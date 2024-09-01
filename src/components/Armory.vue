@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>Armory</h1>
-    <ul>
+    <h1>Armory Items</h1>
+    <ul v-if="armoryItems.length">
       <li v-for="item in armoryItems" :key="item.id">{{ item.name }}</li>
     </ul>
-    <button @click="addNewItem">Add New Item</button>
+    <p v-else>No items found.</p>
   </div>
 </template>
 
@@ -15,26 +15,29 @@ export default {
   data() {
     return {
       armoryItems: [],
+      loading: false,
+      error: null,
     };
   },
-  async created() {
-    try {
-      const response = await armoryService.getAllArmories();
-      this.armoryItems = response.data;
-    } catch (error) {
-      console.error('Error fetching armory items:', error.response.data.message);
-    }
-  },
   methods: {
-    async addNewItem() {
+    async fetchArmoryItems() {
+      this.loading = true;
       try {
-        const newItem = { name: 'New Shield', level: 1 };
-        await armoryService.createArmory(newItem);
-        this.armoryItems.push(newItem); // Update local state
+        const response = await armoryService.getAll();
+        this.armoryItems = response.data;
       } catch (error) {
-        console.error('Error adding new item:', error.response.data.message);
+        this.error = error.message;
+      } finally {
+        this.loading = false;
       }
     },
   },
+  created() {
+    this.fetchArmoryItems();
+  },
 };
 </script>
+
+<style scoped>
+/* Add your component styles here */
+</style>
