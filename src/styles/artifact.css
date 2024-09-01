@@ -1,0 +1,94 @@
+/* General styles for the artifact container */
+.orc-artifact.screen {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame-30-X0jP8z {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: rgba(35, 35, 35, 0.8);
+    border-radius: 8px;
+}
+
+/* Header area with title and gold amount */
+.title-pRQDkS {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+.base-artifact-bar-V4xny3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Artifact properties display */
+.artifact-property {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.artifact-property img {
+    width: 100px;  /* Adjust based on your actual image sizes */
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Individual artifact description */
+.artifact-property div {
+    text-align: left;
+}
+
+.general-attack-bar {
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Specific styles for levels, gold amounts, etc. */
+.lvl-0 {
+    font-size: 12px;
+}
+
+.x15692-k {
+    font-size: 11px;
+    color: #ffd700; /* Gold color */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .frame-30-X0jP8z {
+        padding: 10px;
+    }
+
+    .title-pRQDkS {
+        font-size: 20px;
+    }
+
+    .base-artifact-bar-V4xny3 {
+        flex-direction: column;
+    }
+
+    .artifact-property {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artifact-property img {
+        margin-bottom: 10px;
+    }
+}
