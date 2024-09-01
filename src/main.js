@@ -6,5 +6,8 @@ import router from './router';  // Import the router
 const app = createApp(App);
 
 app.use(router);  // Use the router instance
-
-app.mount('#app');
+new Vue({
+    router,
+    store,  // Register the store
+    render: (h) => h(App),
+}).mount('#app');
