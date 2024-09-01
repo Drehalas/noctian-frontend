@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import '@/styles/css/hero/hero.css';
+import '@/styles/hero.css';
 import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
 import BaseHeroBar from "@/components/BaseHeroBar.vue";
 import GoldBar from "@/components/GoldBar.vue";

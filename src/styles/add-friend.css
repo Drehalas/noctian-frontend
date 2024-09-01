@@ -1,0 +1,1448 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,600,400");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --outer-space: #31353b;
+    --shark: #21242980;
+    --white: #ffffff;
+
+    --font-size-l: 12px;
+    --font-size-m: 10px;
+    --font-size-s: 9px;
+    --font-size-xl: 15px;
+    --font-size-xxl: 24px !important;
+    --font-size-xxxl: 40px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-semi-bold-white-12px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.orc-add-friend {
+    background-color: #191919;
+    height: 932px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 430px;
+}
+
+.orc-add-friend .frame-30-65pYhZ {
+    background-color: transparent;
+    height: 1015px;
+    left: 2px;
+    position: absolute;
+    top: -107px;
+    width: 428px;
+}
+
+.orc-add-friend .rectangle-3-YWnndF {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+    background-color: transparent;
+    height: 296px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 428px;
+}
+
+.orc-add-friend .rectangle-1-YWnndF {
+    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+    background-color: transparent;
+    border-radius: 50px 50px 0px 0px;
+    height: 867px;
+    left: 0px;
+    position: absolute;
+    top: 164px;
+    width: 428px;
+}
+
+.orc-add-friend .orc-banner-YWnndF {
+    background-color: transparent;
+    height: 428px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: -34px;
+    width: 428px;
+}
+
+.orc-add-friend .frame-10-YWnndF {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    left: 117px;
+    position: absolute;
+    top: 209px;
+    width: 193px;
+}
+
+.orc-add-friend .group-9-Eakbrv {
+    background-color: transparent;
+    height: 42px;
+    position: relative;
+    width: 42px;
+}
+
+.orc-add-friend .group-8-xixAN6 {
+    left: 0px;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-add-friend .pngtreeglossy-golden-coin-icon_6866281-1-WF6orr {
+    background-color: transparent;
+    height: 42px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-add-friend .title-Eakbrv {
+    background-color: transparent;
+    color: #fffefc;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 700;
+    height: 46px;
+    letter-spacing: -0.80px;
+    line-height: 44.0px;
+    margin-right: -13.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 156px;
+}
+
+.orc-add-friend .group-19-YWnndF {
+    background-color: transparent;
+    height: 75px;
+    left: 30px;
+    position: absolute;
+    top: 312px;
+    width: 367px;
+}
+
+.orc-add-friend .group-18-ads4WT {
+    height: 75px !important;
+    width: 367px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.orc-add-friend .rectangle-11-hwdVXu {
+    background-color: var(--outer-space) !important;
+    height: 75px !important;
+    width: 367px !important;
+}
+
+.orc-add-friend .frame-22-hwdVXu {
+    align-items: flex-start;
+    background-color: transparent;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 7px;
+}
+
+.orc-add-friend .peon-6jHW5V {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+}
+
+.orc-add-friend .frame-23-hwdVXu {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 25px;
+    position: absolute;
+    top: 40px;
+    width: 346px;
+}
+
+.orc-add-friend .add-your-friends-and-SaVObQ {
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: 25px;
+    letter-spacing: -0.20px;
+    line-height: 11.0px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+}
+
+.orc-add-friend .add-friend-button-YWnndF {
+    background-color: transparent;
+    height: 55px;
+    left: 34px;
+    position: absolute;
+    top: 394px;
+    width: 363px;
+    display: flex;
+    justify-content: center;
+}
+
+.orc-add-friend .group-18-DJAnWR {
+    height: 55px !important;
+    width: 363px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.orc-add-friend .rectangle-11-tLIa2h {
+    background-color: #0261ff !important;
+    height: 55px !important;
+    width: 363px !important;
+}
+
+.orc-add-friend .frame-21-tLIa2h {
+    align-items: flex-start;
+    background-color: #0261ff;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+.orc-add-friend .add-friend-IX9HgH {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-27-YWnndF {
+    background-color: transparent;
+    height: 428px;
+    left: 30px;
+    position: absolute;
+    top: 461px;
+    width: 367px;
+}
+
+.orc-add-friend .rectangle-10-nSIjJq {
+    background-color: var(--outer-space);
+    border-radius: 10px;
+    height: 428px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-add-friend .frame-16-nSIjJq {
+    background-color: transparent;
+    height: 136px;
+    left: 4px;
+    position: absolute;
+    top: 42px;
+    width: 66px;
+}
+
+.orc-add-friend .friend-list-nSnucG {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 153px;
+    letter-spacing: -0.30px;
+    line-height: 16.5px;
+    position: absolute;
+    text-align: left;
+    top: -20px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .group-57-nSnucG {
+    background-color: transparent;
+    height: 33px;
+    left: 0px;
+    position: relative;
+    width: 358px;
+    margin-top: 5px;
+}
+
+.orc-add-friend .frame-18-mujmNE {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.orc-add-friend .carzyl544-RccxTl {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-mujmNE {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x1-fkSG5E {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-58-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 544px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-W02X6U {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .lobalub5165-jslVkH {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-W02X6U {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x2-Zedx7E {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-59-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 582px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-SWNlQl {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .lapuzi45-JDWe8v {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-SWNlQl {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x3-hBhkyW {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-60-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 620px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-hPo8S4 {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .rangofu44-1vltui {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-hPo8S4 {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x4-I3Q4KX {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-61-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 658px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-RUdKe2 {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .yakuzo112-VIQgOr {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-RUdKe2 {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x5-2boxFe {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-62-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 696px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-AxGKty {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .frame-19-AxGKty {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x6-YBWuDZ {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-63-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 734px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-Se7xm1 {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .frame-19-Se7xm1 {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x7-9ypiQa {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-64-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 772px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-7Hi2xW {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .frame-19-7Hi2xW {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x8-1JE1bx {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-65-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 810px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-vTmQlx {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .frame-19-vTmQlx {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x9-iv6QBb {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .group-66-YWnndF {
+    background-color: transparent;
+    height: 33px;
+    left: 34px;
+    position: absolute;
+    top: 848px;
+    width: 358px;
+}
+
+.orc-add-friend .frame-18-GKYsgw {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 66px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 292px;
+}
+
+.orc-add-friend .frame-19-GKYsgw {
+    background-color: var(--shark);
+    display: flex;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-add-friend .x10-z5Zszv {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .base-add-friend-bar-YWnndF {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    left: 21px;
+    padding: 4px 0px;
+    position: absolute;
+    top: 258px;
+}
+
+.orc-add-friend .frame-16-coHzdR {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 3px 12px;
+    position: relative;
+}
+
+.orc-add-friend .frame-15-xmFfE4 {
+    border-radius: 5px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-add-friend .hero-43eybJ {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-20-xmFfE4 {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.orc-add-friend .soldier-7ly4bi {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-19-xmFfE4 {
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    padding: 10px 8px;
+    position: relative;
+}
+
+.orc-add-friend .armory-ikZEkM {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-18-xmFfE4 {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.orc-add-friend .spell-kUIlL3 {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-17-xmFfE4 {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-add-friend .artifact-9tsDiz {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-16-xmFfE4 {
+    align-items: center;
+    background-color: #0b0b0c80;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.orc-add-friend .peon-2xVuyw {
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+}
+
+.orc-add-friend .general-base-bar-65pYhZ {
+    background-color: transparent;
+    height: 60px;
+    left: 31px;
+    position: fixed;
+    top: 852px;
+    width: 368px;
+}
+
+.orc-add-friend .frame-11-VRiuBN {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 12px;
+    display: flex;
+    gap: 6px;
+    height: 60px;
+    left: 0px;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    width: 368px;
+}
+
+.orc-add-friend .frame-13-iax8pF {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-add-friend .group-7qMxxZ {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-add-friend .x1-57-21KyH2 {
+    background-color: transparent;
+    height: 24px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 18px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-add-friend .attack-21KyH2 {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: 0.00px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .frame-17-iax8pF {
+    background-color: #0b0b0b80;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 65px;
+}
+
+.orc-add-friend .group-AKxXeN {
+    width: 42px;
+}
+
+.orc-add-friend .base-846JG7 {
+    background-color: transparent;
+    height: auto;
+    left: 10px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .x5-8-846JG7 {
+    background-color: transparent;
+    height: 40px;
+    left: 0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    transform: rotate(-180deg);
+    width: 40px;
+}
+
+.orc-add-friend .frame-18-iax8pF {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-add-friend .group-ZLxnD1 {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-add-friend .x6-501-9mbSX2 {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-add-friend .ladder-9mbSX2 {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .frame-15-iax8pF {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 65px;
+}
+
+.orc-add-friend .group-8-TRhOJe {
+    margin-bottom: -2.00px;
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-add-friend .x7-1-CynxZS {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 30px;
+}
+
+.orc-add-friend .war-CynxZS {
+    background-color: transparent;
+    height: auto;
+    left: 8px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .frame-14-iax8pF {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-add-friend .group-xLxWOS {
+    opacity: 0.6;
+    width: 37px;
+}
+
+.orc-add-friend .treasure-8Kyrx1 {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-add-friend .x8-4-8Kyrx1 {
+    background-color: transparent;
+    height: 32px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    transform: rotate(-180deg);
+    width: 32px;
+}
+
+.orc-add-friend .empty {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .frame-15 {
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.orc-add-friend .frame-17 {
+    align-items: center;
+    position: relative;
+}
+
+.orc-add-friend .frame-19 {
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.orc-add-friend .group {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.orc-add-friend .group-18 {
+    background-color: transparent;
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+.orc-add-friend .group-8 {
+    background-color: transparent;
+    height: 42px;
+    position: relative;
+}
+
+.orc-add-friend .peon {
+    background-color: transparent;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-add-friend .rectangle-11 {
+    border-radius: 15px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+}

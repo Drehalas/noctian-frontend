@@ -1,0 +1,4522 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,600,400");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --outer-space: #31353b;
+    --white: #ffffff;
+
+    --font-size-l: 11px;
+    --font-size-m: 9px;
+    --font-size-s: 8.2px;
+    --font-size-xl: 12px;
+    --font-size-xs: 7px;
+    --font-size-xxl: 40px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-semi-bold-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-normal-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto-medium-white-7px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.roboto-semi-bold-white-8-2px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-12px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.orc-hero {
+    background-color: #191919;
+    height: 3765px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 430px;
+}
+
+.orc-hero .frame-30-zHO16R {
+    background-color: transparent;
+    height: 3876px;
+    left: 2px;
+    position: absolute;
+    top: -107px;
+    width: 428px;
+}
+
+.orc-hero .frame-10-lvJUvn {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 209px;
+    width: 100%;
+    justify-content: center;
+}
+
+.orc-hero .group-9-XsTlFn {
+    height: 42px;
+    width: 42px;
+}
+
+.orc-hero .group-8-oc1ZZS {
+    left: 0px;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-hero .pngtreeglossy-golden-coin-icon_6866281-1-UAjQ2R {
+    background-color: transparent;
+    height: 42px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-hero .title-XsTlFn {
+    background-color: transparent;
+    color: #fffefc;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+    height: 46px;
+    letter-spacing: -0.80px;
+    line-height: 44.0px;
+    margin-right: -13.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-hero .base-hero-bar-lvJUvn {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    left: 21px;
+    padding: 4px 0px;
+    position: absolute;
+    top: 258px;
+}
+
+.orc-hero .frame-16-cZXoCo {
+    padding: 3px 12px;
+}
+
+.orc-hero .frame-15-wNWTLI {
+    background-color: transparent;
+    border-radius: 5px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-hero .hero-n6d0Ud {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-wNWTLI {
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-hero .soldier-kDvytW {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-19-wNWTLI {
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 8px;
+}
+
+.orc-hero .armory-MjOaOq {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-18-wNWTLI {
+    border-radius: 5px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-hero .spell-KYkoHY {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-17-wNWTLI {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-hero .artifact-H13YWN {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-16-wNWTLI {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.orc-hero .peon-LSCL1d {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .hero-equp-select-lvJUvn {
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    justify-content: center;
+    left: 0px;
+    overflow: hidden;
+    padding: 17px 12px;
+    position: absolute;
+    top: 300px;
+    width: 428px;
+}
+
+.orc-hero .property-11-3peoxU {
+    background-color: transparent;
+    cursor: pointer;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-qGPTjX {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-T7RRcN {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-MZoG0a {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-klRr92 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .melee-weapon-KD455G {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-KD455G {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-CSoEXl {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-vdMDfX {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-qniZba {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .spirit-shield-qGPTjX {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-hero .property-12-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .ranged-1-4ORRTd {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 9px;
+    width: 45px;
+}
+
+.orc-hero .frame-22-4ORRTd {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-xWjNlM {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-lFg27e {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-AVTn1D {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ranged-weapon-750xxA {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-750xxA {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-jCkamQ {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-AqRsxq {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-PiHn8z {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .property-13-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .off-hand-1-oYQdyx {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .frame-22-oYQdyx {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-8TkOwZ {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-lahU73 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-jMEAdw {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .off-hand-cIbkSu {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-cIbkSu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-zuEbv2 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-6iB6fR {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-yLeOuK {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .property-14-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-ZOn9H2 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-Jtnlis {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-a4Bxyb {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-8vzpLw {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .chest-armor-pg7wen {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-pg7wen {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-nRn7Z7 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-EVa88T {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-QQRx9o {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .chest-armor-ZOn9H2 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-15-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-6BL501 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-LKLVVY {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-ByYV6z {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-xsMPJx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .pants-6eENbr {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-6eENbr {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-6cxVIE {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-T3SkL8 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-RhgcHi {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .pants-6BL501 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-16-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-AfNQrn {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-hJxIk6 {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-FiSbzu {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-LxeqHV {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gloves-5YUHM8 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-5YUHM8 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-Lr4IiM {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-yJEvlV {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-aN6MD8 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gloves-AfNQrn {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-17-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-HXEBLM {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-hpwJ3x {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-UDJhMb {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-RJxSSy {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .feet-9Yxvth {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-9Yxvth {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-mjc6m5 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-Bixsc2 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-qycm8a {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .feet-HXEBLM {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-18-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-MDExnZ {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-MdF0q5 {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-WT4j4r {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-Wdu8nj {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .belt-0pb12c {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-0pb12c {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-WFihDY {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-P4xQ3K {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-wUS651 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .belt-MDExnZ {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-19-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-DCcIzz {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-3yxbct {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-yeUSnK {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-alYExe {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .bracers-Gb9sIt {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-Gb9sIt {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-SEzAmo {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-il0adx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-8nSb3L {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .bracers-DCcIzz {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-110-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-PWohOx {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-QjVxeW {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-GNtyZK {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-mKtBdW {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .shoulder-gIw5xs {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-gIw5xs {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-ApPYBW {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-LgpjJp {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-qgIL6j {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .shoulder-PWohOx {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-111-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-n9CXpZ {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-b9JFo2 {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-zex0QR {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-54Z7Xc {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .cloak-xmzrbB {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-xmzrbB {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-iuboRj {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-HJZzoW {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-5Ut7yz {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .cloak-n9CXpZ {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-112-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-93sry0 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-xmeAna {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-nW6qIl {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-hwJxQx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .neckless-J9Xbg6 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-J9Xbg6 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-L6N3Nn {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-kJ7TG5 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-DmyVtK {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .neckless-93sry0 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-113-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-xjX60e {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-8pqhOc {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-rnOPVL {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-peMNYV {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-q0VQIT {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-q0VQIT {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-4d791Q {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-ETx7uD {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-tzC8zo {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-xjX60e {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-114-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-8WcVuO {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-XqcuUk {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-ZGygtD {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-6VBbl0 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-2-4nRinA {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-4nRinA {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-6KzaZI {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-4HauGo {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-VbUWTj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-2-8WcVuO {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-115-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-UJa7pT {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-34BE84 {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-4Ph5FE {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-tmJtye {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-ZSp7On {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-ZSp7On {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-CJMCJi {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-UgkCw5 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-xyavU9 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-UJa7pT {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-116-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-8RQxIV {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-hero .vector-9-JK52xZ {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-AM1tgZ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-zKqnLM {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-2-05jkU3 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-05jkU3 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-cutLwx {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-CKZ9V0 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-i3Exh4 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-2-8RQxIV {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-117-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-LgkaUd {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-4yAUdF {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-U776k4 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-1Uls4E {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .melee-weapon-gem-Zx6A6x {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-Zx6A6x {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-lEEmzA {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-2lOxCw {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-slb65p {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .melee-weapon-gem-LgkaUd {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-118-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-l8XpQx {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-o62kmC {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-dhCxGJ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-0Yn5QP {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ranged-weapon-gem-PPhvLy {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-PPhvLy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-Yf9z86 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-aH9NWj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-5Kyg7E {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ranged-weapon-gem-l8XpQx {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.orc-hero .property-119-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-C4aPxD {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-NiqcMw {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-Ct61Qy {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-GOwquE {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .off-hand-gem-vVw2dQ {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-vVw2dQ {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-4JxIBx {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-jgFlOO {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-qXORnD {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .off-hand-gem-C4aPxD {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-120-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-lcmU3F {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-xLQEAw {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-z0ZrEv {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-vabq6t {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .chest-gem-BGqFbh {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-BGqFbh {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-ITndUa {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-CCVnqT {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-xHoklD {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .chest-gem-lcmU3F {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-121-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-8KsG79 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-ZbF79o {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-dEG49b {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-PTD7wM {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .pants-gem-eaGzQn {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-eaGzQn {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-AJW5wT {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-o8xmaO {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-wyqOsQ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .pants-gem-8KsG79 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-122-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-pRixqx {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-aFdvJ2 {
+    height: 24.36920166015625px;
+}
+
+.orc-hero .group-9-d5lDCz {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-xoxI80 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gloves-gem-me5aOy {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-me5aOy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-C0xW0O {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-2gOlyx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-1mUhJh {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gloves-gem-pRixqx {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-123-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-H76LkT {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-60I5Bk {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-vnk2nJ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-dDZuv1 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .feet-gem-9W6rey {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-9W6rey {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-R1MwOE {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-A32Voj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-y4vTvD {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .feet-gem-H76LkT {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-124-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-F3bCRq {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-l98aBD {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-MAxUdf {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-hjPzzG {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .belt-gem-WjVdHT {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-WjVdHT {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-qeWaH4 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-m1Jjt7 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-vxD5Dd {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .belt-gem-F3bCRq {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-125-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-6iahO9 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-Pe4BAY {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-Nj1huM {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-Zo5qaD {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .bracers-gem-8lCJ9w {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-8lCJ9w {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-VxSfYW {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-0xVWOB {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-DrPyZx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .bracers-gem-6iahO9 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-126-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-ZlcS4x {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-kw674X {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-5xxNbx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-Qxm58m {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .shoulder-gem-C3t4io {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-C3t4io {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-iPMF3D {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-K7ScEB {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-svQ5NR {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .shoulder-gem-ZlcS4x {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-127-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-BcZMe0 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-xkpFJl {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-xOQ2kQ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-KwTFUp {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .cloak-gem-SSTAg6 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-SSTAg6 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-A5DixE {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-XqqtLx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-tS4Kqu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .cloak-gem-BcZMe0 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-128-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-4YMmB9 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-2gTm0I {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-OqYwys {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-RM2ebo {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .neckless-gem-SUW6O6 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-SUW6O6 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-MdVAg3 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-xdkGbl {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-pbzKMn {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .neckless-gem-4YMmB9 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-129-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-5RMuNv {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-4EuZ0P {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-uWlfKG {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-DwA9Tl {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-gem-QcnWCn {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-QcnWCn {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-dXqQZK {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-XxNmrm {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-RNBxyz {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-gem-5RMuNv {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-130-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-LVik69 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-gpGHUb {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-YgxzTx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-zIOofM {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-2-gem-YqA56I {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-YqA56I {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-VSIxFQ {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-jhOs48 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-JWWgxb {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-2-gem-LVik69 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-131-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-MSd1QR {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-MqGnVf {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-xHlU7O {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-xtzj87 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-gem-RVv9k0 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-RVv9k0 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-AbiwxP {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-rkxSM3 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-qTEJ8S {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-gem-MSd1QR {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-132-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-xp2NQM {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-I9vfkm {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-hVlhq4 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-nFixI3 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-2-gem-744t9H {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-744t9H {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-v5KkxE {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-bNzApf {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-AabtiO {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-2-gem-xp2NQM {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-133-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-2ftf1F {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-xjRewk {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-A0lkGH {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-M5mthV {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .melee-weapon-enchant-pCcNr7 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-pCcNr7 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-TftRuK {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-Bwx6NJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-x0ObXH {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .melee-weapon-enchant-2ftf1F {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-134-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-F1idOk {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-Ioxvg2 {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-jKk7o6 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-W8r8xp {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ranged-weapon-enchant-n3ZVNY {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-n3ZVNY {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-XRkuNP {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-QJKk3H {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-lZmpbj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ranged-weapon-enchant-F1idOk {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-135-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-8yX3zX {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-7tTtq6 {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-75MNFx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-uXBXBN {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .off-hand-enchant-KQ35Cp {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-KQ35Cp {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-vXHhK5 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-IXg4Qp {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-PhMYzk {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .off-hand-enchant-8yX3zX {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-136-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-9bYiZU {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-HTxblP {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-8Nx3Ww {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-nqujHe {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .chest-enchant-8mm45h {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-8mm45h {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-rxGYnt {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-NNH51F {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-pF5R1u {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .chest-enchant-9bYiZU {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-137-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-DHSx1O {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-JxJxqM {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-x0b2lP {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-xC85sW {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .pants-enchant-xQUARZ {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-xQUARZ {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-FcxgcJ {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-VAEudw {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-DSYhXn {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .pants-enchant-DHSx1O {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-138-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-Gdm4Mx {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-JnuR0z {
+    height: 24.3692626953125px;
+}
+
+.orc-hero .group-9-Ei5gvO {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-0qtC8Z {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gloves-enchant-PFElxc {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-PFElxc {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-OodOrD {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-uxn07m {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-4tgThk {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gloves-enchant-Gdm4Mx {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-139-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-UmasZj {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-j94EW9 {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-j8xGvf {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-6tqd5A {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .feet-enchant-RIb3Yg {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-RIb3Yg {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-Uzf0hs {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-O1KJGc {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-MjXUte {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .feet-enchant-UmasZj {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-140-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-Oexo6J {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-yLlZ7O {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-LY1fVs {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-L302Ku {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .belt-enchant-b7d7ex {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-b7d7ex {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-VbVuxn {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-dxSgYB {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-HSvoIu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .belt-enchant-Oexo6J {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-141-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-3PUPuS {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-uGAkmP {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-H1YXCq {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-krLWVL {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .bracers-enchant-Oc0hr5 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-Oc0hr5 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-TjLxq4 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-AExenU {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-kK9r7o {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .bracers-enchant-3PUPuS {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-142-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-gCM0rG {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-HAsEAw {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-FcYS5q {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-PCfBjz {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .shoulder-enchant-FJrBHd {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-FJrBHd {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-beVxDx {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-vtUbjd {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-lmxwrh {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .shoulder-enchant-gCM0rG {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-143-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-P2Mnqz {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-KxfGY7 {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-nvmglg {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-ILNxuw {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .cloak-enchant-SWSrA0 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-SWSrA0 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-nu8kdK {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-BiLmRb {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-xlDzxS {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .cloak-enchant-P2Mnqz {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-144-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-ppdamH {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-QZsPxz {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-Br8koA {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-tj4gY0 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .neckless-enchant-PaSTgp {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-PaSTgp {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-Tbxkfi {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-lEyFKu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-8mGyQv {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .neckless-enchant-ppdamH {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-145-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-jhwXxw {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-oTpUwR {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-xE51xf {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-dxI4eI {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-enchant-ej6Td5 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-ej6Td5 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-QVeqxU {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-6xSqsi {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-9qLB3G {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-enchant-jhwXxw {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-146-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-1kg4BG {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-JfxE9P {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-ubppr2 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-O7sLSk {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ring-2-enchant-P4M4ey {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-P4M4ey {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-h0ZPuH {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-ugHzGv {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-eiWKmF {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ring-2-enchant-1kg4BG {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-147-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-FV49EA {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-03Rds5 {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-ewNSCn {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-joiu15 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-enchant-cKsoQ3 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-cKsoQ3 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-BHsePK {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-LLxTgg {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-7CmdJ0 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-enchant-FV49EA {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-148-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-05O0ep {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-kOVHfx {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-grqEir {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-On3fGl {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .trinket-2-enchant-HFPxhw {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-HFPxhw {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-TIgxYZ {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-hsRXcu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-8xPtYd {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .trinket-2-enchant-05O0ep {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-149-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-e7Kkm1 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-m5w1la {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-tPZlVC {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-kqytRi {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .melee-weapon-rune-II8lHn {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-II8lHn {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-ziWbNx {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-7jlVGJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-WorK7J {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .melee-weapon-rune-e7Kkm1 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-150-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-sauxek {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-NL9J5Y {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-pjsxyO {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-xGRhIy {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .ranged-weapon-rune-wcwGgg {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-wcwGgg {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-ZQvtx8 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-NikPXw {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-nrs7xu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .ranged-weapon-rune-sauxek {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-151-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-w0jzW7 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-jhbuqh {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-dHT2dx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-YOXxyx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .off-hand-rune-8M0UCx {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-8M0UCx {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-6WlOcJ {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-tRExip {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-8Ot3iu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .off-hand-rune-w0jzW7 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-152-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-v4KuW9 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-uMJpRV {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-GgeyCd {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-x6uAQk {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .chest-rune-Z31BIx {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-Z31BIx {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-254o2W {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-HhNHQO {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-9ywJpx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .chest-rune-v4KuW9 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-153-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-fWJqhW {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-TABNwa {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-XybxSx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-mXFurr {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .pants-rune-qJDpLO {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-qJDpLO {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-yLVusl {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-zgNuiQ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-kkTNhx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .pants-rune-fWJqhW {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-154-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-oupLJ7 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-KYCQxx {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-lVlFIx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-AY5XPB {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gloves-rune-6EDdoi {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-6EDdoi {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-TaLIIT {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-8hBbJJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-DoKHgQ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gloves-rune-oupLJ7 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-155-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-JxtyKk {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-XtpZst {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-jxUIEt {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-6LlGM9 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .feet-rune-v3Wf8i {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-v3Wf8i {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-e40wWa {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-8O6Ux9 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-6ykXkP {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .feet-rune-JxtyKk {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-156-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-HeiYxU {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-L0yPt0 {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-EtYxNQ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-3DsxNB {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .belt-rune-upLQgZ {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-upLQgZ {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-T7M4z2 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-gz0xUU {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-9xnkKr {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .belt-rune-HeiYxU {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 40px;
+}
+
+.orc-hero .property-157-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-ZHWmf1 {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-sbCOKK {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-saXB7N {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-YuI8WD {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .bracers-rune-qAujHD {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-qAujHD {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-S6xFy9 {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-aDglKj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-UclQPC {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .bracers-rune-ZHWmf1 {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .property-158-3peoxU {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-hero .frame-22-oSbxka {
+    display: inline-flex;
+}
+
+.orc-hero .vector-9-JNuVoD {
+    height: 24.369140625px;
+}
+
+.orc-hero .group-9-gD09pq {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .gold-s0Orxj {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-hero .shoulder-rune-mwQlzB {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .frame-20-mwQlzB {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-hero .frame-19-G8KTQT {
+    gap: 2.237287998199463px;
+}
+
+.orc-hero .group-9-mVAmK3 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .gold-xww7xe {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-hero .shoulder-rune-oSbxka {
+    background-color: transparent;
+    height: 40px;
+    left: 9px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 40px;
+}
+
+.orc-hero .frame-15 {
+    align-items: center;
+    position: relative;
+}
+
+.orc-hero .frame-16 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.orc-hero .frame-17 {
+    align-items: center;
+    position: relative;
+}
+
+.orc-hero .frame-18 {
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.orc-hero .frame-19 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-hero .frame-20 {
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-hero .frame-21 {
+    align-items: flex-start;
+    background-color: transparent;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 52px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 15px;
+}
+
+.orc-hero .frame-22 {
+    align-items: center;
+    background-color: transparent;
+    gap: 12px;
+    left: 21px;
+    position: absolute;
+    top: 74px;
+}
+
+.orc-hero .frame-4 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3px;
+    position: relative;
+}
+
+.orc-hero .gold {
+    background-color: transparent;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.orc-hero .group {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.orc-hero .group-18 {
+    background-color: transparent;
+    height: 108px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-hero .group-8 {
+    background-color: transparent;
+    height: 42px;
+    position: relative;
+}
+
+.orc-hero .group-9 {
+    background-color: transparent;
+    position: relative;
+}
+
+.orc-hero .lvl-0 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .raid-income-per-hour {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .rectangle-11 {
+    background-color: var(--outer-space);
+    border-radius: 15px;
+    height: 108px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-hero .vector-8 {
+    background-color: transparent;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: 67px;
+    width: 180px;
+}
+
+.orc-hero .vector-9 {
+    background-color: transparent;
+    position: relative;
+    width: 1px;
+}
+
+.orc-hero .x0 {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-hero .x15692-k {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}

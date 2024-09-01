@@ -1,0 +1,1426 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,600");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --outer-space: #31353b;
+    --shark: #21242980;
+    --white: #ffffff;
+
+    --font-size-l: 24px;
+    --font-size-m: 12px;
+    --font-size-s: 11px;
+    --font-size-xs: 9px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-semi-bold-white-12px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.orc-ladder {
+    background-color: #191919;
+    height: 968px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 430px;
+}
+
+.orc-ladder .frame-30-sSjFR3 {
+    background-color: transparent;
+    height: 1015px;
+    left: 2px;
+    position: absolute;
+    top: -82px;
+    width: 428px;
+}
+
+.orc-ladder .rectangle-3-7GkIVu {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 30%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+    background-color: transparent;
+    height: 533px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 428px;
+}
+
+.orc-ladder .rectangle-1-7GkIVu {
+    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+    background-color: transparent;
+    border-radius: 50px 50px 0px 0px;
+    height: 633px;
+    left: 0px;
+    position: absolute;
+    top: 417px;
+    width: 428px;
+}
+
+.orc-ladder .orc-banner-7GkIVu {
+    background-color: transparent;
+    height: 428px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 218px;
+    width: 428px;
+}
+
+.orc-ladder .ork-ladder-20-logo-7GkIVu {
+    background-color: transparent;
+    height: 217px;
+    left: 159px;
+    object-fit: cover;
+    position: absolute;
+    top: 133px;
+    width: 118px;
+}
+
+.orc-ladder .group-12-7GkIVu {
+    background-color: transparent;
+    height: 34px;
+    left: 36px;
+    position: absolute;
+    top: 335px;
+    width: 357px;
+}
+
+.orc-ladder .rectangle-4-c0QDzt {
+    background-color: #32363c;
+    border: 0.5px solid;
+    border-color: #555555bf;
+    border-radius: 30px;
+    height: 19px;
+    left: 0px;
+    position: absolute;
+    top: 15px;
+    width: 357px;
+}
+
+.orc-ladder .rectangle-6-c0QDzt {
+    background-color: #c0b104;
+    border-radius: 30px;
+    height: 18px;
+    left: 0px;
+    position: absolute;
+    top: 15px;
+    width: 21px;
+}
+
+.orc-ladder .group-27-7GkIVu {
+    background-color: transparent;
+    height: 58px;
+    left: 128px;
+    position: absolute;
+    top: 455px;
+    width: 184px;
+}
+
+.orc-ladder .title-geIusQ {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 31px;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .level-120-geIusQ {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 16px;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: 153px;
+}
+
+.orc-ladder .vector-8-geIusQ {
+    height: 1px;
+    left: 0px;
+    top: 30px;
+    width: 180px;
+}
+
+.orc-ladder .group-16-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: relative;
+    width: 367px;
+    margin-top: 5px;
+}
+
+.orc-ladder .frame-17-b6ve6e {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .saruman869-6pApPI {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-b6ve6e {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-3jj4gC {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236801-rsigCY {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-SzCFNz {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-28-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 565px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-5l7SdV {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .kaboom23-f2sXmX {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-5l7SdV {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-WaQfzo {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236802-hc0obs {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-Xy7tz4 {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-29-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 606px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-6KLq2r {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .bald-eagle452-gzExrI {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-6KLq2r {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-LbnVPG {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236803-WthkOv {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-rOvBcS {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-30-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 647px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-yG7bHM {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .aragon-ftw11-0XRHCz {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-yG7bHM {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-1YxlMe {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236804-qJBw3T {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-L7wh2M {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-31-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 31px;
+    position: absolute;
+    top: 688px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-LeSZz2 {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .kaliente23-lAnZZ2 {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-LeSZz2 {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-j8jRi0 {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236805-WSpAER {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-wr3xwI {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-32-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 729px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-cfzI4F {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .axeboy23232-9v3Zir {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-cfzI4F {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-4Hvfy7 {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236806-rTZNlQ {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-w2Ge8q {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-33-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 770px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-ZHwvIP {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .ccccccccc1111-P556iB {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-ZHwvIP {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-fVSEbD {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236807-TwiT6w {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-xQTpev {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-34-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 811px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-cY7AVe {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .yanbex022-pRuLYB {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-cY7AVe {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-wIpDyG {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236808-9Bg043 {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-PgMTjP {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-35-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 852px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-WXH8zu {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .hey123-P96bMg {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-WXH8zu {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-ehDhuw {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x3236809-NMWEAX {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-9BxYos {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .group-36-7GkIVu {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 893px;
+    width: 367px;
+}
+
+.orc-ladder .frame-17-Peuh5v {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 84px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-ladder .arthur8071-QlcePW {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .frame-18-Peuh5v {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 274px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 82px;
+}
+
+.orc-ladder .group-8-zDmoFU {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-ladder .x1026-zDmoFU {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .x4145927-yLDVCt {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-left: -7.00px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .vector-8-AkV6aH {
+    height: 31px;
+    left: 80px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .general-ladder-bar-sSjFR3 {
+    background-color: transparent;
+    height: 60px;
+    left: 31px;
+    position: fixed;
+    top: 852px;
+    width: 368px;
+}
+
+.orc-ladder .frame-11-gl3Jd4 {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 12px;
+    display: flex;
+    gap: 6px;
+    height: 60px;
+    left: 0px;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    width: 368px;
+}
+
+.orc-ladder .frame-13-XwPgv7 {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-ladder .group-cVPwHs {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-ladder .x1-57-23CMfZ {
+    background-color: transparent;
+    height: 24px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 18px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-ladder .attack-23CMfZ {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: 0.00px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .frame-17-XwPgv7 {
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-ladder .group-rVDgy1 {
+    opacity: 0.6;
+    width: 42px;
+}
+
+.orc-ladder .base-91FKnG {
+    background-color: transparent;
+    height: auto;
+    left: 10px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .x5-8-91FKnG {
+    background-color: transparent;
+    height: 40px;
+    left: 0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    transform: rotate(-180deg);
+    width: 40px;
+}
+
+.orc-ladder .frame-18-XwPgv7 {
+    background-color: #0b0b0b80;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-ladder .group-1YUg8O {
+    width: 32px;
+}
+
+.orc-ladder .x6-501-3PSy7t {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-ladder .ladder-3PSy7t {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .frame-15-XwPgv7 {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-ladder .group-8-pCWE4S {
+    height: 42px;
+    margin-bottom: -2.00px;
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-ladder .x7-1-W3aEHR {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 30px;
+}
+
+.orc-ladder .war-W3aEHR {
+    background-color: transparent;
+    height: auto;
+    left: 8px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .frame-14-XwPgv7 {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-ladder .group-JDerOL {
+    opacity: 0.6;
+    width: 37px;
+}
+
+.orc-ladder .treasure-7eOV3j {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-ladder .x8-4-7eOV3j {
+    background-color: transparent;
+    height: 32px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    transform: rotate(-180deg);
+    width: 32px;
+}
+
+.orc-ladder .frame-16 {
+    background-color: transparent;
+    height: 33px;
+    left: 5px;
+    position: absolute;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-ladder .frame-17 {
+    align-items: center;
+    display: flex;
+}
+
+.orc-ladder .frame-18 {
+    align-items: center;
+    display: flex;
+}
+
+.orc-ladder .frame-19 {
+    align-items: center;
+    background-color: var(--shark);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+}
+
+.orc-ladder .frame-4 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3px;
+    position: relative;
+}
+
+.orc-ladder .group {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.orc-ladder .group-8 {
+    background-color: transparent;
+    position: relative;
+}
+
+.orc-ladder .pngtreeglossy-golden-coin-icon_6866281-1 {
+    background-color: transparent;
+    height: 14px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 13px;
+}
+
+.orc-ladder .rectangle-10 {
+    background-color: var(--outer-space);
+    border-radius: 10px;
+    height: 41px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-ladder .vector-8 {
+    background-color: transparent;
+    position: absolute;
+}
+
+.orc-ladder .vector-9 {
+    background-color: transparent;
+    height: 31px;
+    left: 269px;
+    position: absolute;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-ladder .x2101-k {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-ladder .x2102-k {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
