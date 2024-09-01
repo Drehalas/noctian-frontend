@@ -1,51 +1,81 @@
 /* eslint-disable vue/multi-word-component-names */
 
 <template>
-  <div class="add-friend">
-    <h1>Add Friend</h1>
-    <p>Add a friend to join your adventures.</p>
-    <!-- Example of an add friend form -->
-    <form @submit.prevent="addFriend">
-      <input type="text" v-model="friendName" placeholder="Enter friend's name" />
-      <button type="submit">Add Friend</button>
-    </form>
-    <ul>
-      <li v-for="friend in friends" :key="friend.id">
-        {{ friend.name }}
-      </li>
-    </ul>
-  </div>
+    <div class="container-center-horizontal hero">
+        <div class="orc-hero screen orc-add-friend">
+            <div class="frame-30-zHO16R">
+                <FactionHeader />
+                <GoldBar />
+                <BaseHeroBar :selected="'Peon'" />
+                <div class="group-19-YWnndF">
+                    <div class="group-18-ads4WT group-18">
+                        <div class="rectangle-11-hwdVXu rectangle-11"></div>
+                        <div class="frame-22-hwdVXu">
+                            <div class="peon-6jHW5V peon">PEON</div>
+                        </div>
+                        <div class="frame-23-hwdVXu">
+                            <p class="add-your-friends-and-SaVObQ">Add your friends and some of their
+                                gold will be added to your chest. Remember that they have to be in the same faction
+                                because no one will help their enemies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-friend-button-YWnndF">
+                    <div class="group-18-DJAnWR group-18">
+                        <div class="rectangle-11-tLIa2h rectangle-11"></div>
+                        <div class="frame-21-tLIa2h">
+                            <div class="add-friend-IX9HgH">ADD FRIEND</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-27-YWnndF">
+                    <div class="rectangle-10-nSIjJq"></div>
+                    <div class="frame-16-nSIjJq">
+                        <div class="friend-list-nSnucG">Friend list</div>
+                        <div class="group-57-nSnucG" v-for="item in friends" :key="item.id">
+                            <div class="frame-18-mujmNE">
+                                <div class="carzyl544-RccxTl roboto-semi-bold-white-12px">
+                                    {{item.name}}
+                                </div>
+                            </div>
+                            <div class="frame-19-mujmNE frame-19">
+                                <div class="x1-fkSG5E roboto-semi-bold-white-12px">
+                                    {{item.id}}.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <GeneralAttackBar :selected="'Base'" />
+        </div>
+    </div>
 </template>
 
 <script>
+import '@/styles/css/add-friend/add-friend.css';
+import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
+import BaseHeroBar from "@/components/BaseHeroBar.vue";
+import GoldBar from "@/components/GoldBar.vue";
+import FactionHeader from "@/components/FactionHeader.vue";
+
 export default {
-  name: 'AddFriend',
-  data() {
-    return {
-      friendName: '',
-      friends: [
-        { id: 1, name: 'Alice' },
-        { id: 2, name: 'Bob' },
-        // Mock data for illustration
-      ],
-    };
-  },
-  methods: {
-    addFriend() {
-      if (this.friendName) {
-        this.friends.push({ id: this.friends.length + 1, name: this.friendName });
-        this.friendName = '';
-        console.log(`Added friend: ${this.friendName}`);
-      }
+    name: 'AddFriend',
+    components: {
+        GeneralAttackBar,
+        BaseHeroBar,
+        GoldBar,
+        FactionHeader,
     },
-  },
+    data() {
+        return {
+            friends: [
+                { id: 1, name: 'Alice' },
+                { id: 2, name: 'Bob' },
+            ],
+        };
+    },
+    methods: {
+    },
 };
 </script>
-
-<style scoped>
-.add-friend {
-  padding: 20px;
-  background-color: #f0f8ff;
-  border-radius: 8px;
-}
-</style>

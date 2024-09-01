@@ -1,0 +1,727 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,400");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: flex-center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+
+    --font-size-l: 24px;
+    --font-size-m: 10px;
+    --font-size-s: 9px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.orc-treasure {
+    background-color: #191919;
+    height: 932px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 430px;
+}
+
+.orc-treasure .frame-30-exKbOx {
+    background-color: transparent;
+    height: 1015px;
+    left: 0px;
+    position: absolute;
+    top: -82px;
+    width: 428px;
+}
+
+.orc-treasure .rectangle-3-Cjm0nv {
+    background-color: transparent;
+    height: 451px;
+    left: 0px;
+    position: absolute;
+    top: 82px;
+    width: 428px;
+}
+
+.orc-treasure .rectangle-1-Cjm0nv {
+    background-color: transparent;
+    height: 597px;
+    left: 0px;
+    position: absolute;
+    top: 417px;
+    width: 428px;
+}
+
+.orc-treasure .war-banner-Cjm0nv {
+    background-color: transparent;
+    height: 439px;
+    left: -5px;
+    object-fit: cover;
+    position: absolute;
+    top: 398px;
+    width: 439px;
+}
+
+.orc-treasure .rectangle-4-Cjm0nv {
+    background-color: transparent;
+    height: 311px;
+    left: 2334px;
+    position: absolute;
+    top: -900px;
+    width: 428px;
+}
+
+.orc-treasure .group-27-Cjm0nv {
+    background-color: transparent;
+    height: 28px;
+    left: 128px;
+    position: absolute;
+    top: 477px;
+    width: 182px;
+}
+
+.orc-treasure .level-120-zFJ7xU {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 24px;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: 131px;
+}
+
+.orc-treasure .vector-8-zFJ7xU {
+    background-color: transparent;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: 28px;
+    width: 180px;
+}
+
+.orc-treasure .group-70-Cjm0nv {
+    background-color: transparent;
+    height: 306px;
+    left: 0px;
+    position: absolute;
+    top: 82px;
+    width: 428px;
+}
+
+.orc-treasure .x32-h3edDf {
+    background-color: transparent;
+    height: 147px;
+    left: 0px;
+    position: absolute;
+    top: 111px;
+    width: 333px;
+}
+
+.orc-treasure .x31-h3edDf {
+    background-color: transparent;
+    height: 254px;
+    left: 174px;
+    object-fit: cover;
+    position: absolute;
+    top: 43px;
+    width: 254px;
+}
+
+.orc-treasure .x2-2-h3edDf {
+    background-color: transparent;
+    height: 282px;
+    left: 73px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 282px;
+}
+
+.orc-treasure .x34-h3edDf {
+    background-color: transparent;
+    height: 136px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 170px;
+    width: 254px;
+}
+
+.orc-treasure .x33-h3edDf {
+    background-color: transparent;
+    height: 147px;
+    left: 171px;
+    position: absolute;
+    top: 150px;
+    width: 257px;
+}
+
+.orc-treasure .group-19-Cjm0nv {
+    background-color: transparent;
+    height: 38px;
+    left: 25px;
+    position: absolute;
+    top: 512px;
+    width: 367px;
+}
+
+.orc-treasure .group-18-GtvAHp {
+    height: 38px;
+}
+
+.orc-treasure .rectangle-11-9Nt7xs {
+    background-color: #31353b;
+    height: 38px;
+}
+
+.orc-treasure .frame-23-9Nt7xs {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 13px;
+    left: 8px;
+    position: absolute;
+    top: 12px;
+    width: 346px;
+}
+
+.orc-treasure .please-connect-your-di0LSt {
+    align-self: stretch;
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: 25px;
+    letter-spacing: -0.20px;
+    line-height: 11.0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+}
+
+.orc-treasure .add-wallet-button-Cjm0nv {
+    background-color: transparent;
+    height: 55px;
+    left: 25px;
+    position: absolute;
+    top: 586px;
+    width: 367px;
+}
+
+.orc-treasure .group-18-0fbiDm {
+    height: 55px;
+}
+
+.orc-treasure .rectangle-11-ZVRKks {
+    background-color: #0261ff;
+    height: 55px;
+}
+
+.orc-treasure .frame-21-ZVRKks {
+    align-items: flex-start;
+    background-color: #0261ff;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 113px;
+    position: absolute;
+    top: 15px;
+}
+
+.orc-treasure .add-wallet-mbRsOe {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 26.4px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-treasure .general-treasure-bar-exKbOx {
+    background-color: transparent;
+    height: 60px;
+    left: 31px;
+    position: fixed;
+    top: 852px;
+    width: 368px;
+}
+
+.orc-treasure .frame-11-JI8YxG {
+    align-items: center;
+    background-color: #31353b;
+    border-radius: 12px;
+    display: flex;
+    gap: 6px;
+    height: 60px;
+    left: 0px;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    width: 368px;
+}
+
+.orc-treasure .frame-13-qAVq5G {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-treasure .group-x0Qb7M {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-treasure .x1-57-1w8rG3 {
+    background-color: transparent;
+    height: 24px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 18px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-treasure .attack-1w8rG3 {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: 0.00px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-treasure .frame-17-qAVq5G {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-treasure .group-u6yaHW {
+    opacity: 0.6;
+    width: 42px;
+}
+
+.orc-treasure .base-icyQBW {
+    background-color: transparent;
+    height: auto;
+    left: 10px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-treasure .x5-8-icyQBW {
+    background-color: transparent;
+    height: 40px;
+    left: 0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    transform: rotate(-180deg);
+    width: 40px;
+}
+
+.orc-treasure .frame-18-qAVq5G {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-treasure .group-uSeMIl {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-treasure .x6-501-xpURp3 {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-treasure .ladder-xpURp3 {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-treasure .frame-15-qAVq5G {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-treasure .group-8-HizDcZ {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    opacity: 0.6;
+    position: relative;
+    width: 32px;
+}
+
+.orc-treasure .x7-1-fhFcZH {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 30px;
+}
+
+.orc-treasure .war-fhFcZH {
+    background-color: transparent;
+    height: auto;
+    left: 8px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-treasure .frame-14-qAVq5G {
+    align-items: center;
+    background-color: #0b0b0b80;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-treasure .group-d8pN7R {
+    width: 37px;
+}
+
+.orc-treasure .treasure-FUI8R0 {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-treasure .x8-4-FUI8R0 {
+    background-color: transparent;
+    height: 32px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    transform: rotate(-180deg);
+    width: 32px;
+}
+
+.orc-treasure .group {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.orc-treasure .group-18 {
+    background-color: transparent;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-treasure .rectangle-11 {
+    border-radius: 15px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 367px;
+}

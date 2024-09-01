@@ -1,0 +1,2369 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,600,400");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: flex-center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --outer-space: #31353b;
+    --white: #ffffff;
+
+    --font-size-l: 11px;
+    --font-size-m: 9px;
+    --font-size-s: 8.2px;
+    --font-size-xl: 12px;
+    --font-size-xs: 7px;
+    --font-size-xxl: 40px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-semi-bold-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-normal-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto-medium-white-7px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.roboto-semi-bold-white-8-2px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-12px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.orc-armory {
+    background-color: #191919;
+    height: 1515px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    width: 430px;
+}
+
+.orc-armory .frame-30-beB9KQ {
+    background-color: transparent;
+    height: 1561px;
+    left: 2px;
+    position: absolute;
+    top: -107px;
+    width: 428px;
+}
+
+.orc-armory .rectangle-3-UAIN5i {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+    background-color: transparent;
+    height: 296px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 428px;
+}
+
+.orc-armory .rectangle-1-UAIN5i {
+    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+    background-color: transparent;
+    border-radius: 50px 50px 0px 0px;
+    height: 1443px;
+    left: 0px;
+    position: absolute;
+    top: 164px;
+    width: 428px;
+}
+
+.orc-armory .orc-banner-UAIN5i {
+    background-color: transparent;
+    height: 428px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: -34px;
+    width: 428px;
+}
+
+.orc-armory .frame-10-UAIN5i {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    left: 117px;
+    position: absolute;
+    top: 209px;
+    width: 193px;
+}
+
+.orc-armory .group-9-IPOoGP {
+    height: 42px;
+    width: 42px;
+}
+
+.orc-armory .group-8-fPn1xd {
+    left: 0px;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-armory .pngtreeglossy-golden-coin-icon_6866281-1-abrs9Z {
+    background-color: transparent;
+    height: 42px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-armory .title-IPOoGP {
+    background-color: transparent;
+    color: #fffefc;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+    height: 46px;
+    letter-spacing: -0.80px;
+    line-height: 44.0px;
+    margin-right: -13.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 156px;
+}
+
+.orc-armory .base-armory-bar-UAIN5i {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    left: 21px;
+    padding: 4px 0px;
+    position: absolute;
+    top: 258px;
+}
+
+.orc-armory .frame-16-9Y5NEQ {
+    padding: 3px 12px;
+}
+
+.orc-armory .frame-15-iL0k7T {
+    border-radius: 5px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-armory .hero-WMLP9g {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-iL0k7T {
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-armory .soldier-rIuPRG {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-19-iL0k7T {
+    background-color: #0b0b0c80;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 8px;
+}
+
+.orc-armory .armory-LRcbPn {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-18-iL0k7T {
+    border-radius: 5px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-armory .spell-lURk5E {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-17-iL0k7T {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.orc-armory .artifact-D5sbao {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-16-iL0k7T {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.orc-armory .peon-oInZ7N {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .armory-select-UAIN5i {
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    justify-content: center;
+    left: 0px;
+    overflow: hidden;
+    padding: 17px 12px;
+    position: absolute;
+    top: 300px;
+    width: 428px;
+}
+
+.orc-armory .property-31-slvvOR {
+    background-color: transparent;
+    cursor: pointer;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-3x65AO {
+    position: relative;
+}
+
+.orc-armory .frame-22-7c6van {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-NmsCWZ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-fxZnJL {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-7c6van {
+    display: inline-flex;
+}
+
+.orc-armory .warcamp-cM1FVU {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-cM1FVU {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-8JAqHB {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-WdCxzJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-NWRsxD {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .warcamp-7c6van {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-32-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-pcxf4p {
+    position: relative;
+}
+
+.orc-armory .frame-22-sQ1t9r {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-oIGaH4 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-eSdxLa {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-sQ1t9r {
+    display: inline-flex;
+}
+
+.orc-armory .forge-FByLWq {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-FByLWq {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-wqBBSd {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-IB7375 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-sXKxzU {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .forge-sQ1t9r {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-33-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-pb9Dmc {
+    position: relative;
+}
+
+.orc-armory .frame-22-9MaF0i {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-Zel9U1 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-pWyBdI {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-9MaF0i {
+    display: inline-flex;
+}
+
+.orc-armory .spirit-lodge-BqUcxh {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-BqUcxh {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-xqzL8L {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-18OQMG {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-1qKbOJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .spirit-lodge-9MaF0i {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-34-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-gKDGZz {
+    position: absolute;
+}
+
+.orc-armory .frame-22-3mx08Z {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-sZP1Hp {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-m9DQC6 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-3mx08Z {
+    display: inline-flex;
+}
+
+.orc-armory .bestiary-Eu9stB {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-Eu9stB {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-0jcn3r {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-wOlqTh {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-rHWJZL {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .bestiary-gKDGZz {
+    background-color: transparent;
+    height: 45px;
+    left: 11px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+}
+
+.orc-armory .property-35-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-z9syNf {
+    position: relative;
+}
+
+.orc-armory .frame-22-al0uBH {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-GthiBm {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-9Ef1OH {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-al0uBH {
+    display: inline-flex;
+}
+
+.orc-armory .great-hall-hN4qqu {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-hN4qqu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-Qi8a0U {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-zSBHfs {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-wM2pF8 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .great-hall-al0uBH {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-36-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-NMiR3U {
+    position: relative;
+}
+
+.orc-armory .frame-22-balym1 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-NkmDpS {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-OTx9EG {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-balym1 {
+    display: inline-flex;
+}
+
+.orc-armory .serrated-blades-gkgzjs {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-gkgzjs {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-PWVlD3 {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-QA8o2a {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-IVmWD9 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .serrated-blades-balym1 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-37-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-zfZTeg {
+    position: relative;
+}
+
+.orc-armory .frame-22-N8eKEr {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-85sTp0 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-MQyXEq {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-N8eKEr {
+    display: inline-flex;
+}
+
+.orc-armory .poisoned-tips-M5n3GM {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-M5n3GM {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-XaB701 {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-0sqt9c {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-2KBdl4 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .poisoned-tips-N8eKEr {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-38-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-qrwGi6 {
+    position: relative;
+}
+
+.orc-armory .frame-22-BukZOc {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-sRra1G {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-qQItsM {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-BukZOc {
+    display: inline-flex;
+}
+
+.orc-armory .flaming-munitions-7wHKeI {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-7wHKeI {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-NLivPf {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-40c6SI {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-YESesG {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .flaming-munitions-BukZOc {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-39-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-49ZOoS {
+    position: relative;
+}
+
+.orc-armory .frame-22-dbLmif {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-X7wqGx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-uxa8sE {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-dbLmif {
+    display: inline-flex;
+}
+
+.orc-armory .rune-inscribed-weapons-xRGmgx {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-xRGmgx {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-pDdACz {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-BRufyg {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-4NWry5 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .rune-inscribed-weapons-dbLmif {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-310-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-Xy1CKJ {
+    position: relative;
+}
+
+.orc-armory .frame-22-21rIEU {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-qrNJ3e {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-fuyxC5 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-21rIEU {
+    display: inline-flex;
+}
+
+.orc-armory .berserker-axes-D4VQM9 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-D4VQM9 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-rnxhUk {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-s6fTIE {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-RIzWCH {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .berserker-axes-21rIEU {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-armory .property-311-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-GettNl {
+    position: relative;
+}
+
+.orc-armory .frame-22-aXIcnh {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-QFXXxr {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-3fxTko {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-aXIcnh {
+    display: inline-flex;
+}
+
+.orc-armory .spiked-armor-PDUItY {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-PDUItY {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-htG5Yw {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-Vqr0K8 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-K80vk4 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .spiked-armor-aXIcnh {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-312-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-CxKaP3 {
+    position: relative;
+}
+
+.orc-armory .frame-22-JweZpy {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-QfOhxZ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-18rWxC {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-JweZpy {
+    display: inline-flex;
+}
+
+.orc-armory .trollhide-armor-TfwW6H {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-TfwW6H {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-eyx2Sh {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-RAyecN {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-mty4Sx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .trollhide-armor-JweZpy {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-313-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-PDKLGe {
+    position: relative;
+}
+
+.orc-armory .frame-22-uyInH4 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-mNqCba {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-sZiXvC {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-uyInH4 {
+    display: inline-flex;
+}
+
+.orc-armory .black-iron-plate-zeohxB {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-zeohxB {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-GhFnmt {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-Ae2JsP {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-Q8unBI {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .black-iron-plate-uyInH4 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-armory .property-314-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-D2xTWb {
+    position: relative;
+}
+
+.orc-armory .frame-22-06GN34 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-10v6tZ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-N29FHy {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-06GN34 {
+    display: inline-flex;
+}
+
+.orc-armory .warlords-regalia-rY2HJH {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-rY2HJH {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-OxWUUJ {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-JdDiwm {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-On9LVx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .warlords-regalia-06GN34 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-armory .property-315-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-6kqxeH {
+    position: relative;
+}
+
+.orc-armory .frame-22-y95LJT {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-TNg2QH {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-xvLcDT {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-y95LJT {
+    display: flex;
+    height: 47px;
+    width: 73px;
+}
+
+.orc-armory .shamans-garb-SJzTS6 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-SJzTS6 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-RSERo2 {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-1gX1kg {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-P6P7Va {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .shamans-garb-y95LJT {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-316-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-xpWrcc {
+    position: relative;
+}
+
+.orc-armory .frame-22-Saiil0 {
+    display: flex;
+    height: 24px;
+    width: 104px;
+}
+
+.orc-armory .group-9-st6hmw {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-anX9cD {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-Saiil0 {
+    display: inline-flex;
+}
+
+.orc-armory .throwing-axes-X37tWy {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-X37tWy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-IPxAkK {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-WBKe1S {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-xZga5a {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .throwing-axes-Saiil0 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-317-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-vCReqw {
+    position: relative;
+}
+
+.orc-armory .frame-22-HpZXvQ {
+    display: inline-flex;
+}
+
+.orc-armory .group-9-A213Wh {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-pf62yo {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-HpZXvQ {
+    display: inline-flex;
+}
+
+.orc-armory .grappling-hooks-NTRlW2 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-NTRlW2 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-1ND5hb {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-ujwxvr {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-LyB3cY {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .grappling-hooks-HpZXvQ {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-armory .property-318-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-pEFpwq {
+    position: relative;
+}
+
+.orc-armory .frame-22-tEMJlu {
+    display: inline-flex;
+}
+
+.orc-armory .group-9-KaxUt7 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-D5ItTW {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-tEMJlu {
+    display: inline-flex;
+}
+
+.orc-armory .war-banners-mFhGTR {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-mFhGTR {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-qRfiWl {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-dnHnzJ {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-fh9JDp {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .war-banners-tEMJlu {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-armory .property-319-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-r1mCDa {
+    position: relative;
+}
+
+.orc-armory .frame-22-T0Kwld {
+    display: inline-flex;
+}
+
+.orc-armory .group-9-3UUppz {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-YCVEZ0 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-T0Kwld {
+    display: inline-flex;
+}
+
+.orc-armory .totem-of-protection-Zaz3Vx {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-Zaz3Vx {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-bvNUEz {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-J7TJFe {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-O6i4ip {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .totem-of-protection-T0Kwld {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .property-320-slvvOR {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-armory .group-18-zaxc8n {
+    position: relative;
+}
+
+.orc-armory .frame-22-o6uTCJ {
+    display: inline-flex;
+}
+
+.orc-armory .group-9-DdqFMf {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .gold-CCFsXe {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-armory .frame-21-o6uTCJ {
+    display: inline-flex;
+}
+
+.orc-armory .drums-of-rage-gtvdCc {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .frame-20-gtvdCc {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-armory .frame-19-UqIaoL {
+    background-color: transparent;
+    gap: 2.237287998199463px;
+}
+
+.orc-armory .group-9-1O77aw {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .gold-66UVDx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-armory .drums-of-rage-o6uTCJ {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 45px;
+}
+
+.orc-armory .general-base-bar-beB9KQ {
+    background-color: transparent;
+    height: 60px;
+    left: 31px;
+    position: fixed;
+    top: 852px;
+    width: 368px;
+}
+
+.orc-armory .frame-11-9GMCBo {
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 12px;
+    display: flex;
+    gap: 6px;
+    height: 60px;
+    left: 0px;
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    width: 368px;
+}
+
+.orc-armory .frame-13-glfMxz {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-armory .group-ToSFkD {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-armory .x1-57-Rj85Aw {
+    background-color: transparent;
+    height: 24px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 18px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-armory .attack-Rj85Aw {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: 0.00px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-armory .frame-17-glfMxz {
+    background-color: #0b0b0b80;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 65px;
+}
+
+.orc-armory .group-GmFDsD {
+    width: 42px;
+}
+
+.orc-armory .base-hJaFeS {
+    background-color: transparent;
+    height: auto;
+    left: 10px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-armory .x5-8-hJaFeS {
+    background-color: transparent;
+    height: 40px;
+    left: 0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    transform: rotate(-180deg);
+    width: 40px;
+}
+
+.orc-armory .frame-18-glfMxz {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 65px;
+}
+
+.orc-armory .group-NuWmtK {
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-armory .x6-501-YKQuDO {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    transform: rotate(-180deg);
+    width: 30px;
+}
+
+.orc-armory .ladder-YKQuDO {
+    background-color: transparent;
+    height: auto;
+    left: 2px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-armory .frame-15-glfMxz {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 65px;
+}
+
+.orc-armory .group-8-GYvNax {
+    margin-bottom: -2.00px;
+    opacity: 0.6;
+    width: 32px;
+}
+
+.orc-armory .x7-1-c7s2yk {
+    background-color: transparent;
+    height: 30px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 30px;
+}
+
+.orc-armory .war-c7s2yk {
+    background-color: transparent;
+    height: auto;
+    left: 8px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-armory .frame-14-glfMxz {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 50px;
+    padding: 5px 10px;
+    position: relative;
+    width: 65px;
+}
+
+.orc-armory .group-HrmcET {
+    opacity: 0.6;
+    width: 37px;
+}
+
+.orc-armory .treasure-zEjaoC {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-armory .x8-4-zEjaoC {
+    background-color: transparent;
+    height: 32px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    transform: rotate(-180deg);
+    width: 32px;
+}
+
+.orc-armory .frame-15 {
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.orc-armory .frame-16 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.orc-armory .frame-17 {
+    align-items: center;
+    position: relative;
+}
+
+.orc-armory .frame-18 {
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.orc-armory .frame-19 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-armory .frame-20 {
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-armory .frame-21 {
+    align-items: flex-start;
+    background-color: transparent;
+    flex-direction: column;
+    gap: 10px;
+    left: 52px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 15px;
+}
+
+.orc-armory .frame-22 {
+    align-items: center;
+    background-color: transparent;
+    gap: 12px;
+    left: 21px;
+    position: absolute;
+    top: 74px;
+}
+
+.orc-armory .frame-4 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3px;
+    position: relative;
+}
+
+.orc-armory .gold {
+    background-color: transparent;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.orc-armory .group {
+    background-color: transparent;
+    height: 42px;
+    margin-bottom: -2.00px;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.orc-armory .group-18 {
+    background-color: transparent;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-armory .group-8 {
+    background-color: transparent;
+    height: 42px;
+    position: relative;
+}
+
+.orc-armory .group-9 {
+    background-color: transparent;
+    position: relative;
+}
+
+.orc-armory .lvl-0 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .raid-income-per-hour {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .rectangle-11 {
+    background-color: var(--outer-space);
+    border-radius: 15px;
+    height: 108px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-armory .vector-8 {
+    background-color: transparent;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: 67px;
+    width: 180px;
+}
+
+.orc-armory .vector-9 {
+    background-color: transparent;
+    height: 24.36920166015625px;
+    position: relative;
+    width: 1px;
+}
+
+.orc-armory .x0 {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-armory .x15692-k {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
