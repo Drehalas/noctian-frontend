@@ -1,3 +1,5 @@
+/* eslint-disable vue/multi-word-component-names */
+
 <template>
   <div class="add-friend">
     <h1>Add Friend</h1>

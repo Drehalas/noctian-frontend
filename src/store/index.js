@@ -1,7 +1,4 @@
-// src/store/index.js
-
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex';  // Import createStore from vuex
 
 // Import modules
 import armory from './modules/armory';
@@ -9,9 +6,8 @@ import faction from './modules/faction';
 import game from './modules/game';
 import skillBuff from './modules/skillBuff';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+// Create the store instance using createStore
+const store = createStore({
     modules: {
         armory,
         faction,
@@ -19,3 +15,5 @@ export default new Vuex.Store({
         skillBuff,
     },
 });
+
+export default store;  // Export the store instance
