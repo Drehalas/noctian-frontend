@@ -148,7 +148,7 @@
 }
 
 .align-self-flex-center {
-    align-self: flex-center;
+    align-self: center;
 }
 
 .valign-text-middle {
@@ -202,6 +202,7 @@ input:focus {
     --font-size-l: 24px;
     --font-size-m: 12px;
     --font-size-s: 11px;
+    --font-size-xl: 30px;
     --font-size-xs: 9px;
 
     --font-family-roboto: "Roboto", Helvetica;
@@ -231,9 +232,9 @@ input:focus {
     font-weight: 500;
 }
 
-.orc-ladder {
+.orc-war {
     background-color: #191919;
-    height: 968px;
+    height: 932px;
     left: 0px;
     overflow: hidden;
     position: relative;
@@ -241,7 +242,7 @@ input:focus {
     width: 430px;
 }
 
-.orc-ladder .frame-30-sSjFR3 {
+.orc-war .frame-30-0Yffcq {
     background-color: transparent;
     height: 1015px;
     left: 2px;
@@ -250,8 +251,8 @@ input:focus {
     width: 428px;
 }
 
-.orc-ladder .rectangle-3-7GkIVu {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 30%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+.orc-war .rectangle-3-gfXRIF {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(232.68750607967377, 225.38368999958038, 13.573437854647636) 100%);
     background-color: transparent;
     height: 533px;
     left: 0px;
@@ -260,791 +261,117 @@ input:focus {
     width: 428px;
 }
 
-.orc-ladder .rectangle-1-7GkIVu {
-    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+.orc-war .rectangle-1-gfXRIF {
     background-color: transparent;
-    border-radius: 50px 50px 0px 0px;
-    height: 633px;
+    height: 597px;
     left: 0px;
     position: absolute;
     top: 417px;
     width: 428px;
 }
 
-.orc-ladder .orc-banner-7GkIVu {
+.orc-war .war-banner-gfXRIF {
     background-color: transparent;
     height: 428px;
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 218px;
+    top: 355px;
     width: 428px;
 }
 
-.orc-ladder .ork-ladder-20-logo-7GkIVu {
+.orc-war .group-27-gfXRIF {
     background-color: transparent;
-    height: 217px;
-    left: 159px;
-    object-fit: cover;
-    position: absolute;
-    top: 133px;
-    width: 118px;
-}
-
-.orc-ladder .group-12-7GkIVu {
-    background-color: transparent;
-    height: 34px;
-    left: 36px;
-    position: absolute;
-    top: 335px;
-    width: 357px;
-}
-
-.orc-ladder .rectangle-4-c0QDzt {
-    background-color: #32363c;
-    border: 0.5px solid;
-    border-color: #555555bf;
-    border-radius: 30px;
-    height: 19px;
-    left: 0px;
-    position: absolute;
-    top: 15px;
-    width: 357px;
-}
-
-.orc-ladder .rectangle-6-c0QDzt {
-    background-color: #c0b104;
-    border-radius: 30px;
-    height: 18px;
-    left: 0px;
-    position: absolute;
-    top: 15px;
-    width: 21px;
-}
-
-.orc-ladder .group-27-7GkIVu {
-    background-color: transparent;
-    height: 58px;
+    height: 28px;
     left: 128px;
     position: absolute;
-    top: 455px;
-    width: 184px;
+    top: 476px;
+    width: 182px;
 }
 
-.orc-ladder .title-geIusQ {
+.orc-war .level-120-JSjuIa {
     background-color: transparent;
     color: var(--white);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 500;
     height: auto;
-    left: 31px;
-    letter-spacing: -0.48px;
-    line-height: 26.4px;
-    position: absolute;
-    text-align: left;
-    top: 32px;
-    white-space: nowrap;
-    width: auto;
-}
-
-.orc-ladder .level-120-geIusQ {
-    background-color: transparent;
-    color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    height: auto;
-    left: 16px;
+    left: 39px;
     letter-spacing: -0.48px;
     line-height: 26.4px;
     position: absolute;
     text-align: left;
     top: 0px;
     white-space: nowrap;
-    width: 153px;
+    width: 93px;
 }
 
-.orc-ladder .vector-8-geIusQ {
+.orc-war .vector-8-JSjuIa {
     height: 1px;
     left: 0px;
-    top: 30px;
+    top: 28px;
     width: 180px;
 }
 
-.orc-ladder .group-16-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: relative;
-    width: 367px;
-    margin-top: 5px;
-}
-
-.orc-ladder .frame-17-b6ve6e {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .saruman869-6pApPI {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-b6ve6e {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-3jj4gC {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236801-rsigCY {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-SzCFNz {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-28-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 565px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-5l7SdV {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .kaboom23-f2sXmX {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-5l7SdV {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-WaQfzo {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236802-hc0obs {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-Xy7tz4 {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-29-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 606px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-6KLq2r {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .bald-eagle452-gzExrI {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-6KLq2r {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-LbnVPG {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236803-WthkOv {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-rOvBcS {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-30-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 647px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-yG7bHM {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .aragon-ftw11-0XRHCz {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-yG7bHM {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-1YxlMe {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236804-qJBw3T {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-L7wh2M {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-31-7GkIVu {
+.orc-war .group-16-gfXRIF {
     background-color: transparent;
     height: 41px;
     left: 31px;
     position: absolute;
-    top: 688px;
+    top: 511px;
     width: 367px;
 }
 
-.orc-ladder .frame-17-LeSZz2 {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .kaliente23-lAnZZ2 {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-LeSZz2 {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-j8jRi0 {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236805-WSpAER {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-wr3xwI {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-32-7GkIVu {
-    background-color: transparent;
+.orc-war .rectangle-10-sMV5yX {
     height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 729px;
+    left: 0px;
+    top: 0px;
     width: 367px;
 }
 
-.orc-ladder .frame-17-cfzI4F {
-    background-color: var(--shark);
+.orc-war .frame-16-sMV5yX {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-vwdZa2 {
+    background-color: #073e0380;
     border-radius: 5px;
     gap: 10px;
     justify-content: center;
-    left: 84px;
+    left: 48px;
     padding: 10px;
     position: absolute;
     top: -0px;
     width: 170px;
 }
 
-.orc-ladder .axeboy23232-9v3Zir {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
+.orc-war .x9b3af883-354d-4413-bf7f-37baaad350d0-2-91MWnz {
+    left: 39px;
+    top: 3px;
 }
 
-.orc-ladder .frame-18-cfzI4F {
+.orc-war .frame-18-vwdZa2 {
     background-color: var(--shark);
     border-radius: 5px;
     gap: 10px;
     justify-content: center;
-    left: 274px;
+    left: 226px;
     padding: 10px;
     position: absolute;
     top: 0px;
-    width: 82px;
+    width: 131px;
 }
 
-.orc-ladder .group-8-4Hvfy7 {
+.orc-war .group-8-qFxTKI {
     height: 14px;
     width: 13px;
 }
 
-.orc-ladder .x3236806-rTZNlQ {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-w2Ge8q {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-33-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 770px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-ZHwvIP {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .ccccccccc1111-P556iB {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-ZHwvIP {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-fVSEbD {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236807-TwiT6w {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-xQTpev {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-34-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 811px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-cY7AVe {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .yanbex022-pRuLYB {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-cY7AVe {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-wIpDyG {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236808-9Bg043 {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-PgMTjP {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-35-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 852px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-WXH8zu {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .hey123-P96bMg {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-WXH8zu {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-ehDhuw {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x3236809-NMWEAX {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .vector-8-9BxYos {
-    height: 31px;
-    left: 80px;
-    top: 6px;
-    width: 1px;
-}
-
-.orc-ladder .group-36-7GkIVu {
-    background-color: transparent;
-    height: 41px;
-    left: 30px;
-    position: absolute;
-    top: 893px;
-    width: 367px;
-}
-
-.orc-ladder .frame-17-Peuh5v {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 84px;
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    width: 170px;
-}
-
-.orc-ladder .arthur8071-QlcePW {
-    background-color: transparent;
-    letter-spacing: -0.24px;
-    line-height: 13.2px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-ladder .frame-18-Peuh5v {
-    background-color: var(--shark);
-    border-radius: 5px;
-    gap: 10px;
-    justify-content: center;
-    left: 274px;
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    width: 82px;
-}
-
-.orc-ladder .group-8-zDmoFU {
-    height: 14px;
-    width: 13px;
-}
-
-.orc-ladder .x1026-zDmoFU {
+.orc-war .x32102-b-qFxTKI {
     background-color: transparent;
     letter-spacing: -0.22px;
     line-height: 12.1px;
@@ -1054,12 +381,22 @@ input:focus {
     width: fit-content;
 }
 
-.orc-ladder .x4145927-yLDVCt {
+.orc-war .frame-19-vwdZa2 {
+    align-items: center;
+    background-color: #ffe10080;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x1-RBnjXB {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
-    margin-left: -7.00px;
-    margin-right: -7.00px;
     margin-top: -1.00px;
     position: relative;
     text-align: left;
@@ -1067,14 +404,726 @@ input:focus {
     width: fit-content;
 }
 
-.orc-ladder .vector-8-AkV6aH {
+.orc-war .vector-8-sMV5yX {
     height: 31px;
-    left: 80px;
+    left: 49px;
     top: 6px;
     width: 1px;
 }
 
-.orc-ladder .general-ladder-bar-sSjFR3 {
+.orc-war .vector-9-sMV5yX {
+    left: 227px;
+}
+
+.orc-war .group-28-gfXRIF {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 552px;
+    width: 367px;
+}
+
+.orc-war .rectangle-10-2prqx0 {
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-war .frame-16-2prqx0 {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-xwffxI {
+    background-color: #8a010180;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 48px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-war .x9b3af883-354d-4413-bf7f-37baaad350d0-2-sAYRXY {
+    left: 31px;
+    top: 1px;
+}
+
+.orc-war .frame-18-xwffxI {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 226px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 131px;
+}
+
+.orc-war .group-8-XJQBxg {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-war .x31898-b-XJQBxg {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-19-xwffxI {
+    align-items: center;
+    background-color: #f0f0f080;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x2-pPna1m {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8-2prqx0 {
+    height: 31px;
+    left: 50px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-war .vector-9-2prqx0 {
+    left: 228px;
+}
+
+.orc-war .group-29-gfXRIF {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 593px;
+    width: 367px;
+}
+
+.orc-war .rectangle-10-pxZmSF {
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-war .frame-16-pxZmSF {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-nOdZKA {
+    background-color: #cad3e280;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 48px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-war .x59193c11-9086-446e-a544-d8ed9f2e49e8-1-vXwrHo {
+    left: 33px;
+    top: 3px;
+}
+
+.orc-war .frame-18-nOdZKA {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 226px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 131px;
+}
+
+.orc-war .group-8-5eYUB9 {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-war .x31651-b-5eYUB9 {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-19-nOdZKA {
+    align-items: center;
+    background-color: #9b520080;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x3-lkT0WM {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8-pxZmSF {
+    height: 31px;
+    left: 50px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-war .vector-9-pxZmSF {
+    left: 228px;
+}
+
+.orc-war .group-30-gfXRIF {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 634px;
+    width: 367px;
+}
+
+.orc-war .rectangle-10-k15xbP {
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-war .frame-16-k15xbP {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-5cxvYG {
+    background-color: #0c9a0080;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 48px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-war .x59193c11-9086-446e-a544-d8ed9f2e49e8-1-v93PyF {
+    left: 38px;
+    top: 3px;
+}
+
+.orc-war .frame-18-5cxvYG {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 226px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 131px;
+}
+
+.orc-war .group-8-dE3Dxo {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-war .x31427-b-dE3Dxo {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-19-5cxvYG {
+    align-items: center;
+    background-color: var(--shark);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x4-4r96bM {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8-k15xbP {
+    height: 31px;
+    left: 50px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-war .vector-9-k15xbP {
+    left: 228px;
+}
+
+.orc-war .group-32-gfXRIF {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 674px;
+    width: 367px;
+}
+
+.orc-war .rectangle-10-cgtvab {
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-war .frame-16-cgtvab {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-rKFCBu {
+    background-color: #06337e80;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 48px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-war .x59193c11-9086-446e-a544-d8ed9f2e49e8-1-3ZzqFd {
+    left: 31px;
+    top: 3px;
+}
+
+.orc-war .frame-18-rKFCBu {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 226px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 131px;
+}
+
+.orc-war .group-8-ruULly {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-war .x31151-b-ruULly {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-19-rKFCBu {
+    align-items: center;
+    background-color: var(--shark);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x5-sDaOSL {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8-cgtvab {
+    height: 31px;
+    left: 50px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-war .vector-9-cgtvab {
+    left: 228px;
+}
+
+.orc-war .group-47-gfXRIF {
+    background-color: transparent;
+    height: 41px;
+    left: 30px;
+    position: absolute;
+    top: 715px;
+    width: 367px;
+}
+
+.orc-war .rectangle-10-P5r8SD {
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    width: 367px;
+}
+
+.orc-war .frame-16-P5r8SD {
+    height: 33px;
+    left: 5px;
+    top: 4px;
+    width: 68px;
+}
+
+.orc-war .frame-17-EpcF0b {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 48px;
+    padding: 10px;
+    position: absolute;
+    top: -0px;
+    width: 170px;
+}
+
+.orc-war .x59193c11-9086-446e-a544-d8ed9f2e49e8-1-a75J6v {
+    left: 30px;
+    top: 1px;
+}
+
+.orc-war .frame-18-EpcF0b {
+    background-color: var(--shark);
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    left: 226px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 131px;
+}
+
+.orc-war .group-8-Ny3Txx {
+    height: 14px;
+    width: 13px;
+}
+
+.orc-war .x27474-b-Ny3Txx {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-19-EpcF0b {
+    align-items: center;
+    background-color: var(--shark);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+.orc-war .x6-N2lhx0 {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8-P5r8SD {
+    height: 31px;
+    left: 50px;
+    top: 6px;
+    width: 1px;
+}
+
+.orc-war .vector-9-P5r8SD {
+    left: 228px;
+}
+
+.orc-war .x2-2-gfXRIF {
+    background-color: transparent;
+    height: 448px;
+    left: -10px;
+    object-fit: cover;
+    position: absolute;
+    top: -30px;
+    width: 448px;
+}
+
+.orc-war .group-39-gfXRIF {
+    background-color: transparent;
+    height: 50px;
+    left: 39px;
+    position: absolute;
+    top: 119px;
+    width: 333px;
+}
+
+.orc-war .rectangle-10-9mhVzY {
+    height: 41px;
+    left: 17px;
+    opacity: 0.25;
+    top: 3px;
+    width: 316px;
+}
+
+.orc-war .frame-16-9mhVzY {
+    height: 34px;
+    left: 0px;
+    top: 7px;
+    width: 333px;
+}
+
+.orc-war .frame-19-C1Ze1Q {
+    align-items: center;
+    background-color: #073d029e;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 100px;
+}
+
+.orc-war .frame-20-C1Ze1Q {
+    background-color: #0c9a0080;
+    left: 230px;
+}
+
+.orc-war .group-40-gfXRIF {
+    background-color: transparent;
+    height: 50px;
+    left: 39px;
+    position: absolute;
+    top: 163px;
+    width: 333px;
+}
+
+.orc-war .rectangle-10-LprqiJ {
+    height: 41px;
+    left: 17px;
+    opacity: 0.25;
+    top: 3px;
+    width: 316px;
+}
+
+.orc-war .frame-16-LprqiJ {
+    height: 34px;
+    left: 0px;
+    top: 7px;
+    width: 333px;
+}
+
+.orc-war .frame-19-ekdxd7 {
+    align-items: center;
+    background-color: #8a000080;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 100px;
+}
+
+.orc-war .frame-20-ekdxd7 {
+    background-color: #c9d2e280;
+    left: 230px;
+}
+
+.orc-war .group-41-gfXRIF {
+    background-color: transparent;
+    height: 50px;
+    left: 39px;
+    position: absolute;
+    top: 207px;
+    width: 333px;
+}
+
+.orc-war .rectangle-10-1epfzU {
+    height: 41px;
+    left: 17px;
+    opacity: 0.25;
+    top: 3px;
+    width: 316px;
+}
+
+.orc-war .frame-16-1epfzU {
+    height: 34px;
+    left: 0px;
+    top: 7px;
+    width: 333px;
+}
+
+.orc-war .frame-20-UxBtug {
+    background-color: var(--shark);
+    left: 20px;
+}
+
+.orc-war .frame-21-UxBtug {
+    align-items: center;
+    background-color: #05337e80;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    left: 230px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 100px;
+}
+
+.orc-war .group-45-gfXRIF {
+    background-color: transparent;
+    height: 72px;
+    left: 14px;
+    position: absolute;
+    top: 275px;
+    width: 380px;
+}
+
+.orc-war .rectangle-10-OxckLq {
+    height: 70px;
+    left: 19px;
+    opacity: 0.25;
+    top: 0px;
+    width: 361px;
+}
+
+.orc-war .frame-16-OxckLq {
+    height: 65px;
+    left: 0px;
+    top: 7px;
+    width: 380px;
+}
+
+.orc-war .frame-19-tkD6WF {
+    background-color: #040200b0;
+    height: 58px;
+    left: 24px;
+    position: relative;
+    width: 350px;
+}
+
+.orc-war .title-JWTY9q {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 10px;
+    letter-spacing: -0.60px;
+    line-height: 33.0px;
+    position: absolute;
+    text-align: left;
+    top: 11px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-war .x15958-JWTY9q {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 215px;
+    letter-spacing: -0.60px;
+    line-height: 33.0px;
+    position: absolute;
+    text-align: left;
+    top: 11px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-war .general-war-bar-0Yffcq {
     background-color: transparent;
     height: 60px;
     left: 31px;
@@ -1083,7 +1132,7 @@ input:focus {
     width: 368px;
 }
 
-.orc-ladder .frame-11-gl3Jd4 {
+.orc-war .frame-11-xFIxtJ {
     align-items: center;
     background-color: var(--outer-space);
     border-radius: 12px;
@@ -1097,7 +1146,7 @@ input:focus {
     width: 368px;
 }
 
-.orc-ladder .frame-13-XwPgv7 {
+.orc-war .frame-13-5Adm2c {
     align-items: center;
     background-color: transparent;
     border-radius: 8px;
@@ -1111,12 +1160,11 @@ input:focus {
     width: 65px;
 }
 
-.orc-ladder .group-cVPwHs {
-    opacity: 0.6;
+.orc-war .group-AMm6h4 {
     width: 32px;
 }
 
-.orc-ladder .x1-57-23CMfZ {
+.orc-war .x1-57-quW5yL {
     background-color: transparent;
     height: 24px;
     left: 0px;
@@ -1127,7 +1175,7 @@ input:focus {
     width: 30px;
 }
 
-.orc-ladder .attack-23CMfZ {
+.orc-war .attack-quW5yL {
     background-color: transparent;
     height: auto;
     left: 2px;
@@ -1142,7 +1190,7 @@ input:focus {
     width: auto;
 }
 
-.orc-ladder .frame-17-XwPgv7 {
+.orc-war .frame-17-5Adm2c {
     background-color: transparent;
     border-radius: 8px;
     cursor: pointer;
@@ -1154,12 +1202,11 @@ input:focus {
     width: 65px;
 }
 
-.orc-ladder .group-rVDgy1 {
-    opacity: 0.6;
+.orc-war .group-F5oYfz {
     width: 42px;
 }
 
-.orc-ladder .base-91FKnG {
+.orc-war .base-FR2fAn {
     background-color: transparent;
     height: auto;
     left: 10px;
@@ -1174,7 +1221,7 @@ input:focus {
     width: auto;
 }
 
-.orc-ladder .x5-8-91FKnG {
+.orc-war .x5-8-FR2fAn {
     background-color: transparent;
     height: 40px;
     left: 0px;
@@ -1186,9 +1233,10 @@ input:focus {
     width: 40px;
 }
 
-.orc-ladder .frame-18-XwPgv7 {
-    background-color: #0b0b0b80;
+.orc-war .frame-18-5Adm2c {
+    background-color: transparent;
     border-radius: 8px;
+    cursor: pointer;
     flex-direction: column;
     gap: 2px;
     height: 50px;
@@ -1197,11 +1245,11 @@ input:focus {
     width: 65px;
 }
 
-.orc-ladder .group-1YUg8O {
+.orc-war .group-U02MLx {
     width: 32px;
 }
 
-.orc-ladder .x6-501-3PSy7t {
+.orc-war .x6-501-QxDciW {
     background-color: transparent;
     height: 30px;
     left: 0px;
@@ -1212,12 +1260,13 @@ input:focus {
     width: 30px;
 }
 
-.orc-ladder .ladder-3PSy7t {
+.orc-war .ladder-QxDciW {
     background-color: transparent;
     height: auto;
     left: 2px;
     letter-spacing: -0.18px;
     line-height: 9.9px;
+    opacity: 0.5;
     position: absolute;
     text-align: left;
     top: 0px;
@@ -1226,11 +1275,10 @@ input:focus {
     width: auto;
 }
 
-.orc-ladder .frame-15-XwPgv7 {
+.orc-war .frame-15-5Adm2c {
     align-items: center;
-    background-color: transparent;
+    background-color: #0b0b0b80;
     border-radius: 8px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -1240,14 +1288,13 @@ input:focus {
     width: 65px;
 }
 
-.orc-ladder .group-8-pCWE4S {
+.orc-war .group-8-Tq8AFq {
     height: 42px;
     margin-bottom: -2.00px;
-    opacity: 0.6;
     width: 32px;
 }
 
-.orc-ladder .x7-1-W3aEHR {
+.orc-war .x7-1-bH7oLf {
     background-color: transparent;
     height: 30px;
     left: 0px;
@@ -1257,13 +1304,12 @@ input:focus {
     width: 30px;
 }
 
-.orc-ladder .war-W3aEHR {
+.orc-war .war-bH7oLf {
     background-color: transparent;
     height: auto;
     left: 8px;
     letter-spacing: -0.18px;
     line-height: 9.9px;
-    opacity: 0.5;
     position: absolute;
     text-align: left;
     top: 32px;
@@ -1271,7 +1317,7 @@ input:focus {
     width: auto;
 }
 
-.orc-ladder .frame-14-XwPgv7 {
+.orc-war .frame-14-5Adm2c {
     align-items: center;
     background-color: transparent;
     border-radius: 8px;
@@ -1285,12 +1331,11 @@ input:focus {
     width: 65px;
 }
 
-.orc-ladder .group-JDerOL {
-    opacity: 0.6;
+.orc-war .group-L0AFhh {
     width: 37px;
 }
 
-.orc-ladder .treasure-7eOV3j {
+.orc-war .treasure-HLAFug {
     background-color: transparent;
     height: auto;
     left: 0px;
@@ -1305,7 +1350,7 @@ input:focus {
     width: auto;
 }
 
-.orc-ladder .x8-4-7eOV3j {
+.orc-war .x8-4-HLAFug {
     background-color: transparent;
     height: 32px;
     left: 0px;
@@ -1316,40 +1361,72 @@ input:focus {
     width: 32px;
 }
 
-.orc-ladder .frame-16 {
+.orc-war .angels {
     background-color: transparent;
-    height: 33px;
-    left: 5px;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .demons {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .elves {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .frame-16 {
+    background-color: transparent;
     position: absolute;
-    top: 4px;
-    width: 68px;
 }
 
-.orc-ladder .frame-17 {
+.orc-war .frame-17 {
     align-items: center;
     display: flex;
 }
 
-.orc-ladder .frame-18 {
+.orc-war .frame-18 {
     align-items: center;
     display: flex;
 }
 
-.orc-ladder .frame-19 {
+.orc-war .frame-19 {
+    border-radius: 5px;
+    top: 0px;
+}
+
+.orc-war .frame-20 {
     align-items: center;
-    background-color: var(--shark);
     border-radius: 5px;
     display: flex;
     gap: 10px;
     justify-content: center;
-    left: 0px;
     padding: 10px;
     position: absolute;
     top: 0px;
-    width: 66px;
+    width: 100px;
 }
 
-.orc-ladder .frame-4 {
+.orc-war .frame-4 {
     align-items: center;
     background-color: transparent;
     display: inline-flex;
@@ -1358,20 +1435,43 @@ input:focus {
     position: relative;
 }
 
-.orc-ladder .group {
+.orc-war .group {
     background-color: transparent;
     height: 42px;
     margin-bottom: -2.00px;
+    opacity: 0.6;
     position: relative;
     transform: rotate(180deg);
 }
 
-.orc-ladder .group-8 {
+.orc-war .group-8 {
     background-color: transparent;
     position: relative;
 }
 
-.orc-ladder .pngtreeglossy-golden-coin-icon_6866281-1 {
+.orc-war .humans {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .orcs {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .pngtreeglossy-golden-coin-icon_6866281-1 {
     background-color: transparent;
     height: 14px;
     left: 0px;
@@ -1381,46 +1481,58 @@ input:focus {
     width: 13px;
 }
 
-.orc-ladder .rectangle-10 {
+.orc-war .rectangle-10 {
     background-color: var(--outer-space);
     border-radius: 10px;
-    height: 41px;
-    left: 0px;
     position: absolute;
-    top: 0px;
-    width: 367px;
 }
 
-.orc-ladder .vector-8 {
+.orc-war .undeads {
+    background-color: transparent;
+    letter-spacing: -0.24px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-war .vector-8 {
     background-color: transparent;
     position: absolute;
 }
 
-.orc-ladder .vector-9 {
+.orc-war .vector-9 {
     background-color: transparent;
     height: 31px;
-    left: 269px;
     position: absolute;
     top: 6px;
     width: 1px;
 }
 
-.orc-ladder .x2101-k {
+.orc-war .x22 {
     background-color: transparent;
-    letter-spacing: -0.22px;
-    line-height: 12.1px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
+    height: 50px;
+    left: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 50px;
 }
 
-.orc-ladder .x2102-k {
+.orc-war .x59193c11-9086-446e-a544-d8ed9f2e49e8-1 {
     background-color: transparent;
-    letter-spacing: -0.22px;
-    line-height: 12.1px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+    width: 30px;
+}
+
+.orc-war .x9b3af883-354d-4413-bf7f-37baaad350d0-2 {
+    background-color: transparent;
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+    width: 30px;
 }

@@ -1,7 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Rosarivo:400");
-
 .screen textarea:focus,
 .screen input:focus {
     outline: none;
@@ -148,7 +146,7 @@
 }
 
 .align-self-flex-center {
-    align-self: flex-center;
+    align-self: center;
 }
 
 .valign-text-middle {
@@ -193,88 +191,50 @@ input:focus {
     box-sizing: border-box;
 }
 
-:root {
-    --black: #000000;
-
-    --font-size-l: 64px;
-    --font-size-m: 30px;
-
-    --font-family-rosarivo: "Rosarivo", Helvetica;
+.intro {
+    align-items: center;
+    background-color: #191919;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
 }
 
-.loading {
-    background-color: #191919;
-    cursor: pointer;
+.intro .frame-a1KK9a {
+    background-color: transparent;
     height: 932px;
     overflow: hidden;
-    overflow-x: hidden;
     position: relative;
-    width: 430px;
+    width: 100%;
 }
 
-.loading .rectangle-3-D9VNiZ {
-    background-color: var(--black);
-    border: 1px solid;
-    border-color: var(--black);
-    height: 932px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 430px;
+.intro .frame-29-ojYCXP {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
 }
 
-.loading .loading-background-D9VNiZ {
-    background-color: transparent;
-    height: 931px;
-    left: 0px;
-    object-fit: cover;
-    position: absolute;
-    top: 1px;
-    width: 430px;
+.intro .rectangle-13-Nx77TY {
+    background-color: #000000;
+    height: 241px;
+    left: 0;
+    position: relative;
+    top: 344px;
+    width: 429px;
 }
 
-.loading .noctian-war-for-the-throne-D9VNiZ {
-    background-color: transparent;
-    color: #ffffff;
-    font-family: var(--font-family-rosarivo);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 19px;
-    letter-spacing: -0.60px;
-    line-height: 33.0px;
-    position: absolute;
-    text-align: left;
-    text-shadow: 0px 4px 4px #000000;
-    top: 73px;
-    width: 389px;
-}
-
-.loading .loading-logo-D9VNiZ {
-    background-color: transparent;
-    height: 283px;
-    left: 75px;
-    position: absolute;
-    top: 189px;
-    width: 281px;
-}
-
-.loading .title-D9VNiZ {
-    -webkit-text-stroke: 1px var(--black);
-    background-color: transparent;
-    color: #ffffff;
-    font-family: var(--font-family-rosarivo);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 86px;
-    letter-spacing: -1.28px;
-    line-height: 70.4px;
-    position: absolute;
-    text-align: left;
-    top: 798px;
-    white-space: nowrap;
-    width: 278px;
+.intro video {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
 }

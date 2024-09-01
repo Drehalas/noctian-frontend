@@ -148,7 +148,7 @@
 }
 
 .align-self-flex-center {
-    align-self: flex-center;
+    align-self: center;
 }
 
 .valign-text-middle {
@@ -264,9 +264,9 @@ input:focus {
     font-weight: 500;
 }
 
-.orc-armory {
+.orc-spell {
     background-color: #191919;
-    height: 1515px;
+    height: 2031px;
     left: 0px;
     overflow: hidden;
     position: relative;
@@ -274,16 +274,16 @@ input:focus {
     width: 430px;
 }
 
-.orc-armory .frame-30-beB9KQ {
+.orc-spell .frame-30-3LxCsq {
     background-color: transparent;
-    height: 1561px;
+    height: 2000px;
     left: 2px;
     position: absolute;
     top: -107px;
     width: 428px;
 }
 
-.orc-armory .rectangle-3-UAIN5i {
+.orc-spell .rectangle-3-CZ9KTG {
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
     background-color: transparent;
     height: 296px;
@@ -293,18 +293,18 @@ input:focus {
     width: 428px;
 }
 
-.orc-armory .rectangle-1-UAIN5i {
+.orc-spell .rectangle-1-CZ9KTG {
     background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
-    height: 1443px;
+    height: 1974px;
     left: 0px;
     position: absolute;
     top: 164px;
     width: 428px;
 }
 
-.orc-armory .orc-banner-UAIN5i {
+.orc-spell .orc-banner-CZ9KTG {
     background-color: transparent;
     height: 428px;
     left: 0px;
@@ -314,7 +314,7 @@ input:focus {
     width: 428px;
 }
 
-.orc-armory .frame-10-UAIN5i {
+.orc-spell .frame-10-CZ9KTG {
     align-items: flex-start;
     background-color: transparent;
     display: flex;
@@ -325,18 +325,18 @@ input:focus {
     width: 193px;
 }
 
-.orc-armory .group-9-IPOoGP {
+.orc-spell .group-9-EtlqVb {
     height: 42px;
     width: 42px;
 }
 
-.orc-armory .group-8-fPn1xd {
+.orc-spell .group-8-ihxhkk {
     left: 0px;
     top: 0px;
     width: 42px;
 }
 
-.orc-armory .pngtreeglossy-golden-coin-icon_6866281-1-abrs9Z {
+.orc-spell .pngtreeglossy-golden-coin-icon_6866281-1-VaDfci {
     background-color: transparent;
     height: 42px;
     left: 0px;
@@ -346,7 +346,7 @@ input:focus {
     width: 42px;
 }
 
-.orc-armory .title-IPOoGP {
+.orc-spell .title-EtlqVb {
     background-color: transparent;
     color: #fffefc;
     font-family: var(--font-family-roboto);
@@ -364,7 +364,7 @@ input:focus {
     width: 156px;
 }
 
-.orc-armory .base-armory-bar-UAIN5i {
+.orc-spell .base-spell-bar-CZ9KTG {
     align-items: center;
     background-color: var(--outer-space);
     border-radius: 10px;
@@ -378,11 +378,11 @@ input:focus {
     top: 258px;
 }
 
-.orc-armory .frame-16-9Y5NEQ {
+.orc-spell .frame-16-zwa0pt {
     padding: 3px 12px;
 }
 
-.orc-armory .frame-15-iL0k7T {
+.orc-spell .frame-15-CThten {
     border-radius: 5px;
     display: inline-flex;
     flex: 0 0 auto;
@@ -391,7 +391,7 @@ input:focus {
     padding: 10px;
 }
 
-.orc-armory .hero-WMLP9g {
+.orc-spell .hero-FdB7Iu {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -402,7 +402,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-iL0k7T {
+.orc-spell .frame-20-CThten {
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
@@ -411,7 +411,7 @@ input:focus {
     padding: 10px;
 }
 
-.orc-armory .soldier-rIuPRG {
+.orc-spell .soldier-lmBDPh {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -422,8 +422,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-19-iL0k7T {
-    background-color: #0b0b0c80;
+.orc-spell .frame-19-CThten {
     border-radius: 5px;
     cursor: pointer;
     gap: 10px;
@@ -431,7 +430,7 @@ input:focus {
     padding: 10px 8px;
 }
 
-.orc-armory .armory-LRcbPn {
+.orc-spell .armory-zIWONG {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -442,7 +441,8 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-18-iL0k7T {
+.orc-spell .frame-18-CThten {
+    background-color: #0b0b0c80;
     border-radius: 5px;
     display: inline-flex;
     flex: 0 0 auto;
@@ -451,7 +451,7 @@ input:focus {
     padding: 10px;
 }
 
-.orc-armory .spell-lURk5E {
+.orc-spell .spell-yIhH6a {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -462,7 +462,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-17-iL0k7T {
+.orc-spell .frame-17-CThten {
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -473,7 +473,7 @@ input:focus {
     padding: 10px;
 }
 
-.orc-armory .artifact-D5sbao {
+.orc-spell .artifact-cYK38B {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -484,13 +484,13 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-16-iL0k7T {
+.orc-spell .frame-16-CThten {
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
 }
 
-.orc-armory .peon-oInZ7N {
+.orc-spell .peon-zmKllz {
     background-color: transparent;
     letter-spacing: -0.24px;
     line-height: 13.2px;
@@ -501,7 +501,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .armory-select-UAIN5i {
+.orc-spell .spell-select-CZ9KTG {
     align-items: flex-start;
     background-color: transparent;
     border-radius: 5px;
@@ -517,7 +517,7 @@ input:focus {
     width: 428px;
 }
 
-.orc-armory .property-31-slvvOR {
+.orc-spell .property-41-LXSbIk {
     background-color: transparent;
     cursor: pointer;
     height: 107.557861328125px;
@@ -525,104 +525,45 @@ input:focus {
     width: 180px;
 }
 
-.orc-armory .group-18-3x65AO {
-    position: relative;
-}
-
-.orc-armory .frame-22-7c6van {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-NmsCWZ {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-fxZnJL {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-7c6van {
-    display: inline-flex;
-}
-
-.orc-armory .warcamp-cM1FVU {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-cM1FVU {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-8JAqHB {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-WdCxzJ {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-NWRsxD {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .warcamp-7c6van {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-32-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
+.orc-spell .group-18-hcV3Cl {
+    left: 0px;
     width: 180px;
 }
 
-.orc-armory .group-18-pcxf4p {
-    position: relative;
+.orc-spell .rectangle-11-xilcpX {
+    left: 0px;
 }
 
-.orc-armory .frame-22-sQ1t9r {
+.orc-spell .vector-8-xilcpX {
+    left: 0px;
+}
+
+.orc-spell .frame-22-xilcpX {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-oIGaH4 {
+.orc-spell .vector-9-vDEmt4 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-LPRIld {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-eSdxLa {
+.orc-spell .gold-rIwpok {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-sQ1t9r {
-    display: inline-flex;
+.orc-spell .frame-21-xilcpX {
+    left: 53px;
 }
 
-.orc-armory .forge-FByLWq {
+.orc-spell .warcry-energy-WnnBxx {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -633,320 +574,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-FByLWq {
+.orc-spell .frame-20-WnnBxx {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-wqBBSd {
-    background-color: transparent;
+.orc-spell .frame-19-i0jTTx {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-IB7375 {
+.orc-spell .group-9-ZoJNzV {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-sXKxzU {
+.orc-spell .gold-tXwTex {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .forge-sQ1t9r {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-33-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-pb9Dmc {
-    position: relative;
-}
-
-.orc-armory .frame-22-9MaF0i {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-Zel9U1 {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-pWyBdI {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-9MaF0i {
-    display: inline-flex;
-}
-
-.orc-armory .spirit-lodge-BqUcxh {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-BqUcxh {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-xqzL8L {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-18OQMG {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-1qKbOJ {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .spirit-lodge-9MaF0i {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-34-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-gKDGZz {
-    position: absolute;
-}
-
-.orc-armory .frame-22-3mx08Z {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-sZP1Hp {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-m9DQC6 {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-3mx08Z {
-    display: inline-flex;
-}
-
-.orc-armory .bestiary-Eu9stB {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-Eu9stB {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-0jcn3r {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-wOlqTh {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-rHWJZL {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .bestiary-gKDGZz {
-    background-color: transparent;
-    height: 45px;
-    left: 11px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 30px;
-}
-
-.orc-armory .property-35-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-z9syNf {
-    position: relative;
-}
-
-.orc-armory .frame-22-al0uBH {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-GthiBm {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-9Ef1OH {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-al0uBH {
-    display: inline-flex;
-}
-
-.orc-armory .great-hall-hN4qqu {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-hN4qqu {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-Qi8a0U {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-zSBHfs {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-wM2pF8 {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .great-hall-al0uBH {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-36-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-NMiR3U {
-    position: relative;
-}
-
-.orc-armory .frame-22-balym1 {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-NkmDpS {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-OTx9EG {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-balym1 {
-    display: inline-flex;
-}
-
-.orc-armory .serrated-blades-gkgzjs {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-gkgzjs {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-PWVlD3 {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-QA8o2a {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-IVmWD9 {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .serrated-blades-balym1 {
+.orc-spell .warcry-energy-xilcpX {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -955,38 +603,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-37-slvvOR {
+.orc-spell .property-42-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-zfZTeg {
-    position: relative;
+.orc-spell .group-18-AD9rz3 {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-N8eKEr {
+.orc-spell .rectangle-11-MDSkQk {
+    left: 0px;
+}
+
+.orc-spell .vector-8-MDSkQk {
+    left: 0px;
+}
+
+.orc-spell .frame-22-MDSkQk {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-85sTp0 {
+.orc-spell .vector-9-YVHhct {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-ItbHhe {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-MQyXEq {
+.orc-spell .gold-wVECA9 {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-N8eKEr {
-    display: inline-flex;
+.orc-spell .frame-21-MDSkQk {
+    left: 54px;
 }
 
-.orc-armory .poisoned-tips-M5n3GM {
+.orc-spell .green-tide-HD60qT {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -997,28 +659,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-M5n3GM {
+.orc-spell .frame-20-HD60qT {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-XaB701 {
-    background-color: transparent;
+.orc-spell .frame-19-DPxsc8 {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-0sqt9c {
+.orc-spell .group-9-OLUPkO {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-2KBdl4 {
+.orc-spell .gold-s3dDYX {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .poisoned-tips-N8eKEr {
+.orc-spell .green-tide-MDSkQk {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1027,38 +688,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-38-slvvOR {
+.orc-spell .property-43-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-qrwGi6 {
-    position: relative;
+.orc-spell .group-18-WwKHfH {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-BukZOc {
+.orc-spell .rectangle-11-txLGxR {
+    left: 0px;
+}
+
+.orc-spell .vector-8-txLGxR {
+    left: 0px;
+}
+
+.orc-spell .frame-22-txLGxR {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-sRra1G {
+.orc-spell .vector-9-FDxO42 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-tdsAYq {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-qQItsM {
+.orc-spell .gold-iB7ccC {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-BukZOc {
-    display: inline-flex;
+.orc-spell .frame-21-txLGxR {
+    left: 53px;
 }
 
-.orc-armory .flaming-munitions-7wHKeI {
+.orc-spell .rock-lobber-ba93v4 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1069,28 +744,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-7wHKeI {
+.orc-spell .frame-20-ba93v4 {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-NLivPf {
-    background-color: transparent;
+.orc-spell .frame-19-gtu6Ph {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-40c6SI {
+.orc-spell .group-9-m26bR4 {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-YESesG {
+.orc-spell .gold-G01SyV {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .flaming-munitions-BukZOc {
+.orc-spell .rock-lobber-txLGxR {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1099,38 +773,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-39-slvvOR {
+.orc-spell .property-44-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-49ZOoS {
-    position: relative;
+.orc-spell .group-18-lGzgYr {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-dbLmif {
+.orc-spell .rectangle-11-Mey4JM {
+    left: 0px;
+}
+
+.orc-spell .vector-8-Mey4JM {
+    left: 0px;
+}
+
+.orc-spell .frame-22-Mey4JM {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-X7wqGx {
+.orc-spell .vector-9-ZC1wvU {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-7Cxl6z {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-uxa8sE {
+.orc-spell .gold-tfLxYe {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-dbLmif {
-    display: inline-flex;
+.orc-spell .frame-21-Mey4JM {
+    left: 54px;
 }
 
-.orc-armory .rune-inscribed-weapons-xRGmgx {
+.orc-spell .firestorm-1xBMBo {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1141,69 +829,81 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-xRGmgx {
+.orc-spell .frame-20-1xBMBo {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-pDdACz {
-    background-color: transparent;
+.orc-spell .frame-19-YXVNx6 {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-BRufyg {
+.orc-spell .group-9-6nNNPx {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-4NWry5 {
+.orc-spell .gold-Tfzuvp {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .rune-inscribed-weapons-dbLmif {
+.orc-spell .firestorm-Mey4JM {
     background-color: transparent;
     height: 45px;
     left: 7px;
-    object-fit: cover;
     position: absolute;
     top: 11px;
     width: 45px;
 }
 
-.orc-armory .property-310-slvvOR {
+.orc-spell .property-45-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-Xy1CKJ {
-    position: relative;
+.orc-spell .group-18-wPsBnT {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-21rIEU {
+.orc-spell .rectangle-11-Xn1x8j {
+    left: 0px;
+}
+
+.orc-spell .vector-8-Xn1x8j {
+    left: 0px;
+}
+
+.orc-spell .frame-22-Xn1x8j {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-qrNJ3e {
+.orc-spell .vector-9-qbTUNx {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-adojAv {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-fuyxC5 {
+.orc-spell .gold-v8kzg1 {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-21rIEU {
-    display: inline-flex;
+.orc-spell .frame-21-Xn1x8j {
+    left: 53px;
 }
 
-.orc-armory .berserker-axes-D4VQM9 {
+.orc-spell .blood-boil-vrEep1 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1214,28 +914,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-D4VQM9 {
+.orc-spell .frame-20-vrEep1 {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-rnxhUk {
-    background-color: transparent;
+.orc-spell .frame-19-nxtWCx {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-s6fTIE {
+.orc-spell .group-9-8rreKI {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-RIzWCH {
+.orc-spell .gold-p7xe20 {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .berserker-axes-21rIEU {
+.orc-spell .blood-boil-Xn1x8j {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1244,38 +943,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-311-slvvOR {
+.orc-spell .property-46-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-GettNl {
-    position: relative;
+.orc-spell .group-18-pcNP0o {
+    left: -1px;
+    width: 181px;
 }
 
-.orc-armory .frame-22-aXIcnh {
+.orc-spell .rectangle-11-tc7viD {
+    left: 1px;
+}
+
+.orc-spell .vector-8-tc7viD {
+    left: 1px;
+}
+
+.orc-spell .frame-22-tc7viD {
     display: flex;
     height: 24px;
+    left: 22px;
     width: 104px;
 }
 
-.orc-armory .group-9-QFXXxr {
+.orc-spell .vector-9-agGYk5 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-M8uu15 {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-3fxTko {
+.orc-spell .gold-FFUu9x {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-aXIcnh {
-    display: inline-flex;
+.orc-spell .frame-21-tc7viD {
+    left: 55px;
 }
 
-.orc-armory .spiked-armor-PDUItY {
+.orc-spell .ironhide-aura-2FjZi6 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1286,28 +999,112 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-PDUItY {
+.orc-spell .frame-20-2FjZi6 {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-htG5Yw {
-    background-color: transparent;
+.orc-spell .frame-19-xvoimD {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-Vqr0K8 {
+.orc-spell .group-9-ixdh4A {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-K80vk4 {
+.orc-spell .gold-z5yjOv {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .spiked-armor-aXIcnh {
+.orc-spell .ironhide-aura-tc7viD {
+    background-color: transparent;
+    height: 55px;
+    left: 0px;
+    position: absolute;
+    top: 14px;
+    width: 55px;
+}
+
+.orc-spell .property-47-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-RW7JsW {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-inF9Af {
+    left: 0px;
+}
+
+.orc-spell .vector-8-inF9Af {
+    left: 0px;
+}
+
+.orc-spell .frame-22-inF9Af {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-xcRRRP {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-W5AmYx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-pLB2q7 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-inF9Af {
+    left: 53px;
+}
+
+.orc-spell .spirit-shield-FY7K2t {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-FY7K2t {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-L3LMx5 {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-q64Da0 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-WYYtfu {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .spirit-shield-inF9Af {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1316,38 +1113,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-312-slvvOR {
+.orc-spell .property-48-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-CxKaP3 {
-    position: relative;
+.orc-spell .group-18-Nzqmlo {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-JweZpy {
+.orc-spell .rectangle-11-fcZ7QE {
+    left: 0px;
+}
+
+.orc-spell .vector-8-fcZ7QE {
+    left: 0px;
+}
+
+.orc-spell .frame-22-fcZ7QE {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-QfOhxZ {
+.orc-spell .vector-9-Rz1iE4 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-8M8YCS {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-18rWxC {
+.orc-spell .gold-kZxLB3 {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-JweZpy {
-    display: inline-flex;
+.orc-spell .frame-21-fcZ7QE {
+    left: 54px;
 }
 
-.orc-armory .trollhide-armor-TfwW6H {
+.orc-spell .troll-regeneration-Gklha6 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1358,28 +1169,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-TfwW6H {
+.orc-spell .frame-20-Gklha6 {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-eyx2Sh {
-    background-color: transparent;
+.orc-spell .frame-19-h8d3vY {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-RAyecN {
+.orc-spell .group-9-ciUmEH {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-mty4Sx {
+.orc-spell .gold-xIgxvr {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .trollhide-armor-JweZpy {
+.orc-spell .troll-regeneration-fcZ7QE {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1388,38 +1198,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-313-slvvOR {
+.orc-spell .property-49-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-PDKLGe {
-    position: relative;
+.orc-spell .group-18-aT6Ggj {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-uyInH4 {
+.orc-spell .rectangle-11-HMxtSc {
+    left: 0px;
+}
+
+.orc-spell .vector-8-HMxtSc {
+    left: 0px;
+}
+
+.orc-spell .frame-22-HMxtSc {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-mNqCba {
+.orc-spell .vector-9-KlixAP {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-LdLy9O {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-sZiXvC {
+.orc-spell .gold-P5qJyg {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-uyInH4 {
-    display: inline-flex;
+.orc-spell .frame-21-HMxtSc {
+    left: 53px;
 }
 
-.orc-armory .black-iron-plate-zeohxB {
+.orc-spell .ground-slam-ceisAE {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1430,28 +1254,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-zeohxB {
+.orc-spell .frame-20-ceisAE {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-GhFnmt {
-    background-color: transparent;
+.orc-spell .frame-19-SPyuwB {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-Ae2JsP {
+.orc-spell .group-9-BQ81uW {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-Q8unBI {
+.orc-spell .gold-m9Eg6G {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .black-iron-plate-uyInH4 {
+.orc-spell .ground-slam-HMxtSc {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1460,38 +1283,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-314-slvvOR {
+.orc-spell .property-410-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-D2xTWb {
-    position: relative;
+.orc-spell .group-18-pxdwbk {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-06GN34 {
+.orc-spell .rectangle-11-vmxwiO {
+    left: 0px;
+}
+
+.orc-spell .vector-8-vmxwiO {
+    left: 0px;
+}
+
+.orc-spell .frame-22-vmxwiO {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-10v6tZ {
+.orc-spell .vector-9-JBReSd {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-fnHj7L {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-N29FHy {
+.orc-spell .gold-xoxfai {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-06GN34 {
-    display: inline-flex;
+.orc-spell .frame-21-vmxwiO {
+    left: 54px;
 }
 
-.orc-armory .warlords-regalia-rY2HJH {
+.orc-spell .war-chant-OksfOn {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1502,28 +1339,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-rY2HJH {
+.orc-spell .frame-20-OksfOn {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-OxWUUJ {
-    background-color: transparent;
+.orc-spell .frame-19-MkXw9g {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-JdDiwm {
+.orc-spell .group-9-58ABlL {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-On9LVx {
+.orc-spell .gold-trRtJO {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .warlords-regalia-06GN34 {
+.orc-spell .war-chant-vmxwiO {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1532,40 +1368,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-315-slvvOR {
+.orc-spell .property-411-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-6kqxeH {
-    position: relative;
+.orc-spell .group-18-8eYyJb {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-y95LJT {
+.orc-spell .rectangle-11-6S3U1Q {
+    left: 0px;
+}
+
+.orc-spell .vector-8-6S3U1Q {
+    left: 0px;
+}
+
+.orc-spell .frame-22-6S3U1Q {
     display: flex;
     height: 24px;
+    left: 21px;
     width: 104px;
 }
 
-.orc-armory .group-9-TNg2QH {
+.orc-spell .vector-9-q5aBuH {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-aTfKOV {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-xvLcDT {
+.orc-spell .gold-IbeyRr {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-y95LJT {
-    display: flex;
-    height: 47px;
-    width: 73px;
+.orc-spell .frame-21-6S3U1Q {
+    left: 53px;
 }
 
-.orc-armory .shamans-garb-SJzTS6 {
+.orc-spell .feral-speed-cl2XyM {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1576,170 +1424,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-SJzTS6 {
+.orc-spell .frame-20-cl2XyM {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-RSERo2 {
-    background-color: transparent;
+.orc-spell .frame-19-mqDO2c {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-1gX1kg {
+.orc-spell .group-9-HeiRb2 {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-P6P7Va {
+.orc-spell .gold-EniazN {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .shamans-garb-y95LJT {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-316-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-xpWrcc {
-    position: relative;
-}
-
-.orc-armory .frame-22-Saiil0 {
-    display: flex;
-    height: 24px;
-    width: 104px;
-}
-
-.orc-armory .group-9-st6hmw {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-anX9cD {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-Saiil0 {
-    display: inline-flex;
-}
-
-.orc-armory .throwing-axes-X37tWy {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-X37tWy {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-IPxAkK {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-WBKe1S {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-xZga5a {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .throwing-axes-Saiil0 {
-    background-color: transparent;
-    height: 45px;
-    left: 7px;
-    position: absolute;
-    top: 11px;
-    width: 45px;
-}
-
-.orc-armory .property-317-slvvOR {
-    background-color: transparent;
-    height: 107.557861328125px;
-    position: relative;
-    width: 180px;
-}
-
-.orc-armory .group-18-vCReqw {
-    position: relative;
-}
-
-.orc-armory .frame-22-HpZXvQ {
-    display: inline-flex;
-}
-
-.orc-armory .group-9-A213Wh {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .gold-pf62yo {
-    height: 20px;
-    width: 20px;
-}
-
-.orc-armory .frame-21-HpZXvQ {
-    display: inline-flex;
-}
-
-.orc-armory .grappling-hooks-NTRlW2 {
-    background-color: transparent;
-    letter-spacing: -0.18px;
-    line-height: 9.9px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
-}
-
-.orc-armory .frame-20-NTRlW2 {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.orc-armory .frame-19-1ND5hb {
-    background-color: transparent;
-    gap: 2.237287998199463px;
-}
-
-.orc-armory .group-9-ujwxvr {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .gold-LyB3cY {
-    height: 16px;
-    width: 16px;
-}
-
-.orc-armory .grappling-hooks-HpZXvQ {
+.orc-spell .feral-speed-6S3U1Q {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1748,36 +1453,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-318-slvvOR {
+.orc-spell .property-412-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-pEFpwq {
-    position: relative;
+.orc-spell .group-18-mY2zZt {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-tEMJlu {
-    display: inline-flex;
+.orc-spell .rectangle-11-fHmH6N {
+    left: 0px;
 }
 
-.orc-armory .group-9-KaxUt7 {
+.orc-spell .vector-8-fHmH6N {
+    left: 0px;
+}
+
+.orc-spell .frame-22-fHmH6N {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-DJx7lj {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-hSx6QE {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-D5ItTW {
+.orc-spell .gold-S3hXbs {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-tEMJlu {
-    display: inline-flex;
+.orc-spell .frame-21-fHmH6N {
+    left: 54px;
 }
 
-.orc-armory .war-banners-mFhGTR {
+.orc-spell .blood-scent-oPCavf {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1788,28 +1509,27 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-mFhGTR {
+.orc-spell .frame-20-oPCavf {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-qRfiWl {
-    background-color: transparent;
+.orc-spell .frame-19-BqEYzS {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-dnHnzJ {
+.orc-spell .group-9-h22crM {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-fh9JDp {
+.orc-spell .gold-yUVC58 {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .war-banners-tEMJlu {
+.orc-spell .blood-scent-fHmH6N {
     background-color: transparent;
     height: 45px;
     left: 7px;
@@ -1818,36 +1538,52 @@ input:focus {
     width: 45px;
 }
 
-.orc-armory .property-319-slvvOR {
+.orc-spell .property-413-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-r1mCDa {
-    position: relative;
+.orc-spell .group-18-aIoyUv {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-T0Kwld {
-    display: inline-flex;
+.orc-spell .rectangle-11-b9S3p7 {
+    left: 0px;
 }
 
-.orc-armory .group-9-3UUppz {
+.orc-spell .vector-8-b9S3p7 {
+    left: 0px;
+}
+
+.orc-spell .frame-22-b9S3p7 {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-qd4h7x {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-xvBgUc {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-YCVEZ0 {
+.orc-spell .gold-dPKIxg {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-T0Kwld {
-    display: inline-flex;
+.orc-spell .frame-21-b9S3p7 {
+    left: 53px;
 }
 
-.orc-armory .totem-of-protection-Zaz3Vx {
+.orc-spell .shamanistic-ward-rDz5IQ {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1858,66 +1594,81 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-Zaz3Vx {
+.orc-spell .frame-20-rDz5IQ {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-bvNUEz {
-    background-color: transparent;
+.orc-spell .frame-19-CrdUQ3 {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-J7TJFe {
+.orc-spell .group-9-kQxjvr {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-O6i4ip {
+.orc-spell .gold-uxQXz2 {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .totem-of-protection-T0Kwld {
+.orc-spell .shamanistic-ward-b9S3p7 {
     background-color: transparent;
     height: 45px;
     left: 7px;
     position: absolute;
-    top: 11px;
+    top: 13px;
     width: 45px;
 }
 
-.orc-armory .property-320-slvvOR {
+.orc-spell .property-414-LXSbIk {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
     width: 180px;
 }
 
-.orc-armory .group-18-zaxc8n {
-    position: relative;
+.orc-spell .group-18-Ox5hmI {
+    left: 0px;
+    width: 180px;
 }
 
-.orc-armory .frame-22-o6uTCJ {
-    display: inline-flex;
+.orc-spell .rectangle-11-7BJoT1 {
+    left: 0px;
 }
 
-.orc-armory .group-9-DdqFMf {
+.orc-spell .vector-8-7BJoT1 {
+    left: 0px;
+}
+
+.orc-spell .frame-22-7BJoT1 {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-itexZx {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-cme9qw {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .gold-CCFsXe {
+.orc-spell .gold-jXDhxs {
     height: 20px;
     width: 20px;
 }
 
-.orc-armory .frame-21-o6uTCJ {
-    display: inline-flex;
+.orc-spell .frame-21-7BJoT1 {
+    left: 54px;
 }
 
-.orc-armory .drums-of-rage-gtvdCc {
+.orc-spell .call-of-the-wild-BBnbq6 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -1928,37 +1679,1123 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .frame-20-gtvdCc {
+.orc-spell .frame-20-BBnbq6 {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
 
-.orc-armory .frame-19-UqIaoL {
-    background-color: transparent;
+.orc-spell .frame-19-APVln2 {
     gap: 2.237287998199463px;
 }
 
-.orc-armory .group-9-1O77aw {
+.orc-spell .group-9-NQ0Wxc {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .gold-66UVDx {
+.orc-spell .gold-lRRxeD {
     height: 16px;
     width: 16px;
 }
 
-.orc-armory .drums-of-rage-o6uTCJ {
+.orc-spell .call-of-the-wild-7BJoT1 {
     background-color: transparent;
     height: 45px;
     left: 7px;
     position: absolute;
-    top: 11px;
+    top: 13px;
     width: 45px;
 }
 
-.orc-armory .general-base-bar-beB9KQ {
+.orc-spell .property-415-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-TciO4I {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-mZCdxm {
+    left: 0px;
+}
+
+.orc-spell .vector-8-mZCdxm {
+    left: 0px;
+}
+
+.orc-spell .frame-22-mZCdxm {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-xxxTW4 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-9ceS9a {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-E2TKZl {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-mZCdxm {
+    left: 53px;
+}
+
+.orc-spell .vision-quest-3oADEA {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-3oADEA {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-emSHQi {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-y8v3YS {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-gp8awr {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .vision-quest-mZCdxm {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-416-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-oBexOA {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-8xmv7h {
+    left: 0px;
+}
+
+.orc-spell .vector-8-8xmv7h {
+    left: 0px;
+}
+
+.orc-spell .frame-22-8xmv7h {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-TLbhQK {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-v36xjX {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-xx1Yut {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-8xmv7h {
+    left: 54px;
+}
+
+.orc-spell .enfeeblement-aVjFtp {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-aVjFtp {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-NHSjco {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-5iqspE {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-8zTeCx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .enfeeblement-8xmv7h {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-417-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-0HLhmA {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-kGi3PS {
+    left: 0px;
+}
+
+.orc-spell .vector-8-kGi3PS {
+    left: 0px;
+}
+
+.orc-spell .frame-22-kGi3PS {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-BscMu6 {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-xui3D1 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-yemsdx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-kGi3PS {
+    left: 53px;
+}
+
+.orc-spell .vulnerability-kN9ziW {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-kN9ziW {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-tEDEmr {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-xIIsz5 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-fx9xdt {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .vulnerability-kGi3PS {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-418-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-dJ8rGh {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-p1g2wP {
+    left: 0px;
+}
+
+.orc-spell .vector-8-p1g2wP {
+    left: 0px;
+}
+
+.orc-spell .frame-22-p1g2wP {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-vgTtzv {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-Bjd3FT {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-L2aJe1 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-p1g2wP {
+    left: 54px;
+}
+
+.orc-spell .confusion-Icvgoz {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-Icvgoz {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-lsZI29 {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-CqmPnj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-xxeBgN {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .confusion-p1g2wP {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-419-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-2xXySN {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-2P96iQ {
+    left: 0px;
+}
+
+.orc-spell .vector-8-2P96iQ {
+    left: 0px;
+}
+
+.orc-spell .frame-22-2P96iQ {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-e40T1e {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-Q3Tevv {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-SxoZDQ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-2P96iQ {
+    left: 53px;
+}
+
+.orc-spell .rotting-touch-7L8zBn {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-7L8zBn {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-xvSLro {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-QVm0ox {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-92EmJd {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .rotting-touch-2P96iQ {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-420-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-LOBJrl {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-rLKTb8 {
+    left: 0px;
+}
+
+.orc-spell .vector-8-rLKTb8 {
+    left: 0px;
+}
+
+.orc-spell .frame-22-rLKTb8 {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-vbpKZO {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-WwuieT {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-9OaXAb {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-rLKTb8 {
+    left: 54px;
+}
+
+.orc-spell .curse-of-weakness-HZTCib {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-HZTCib {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-1COXBL {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-BXgHXg {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-CHg0uR {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .curse-of-weakness-rLKTb8 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-421-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-oj9Pon {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-1dlQtZ {
+    left: 0px;
+}
+
+.orc-spell .vector-8-1dlQtZ {
+    left: 0px;
+}
+
+.orc-spell .frame-22-1dlQtZ {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-yz1S9O {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-GVkx13 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-VTeZTs {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-1dlQtZ {
+    left: 53px;
+}
+
+.orc-spell .war-gods-might-vuVgri {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-vuVgri {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-s0n62c {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-kOfppx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-UjgKsk {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .war-gods-might-1dlQtZ {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-422-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-JTNZ57 {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-PSUAxR {
+    left: 0px;
+}
+
+.orc-spell .vector-8-PSUAxR {
+    left: 0px;
+}
+
+.orc-spell .frame-22-PSUAxR {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-23fxoX {
+    height: 24.36920166015625px;
+}
+
+.orc-spell .group-9-NBvFRc {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-FG5jl9 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-PSUAxR {
+    left: 54px;
+}
+
+.orc-spell .the-great-warcry-ZJRZkD {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-ZJRZkD {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-x44XTI {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-TaNOA2 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-m9iZma {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .the-great-warcry-PSUAxR {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-423-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-NISu2Q {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-CufaeA {
+    left: 0px;
+}
+
+.orc-spell .vector-8-CufaeA {
+    left: 0px;
+}
+
+.orc-spell .frame-22-CufaeA {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-uio79N {
+    height: 24.3692626953125px;
+}
+
+.orc-spell .group-9-8l68Rx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-ByeAHA {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-CufaeA {
+    left: 53px;
+}
+
+.orc-spell .rupturing-earth-zkiZMA {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-zkiZMA {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-WipPzr {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-fkLRLX {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-JJfdfx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .rupturing-earth-CufaeA {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-424-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-IxJSLU {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-fFxhpA {
+    left: 0px;
+}
+
+.orc-spell .vector-8-fFxhpA {
+    left: 0px;
+}
+
+.orc-spell .frame-22-fFxhpA {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-GPP2EX {
+    height: 24.3692626953125px;
+}
+
+.orc-spell .group-9-sRnlO8 {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-wOPdPl {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-fFxhpA {
+    left: 54px;
+}
+
+.orc-spell .blood-moon-VfnxT1 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-VfnxT1 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-38VCVk {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-SIEvuP {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-VdiTUK {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .blood-moon-fFxhpA {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .property-425-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-dnS8Q0 {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-vQjkNY {
+    left: 0px;
+}
+
+.orc-spell .vector-8-vQjkNY {
+    left: 0px;
+}
+
+.orc-spell .frame-22-vQjkNY {
+    display: inline-flex;
+    left: 21px;
+}
+
+.orc-spell .vector-9-Nr2lls {
+    height: 24.3692626953125px;
+}
+
+.orc-spell .group-9-8jiECq {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-miggvW {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-vQjkNY {
+    left: 53px;
+}
+
+.orc-spell .ancestral-fury-nIXS9K {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-nIXS9K {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-VSkqGR {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-iYAw5X {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-uANEQF {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .ancestral-fury-vQjkNY {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-426-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-rFQA70 {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-82Rsy3 {
+    left: 0px;
+}
+
+.orc-spell .vector-8-82Rsy3 {
+    left: 0px;
+}
+
+.orc-spell .frame-22-82Rsy3 {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-aV8z4F {
+    height: 24.3692626953125px;
+}
+
+.orc-spell .group-9-7A2XPB {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-liEgWZ {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-82Rsy3 {
+    left: 54px;
+}
+
+.orc-spell .blood-sacrifice-ToytgN {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-ToytgN {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-ciJgTr {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-Z2rG8W {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-RQKrb3 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .blood-sacrifice-82Rsy3 {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 12px;
+    width: 45px;
+}
+
+.orc-spell .property-427-LXSbIk {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-spell .group-18-roGPJx {
+    left: 0px;
+    width: 180px;
+}
+
+.orc-spell .rectangle-11-WIIxXT {
+    left: 0px;
+}
+
+.orc-spell .vector-8-WIIxXT {
+    left: 0px;
+}
+
+.orc-spell .frame-22-WIIxXT {
+    display: flex;
+    height: 24px;
+    left: 21px;
+    width: 104px;
+}
+
+.orc-spell .vector-9-ycAGAm {
+    height: 24.3692626953125px;
+}
+
+.orc-spell .group-9-3TKflS {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .gold-kFk2rx {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-spell .frame-21-WIIxXT {
+    left: 54px;
+}
+
+.orc-spell .summon-greater-demon-zOOfzX {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-spell .frame-20-zOOfzX {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-spell .frame-19-zZWY4c {
+    gap: 2.237287998199463px;
+}
+
+.orc-spell .group-9-SRYabS {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .gold-quuNhj {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-spell .summon-greater-demon-WIIxXT {
+    background-color: transparent;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    top: 13px;
+    width: 45px;
+}
+
+.orc-spell .general-base-bar-3LxCsq {
     background-color: transparent;
     height: 60px;
     left: 31px;
@@ -1967,7 +2804,7 @@ input:focus {
     width: 368px;
 }
 
-.orc-armory .frame-11-9GMCBo {
+.orc-spell .frame-11-Gc37YR {
     align-items: center;
     background-color: var(--outer-space);
     border-radius: 12px;
@@ -1981,7 +2818,7 @@ input:focus {
     width: 368px;
 }
 
-.orc-armory .frame-13-glfMxz {
+.orc-spell .frame-13-Bi6bW1 {
     align-items: center;
     background-color: transparent;
     border-radius: 8px;
@@ -1995,15 +2832,15 @@ input:focus {
     width: 65px;
 }
 
-.orc-armory .group-ToSFkD {
+.orc-spell .group-H6K6BX {
     opacity: 0.6;
     width: 32px;
 }
 
-.orc-armory .x1-57-Rj85Aw {
+.orc-spell .x1-57-Cth5dW {
     background-color: transparent;
     height: 24px;
-    left: 0px;
+    left: -0px;
     object-fit: cover;
     position: absolute;
     top: 18px;
@@ -2011,7 +2848,7 @@ input:focus {
     width: 30px;
 }
 
-.orc-armory .attack-Rj85Aw {
+.orc-spell .attack-Cth5dW {
     background-color: transparent;
     height: auto;
     left: 2px;
@@ -2026,7 +2863,7 @@ input:focus {
     width: auto;
 }
 
-.orc-armory .frame-17-glfMxz {
+.orc-spell .frame-17-Bi6bW1 {
     background-color: #0b0b0b80;
     border-radius: 8px;
     display: flex;
@@ -2037,11 +2874,11 @@ input:focus {
     width: 65px;
 }
 
-.orc-armory .group-GmFDsD {
+.orc-spell .group-Uhvf3f {
     width: 42px;
 }
 
-.orc-armory .base-hJaFeS {
+.orc-spell .base-QMX4Um {
     background-color: transparent;
     height: auto;
     left: 10px;
@@ -2055,7 +2892,7 @@ input:focus {
     width: auto;
 }
 
-.orc-armory .x5-8-hJaFeS {
+.orc-spell .x5-8-QMX4Um {
     background-color: transparent;
     height: 40px;
     left: 0px;
@@ -2067,7 +2904,8 @@ input:focus {
     width: 40px;
 }
 
-.orc-armory .frame-18-glfMxz {
+.orc-spell .frame-18-Bi6bW1 {
+    background-color: transparent;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -2077,12 +2915,12 @@ input:focus {
     width: 65px;
 }
 
-.orc-armory .group-NuWmtK {
+.orc-spell .group-xP5Dhe {
     opacity: 0.6;
     width: 32px;
 }
 
-.orc-armory .x6-501-YKQuDO {
+.orc-spell .x6-501-QcwSzk {
     background-color: transparent;
     height: 30px;
     left: 0px;
@@ -2093,7 +2931,7 @@ input:focus {
     width: 30px;
 }
 
-.orc-armory .ladder-YKQuDO {
+.orc-spell .ladder-QcwSzk {
     background-color: transparent;
     height: auto;
     left: 2px;
@@ -2108,7 +2946,7 @@ input:focus {
     width: auto;
 }
 
-.orc-armory .frame-15-glfMxz {
+.orc-spell .frame-15-Bi6bW1 {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -2118,13 +2956,13 @@ input:focus {
     width: 65px;
 }
 
-.orc-armory .group-8-GYvNax {
+.orc-spell .group-8-7lZYyC {
     margin-bottom: -2.00px;
     opacity: 0.6;
     width: 32px;
 }
 
-.orc-armory .x7-1-c7s2yk {
+.orc-spell .x7-1-zJnpRo {
     background-color: transparent;
     height: 30px;
     left: 0px;
@@ -2134,7 +2972,7 @@ input:focus {
     width: 30px;
 }
 
-.orc-armory .war-c7s2yk {
+.orc-spell .war-zJnpRo {
     background-color: transparent;
     height: auto;
     left: 8px;
@@ -2148,7 +2986,7 @@ input:focus {
     width: auto;
 }
 
-.orc-armory .frame-14-glfMxz {
+.orc-spell .frame-14-Bi6bW1 {
     align-items: center;
     background-color: transparent;
     border-radius: 8px;
@@ -2162,12 +3000,12 @@ input:focus {
     width: 65px;
 }
 
-.orc-armory .group-HrmcET {
+.orc-spell .group-5vWkBc {
     opacity: 0.6;
     width: 37px;
 }
 
-.orc-armory .treasure-zEjaoC {
+.orc-spell .treasure-Js9OIq {
     background-color: transparent;
     height: auto;
     left: 0px;
@@ -2182,7 +3020,7 @@ input:focus {
     width: auto;
 }
 
-.orc-armory .x8-4-zEjaoC {
+.orc-spell .x8-4-Js9OIq {
     background-color: transparent;
     height: 32px;
     left: 0px;
@@ -2193,14 +3031,14 @@ input:focus {
     width: 32px;
 }
 
-.orc-armory .frame-15 {
+.orc-spell .frame-15 {
     align-items: center;
     background-color: transparent;
     cursor: pointer;
     position: relative;
 }
 
-.orc-armory .frame-16 {
+.orc-spell .frame-16 {
     align-items: center;
     background-color: transparent;
     display: inline-flex;
@@ -2210,53 +3048,52 @@ input:focus {
     position: relative;
 }
 
-.orc-armory .frame-17 {
+.orc-spell .frame-17 {
     align-items: center;
     position: relative;
 }
 
-.orc-armory .frame-18 {
+.orc-spell .frame-18 {
     align-items: center;
-    background-color: transparent;
     cursor: pointer;
     position: relative;
 }
 
-.orc-armory .frame-19 {
+.orc-spell .frame-19 {
     align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    position: relative;
-}
-
-.orc-armory .frame-20 {
     background-color: transparent;
     display: inline-flex;
     flex: 0 0 auto;
     position: relative;
 }
 
-.orc-armory .frame-21 {
+.orc-spell .frame-20 {
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-spell .frame-21 {
     align-items: flex-start;
     background-color: transparent;
+    display: inline-flex;
     flex-direction: column;
     gap: 10px;
-    left: 52px;
     padding: 0px 4px;
     position: absolute;
     top: 15px;
 }
 
-.orc-armory .frame-22 {
+.orc-spell .frame-22 {
     align-items: center;
     background-color: transparent;
     gap: 12px;
-    left: 21px;
     position: absolute;
     top: 74px;
 }
 
-.orc-armory .frame-4 {
+.orc-spell .frame-4 {
     align-items: center;
     background-color: transparent;
     display: inline-flex;
@@ -2265,7 +3102,7 @@ input:focus {
     position: relative;
 }
 
-.orc-armory .gold {
+.orc-spell .gold {
     background-color: transparent;
     left: 0px;
     object-fit: cover;
@@ -2273,7 +3110,7 @@ input:focus {
     top: 0px;
 }
 
-.orc-armory .group {
+.orc-spell .group {
     background-color: transparent;
     height: 42px;
     margin-bottom: -2.00px;
@@ -2281,26 +3118,25 @@ input:focus {
     transform: rotate(180deg);
 }
 
-.orc-armory .group-18 {
+.orc-spell .group-18 {
     background-color: transparent;
     height: 108px;
-    left: 0px;
+    position: relative;
     top: 0px;
-    width: 180px;
 }
 
-.orc-armory .group-8 {
+.orc-spell .group-8 {
     background-color: transparent;
     height: 42px;
     position: relative;
 }
 
-.orc-armory .group-9 {
+.orc-spell .group-9 {
     background-color: transparent;
     position: relative;
 }
 
-.orc-armory .lvl-0 {
+.orc-spell .lvl-0 {
     background-color: transparent;
     letter-spacing: -0.18px;
     line-height: 9.9px;
@@ -2310,7 +3146,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .raid-income-per-hour {
+.orc-spell .raid-income-per-hour {
     background-color: transparent;
     letter-spacing: -0.14px;
     line-height: 7.7px;
@@ -2322,33 +3158,30 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .rectangle-11 {
+.orc-spell .rectangle-11 {
     background-color: var(--outer-space);
     border-radius: 15px;
     height: 108px;
-    left: 0px;
     position: absolute;
     top: 0px;
     width: 180px;
 }
 
-.orc-armory .vector-8 {
+.orc-spell .vector-8 {
     background-color: transparent;
     height: 1px;
-    left: 0px;
     position: absolute;
     top: 67px;
     width: 180px;
 }
 
-.orc-armory .vector-9 {
+.orc-spell .vector-9 {
     background-color: transparent;
-    height: 24.36920166015625px;
     position: relative;
     width: 1px;
 }
 
-.orc-armory .x0 {
+.orc-spell .x0 {
     background-color: transparent;
     letter-spacing: -0.16px;
     line-height: 9.0px;
@@ -2358,7 +3191,7 @@ input:focus {
     width: fit-content;
 }
 
-.orc-armory .x15692-k {
+.orc-spell .x15692-k {
     background-color: transparent;
     letter-spacing: -0.22px;
     line-height: 12.1px;

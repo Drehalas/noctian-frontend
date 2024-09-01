@@ -170,7 +170,7 @@ body[mode='code'] [data-id]:hover {
     display: flex;
     justify-content: center;
     position: fixed;
-    width: -webkit-fill-available;
+    width: webkit-fill-available;
 }
 
 .general-attack-bar .frame-11-n1uJ2s {
@@ -204,7 +204,7 @@ body[mode='code'] [data-id]:hover {
 .general-attack-bar .x1-57-a5Jn4M {
     background-color: transparent;
     height: 24px;
-    left: 0px;
+    left: 0;
     object-fit: cover;
     position: absolute;
     top: 18px;
