@@ -1,0 +1,88 @@
+
+.container-center-horizontal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.orc-ladder.screen {
+    background: rgb(25, 25, 25);
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.frame-30-sSjFR3 {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.rectangle-3-7GkIVu, .rectangle-1-7GkIVu {
+    background-color: #333;
+    height: 4px;
+    margin: 5px 0;
+}
+
+.orc-banner-7GkIVu {
+    width: 100%;
+    height: auto;
+}
+
+.group-12-7GkIVu, .group-27-7GkIVu, .group-16-7GkIVu, .group-28-7GkIVu {
+    margin: 10px 0;
+}
+
+.title-geIusQ {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.level-120-geIusQ {
+    font-size: 18px;
+}
+
+.group-16 .frame-16, .group-28 .frame-16, .group-29 .frame-16, .group-30 .frame-16 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frame-17-b6ve6e, .frame-17-5l7SdV {
+    flex-grow: 1;
+}
+
+.frame-18-b6ve6e, .frame-18-5l7SdV {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+}
+
+.frame-19 {
+    flex-grow: 1;
+}
+
+.rectangle-10 {
+    background-color: #444;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.group-8 {
+    margin-right: 5px;
+}
+
+.roboto-semi-bold-white-12px {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+}
+
+.roboto-semi-bold-white-11px {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 11px;
+}
+
