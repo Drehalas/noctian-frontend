@@ -98,7 +98,7 @@
 </template>
 
 <script>
-import '@/styles/css/attack/attack.css';
+import '@/styles/attack.css';
 import GeneralAttackBar from './GeneralAttackBar.vue';
 import GoldBar from './GoldBar.vue';
 

@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import '@/styles/css/treasure.css';
+import '@/styles/treasure.css';
 import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
 
 export default {

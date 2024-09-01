@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import '@/styles/css/ladder/ladder.css';
+import '@/styles/css/ladder.css';
 import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
 
 export default {

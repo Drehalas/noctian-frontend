@@ -10,7 +10,7 @@
                     <defs>
                         <linearGradient id="paint0_linear_37_17472" x1="214" y1="0" x2="214" y2="598"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#29323F" />
+                            <stop stop-color="#29323F"  offset=""/>
                             <stop offset="1" stop-color="#C7C7C7" />
                         </linearGradient>
                     </defs>
@@ -97,7 +97,7 @@
                         <div class="frame-17-5cxvYG frame-17">
                             <div class="elves roboto-semi-bold-white-12px">ELVES</div><img
                                 class="x59193c11-9086-446e-a544-d8ed9f2e49e8-1-v93PyF x59193c11-9086-446e-a544-d8ed9f2e49e8-1"
-                                src="orc/war/img/59193c11-9086-446e-a544-d8ed9f2e49e8-1-1.png"
+                                src="src/assets/img/59193c11-9086-446e-a544-d8ed9f2e49e8-1-1.png"
                                 alt="59193c11-9086-446e-a544-d8ed9f2e49e8 1">
                         </div>
                         <div class="frame-18-5cxvYG frame-18">
@@ -213,7 +213,7 @@
 </template>
 
 <script>
-import '@/styles/css/war/war.css';
+import '@/styles/war.css';
 import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
 
 export default {

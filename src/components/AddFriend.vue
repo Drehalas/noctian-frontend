@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import '@/styles/css/add-friend/add-friend.css';
+import '@/styles/add-friend.css';
 import GeneralAttackBar from "@/components/GeneralAttackBar.vue";
 import BaseHeroBar from "@/components/BaseHeroBar.vue";
 import GoldBar from "@/components/GoldBar.vue";
