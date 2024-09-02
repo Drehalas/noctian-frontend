@@ -1,0 +1,1476 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,600,400");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: flex-center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --outer-space: #31353b;
+    --white: #ffffff;
+
+    --font-size-l: 11px;
+    --font-size-m: 9px;
+    --font-size-s: 8.2px;
+    --font-size-xl: 20px;
+    --font-size-xs: 7px;
+    --font-size-xxl: 40px;
+
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.roboto-semi-bold-white-8-2px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-normal-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto-semi-bold-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-semi-bold-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.roboto-medium-white-7px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.roboto-normal-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* screen - orc-skill-u38-buff */
+
+.orc-skill-u38-buff {
+    background-color: #191919;
+    height: 1100px;
+    left: 0px;
+    overflow: hidden;
+    top: 0px;
+    width: 430px;
+    position: absolute;
+}
+
+.orc-skill-u38-buff .frame-30-QHYqVR {
+    background-color: transparent;
+    height: 1211px;
+    left: 0px;
+    position: relative;
+    top: -111px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .rectangle-3-YDVDeA {
+    background: linear-gradient(180deg, rgb(204.4928365945816, 205.06250202655792, 187.97395259141922) 0%, rgb(243.00000071525574, 210.00000268220901, 19.0000007674098) 100%);
+    background-color: transparent;
+    height: 296px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .group-14-YDVDeA {
+    background-color: transparent;
+    height: 811px;
+    left: 0px;
+    position: absolute;
+    top: 172px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .rectangle-2-28LpMs {
+    background-color: #e0aa63;
+    border-radius: 50px;
+    height: 811px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .rectangle-1-YDVDeA {
+    background: linear-gradient(180deg, rgb(139.18750405311584, 124.92078199982643, 44.07604269683361) 0%, rgb(200.81250607967377, 196.32216542959213, 189.09843385219574) 100%);
+    background-color: transparent;
+    border-radius: 50px 50px 0px 0px;
+    height: 1037px;
+    left: 0px;
+    position: absolute;
+    top: 174px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .frame-10-YDVDeA {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    left: 28px;
+    position: absolute;
+    top: 198px;
+    width: 193px;
+}
+
+.orc-skill-u38-buff .group-9-PMa95H {
+    height: 42px;
+    width: 42px;
+}
+
+.orc-skill-u38-buff .group-8-ogQsnh {
+    height: 42px;
+    width: 42px;
+}
+
+.orc-skill-u38-buff .pngtreeglossy-golden-coin-icon_6866281-1-fAllUh {
+    background-color: transparent;
+    height: 42px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 42px;
+}
+
+.orc-skill-u38-buff .title-PMa95H {
+    background-color: transparent;
+    color: #fffefc;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+    height: 46px;
+    letter-spacing: -0.80px;
+    line-height: 44.0px;
+    margin-right: -13.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 156px;
+}
+
+.orc-skill-u38-buff .frame-11-YDVDeA {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    left: 28px;
+    position: absolute;
+    top: 244px;
+    width: 193px;
+}
+
+.orc-skill-u38-buff .group-9-od4OWG {
+    height: 36px;
+    width: 36px;
+}
+
+.orc-skill-u38-buff .group-8-AvdaVK {
+    height: 36px;
+    width: 36px;
+}
+
+.orc-skill-u38-buff .ton-logo-rdGx6S {
+    height: 36px;
+    width: 36px;
+}
+
+.orc-skill-u38-buff .x801-od4OWG {
+    background-color: transparent;
+    color: #fffefc;
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+    height: 46px;
+    letter-spacing: -0.80px;
+    line-height: 44.0px;
+    margin-right: -7.00px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 156px;
+}
+
+.orc-skill-u38-buff .group-28-YDVDeA {
+    background-color: transparent;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    top: 323px;
+    width: 368px;
+}
+
+.orc-skill-u38-buff .vector-8-THK8T8 {
+    top: 25px;
+    width: 366px;
+}
+
+.orc-skill-u38-buff .skills-THK8T8 {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.40px;
+    line-height: 22.0px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .group-29-YDVDeA {
+    background-color: transparent;
+    height: 25px;
+    left: 28px;
+    position: absolute;
+    top: 603px;
+    width: 368px;
+}
+
+.orc-skill-u38-buff .vector-8-vBOoVd {
+    top: 25px;
+    width: 366px;
+}
+
+.orc-skill-u38-buff .potion-vBOoVd {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.40px;
+    line-height: 22.0px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .group-30-YDVDeA {
+    background-color: transparent;
+    height: 25px;
+    left: 28px;
+    position: absolute;
+    top: 764px;
+    width: 368px;
+}
+
+.orc-skill-u38-buff .vector-8-dn1v0N {
+    top: 25px;
+    width: 366px;
+}
+
+.orc-skill-u38-buff .items-dn1v0N {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.40px;
+    line-height: 22.0px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .group-31-YDVDeA {
+    background-color: transparent;
+    height: 25px;
+    left: 28px;
+    position: absolute;
+    top: 1046px;
+    width: 368px;
+}
+
+.orc-skill-u38-buff .vector-8-dzXnyo {
+    top: 25px;
+    width: 366px;
+}
+
+.orc-skill-u38-buff .spells-dzXnyo {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.40px;
+    line-height: 22.0px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .skills-selection-YDVDeA {
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    justify-content: center;
+    left: 0px;
+    overflow: hidden;
+    padding: 17px 12px;
+    position: absolute;
+    top: 350px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .property-61-BxVpmb {
+    cursor: pointer;
+}
+
+.orc-skill-u38-buff .vector-8-K1R0Nx {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-K1R0Nx {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-KkCCdX {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-skill-u38-buff .frame-21-K1R0Nx {
+    display: inline-flex;
+    left: 56px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .multi-attack-6ErPOi {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-6ErPOi {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .attack-6ZfXec {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .multi-attack-K1R0Nx {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .vector-8-l9ySLI {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-l9ySLI {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-d2C3ms {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-skill-u38-buff .frame-21-l9ySLI {
+    display: inline-flex;
+    left: 56px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .mana-pool-5f0YPD {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-5f0YPD {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .mana-pool-aWofHq {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .x1000-ESpO8c {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    margin-top: -0.75px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .mana-pool-l9ySLI {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .vector-8-nc24b5 {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-nc24b5 {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-fwDb4l {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-skill-u38-buff .frame-21-nc24b5 {
+    display: inline-flex;
+    left: 56px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .attack-crit-chance-YdlezQ {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-YdlezQ {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .critical-attack-chance-0DUnRz {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .group-9-g0d2Wb {
+    height: 9px;
+    width: 9px;
+}
+
+.orc-skill-u38-buff .attack-crit-chance-nc24b5 {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .property-64-BxVpmb {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .vector-8-RZnRRv {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-RZnRRv {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-qopkHa {
+    height: 20px;
+    width: 20px;
+}
+
+.orc-skill-u38-buff .frame-21-RZnRRv {
+    display: inline-flex;
+    left: 56px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .attack-crit-income-BBSX7I {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-BBSX7I {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .critical-income-hyHpqT {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-hyHpqT {
+    align-items: center;
+    gap: 2.237287998199463px;
+}
+
+.orc-skill-u38-buff .group-9-48uWzt {
+    height: 9px;
+    width: 9px;
+}
+
+.orc-skill-u38-buff .x10-48uWzt {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    margin-top: -0.75px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .attack-crit-income-RZnRRv {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .potion-selection-YDVDeA {
+    top: 628px;
+}
+
+.orc-skill-u38-buff .vector-8-dewx1N {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-dewx1N {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .x66-2IN8lX {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-4-2IN8lX {
+    margin-right: -15.00px;
+}
+
+.orc-skill-u38-buff .group-9-mbO1tk {
+    height: 12px;
+    width: 53px;
+}
+
+.orc-skill-u38-buff .cooldown-d3xIT9 {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .x0000-mbO1tk {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-21-dewx1N {
+    display: inline-flex;
+    left: 55px;
+    top: 33px;
+}
+
+.orc-skill-u38-buff .mana-potion-V4dAVI {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .mana-potion-dewx1N {
+    background-color: transparent;
+    height: 50px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .item-select-YDVDeA {
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    left: 0px;
+    overflow: hidden;
+    padding: 17px 20px;
+    position: absolute;
+    top: 788px;
+    width: 428px;
+}
+
+.orc-skill-u38-buff .vector-8-xmVaUj {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-xmVaUj {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-1UFSxM {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .ton-logo-7bkR2D {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .frame-21-xmVaUj {
+    display: inline-flex;
+    left: 51px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .magic-gods-blood-potion-voRCmz {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-voRCmz {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .regeneration-per-second-qnh5CI {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .group-9-n45F82 {
+    height: 9px;
+    width: 7px;
+}
+
+.orc-skill-u38-buff .x3-Nrk5iz {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .per-sec-n45F82 {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    margin-top: -0.75px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .magic-gods-blood-potion-xmVaUj {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .vector-8-HcW4em {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-HcW4em {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-F7TEgM {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .ton-logo-aFAtaM {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .frame-21-HcW4em {
+    display: inline-flex;
+    left: 51px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .heros-pocket-portal-NFHpLF {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-NFHpLF {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .attack-income-bonus-e9uxlO {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .group-9-VT6DGZ {
+    height: 9px;
+    width: 9px;
+}
+
+.orc-skill-u38-buff .heros-pocket-portal-HcW4em {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .vector-8-nZOoxG {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-nZOoxG {
+    left: 21px;
+    width: 104px;
+}
+
+.orc-skill-u38-buff .group-9-i5dQaE {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .ton-logo-x0jrzx {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .frame-21-nZOoxG {
+    display: inline-flex;
+    left: 51px;
+    top: 18px;
+}
+
+.orc-skill-u38-buff .armys-raid-portal-lFWxfe {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-lFWxfe {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .raid-income-bonus-5WW5bv {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .group-9-E9MITb {
+    height: 9px;
+    width: 9px;
+}
+
+.orc-skill-u38-buff .armys-raid-portal-nZOoxG {
+    background-color: transparent;
+    height: 50px;
+    left: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .potion-selection-3oCFl8 {
+    top: 1072px;
+}
+
+.orc-skill-u38-buff .vector-8-gNiOCb {
+    top: 67px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .frame-22-gNiOCb {
+    justify-content: center;
+    left: 8px;
+    width: 166px;
+}
+
+.orc-skill-u38-buff .group-9-scBzmM {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .ton-logo-sPT6w0 {
+    height: 16px;
+    width: 16px;
+}
+
+.orc-skill-u38-buff .x10-ton-scBzmM {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-21-gNiOCb {
+    display: flex;
+    left: 50px;
+    top: 19px;
+    width: 122px;
+}
+
+.orc-skill-u38-buff .the-ancients-transformation-ritual-t1fUY3 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .frame-20-t1fUY3 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orc-skill-u38-buff .faction-chance-s4ImQl {
+    background-color: transparent;
+    letter-spacing: -0.14px;
+    line-height: 7.7px;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .the-ancients-transformation-ritual-gNiOCb {
+    background-color: transparent;
+    height: 50px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 34px;
+}
+
+.orc-skill-u38-buff .close-button-YDVDeA {
+    background-color: transparent;
+    cursor: pointer;
+    height: 25px;
+    left: 377px;
+    position: absolute;
+    top: 201px;
+    width: 25px;
+}
+
+.orc-skill-u38-buff .exclude-GoE04q {
+    background-color: transparent;
+    cursor: pointer;
+    height: 25px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 25px;
+}
+
+.orc-skill-u38-buff .frame-19 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 2.237287998199463px;
+    position: relative;
+}
+
+.orc-skill-u38-buff .frame-20 {
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.orc-skill-u38-buff .frame-21 {
+    align-items: flex-start;
+    background-color: transparent;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 4px;
+    position: absolute;
+}
+
+.orc-skill-u38-buff .frame-22 {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    gap: 12px;
+    height: 24px;
+    position: absolute;
+    top: 74px;
+}
+
+.orc-skill-u38-buff .frame-4 {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3px;
+    position: relative;
+}
+
+.orc-skill-u38-buff .gold {
+    background-color: transparent;
+    height: 20px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 20px;
+}
+
+.orc-skill-u38-buff .group-18 {
+    background-color: transparent;
+    height: 108px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .group-8 {
+    background-color: transparent;
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+.orc-skill-u38-buff .group-9 {
+    background-color: transparent;
+    position: relative;
+}
+
+.orc-skill-u38-buff .lvl-0 {
+    background-color: transparent;
+    letter-spacing: -0.18px;
+    line-height: 9.9px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .potion-selection {
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    justify-content: center;
+    left: 0px;
+    overflow: hidden;
+    padding: 17px 12px;
+    position: absolute;
+    width: 221px;
+}
+
+.orc-skill-u38-buff .property-61 {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .property-62 {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .property-63 {
+    background-color: transparent;
+    height: 107.557861328125px;
+    position: relative;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .rectangle-11 {
+    background-color: var(--outer-space);
+    border-radius: 15px;
+    height: 108px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 180px;
+}
+
+.orc-skill-u38-buff .ton-logo {
+    background-color: transparent;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.orc-skill-u38-buff .vector-8 {
+    background-color: transparent;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+}
+
+.orc-skill-u38-buff .vector-9 {
+    background-color: transparent;
+    height: 24.36920166015625px;
+    position: relative;
+    width: 1px;
+}
+
+.orc-skill-u38-buff .x {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.orc-skill-u38-buff .x0 {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    margin-top: -0.75px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .x07-ton {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .x1 {
+    background-color: transparent;
+    letter-spacing: -0.16px;
+    line-height: 9.0px;
+    margin-top: -0.75px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.orc-skill-u38-buff .x15692-k {
+    background-color: transparent;
+    letter-spacing: -0.22px;
+    line-height: 12.1px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+}

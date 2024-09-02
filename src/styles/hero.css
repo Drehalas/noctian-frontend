@@ -201,7 +201,7 @@ input:focus {
     --font-size-l: 11px;
     --font-size-m: 9px;
     --font-size-s: 8.2px;
-    --font-size-xl: 12px;
+    --font-size-xl: 12px !important;
     --font-size-xs: 7px;
     --font-size-xxl: 40px;
 
@@ -266,9 +266,9 @@ input:focus {
 
 .orc-hero {
     background-color: #191919;
-    height: 3765px;
+    min-height: 100vh;
     left: 0px;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     top: 0px;
     width: 430px;
@@ -276,7 +276,7 @@ input:focus {
 
 .orc-hero .frame-30-zHO16R {
     background-color: transparent;
-    height: 3876px;
+    min-height: 100vh;
     left: 2px;
     position: absolute;
     top: -107px;

@@ -2,15 +2,18 @@
     <div>
         <div class="rectangle-3-lvJUvn"></div>
         <div class="rectangle-1-lvJUvn"></div>
-        <img class="banner-lvJUvn" src="@/assets/img/orc-banner.png" alt="Orc banner">
+        <img class="banner-lvJUvn" :src="orcBanner" alt="Orc banner">
     </div>
 </template>
 
 <script>
+import orcBanner from '@/assets/Global/Attack/Orc banner.png';
+
 export default {
     name: 'FactionHeader',
     data() {
         return {
+            orcBanner
         };
     },
     methods: {

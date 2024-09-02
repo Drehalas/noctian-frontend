@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Armory from '../components/Armory.vue';
-import Soldier from '../components/Soldier.vue';
-import Spell from '../components/Spell.vue';
-import Artifact from '../components/Artifact.vue';
+import Armory from './Armory.vue';
+import Soldier from './Soldier.vue';
+import Spell from './Spell.vue';
+import Artifact from './Artifact.vue';
 import DashboardLayout from "@/layouts/DashboardLayout.vue";
 
 export default {

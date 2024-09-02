@@ -4,7 +4,7 @@
             <div class="group-9-XsTlFn group-9">
                 <div class="group-8-oc1ZZS group-8">
                     <img class="pngtreeglossy-golden-coin-icon_6866281-1-UAjQ2R"
-                        src="global/img/-pngtree-glossy-golden-coin-icon-6866281-1.png"
+                        src="@/assets/Global/Common/Gold.png"
                         alt="Pngtreeglossy golden coin icon_6866281 1">
                 </div>
             </div>
