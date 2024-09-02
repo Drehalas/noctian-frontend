@@ -198,12 +198,12 @@ input:focus {
     --outer-space: #31353b;
     --white: #ffffff;
 
-    --font-size-l: 11px;
-    --font-size-m: 9px;
-    --font-size-s: 8.2px;
-    --font-size-xl: 12px;
-    --font-size-xs: 7px;
-    --font-size-xxl: 40px;
+    --font-size-l: 11px !important;
+    --font-size-m: 9px !important;
+    --font-size-s: 8.2px !important;
+    --font-size-xl: 12px !important;
+    --font-size-xs: 7px !important;
+    --font-size-xxl: 40px !important;
 
     --font-family-roboto: "Roboto", Helvetica;
 }

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Faction from '../components/Faction.vue';
+import Faction from '@/components/Faction.vue';
 import DashboardLayout from "@/layouts/DashboardLayout.vue";
 
 export default {

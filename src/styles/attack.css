@@ -197,13 +197,13 @@ input:focus {
     --black: #000000;
     --white: #ffffff;
 
-    --font-size-l: 11px;
-    --font-size-m: 9px;
-    --font-size-s: 7px;
-    --font-size-xl: 12px;
-    --font-size-xxl: 14px;
-    --font-size-xxxl: 22px;
-    --font-size-xxxxl: 40px;
+    --font-size-l: 11px !important;
+    --font-size-m: 9px !important;
+    --font-size-s: 7px !important;
+    --font-size-xl: 12px !important;
+    --font-size-xxl: 14px !important;
+    --font-size-xxxl: 22px !important;
+    --font-size-xxxxl: 40px !important;
 
     --font-family-roboto: "Roboto", Helvetica;
     --font-family-rosarivo: "Rosarivo", Helvetica;
@@ -455,7 +455,7 @@ input:focus {
     display: flex;
     gap: 8px;
     position: absolute;
-    top: 290px;
+    top: 335px;
     width: 100%;
     justify-content: center;
 }

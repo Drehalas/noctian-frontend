@@ -197,8 +197,8 @@ input:focus {
     --black: #000000;
     --white: #ffffff;
 
-    --font-size-l: 30px;
-    --font-size-m: 17px;
+    --font-size-l: 30px !important;
+    --font-size-m: 14px !important;
 
     --font-family-rosarivo: "Rosarivo", Helvetica;
     --font-family-roboto: "Roboto", Helvetica;
