@@ -24,6 +24,13 @@ import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
 
+import SpiritShield from '@/assets/Hero/Spirit Shield.png';
+import RangedWeapon from '@/assets/Hero/Ranged Weapon.png';
+import OffHand from '@/assets/Hero/Off-hand.png';
+import ChestArmor from '@/assets/Hero/Chest Armor.png';
+import Pants from '@/assets/Hero/Pants.png';
+import Gloves from '@/assets/Hero/Gloves.png';
+
 export default {
     name: 'Hero',
     components: {
@@ -39,68 +46,68 @@ export default {
             heroList: [
                 {
                     id: "1",
-                    name: "Warcamp",
-                    description: "A fortified camp that increases raid income.",
+                    name: "Melee Weapon",
+                    description: "A well-balanced weapon made of quality steel",
                     cost: 156920,
                     gains: 0,
                     level: 1,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: SpiritShield,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "2",
-                    name: "Forge",
+                    name: "Ranged Weapon",
                     description: "A place to craft powerful weapons and armor.",
                     cost: 156.920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/forge.png",
+                    imageUrl: RangedWeapon,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "3",
-                    name: "Spirit Lodge",
+                    name: "Off-Hand",
                     description: "A mystical lodge that enhances magical abilities.",
                     cost: 1569.20,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/spirit-lodge.png",
+                    imageUrl: OffHand,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "4",
-                    name: "Bestiary",
+                    name: "Chest Armor",
                     description: "A place to train and enhance beasts for battle.",
                     cost: 1569.20,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/bestiary.png",
+                    imageUrl: ChestArmor,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "5",
-                    name: "Great Hall",
+                    name: "Pants",
                     description: "The center of the orc's power, enhancing leadership.",
                     cost: 156920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: Pants,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "6",
-                    name: "Serrated Blades",
+                    name: "Gloves",
                     description: "Enhances melee weapons with serrated edges, increasing damage.",
                     cost: 156920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/serrated-blades@2x.png",
+                    imageUrl: Gloves,
                     raidIncomePerHour: 0
                 }
             ],
@@ -111,7 +118,6 @@ export default {
     methods: {
         upgradeHero(heroId) {
             console.log(`Upgrading hero with ID: ${heroId}`);
-            // Logic to upgrade the hero will be implemented here
         },
         openPopup(item) {
             this.selectedItem = item;

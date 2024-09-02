@@ -3,12 +3,11 @@
         <div class="gold-container">
             <div class="group-9-XsTlFn group-9">
                 <div class="group-8-oc1ZZS group-8">
-                    <img class="pngtreeglossy-golden-coin-icon_6866281-1-UAjQ2R"
-                        src="@/assets/Global/Common/Gold.png"
+                    <img class="pngtreeglossy-golden-coin-icon_6866281-1-UAjQ2R" src="@/assets/Global/Common/Gold.png"
                         alt="Pngtreeglossy golden coin icon_6866281 1">
                 </div>
             </div>
-            <h1 class="title-XsTlFn">507,91</h1>
+            <h1 class="title-XsTlFn">{{ formattedGold }}</h1>
         </div>
     </div>
 </template>
@@ -20,11 +19,18 @@ export default {
     },
     data() {
         return {
-
+            totalGold: 507.93
         };
     },
+    computed: {
+        formattedGold() {
+            return this.totalGold.toFixed(2);
+        }
+    },
     methods: {
-
+        addGold(amount) {
+            this.totalGold += amount;
+        }
     },
 };
 </script>

@@ -24,6 +24,13 @@ import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
 
+import KoboldSlave from '@/assets/Orc images/Orc Soldier/kobold.png';
+import GoblinArcher from '@/assets/Orc images/Orc Soldier/goblin archer.png';
+import OrcYoungling from '@/assets/Orc images/Orc Soldier/orc youngling.png';
+import WolfPack from '@/assets/Orc images/Orc Soldier/wolf pack.png';
+import OrcGrunt from '@/assets/Orc images/Orc Soldier/orc grunt.png';
+import OrcSpearman from '@/assets/Orc images/Orc Soldier/orc spearman.png';
+
 export default {
     name: 'Soldier',
     components: {
@@ -39,68 +46,68 @@ export default {
             soldierList: [
                 {
                     id: "1",
-                    name: "Warcamp",
+                    name: "Kobold Slave",
                     description: "A fortified camp that increases raid income.",
                     cost: 156920,
                     gains: 0,
                     level: 1,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: KoboldSlave,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "2",
-                    name: "Forge",
+                    name: "Goblin Archer",
                     description: "A place to craft powerful weapons and armor.",
                     cost: 156.920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/forge.png",
+                    imageUrl: GoblinArcher,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "3",
-                    name: "Spirit Lodge",
+                    name: "Orc Youngling",
                     description: "A mystical lodge that enhances magical abilities.",
                     cost: 1569.20,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/spirit-lodge.png",
+                    imageUrl: OrcYoungling,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "4",
-                    name: "Bestiary",
+                    name: "Wolf Pack",
                     description: "A place to train and enhance beasts for battle.",
                     cost: 1569.20,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/bestiary.png",
+                    imageUrl: WolfPack,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "5",
-                    name: "Great Hall",
+                    name: "Orc Grunt",
                     description: "The center of the orc's power, enhancing leadership.",
                     cost: 156920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: OrcGrunt,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "6",
-                    name: "Serrated Blades",
+                    name: "Orc Spearman",
                     description: "Enhances melee weapons with serrated edges, increasing damage.",
                     cost: 156920,
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/serrated-blades@2x.png",
+                    imageUrl: OrcSpearman,
                     raidIncomePerHour: 0
                 }
             ],

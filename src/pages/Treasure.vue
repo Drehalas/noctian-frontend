@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="add-wallet-button-Cjm0nv">
+                <div class="add-wallet-button-Cjm0nv" @click="showMessage">
                     <div class="group-18-0fbiDm group-18">
                         <div class="rectangle-11-ZVRKks rectangle-11"></div>
                         <div class="frame-21-ZVRKks">
@@ -62,6 +62,7 @@
 <script>
 import '@/styles/treasure.css';
 import Footer from "@/components/Footer.vue";
+import { useToast } from "vue-toastification";
 
 export default {
     name: 'Treasure',
@@ -73,7 +74,15 @@ export default {
 
         };
     },
-    methods: {
+    setup() {
+        const toast = useToast();
+
+        return { toast }
     },
+    methods: {
+        showMessage() {
+            this.toast.error("An error occurred while connecting to the wallet.");
+        }
+    }
 };
 </script>

@@ -252,7 +252,7 @@ input:focus {
 }
 
 .orc-war .rectangle-3-gfXRIF {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(232.68750607967377, 225.38368999958038, 13.573437854647636) 100%);
+    background: linear-gradient(180deg, #000000 67%, rgb(232, 225, 13) 100%);
     background-color: transparent;
     height: 533px;
     left: 0px;
@@ -922,12 +922,10 @@ input:focus {
 
 .orc-war .x2-2-gfXRIF {
     background-color: transparent;
-    height: 448px;
-    left: -10px;
     object-fit: cover;
     position: absolute;
-    top: -30px;
-    width: 448px;
+    top: 100px;
+    width: 100%;
 }
 
 .orc-war .group-39-gfXRIF {

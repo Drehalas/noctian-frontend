@@ -5,7 +5,7 @@
                 <div class="rectangle-3-7GkIVu"></div>
                 <div class="rectangle-1-7GkIVu"></div>
                 <img class="orc-banner-7GkIVu" src="@/assets/Global/Attack/Orc banner.png" alt="Orc banner">
-                <img class="ork-ladder-20-logo-7GkIVu" src="orc/ladder/img/ork-ladder-20-logo.png"
+                <img class="ork-ladder-20-logo-7GkIVu" src="@/assets/Orc images/Orc Avatar/20. Worm Food.png"
                     alt="Ork Ladder 20 logo">
                 <div class="group-12-7GkIVu">
                     <div class="rectangle-4-c0QDzt"></div>
@@ -27,10 +27,10 @@
                             </div>
                             <div class="frame-18-b6ve6e frame-18">
                                 <div class="frame-4">
-                                    <div class="group-8-3jj4gC group-8"><img
-                                            class="pngtreeglossy-golden-coin-icon_6866281-1"
-                                            src="@/assets/Global/Common/Gold.png"
-                                            alt="Pngtreeglossy golden coin icon_6866281 1"></div>
+                                    <div class="group-8-3jj4gC group-8">
+                                        <img class="pngtreeglossy-golden-coin-icon_6866281-1"
+                                            src="@/assets/Global/Common/Gold.png" alt="Gold">
+                                    </div>
                                     <div class="x2102-k roboto-semi-bold-white-11px">{{ item.gold }}K</div>
                                 </div>
                             </div>

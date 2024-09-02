@@ -24,6 +24,13 @@ import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
 
+import Warcamp from '@/assets/Orc images/Orc Armory/war camp.png';
+import Forge from '@/assets/Orc images/Orc Armory/forge.png';
+import SpiritLodge from '@/assets/Orc images/Orc Armory/spirit lodge.png';
+import Bestiary from '@/assets/Orc images/Orc Armory/bestiary.png';
+import GreatHall from '@/assets/Orc images/Orc Armory/great hall.png';
+import SerratedBlades from '@/assets/Orc images/Orc Armory/Serrated Blades.png';
+
 export default {
     name: 'Armory',
     components: {
@@ -45,7 +52,7 @@ export default {
                     gains: 0,
                     level: 1,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: Warcamp,
                     raidIncomePerHour: 0
                 },
                 {
@@ -56,7 +63,7 @@ export default {
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/forge.png",
+                    imageUrl: Forge,
                     raidIncomePerHour: 0
                 },
                 {
@@ -67,7 +74,7 @@ export default {
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/spirit-lodge.png",
+                    imageUrl: SpiritLodge,
                     raidIncomePerHour: 0
                 },
                 {
@@ -78,7 +85,7 @@ export default {
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/bestiary.png",
+                    imageUrl: Bestiary,
                     raidIncomePerHour: 0
                 },
                 {
@@ -89,7 +96,7 @@ export default {
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/warcamp.png",
+                    imageUrl: GreatHall,
                     raidIncomePerHour: 0
                 },
                 {
@@ -100,7 +107,7 @@ export default {
                     gains: 0,
                     level: 0,
                     costMultiplier: 1.5,
-                    imageUrl: "/styles/css/hero/img/serrated-blades@2x.png",
+                    imageUrl: SerratedBlades,
                     raidIncomePerHour: 0
                 }
             ],
