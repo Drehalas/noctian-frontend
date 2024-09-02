@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Create an Axios instance with base settings
 const apiClient = axios.create({
-    baseURL: process.env.VUE_APP_API_BASE_URL || 'http://localhost:3000/api', // Base URL for the API
+    baseURL: process.env.VUE_APP_API_BASE_URL || 'https://localhost:3000/api', // Updated to use HTTPS
     headers: {
         'Content-Type': 'application/json',
     },
