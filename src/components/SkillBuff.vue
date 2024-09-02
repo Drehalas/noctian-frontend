@@ -19,7 +19,7 @@
                 <div class="frame-11-YDVDeA">
                     <div class="group-9-od4OWG group-9">
                         <div class="group-8-AvdaVK group-8">
-                            <img class="ton-logo-rdGx6S ton-logo" src="#" alt="Ton Logo">
+                            <img class="ton-logo-rdGx6S ton-logo" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                         </div>
                     </div>
                     <div class="x801-od4OWG" style="font-size: 40px;">801</div>
@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="multi-attack-K1R0Nx" src="#" alt="Multi Attack">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Multi Attack.png" alt="Multi Attack">
                         </div>
                     </div>
                     <div class="property-62">
@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="mana-pool-l9ySLI" src="#" alt="Mana Pool">
+                            <img class="mana-pool-l9ySLI" src="@/assets/Buff/Mana Pool.png" alt="Mana Pool">
                         </div>
                     </div>
                     <div class="property-63">
@@ -115,7 +115,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="attack-crit-chance-nc24b5" src="#" alt="Attack Crit Chance">
+                            <img class="attack-crit-chance-nc24b5" src="@/assets/Buff/Attack Crit Chance.png"
+                                alt="Attack Crit Chance">
                         </div>
                     </div>
                     <div class="property-64-BxVpmb">
@@ -144,7 +145,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="attack-crit-income-RZnRRv" src="#" alt="Attack Crit Income">
+                            <img class="attack-crit-income-RZnRRv" src="@/assets/Buff/Attack Crit Income.png"
+                                alt="Attack Crit Income">
                         </div>
                     </div>
                 </div>
@@ -165,7 +167,7 @@
                                 <div class="mana-potion-V4dAVI roboto-normal-white-9px">Mana Potion
                                 </div>
                             </div>
-                            <img class="mana-potion-dewx1N" src="#" alt="Mana Potion">
+                            <img class="mana-potion-dewx1N" src="@/assets/Buff/Mana Potion.png" alt="Mana Potion">
                         </div>
                     </div>
                 </div>
@@ -177,7 +179,8 @@
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
                                     <div class="group-9-1UFSxM group-9">
-                                        <img class="ton-logo-7bkR2D ton-logo" src="#" alt="Ton Logo">
+                                        <img class="ton-logo-7bkR2D ton-logo" src="@/assets/Buff/Ton Logo.png"
+                                            alt="Ton Logo">
                                     </div>
                                     <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
                                 </div>
@@ -198,7 +201,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="magic-gods-blood-potion-xmVaUj" src="#" alt="Magic God's Blood Potion">
+                            <img class="magic-gods-blood-potion-xmVaUj" src="@/assets/Buff/Magic Gods Blood Potion.png"
+                                alt="Magic God's Blood Potion">
                         </div>
                     </div>
                     <div class="property-62">
@@ -208,7 +212,8 @@
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
                                     <div class="group-9-F7TEgM group-9">
-                                        <img class="ton-logo-aFAtaM ton-logo" src="#" alt="Ton Logo">
+                                        <img class="ton-logo-aFAtaM ton-logo" src="@/assets/Buff/Ton Logo.png"
+                                            alt="Ton Logo">
                                     </div>
                                     <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
                                 </div>
@@ -227,7 +232,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="heros-pocket-portal-HcW4em" src="#" alt="Hero's Pocket Portal">
+                            <img class="heros-pocket-portal-HcW4em" src="@/assets/Buff/Heros Pocket Portal.png"
+                                alt="Hero's Pocket Portal">
                         </div>
                     </div>
                     <div class="property-63">
@@ -237,7 +243,8 @@
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
                                     <div class="group-9-i5dQaE group-9">
-                                        <img class="ton-logo-x0jrzx ton-logo" src="#" alt="Ton Logo">
+                                        <img class="ton-logo-x0jrzx ton-logo" src="@/assets/Buff/Ton Logo.png"
+                                            alt="Ton Logo">
                                     </div>
                                     <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
                                 </div>
@@ -256,7 +263,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="armys-raid-portal-nZOoxG" src="#" alt="Army's Raid Portal">
+                            <img class="armys-raid-portal-nZOoxG" src="@/assets/Buff/Armys Raid Portal.png"
+                                alt="Army's Raid Portal">
                         </div>
                     </div>
                 </div>
@@ -267,7 +275,8 @@
                             <div class="frame-22-gNiOCb frame-22">
                                 <div class="frame-4">
                                     <div class="group-9-scBzmM group-9">
-                                        <img class="ton-logo-sPT6w0 ton-logo" src="#" alt="Ton Logo">
+                                        <img class="ton-logo-sPT6w0 ton-logo" src="@/assets/Buff/Ton Logo.png"
+                                            alt="Ton Logo">
                                     </div>
                                     <div class="x10-ton-scBzmM roboto-semi-bold-white-11px">
                                         10 TON
@@ -284,7 +293,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="the-ancients-transformation-ritual-gNiOCb" src="#"
+                            <img class="the-ancients-transformation-ritual-gNiOCb"
+                                src="@/assets/Buff/The Ancients Transformation Ritual.png"
                                 alt="The Ancient's Transformation Ritual">
                         </div>
                     </div>
@@ -346,26 +356,29 @@ export default {
 }
 
 .skill-buff-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transform: translateY(100%); 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateY(100%);
 }
 
-.slide-up-enter-active, .slide-up-leave-active {
-  transition: transform 0.5s ease;
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: transform 0.5s ease;
 }
 
-.slide-up-enter-from, .slide-up-leave-to {
-  transform: translateY(100%);
+.slide-up-enter-from,
+.slide-up-leave-to {
+    transform: translateY(100%);
 }
 
-.slide-up-enter-to, .slide-up-leave-from {
-  transform: translateY(0); 
+.slide-up-enter-to,
+.slide-up-leave-from {
+    transform: translateY(0);
 }
 </style>

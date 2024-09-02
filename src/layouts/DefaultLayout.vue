@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Attack from '@/pages/FactionSelection.vue';
+import Attack from '@/pages/Hero.vue';
 
 export default {
   name: 'DefaultLayout',

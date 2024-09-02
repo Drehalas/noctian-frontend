@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="add-friend-button-YWnndF">
+                <div class="add-friend-button-YWnndF" @click="showMessage">
                     <div class="group-18-DJAnWR group-18">
                         <div class="rectangle-11-tLIa2h rectangle-11"></div>
                         <div class="frame-21-tLIa2h">
@@ -58,6 +58,7 @@ import Footer from "@/components/Footer.vue";
 import BaseHeroBar from "@/components/BaseHeroBar.vue";
 import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
+import { useToast } from "vue-toastification";
 
 export default {
     name: 'AddFriend',
@@ -75,7 +76,15 @@ export default {
             ],
         };
     },
-    methods: {
+    setup() {
+        const toast = useToast();
+
+        return { toast }
     },
+    methods: {
+        showMessage() {
+            this.toast.error("An error occurred while adding friends.");
+        }
+    }
 };
 </script>

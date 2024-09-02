@@ -323,12 +323,17 @@ input:focus {
 }
 
 .orc-ladder .group-27-7GkIVu {
-    background-color: transparent;
-    height: 58px;
+    height: 64px;
     left: 128px;
     position: absolute;
     top: 455px;
-    width: 184px;
+    width: 180px;
+    background: #b29d9d40;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .orc-ladder .title-geIusQ {
