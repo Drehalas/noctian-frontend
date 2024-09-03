@@ -229,7 +229,7 @@ export default {
             return colors[faction] || '';
         },
         selectFaction() {
-            alert(this.selectedFaction);
+          this.$router.push(`/attack?faction=${this.selectedFaction.toLowerCase()}`);
         }
     }
 };

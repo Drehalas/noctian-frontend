@@ -1,17 +1,26 @@
 <!-- src/layouts/DefaultLayout.vue -->
 <template>
   <div class="default-layout">
-    <Attack />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Attack from '@/pages/Hero.vue';
 
 export default {
   name: 'DefaultLayout',
-  components: {
-    Attack,
+  mounted() {
+    // Navigate to 'Loading' route when the component is mounted
+    this.$router.push({ name: 'Loading' });
+
+    // Simulate page transitions using setTimeout
+    setTimeout(() => {
+      this.$router.push({ name: 'Intro' }); // Navigate to the Intro page
+
+      setTimeout(() => {
+        this.$router.push({ name: 'FactionSelection' }); // Navigate to the Faction Selection page
+      }, 2000); // Wait 2 seconds before moving to Faction Selection
+    }, 2000); // Wait 2 seconds before moving to Intro
   },
 };
 </script>
