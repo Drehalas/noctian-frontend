@@ -7,7 +7,7 @@
                         <source src="@/assets/Global/Intro/intro.mp4" type="video/mp4" />
                     </video>
                     <div style="display: flex; justify-content: center;">
-                        <button @click="unmute"
+                        <button @click="handleMute(false)" v-if="!isMuteButtonVisible"
                             style="color: #fff; border: none; padding: 5px; border-radius: 5px; background-color: transparent;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px"
                                 viewBox="0 0 24 24">
@@ -19,6 +19,14 @@
                                     d="M16.243 7.757a.75.75 0 10-1.061 1.061 4.5 4.5 0 010 6.364.75.75 0 001.06 1.06 6 6 0 000-8.485z" />
                             </svg>
                         </button>
+                        <button @click="handleMute(true)" v-if="isMuteButtonVisible"
+                            style="color: #fff; border: none; padding: 5px; border-radius: 5px; background-color: transparent;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.553 3.064A.75.75 0 0112 3.75v16.5a.75.75 0 01-1.255.555L5.46 16H2.75A1.75 1.75 0 011 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.75.75 0 01.808-.13zM10.5 5.445l-4.245 3.86a.75.75 0 01-.505.195h-3a.25.25 0 00-.25.25v4.5c0 .138.112.25.25.25h3a.75.75 0 01.505.195l4.245 3.86V5.445z" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -27,12 +35,14 @@
 </template>
 
 <script>
+import "../styles/style.css"
 export default {
     name: 'Intro',
     methods: {
-        unmute() {
+        handleMute(isUnmute) {
             const intro = this.$refs.intro;
-            intro.muted = false;
+            intro.muted = isUnmute;
+            this.isMuteButtonVisible = !isUnmute;
         },
         handleVideoEnd() {
             //TODO yönlendirme yapılacak FactionSelection
@@ -41,6 +51,12 @@ export default {
     mounted() {
         const intro = this.$refs.intro;
         intro.addEventListener('ended', this.handleVideoEnd);
+        this.isMuteButtonVisible = false;
+    },
+    data() {
+        return {
+            isMuteButtonVisible: false
+        }
     }
 };
 </script>
@@ -92,6 +108,5 @@ export default {
 .intro video {
     height: 100%;
     width: 100%;
-    padding: 20px;
 }
 </style>

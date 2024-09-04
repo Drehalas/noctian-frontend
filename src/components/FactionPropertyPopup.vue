@@ -28,7 +28,7 @@
                             <div class="group-9-37ez8N group-9">
                                 <img class="gold-ZIYg15 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                             </div>
-                            <div class="x123-37ez8N">+{{ item.raidIncomePerHour }}</div>
+                            <div class="x123-37ez8N" style="font-size: 9px;">+{{ item.raidIncomePerHour }}</div>
                         </div>
                     </div>
                 </div>

@@ -1,57 +1,55 @@
 <template>
   <div class="general-attack-bar">
-      <div class="frame-11-n1uJ2s frame-11">
-          <div class="frame-13-5E05en" :class="{ selected: selected === 'Attack' }">
-              <div class="group-B4Wcwb group">
-                  <img class="x1-57-a5Jn4M" src="@/assets/Global/Common/Attack logo.png" alt="1 57">
-                  <div class="attack-a5Jn4M roboto-medium-white-9px" style="font-size: 9px;">Attack</div>
-              </div>
-          </div>
-          <div class="frame-17-5E05en" :class="{ selected: selected === 'Base' }">
-              <div class="group-f4bGeB group">
-                  <div class="base-ZEK035 roboto-medium-white-9px" style="font-size: 9px;">Base</div>
-                  <img class="x5-8-ZEK035" src="@/assets/Global/Common/Base logo.png" alt="5 8">
-              </div>
-          </div>
-          <div class="frame-18-5E05en" :class="{ selected: selected === 'Ladder' }">
-              <div class="group-h59B6k group">
-                  <img class="x6-501-LN9TYX" src="@/assets/Global/Common/Ladder logo.png" alt="6 501">
-                  <div class="ladder-LN9TYX roboto-medium-white-9px" style="font-size: 9px;">Ladder</div>
-              </div>
-          </div>
-          <div class="frame-15-5E05en" :class="{ selected: selected === 'War' }">
-              <div class="group-8-Wqk5xj group-8">
-                  <img class="x7-1-lXP6c4" src="@/assets/Global/Common/War logo.png" alt="7 1">
-                  <div class="war-lXP6c4 roboto-medium-white-9px" style="font-size: 9px;">War</div>
-              </div>
-          </div>
-          <div class="frame-14-5E05en" :class="{ selected: selected === 'Treasure' }">
-              <div class="group-iVOhnC group">
-                  <div class="treasure-xsImb2 roboto-medium-white-9px" style="font-size: 9px;">Treasure</div>
-                  <img class="x8-4-xsImb2" src="@/assets/Global/Common/Treasure logo.png" alt="8 4">
-              </div>
-          </div>
+    <div class="frame-11-n1uJ2s frame-11">
+      <div class="frame-13-5E05en" :class="{ selected: selected === 'Attack' }" @click="navigateTo('Attack')">
+        <div class="group-B4Wcwb group">
+          <img class="x1-57-a5Jn4M" src="@/assets/Global/Common/Attack logo.png" alt="1 57">
+          <div class="attack-a5Jn4M roboto-medium-white-9px" style="font-size: 9px;">Attack</div>
+        </div>
       </div>
+      <div class="frame-17-5E05en" :class="{ selected: selected === 'Base' }" @click="navigateTo('Base')">
+        <div class="group-f4bGeB group">
+          <div class="base-ZEK035 roboto-medium-white-9px" style="font-size: 9px;">Base</div>
+          <img class="x5-8-ZEK035" src="@/assets/Global/Common/Base logo.png" alt="5 8">
+        </div>
+      </div>
+      <div class="frame-18-5E05en" :class="{ selected: selected === 'Ladder' }" @click="navigateTo('Ladder')">
+        <div class="group-h59BGe group">
+          <img class="x6-501-LN9TYX" src="@/assets/Global/Common/Ladder logo.png" alt="6 501">
+          <div class="ladder-LN9TYX roboto-medium-white-9px" style="font-size: 9px;">Ladder</div>
+        </div>
+      </div>
+      <div class="frame-15-5E05en" :class="{ selected: selected === 'War' }" @click="navigateTo('War')">
+        <div class="group-8-Wqk5xj group-8">
+          <img class="x7-1-lXP6c4" src="@/assets/Global/Common/War logo.png" alt="7 1">
+          <div class="war-lXP6c4 roboto-medium-white-9px" style="font-size: 9px;">War</div>
+        </div>
+      </div>
+      <div class="frame-14-5E05en" :class="{ selected: selected === 'Treasure' }" @click="navigateTo('Treasure')">
+        <div class="group-iVOhnC group">
+          <div class="treasure-xsImb2 roboto-medium-white-9px" style="font-size: 9px;">Treasure</div>
+          <img class="x8-4-xsImb2" src="@/assets/Global/Common/Treasure logo.png" alt="8 4">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-
 
 <script>
 export default {
   name: 'Footer',
   props: {
-      selected: {
-          type: String,
-          required: true,
-          default: 'Hero'
-      }
-  },
-  data() {
-      return {
-      };
+    selected: {
+      type: String,
+      required: true,
+      default: 'Hero'
+    }
   },
   methods: {
-  },
+    navigateTo(routeName) {
+      this.$router.push({ name: routeName });
+    }
+  }
 };
 </script>
 
@@ -72,7 +70,8 @@ export default {
   display: flex;
   justify-content: center;
   position: fixed;
-  width: -webkit-fill-available;
+  width: 100%;
+
 }
 
 .general-attack-bar .frame-11-n1uJ2s {
@@ -86,186 +85,10 @@ export default {
   width: 368px;
 }
 
-.general-attack-bar .frame-13-5E05en {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  height: 50px;
-  padding: 5px 10px;
-  position: relative;
-  width: 65px;
-  cursor: pointer;
-}
-
-.general-attack-bar .group-B4Wcwb {
-  width: 32px;
-  opacity: 0.6;
-}
-
-.general-attack-bar .x1-57-a5Jn4M {
-  background-color: transparent;
-  height: 24px;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 18px;
-  transform: rotate(-180deg);
-}
-
-.general-attack-bar .attack-a5Jn4M {
-  opacity: 0.5;
-  background-color: transparent;
-  height: auto;
-  left: 2px;
-  letter-spacing: 0.00px;
-  line-height: 9.9px;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  transform: rotate(-180deg);
-  white-space: nowrap;
-  width: auto;
-}
-
-.general-attack-bar .frame-17-5E05en {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  height: 50px;
-  padding: 5px 10px;
-  position: relative;
-  width: 65px;
-}
-
-.general-attack-bar .group-f4bGeB {
-  opacity: 0.6;
-  width: 42px;
-}
-
-.general-attack-bar .base-ZEK035 {
-  background-color: transparent;
-  height: auto;
-  left: 10px;
-  letter-spacing: -0.18px;
-  line-height: 9.9px;
-  opacity: 0.5;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  transform: rotate(-180deg);
-  white-space: nowrap;
-  width: auto;
-}
-
-.general-attack-bar .x5-8-ZEK035 {
-  background-color: transparent;
-  height: 40px;
-  left: 0px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  position: absolute;
-  top: 5px;
-  transform: rotate(-180deg);
-  width: 40px;
-}
-
-.general-attack-bar .frame-18-5E05en {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  height: 50px;
-  padding: 5px 10px;
-  position: relative;
-  width: 65px;
-}
-
-.general-attack-bar .group-h59B6k {
-  opacity: 0.6;
-  width: 32px;
-}
-
-.general-attack-bar .x6-501-LN9TYX {
-  background-color: transparent;
-  height: 30px;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 12px;
-  transform: rotate(-180deg);
-  width: 30px;
-}
-
-.general-attack-bar .ladder-LN9TYX {
-  background-color: transparent;
-  height: auto;
-  left: 2px;
-  letter-spacing: -0.18px;
-  line-height: 9.9px;
-  opacity: 0.5;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  transform: rotate(-180deg);
-  white-space: nowrap;
-  width: auto;
-}
-
-.general-attack-bar .frame-15-5E05en {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  height: 50px;
-  padding: 5px 10px;
-  position: relative;
-  width: 65px;
-}
-
-.general-attack-bar .group-8-Wqk5xj {
-  height: 42px;
-  margin-bottom: -2.00px;
-  opacity: 0.6;
-  width: 32px;
-}
-
-.general-attack-bar .x7-1-lXP6c4 {
-  background-color: transparent;
-  height: 30px;
-  left: 3px;
-  object-fit: cover;
-  position: absolute;
-  top: 2px;
-  width: 30px;
-}
-
-.general-attack-bar .war-lXP6c4 {
-  background-color: transparent;
-  height: auto;
-  left: 10px;
-  letter-spacing: -0.18px;
-  line-height: 9.9px;
-  opacity: 0.5;
-  position: absolute;
-  text-align: left;
-  top: 31px;
-  white-space: nowrap;
-  width: auto;
-}
-
+.general-attack-bar .frame-13-5E05en,
+.general-attack-bar .frame-17-5E05en,
+.general-attack-bar .frame-18-5E05en,
+.general-attack-bar .frame-15-5E05en,
 .general-attack-bar .frame-14-5E05en {
   align-items: center;
   background-color: transparent;
@@ -274,40 +97,42 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
+  justify-content: center;
 }
 
+/* Additional styles for each frame */
+.general-attack-bar .group-B4Wcwb,
+.general-attack-bar .group-f4bGeB,
+.general-attack-bar .group-h59B6k,
+.general-attack-bar .group-8-Wqk5xj,
 .general-attack-bar .group-iVOhnC {
   opacity: 0.6;
-  width: 37px;
 }
 
+.general-attack-bar .x1-57-a5Jn4M,
+.general-attack-bar .x5-8-ZEK035,
+.general-attack-bar .x6-501-LN9TYX,
+.general-attack-bar .x7-1-lXP6c4,
+.general-attack-bar .x8-4-xsImb2 {
+  background-color: transparent;
+  object-fit: cover;
+  position: absolute;
+  transform: rotate(-180deg);
+}
+
+.general-attack-bar .attack-a5Jn4M,
+.general-attack-bar .base-ZEK035,
+.general-attack-bar .ladder-LN9TYX,
+.general-attack-bar .war-lXP6c4,
 .general-attack-bar .treasure-xsImb2 {
   background-color: transparent;
-  height: auto;
-  left: 0px;
-  letter-spacing: -0.18px;
-  line-height: 9.9px;
   opacity: 0.5;
   position: absolute;
   text-align: left;
-  top: 0px;
-  transform: rotate(-180deg);
   white-space: nowrap;
-  width: auto;
-}
-
-.general-attack-bar .x8-4-xsImb2 {
-  background-color: transparent;
-  height: 32px;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 10px;
-  transform: rotate(-180deg);
-  width: 32px;
 }
 </style>
