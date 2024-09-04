@@ -51,7 +51,7 @@ const routes = [
     },
     {
         path: '/hero',
-        name: 'Hero',
+        name: 'Base',
         component: Hero,
         meta: { layout: 'DefaultLayout' }
     },
