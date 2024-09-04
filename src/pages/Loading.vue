@@ -4,9 +4,9 @@
             <div class="rectangle-3-D9VNiZ"></div>
             <img class="loading-background-D9VNiZ" src="@/assets/Global/Loading/Loading background.png"
                 alt="Loading background">
-            <p class="noctian-war-for-the-throne-D9VNiZ" style="font-size: 30px;">Noctian: War for the Throne</p>
+            <p class="noctian-war-for-the-throne-D9VNiZ text-shadow" style="font-size: 30px;">Noctian: War for the Throne</p>
             <img class="loading-logo-D9VNiZ" src="@/assets/Global/Loading/Loading Logo.png" alt="Loading Logo">
-            <h1 class="title-D9VNiZ" style="font-size: 64px;">{{ loadingText }}</h1>
+            <h1 class="title-D9VNiZ text-shadow" style="font-size: 64px;">{{ loadingText }}</h1>
         </div>
     </div>
 </template>
@@ -96,7 +96,6 @@ export default {
     line-height: 33.0px;
     position: absolute;
     text-align: left;
-    text-shadow: 0px 4px 4px #000000;
     top: 73px;
     width: 389px;
 }
@@ -127,5 +126,16 @@ export default {
     top: 798px;
     white-space: nowrap;
     width: 278px;
+}
+
+.text-shadow {
+    text-shadow: -1px -4px #000000,
+        -2px 3px #000000,
+        -4px 2px #000000,
+        4px -2px #000000,
+        4px 2px #000000,
+        -4px -1px #000000,
+        4px -1px #000000,
+        0px 4px #000000 !important
 }
 </style>

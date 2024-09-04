@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .title-XsTlFn {
-    font-size: 40px !important;
+    font-size: 30px !important;
 }
 
 .gold-container {

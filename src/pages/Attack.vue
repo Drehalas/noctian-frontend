@@ -32,10 +32,12 @@
                                     </div>
                                 </div>
                                 <div class="x63631-k-1bAkpj">+636.31K</div>
-                                <img class="vector-1bAkpj vector" src="@/assets/Global/Attack/info.svg" alt="Vector">
+                                <img class="vector-1bAkpj vector" src="@/assets/Global/Attack/info.svg" alt="Vector"
+                                    title="War income represents the passive income gained after a battle."
+                                    @click="showTitle">
                             </div>
                         </div>
-                        <GoldBar ref="goldBar"/>
+                        <GoldBar ref="goldBar" />
                         <div class="group-12-Z6GGxj">
                             <div class="rectangle-4-8WDrgx"></div>
                             <div class="rectangle-5-8WDrgx"></div>
@@ -88,9 +90,9 @@
                             <div class="frame-4-NxHzQ7 frame-4">
                                 <select name="wallet" id="wallet"
                                     style="outline: none;border:none; font-size: 10px; background-color: #000000B2;color: #fff;padding: 2px;border-radius: 5px;">
-                                    <option value="none" selected>None</option>
-                                    <option value="binance-horde"> Binance Horde</option>
-                                    <option value="okx-horde">OKX Horde</option>
+                                    <option value="none" selected>-None-</option>
+                                    <!-- <option value="binance-horde"> Binance Horde</option>
+                                    <option value="okx-horde">OKX Horde</option> -->
                                 </select>
                             </div>
                         </div>
@@ -111,6 +113,7 @@ import '@/styles/attack.css';
 import Footer from '@/components/Footer.vue';
 import GoldBar from '@/components/GoldBar.vue';
 import SkillBuff from '@/components/SkillBuff.vue';
+import { useToast } from "vue-toastification";
 
 export default {
     name: 'Attack',
@@ -123,8 +126,14 @@ export default {
         return {
             isSkillBuffVisible: false,
             floatingTexts: [],
-            increaseAmount: 200
+            increaseAmount: 200,
+            displayTitle: ''
         }
+    },
+    setup() {
+        const toast = useToast();
+
+        return { toast }
     },
     methods: {
         toggleSkillBuffDiv() {
@@ -143,6 +152,9 @@ export default {
             setTimeout(() => {
                 this.floatingTexts.shift();
             }, 500);
+        },
+        showTitle(event) {
+            this.toast.info(event.target.title);
         }
     }
 };

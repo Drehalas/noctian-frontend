@@ -6,7 +6,7 @@
                 <img class="faction-selection-background-YXzsPW"
                     src="@/assets/Global/Faction selection/faction selection background.png"
                     alt="faction selection background">
-                <h1 class="title-YXzsPW">Noctian: War for the Throne</h1>
+                <h1 class="title-YXzsPW text-shadow">Noctian: War for the Throne</h1>
                 <img class="faction-selection-logo-YXzsPW"
                     src="@/assets/Global/Faction selection/Faction Selection Logo.png" alt="Faction Selection Logo">
                 <div class="human-selection-YXzsPW" @click="showFactionDetails('HUMANS')">
@@ -15,7 +15,7 @@
                             <img class="rectangle-12-JrxMsg rectangle-12"
                                 src="@/assets/Global/Faction selection/Human background.png" alt="Rectangle 12">
                             <div class="frame-21">
-                                <div class="humans-qKcTbw rosarivo-normal-white-17px">HUMANS</div>
+                                <div class="humans-qKcTbw rosarivo-normal-white-17px faction-title-shadow">HUMANS</div>
                             </div>
                             <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                                 src="@/assets/Global/Faction selection/Human logo.png" alt="Human logo">
@@ -28,7 +28,7 @@
                         <img class="rectangle-12-9GSYS9 rectangle-12"
                             src="@/assets/Global/Faction selection/Orc background.png" alt="Rectangle 12">
                         <div class="frame-21">
-                            <div class="orcs-nCgnnm rosarivo-normal-white-17px">ORCS</div>
+                            <div class="orcs-nCgnnm rosarivo-normal-white-17px faction-title-shadow">ORCS</div>
                         </div>
                         <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                             src="@/assets/Global/Faction selection/Orc logo.png" alt="Orc logo">
@@ -40,7 +40,7 @@
                         <img class="rectangle-12" src="@/assets/Global/Faction selection/Angel background.png"
                             alt="Rectangle 12">
                         <div class="frame-21">
-                            <div class="angels-pvNINR rosarivo-normal-white-17px">ANGELS</div>
+                            <div class="angels-pvNINR rosarivo-normal-white-17px faction-title-shadow">ANGELS</div>
                         </div>
                         <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                             src="@/assets/Global/Faction selection/Angel logo.png" alt="Angel logo">
@@ -52,7 +52,7 @@
                         <img class="rectangle-12" src="@/assets/Global/Faction selection/Demon background.png"
                             alt="Rectangle 12">
                         <div class="frame-21">
-                            <div class="demons-hXA5hE rosarivo-normal-white-17px">DEMONS</div>
+                            <div class="demons-hXA5hE rosarivo-normal-white-17px faction-title-shadow">DEMONS</div>
                         </div>
                         <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                             src="@/assets/Global/Faction selection/Demon logo.png" alt="Demon logo">
@@ -64,7 +64,7 @@
                         <img class="rectangle-11-5Us6sz" src="@/assets/Global/Faction selection/Elf background.png"
                             alt="Rectangle 11">
                         <div class="frame-21">
-                            <div class="elves-c831ay rosarivo-normal-white-17px">ELVES</div>
+                            <div class="elves-c831ay rosarivo-normal-white-17px faction-title-shadow">ELVES</div>
                         </div>
                         <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                             src="@/assets/Global/Faction selection/Elf logo.png" alt="Elf logo">
@@ -76,7 +76,7 @@
                         <img class="rectangle-12" src="@/assets/Global/Faction selection/Undead background.png"
                             alt="Rectangle 12">
                         <div class="frame-21">
-                            <div class="undeads-3gmlAw rosarivo-normal-white-17px">UNDEADS</div>
+                            <div class="undeads-3gmlAw rosarivo-normal-white-17px faction-title-shadow">UNDEADS</div>
                         </div>
                         <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1"
                             src="@/assets/Global/Faction selection/Human logo.png" alt="Undead logo">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="frame-25-drvqzZ">
-                        <h1 class="title-qEjfPb" style="font-size: 16px;">{{ selectedFaction }}</h1>
+                        <h1 class="title-qEjfPb text-shadow" style="font-size: 16px;">{{ selectedFaction }}</h1>
                     </div>
                     <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1-drvqzZ"
                         :src="getFactionPopupLogo(selectedFaction)" alt="Faction logo">
@@ -229,8 +229,32 @@ export default {
             return colors[faction] || '';
         },
         selectFaction() {
-          this.$router.push(`/attack?faction=${this.selectedFaction.toLowerCase()}`);
+            this.$router.push(`/attack?faction=${this.selectedFaction.toLowerCase()}`);
         }
     }
 };
 </script>
+
+<style>
+.text-shadow {
+    text-shadow: -1px -4px #000000,
+        -2px 3px #000000,
+        -4px 2px #000000,
+        4px -2px #000000,
+        4px 2px #000000,
+        -4px -1px #000000,
+        4px -1px #000000,
+        0px 4px #000000 !important
+}
+
+.faction-title-shadow {
+    text-shadow: -1px -1px #000000,
+        -1px 1px #000000,
+        -1px 1px #000000,
+        1px -1px #000000,
+        1px 1px #000000,
+        -1px -1px #000000,
+        -1px -1px #000000,
+        0px 1px #000000 !important
+}
+</style>

@@ -125,4 +125,4 @@ export default {
 };
 </script>
 
-<style src="@/styles/soldier.css"></style>
+<!-- <style src="@/styles/soldier.css"></style> -->

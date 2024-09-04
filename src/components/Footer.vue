@@ -1,37 +1,37 @@
 <template>
   <div class="general-attack-bar">
-      <div class="frame-11-n1uJ2s frame-11">
-          <div class="frame-13-5E05en" :class="{ selected: selected === 'Attack' }">
-              <div class="group-B4Wcwb group">
-                  <img class="x1-57-a5Jn4M" src="@/assets/Global/Common/Attack logo.png" alt="1 57">
-                  <div class="attack-a5Jn4M roboto-medium-white-9px" style="font-size: 9px;">Attack</div>
-              </div>
-          </div>
-          <div class="frame-17-5E05en" :class="{ selected: selected === 'Base' }">
-              <div class="group-f4bGeB group">
-                  <div class="base-ZEK035 roboto-medium-white-9px" style="font-size: 9px;">Base</div>
-                  <img class="x5-8-ZEK035" src="@/assets/Global/Common/Base logo.png" alt="5 8">
-              </div>
-          </div>
-          <div class="frame-18-5E05en" :class="{ selected: selected === 'Ladder' }">
-              <div class="group-h59B6k group">
-                  <img class="x6-501-LN9TYX" src="@/assets/Global/Common/Ladder logo.png" alt="6 501">
-                  <div class="ladder-LN9TYX roboto-medium-white-9px" style="font-size: 9px;">Ladder</div>
-              </div>
-          </div>
-          <div class="frame-15-5E05en" :class="{ selected: selected === 'War' }">
-              <div class="group-8-Wqk5xj group-8">
-                  <img class="x7-1-lXP6c4" src="@/assets/Global/Common/War logo.png" alt="7 1">
-                  <div class="war-lXP6c4 roboto-medium-white-9px" style="font-size: 9px;">War</div>
-              </div>
-          </div>
-          <div class="frame-14-5E05en" :class="{ selected: selected === 'Treasure' }">
-              <div class="group-iVOhnC group">
-                  <div class="treasure-xsImb2 roboto-medium-white-9px" style="font-size: 9px;">Treasure</div>
-                  <img class="x8-4-xsImb2" src="@/assets/Global/Common/Treasure logo.png" alt="8 4">
-              </div>
-          </div>
+    <div class="frame-11-n1uJ2s frame-11">
+      <div class="frame-13-5E05en" :class="{ selected: selected === 'Attack' }">
+        <div class="group-B4Wcwb group">
+          <img class="x1-57-a5Jn4M" src="@/assets/Global/Common/Attack logo.png" alt="1 57">
+          <div class="attack-a5Jn4M roboto-medium-white-9px" style="font-size: 9px;">Attack</div>
+        </div>
       </div>
+      <div class="frame-17-5E05en" :class="{ selected: selected === 'Base' }">
+        <div class="group-f4bGeB group">
+          <div class="base-ZEK035 roboto-medium-white-9px" style="font-size: 9px;">Base</div>
+          <img class="x5-8-ZEK035" src="@/assets/Global/Common/Base logo.png" alt="5 8">
+        </div>
+      </div>
+      <div class="frame-18-5E05en" :class="{ selected: selected === 'Ladder' }">
+        <div class="group-h59B6k group">
+          <img class="x6-501-LN9TYX" src="@/assets/Global/Common/Ladder logo.png" alt="6 501">
+          <div class="ladder-LN9TYX roboto-medium-white-9px" style="font-size: 9px;">Ladder</div>
+        </div>
+      </div>
+      <div class="frame-15-5E05en" :class="{ selected: selected === 'War' }">
+        <div class="group-8-Wqk5xj group-8">
+          <img class="x7-1-lXP6c4" src="@/assets/Global/Common/War logo.png" alt="7 1">
+          <div class="war-lXP6c4 roboto-medium-white-9px" style="font-size: 9px;">War</div>
+        </div>
+      </div>
+      <div class="frame-14-5E05en" :class="{ selected: selected === 'Treasure' }">
+        <div class="group-iVOhnC group">
+          <div class="treasure-xsImb2 roboto-medium-white-9px" style="font-size: 9px;">Treasure</div>
+          <img class="x8-4-xsImb2" src="@/assets/Global/Common/Treasure logo.png" alt="8 4">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,15 +40,15 @@
 export default {
   name: 'Footer',
   props: {
-      selected: {
-          type: String,
-          required: true,
-          default: 'Hero'
-      }
+    selected: {
+      type: String,
+      required: true,
+      default: 'Hero'
+    }
   },
   data() {
-      return {
-      };
+    return {
+    };
   },
   methods: {
   },
@@ -93,11 +93,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .general-attack-bar .group-B4Wcwb {
@@ -138,10 +140,12 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
+  align-items: center;
+  justify-content: center;
 }
 
 .general-attack-bar .group-f4bGeB {
@@ -184,10 +188,12 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
+  align-items: center;
+  justify-content: center;
 }
 
 .general-attack-bar .group-h59B6k {
@@ -229,10 +235,12 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
+  align-items: center;
+  justify-content: center;
 }
 
 .general-attack-bar .group-8-Wqk5xj {
@@ -274,10 +282,12 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  height: 50px;
+  height: 45px;
   padding: 5px 10px;
   position: relative;
   width: 65px;
+  align-items: center;
+  justify-content: center;
 }
 
 .general-attack-bar .group-iVOhnC {
