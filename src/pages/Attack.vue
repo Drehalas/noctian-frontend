@@ -14,7 +14,7 @@
                             <img class="orc-button-Z6GGxj" src="@/assets/Global/Attack/Orc button.png" alt="Orc button"
                                 style="border: 1px solid transparent; border-radius: 50%;" @click="gainGold">
                             <img class="ork-ladder-20-logo-Z6GGxj"
-                                src="@/assets/Orc images/Orc Avatar/20. Worm Food.png" alt="Ork Ladder 20 logo"
+                                src="@/assets/Orc images/Orc Avatar/20. Worm Food.png" alt="Orc Ladder 20 logo"
                                 @click="gainGold">
                         </div>
                         <div class="frame-2-Z6GGxj">
@@ -23,7 +23,9 @@
                         </div>
                         <div class="frame-3-Z6GGxj">
                             <img class="e3461866-28e9-4e0f-95cb-223395215a83-1-R8jrdC"
-                                src="@/assets/Global/Attack/Ork attack logo.png" alt="Ork attack logo">
+                                src="@/assets/Global/Attack/Orc attack logo.png" alt="Orc attack logo">
+                            <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
+                                alt="Line 1" style="top: 6px;">
                             <div class="war-income-per-hour-R8jrdC">War income per hour</div>
                             <div class="frame-4-R8jrdC frame-4">
                                 <div class="group-9-1bAkpj group-9">
@@ -36,6 +38,8 @@
                                     title="War income represents the passive income gained after a battle."
                                     @click="showTitle">
                             </div>
+                            <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
+                                alt="Line 1" style="position: relative;left: 125px;top: 6px;">
                         </div>
                         <GoldBar ref="goldBar" />
                         <div class="group-12-Z6GGxj">
@@ -56,8 +60,8 @@
                             <div class="group-68-jDU8To">
                                 <div class="frame-34-VYxXau">
                                     <div class="group-67-XBoaRC">
-                                        <div class="frame-11-Gqe1Rb frame-11"><img
-                                                class="bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV"
+                                        <div class="frame-11-Gqe1Rb frame-11">
+                                            <img class="bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV"
                                                 src="@/assets/Global/Attack/Mana.png"
                                                 alt="bc558d3d-8d85-47c6-a507-95a6035c5e38 1">
                                             <div class="x6500-6500-8oF7wV">6500 / 6500</div>
@@ -78,18 +82,18 @@
                         <div class="frame-35-Z6GGxj">
                             <div class="orcs-Ip5M10">ORCS</div>
                             <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1-Ip5M10"
-                                src="@/assets/Global/Attack/Ork logo.png">
+                                src="@/assets/Global/Attack/Orc logo.png">
                         </div>
                     </div>
                     <Footer :selected="'Attack'" />
                     <div class="select-kingdom-zJN8sm select-kingdom">
-                        <img class="binance-logo-4fyxtR" src="@/assets/Global/Attack/Ork logo.png" alt="Binance Logo">
+                        <img class="binance-logo-4fyxtR" src="@/assets/Global/Attack/Orc logo.png" alt="Binance Logo">
                         <div class="select-kingdom-4fyxtR select-kingdom">Select Kingdom</div>
                         <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg" alt="Line 1">
                         <div class="frame-36-4fyxtR">
                             <div class="frame-4-NxHzQ7 frame-4">
                                 <select name="wallet" id="wallet"
-                                    style="outline: none;border:none; font-size: 10px; background-color: #000000B2;color: #fff;padding: 2px;border-radius: 5px;">
+                                    style="width:inherit;outline: none;border:none; font-size: 10px; background-color: #000000B2;color: #fff;padding: 2px;border-radius: 5px;">
                                     <option value="none" selected>-None-</option>
                                     <!-- <option value="binance-horde"> Binance Horde</option>
                                     <option value="okx-horde">OKX Horde</option> -->
@@ -140,8 +144,11 @@ export default {
             this.isSkillBuffVisible = !this.isSkillBuffVisible;
         },
         gainGold(event) {
-            const x = event.clientX;
-            const y = event.clientY;
+            const { innerHeight, innerWidth } = window;
+            const limit = 105;
+
+            const x = (innerWidth - event.clientX < limit) ? event.clientX - limit : event.clientX;
+            const y = (innerHeight - event.clientY < limit) ? event.clientY - limit : event.clientY;
             this.createFloatingText(x, y);
 
             this.$refs.goldBar.addGold(this.increaseAmount);

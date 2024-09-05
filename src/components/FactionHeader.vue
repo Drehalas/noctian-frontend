@@ -23,13 +23,13 @@ export default {
 
 <style>
 .rectangle-3-lvJUvn {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(209, 0, 28) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 25%, rgb(209, 0, 28) 100%);
     background-color: transparent;
     height: 296px;
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 428px;
+    width: 100vw;
 }
 
 .rectangle-1-lvJUvn {
@@ -40,7 +40,7 @@ export default {
     left: 0px;
     position: absolute;
     top: 164px;
-    width: 428px;
+    width: 100vw;
 }
 
 .banner-lvJUvn {
@@ -50,6 +50,6 @@ export default {
     object-fit: cover;
     position: absolute;
     top: -34px;
-    width: 428px;
+    width: 100vw;
 }
 </style>

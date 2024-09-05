@@ -25,6 +25,10 @@
                                     {{ item.name }}
                                 </div>
                             </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="31" viewBox="0 0 2 31"
+                                fill="none" style="position: relative;left: 78px;">
+                                <path d="M1 30.9455L1 -9.76194e-05" stroke="white" stroke-width="0.3" />
+                            </svg>
                             <div class="frame-18-b6ve6e frame-18">
                                 <div class="frame-4">
                                     <div class="group-8-3jj4gC group-8">
@@ -34,8 +38,42 @@
                                     <div class="x2102-k roboto-semi-bold-white-11px">{{ item.gold }}K</div>
                                 </div>
                             </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="31" viewBox="0 0 2 31"
+                                fill="none" style="position: relative;left: 266px;">
+                                <path d="M1 30.9455L1 -9.76194e-05" stroke="white" stroke-width="0.3" />
+                            </svg>
                             <div class="frame-19">
                                 <div class="x3236801-rsigCY roboto-semi-bold-white-12px">#{{ item.order }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-16-7GkIVu" :key="myData.id" style="margin-top: 5px;">
+                        <div class="rectangle-10"></div>
+                        <div class="frame-16">
+                            <div class="frame-17-b6ve6e frame-17">
+                                <div class="saruman869-6pApPI roboto-semi-bold-white-12px">
+                                    {{ myData.name }}
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="31" viewBox="0 0 2 31"
+                                fill="none" style="position: relative;left: 78px;">
+                                <path d="M1 30.9455L1 -9.76194e-05" stroke="white" stroke-width="0.3" />
+                            </svg>
+                            <div class="frame-18-b6ve6e frame-18">
+                                <div class="frame-4">
+                                    <div class="group-8-3jj4gC group-8">
+                                        <img class="pngtreeglossy-golden-coin-icon_6866281-1"
+                                            src="@/assets/Global/Common/Gold.png" alt="Gold">
+                                    </div>
+                                    <div class="x2102-k roboto-semi-bold-white-11px">{{ myData.gold }}K</div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="31" viewBox="0 0 2 31"
+                                fill="none" style="position: relative;left: 266px;">
+                                <path d="M1 30.9455L1 -9.76194e-05" stroke="white" stroke-width="0.3" />
+                            </svg>
+                            <div class="frame-19">
+                                <div class="x3236801-rsigCY roboto-semi-bold-white-12px">#{{ myData.order }}</div>
                             </div>
                         </div>
                     </div>
@@ -47,7 +85,7 @@
 </template>
 
 <script>
-import '@/styles/css/ladder.css';
+import '@/styles/ladder.css';
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -82,7 +120,43 @@ export default {
                     name: "AragonFTW11",
                     gold: "21.02"
                 },
-            ]
+                {
+                    id: "5",
+                    order: "3236803",
+                    name: "BaldEagle452",
+                    gold: "21.02"
+                },
+                {
+                    id: "6",
+                    order: "3236804",
+                    name: "AragonFTW11",
+                    gold: "21.02"
+                },
+                {
+                    id: "7",
+                    order: "3236803",
+                    name: "BaldEagle452",
+                    gold: "21.02"
+                },
+                {
+                    id: "8",
+                    order: "3236804",
+                    name: "AragonFTW11",
+                    gold: "21.02"
+                },
+                {
+                    id: "9",
+                    order: "3236803",
+                    name: "BaldEagle452",
+                    gold: "21.02"
+                }
+            ],
+            myData: {
+                id: "1",
+                order: "3236801",
+                name: "EHK",
+                gold: "20.02"
+            },
         };
     },
     methods: {

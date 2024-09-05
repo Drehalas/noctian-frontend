@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width: 100%;position: absolute;top: 258px;display: flex;justify-content: center;">
     <div class="base-hero-bar-lvJUvn">
       <div class="frame-16-cZXoCo frame-16">
         <!-- Hero -->
@@ -8,7 +8,7 @@
             :class="{ selected: selected === 'Hero' }"
             @click="navigateTo('Hero')"
         >
-          <div class="hero-n6d0Ud roboto-semi-bold-white-12px">Hero</div>
+          <div class="hero-n6d0Ud roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Hero</div>
         </div>
         <!-- Soldier -->
         <div
@@ -16,7 +16,7 @@
             :class="{ selected: selected === 'Soldier' }"
             @click="navigateTo('Soldier')"
         >
-          <div class="soldier-kDvytW roboto-semi-bold-white-12px">Soldier</div>
+          <div class="soldier-kDvytW roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Soldier</div>
         </div>
         <!-- Armory -->
         <div
@@ -24,7 +24,7 @@
             :class="{ selected: selected === 'Armory' }"
             @click="navigateTo('Armory')"
         >
-          <div class="armory-MjOaOq roboto-semi-bold-white-12px">Armory</div>
+          <div class="armory-MjOaOq roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Armory</div>
         </div>
         <!-- Spell -->
         <div
@@ -32,7 +32,7 @@
             :class="{ selected: selected === 'Spell' }"
             @click="navigateTo('Spell')"
         >
-          <div class="spell-KYkoHY roboto-semi-bold-white-12px">Spell</div>
+          <div class="spell-KYkoHY roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Spell</div>
         </div>
         <!-- Artifact -->
         <div
@@ -40,7 +40,7 @@
             :class="{ selected: selected === 'Artifact' }"
             @click="navigateTo('Artifact')"
         >
-          <div class="artifact-H13YWN roboto-semi-bold-white-12px">Artifact</div>
+          <div class="artifact-H13YWN roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Artifact</div>
         </div>
         <!-- Peon -->
         <div
@@ -48,7 +48,7 @@
             :class="{ selected: selected === 'Peon' }"
             @click="navigateTo('Peon')"
         >
-          <div class="peon-LSCL1d roboto-semi-bold-white-12px">Peon</div>
+          <div class="peon-LSCL1d roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Peon</div>
         </div>
       </div>
     </div>
@@ -69,7 +69,9 @@ export default {
     navigateTo(section) {
       switch (section) {
         case 'Hero':
-          this.$router.push({ name: 'Hero' });
+          console.log(1);
+          
+          this.$router.push({ name: 'Base' });
           break;
         case 'Soldier':
           this.$router.push({ name: 'Soldier' });
@@ -84,7 +86,7 @@ export default {
           this.$router.push({ name: 'Artifact' });
           break;
         case 'Peon':
-          this.$router.push({ name: 'Peon' });
+          this.$router.push({ name: 'AddFriend' });
           break;
         default:
           this.$router.push({ name: 'Home' });

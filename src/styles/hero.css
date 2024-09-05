@@ -76,16 +76,15 @@
     overflow: auto;
     position: relative;
     top: 0px;
-    width: 430px;
+    width: 100%;
 }
 
 .orc-hero .frame-30-zHO16R {
     background-color: transparent;
     min-height: 100vh;
-    left: 2px;
     position: absolute;
     top: -107px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-hero .frame-10-lvJUvn {
@@ -148,8 +147,6 @@
     justify-content: center;
     left: 21px;
     padding: 4px 0px;
-    position: absolute;
-    top: 258px;
 }
 
 .orc-hero .frame-16-cZXoCo {
@@ -288,7 +285,7 @@
     padding: 17px 0px;
     position: absolute;
     top: 300px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-hero .property-11-3peoxU {

@@ -11,7 +11,14 @@
                     <div class="group-18-ads4WT group-18">
                         <div class="rectangle-11-hwdVXu rectangle-11"></div>
                         <div class="frame-22-hwdVXu">
-                            <div class="peon-6jHW5V peon">PEON</div>
+                            <div class="peon-6jHW5V peon">
+                                PEON
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2" viewBox="0 0 180 2"
+                                    fill="none" style="position: relative">
+                                    <path d="M0 0.929443H180" stroke="white" stroke-width="0.3" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="frame-23-hwdVXu">
                             <p class="add-your-friends-and-SaVObQ">Add your friends and some of their
@@ -35,12 +42,12 @@
                         <div class="group-57-nSnucG" v-for="item in friends" :key="item.id">
                             <div class="frame-18-mujmNE">
                                 <div class="carzyl544-RccxTl roboto-semi-bold-white-12px">
-                                    {{item.name}}
+                                    {{ item.name }}
                                 </div>
                             </div>
                             <div class="frame-19-mujmNE frame-19">
                                 <div class="x1-fkSG5E roboto-semi-bold-white-12px">
-                                    {{item.id}}.
+                                    {{ item.id }}.
                                 </div>
                             </div>
                         </div>

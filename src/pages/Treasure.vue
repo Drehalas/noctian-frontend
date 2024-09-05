@@ -27,6 +27,10 @@
 
                 <div class="group-27-Cjm0nv">
                     <h1 class="level-120-zFJ7xU" style="font-size: 24px;">TREASURE</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2" viewBox="0 0 180 2" fill="none"
+                        style="position: relative;top:20px">
+                        <path d="M0 0.929443H180" stroke="white" stroke-width="0.3" />
+                    </svg>
                 </div>
                 <div class="group-70-Cjm0nv">
                     <img class="x32-h3edDf" src="@/assets/Global/Treasure/Gold pile 3.png" alt="32">

@@ -5,10 +5,15 @@
             <div class="frame-22-qGPTjX frame-22">
                 <div class="lvl-0 roboto-semi-bold-white-9px" style="font-size: 9px;">lvl {{ property.level }}</div>
                 <div class="frame-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25" fill="none">
+                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white" stroke-opacity="0.2"
+                            stroke-width="0.3" />
+                    </svg>
                     <div class="group-9-MZoG0a group-9">
                         <img class="gold-klRr92 gold" src="@/assets/Global/Common/Gold.png" alt="Gold" />
                     </div>
-                    <div class="x15692-k roboto-semi-bold-white-11px" style="font-size: 11px;">{{ property.cost }}K</div>
+                    <div class="x15692-k roboto-semi-bold-white-11px" style="font-size: 11px;">{{ property.cost }}K
+                    </div>
                 </div>
             </div>
             <div class="frame-21">
@@ -24,6 +29,10 @@
                 </div>
             </div>
             <img class="spirit-shield-qGPTjX" :src="property.imageUrl" :alt="property.name" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1" fill="none"
+                style="position: relative;top: 55px;">
+                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+            </svg>
         </div>
     </div>
 </template>

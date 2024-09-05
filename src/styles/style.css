@@ -21,7 +21,7 @@
 
 body {
     @media (width > 768px) {
-        display: none !important;
+        /* display: none !important; */
     }
 }
 /* SCROLLBAR */

@@ -57,11 +57,11 @@
 .orc-treasure .war-banner-Cjm0nv {
     background-color: transparent;
     height: 439px;
-    left: -5px;
+    left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 398px;
-    width: 439px;
+    top: 439px;
+    width: 100vw
 }
 
 .orc-treasure .rectangle-4-Cjm0nv {
@@ -75,10 +75,10 @@
 
 .orc-treasure .group-27-Cjm0nv {
     background-color: transparent;
-    height: 28px;
+    height: 45px;
     left: 128px;
     position: absolute;
-    top: 477px;
+    top: 517px;
     width: 182px;
 }
 
@@ -129,12 +129,11 @@
 
 .orc-treasure .x31-h3edDf {
     background-color: transparent;
-    height: 254px;
-    left: 174px;
+    height: 120px;
+    left: 185px;
     object-fit: cover;
     position: absolute;
-    top: 43px;
-    width: 254px;
+    top: 105px;
 }
 
 .orc-treasure .x2-2-h3edDf {
@@ -171,7 +170,7 @@
     height: 38px;
     left: 25px;
     position: absolute;
-    top: 512px;
+    top: 562px;
     width: 367px;
 }
 
@@ -219,8 +218,10 @@
     height: 55px;
     left: 25px;
     position: absolute;
-    top: 586px;
+    border: 1px solid #9b5311;
+    top: 626px;
     width: 367px;
+    border-radius: 15px;
 }
 
 .orc-treasure .group-18-0fbiDm {
@@ -228,13 +229,14 @@
 }
 
 .orc-treasure .rectangle-11-ZVRKks {
-    background-color: #0261ff;
+    background-color: #FE881C;
     height: 55px;
+    box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
 
 .orc-treasure .frame-21-ZVRKks {
     align-items: flex-start;
-    background-color: #0261ff;
+    background-color: #FE881C;
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
