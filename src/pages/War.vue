@@ -227,7 +227,7 @@ export default {
     },
     data() {
         return {
-            endTime: new Date('2024-09-04T00:00:00').getTime(),
+            endTime: new Date('2024-09-08T00:00:00').getTime(),
             hours: 0,
             minutes: 0,
             seconds: 0

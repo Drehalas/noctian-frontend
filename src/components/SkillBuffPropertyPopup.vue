@@ -1,6 +1,6 @@
 <template>
-    <div class="container-center-horizontal">
-        <div class="orc-melee-weapon screen ">
+    <div class="container-center-horizontal" style="z-index: 999;">
+        <div class="orc-melee-weapon screen skill-buff">
             <div class="group-31-Jxx3Jc">
                 <div class="rectangle-3-Op5bx8"></div>
                 <div class="group-28-Op5bx8">
@@ -16,9 +16,9 @@
                 <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">
                 <div class="frame-19-Op5bx8">
                     <div class="group-9-WQV2wA group-9">
-                        <img class="gold-xS7xA3 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
+                        <img class="gold-xS7xA3 gold" :src="item.iconSrc" :alt="item.iconAlt">
                     </div>
-                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}K</h1>
+                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
                 </div>
                 <div class="frame-25-Op5bx8">
                     <div class="melee-weapon-AYXywa">{{ item.name }}</div>
@@ -49,7 +49,8 @@
 <script>
 import "@/styles/faction-popup.css"
 export default {
-    name: 'FactionPropertyPopup',
-    props: ['item']
+    name: 'SkillBuffPropertyPopup',
+    props: ['item'],
+    emits: ["close"],
 };
 </script>

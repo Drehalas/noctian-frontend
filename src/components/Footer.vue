@@ -81,6 +81,7 @@ export default {
 
 .container .attack-bar img {
     width: 2rem;
+    margin-bottom: 3px;
 }
 
 .container .attack-bar-container {

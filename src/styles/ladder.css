@@ -38,7 +38,7 @@
 
 .orc-ladder {
     background-color: #191919;
-    height: 968px;
+    height: 932px;
     left: 0px;
     overflow: hidden;
     position: relative;
@@ -131,7 +131,7 @@
     height: 64px;
     left: 128px;
     position: absolute;
-    top: 455px;
+    top: 415px;
     width: 180px;
     background: #21242980;
     box-shadow: 0 8px 32px 0 #21242980;

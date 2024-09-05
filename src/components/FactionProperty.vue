@@ -12,7 +12,8 @@
                     <div class="group-9-MZoG0a group-9">
                         <img class="gold-klRr92 gold" src="@/assets/Global/Common/Gold.png" alt="Gold" />
                     </div>
-                    <div class="x15692-k roboto-semi-bold-white-11px" style="font-size: 11px;">{{ property.cost }}K
+                    <div class="x15692-k roboto-semi-bold-white-11px" style="font-size: 11px;">
+                        {{ property.cost }}
                     </div>
                 </div>
             </div>
