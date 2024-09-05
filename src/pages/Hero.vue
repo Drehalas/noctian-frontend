@@ -103,7 +103,7 @@ export default {
                     cost: 100,
                     gains: 8,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: MeeleWeapon,
                     raidIncomePerHour: 0
                 },
@@ -114,7 +114,7 @@ export default {
                     cost: 150,
                     gains: 12,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RangedWeapon,
                     raidIncomePerHour: 0
                 },
@@ -125,7 +125,7 @@ export default {
                     cost: 225,
                     gains: 18,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: OffHand,
                     raidIncomePerHour: 0
                 },
@@ -136,7 +136,7 @@ export default {
                     cost: 338,
                     gains: 27,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ChestArmor,
                     raidIncomePerHour: 0
                 },
@@ -147,7 +147,7 @@ export default {
                     cost: 506,
                     gains: 41,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Pants,
                     raidIncomePerHour: 0
                 },
@@ -158,7 +158,7 @@ export default {
                     cost: 759,
                     gains: 61,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Gloves,
                     raidIncomePerHour: 0
                 },
@@ -169,7 +169,7 @@ export default {
                     cost: 1139,
                     gains: 91,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Feet,
                     raidIncomePerHour: 0
                 },
@@ -180,7 +180,7 @@ export default {
                     cost: 1709,
                     gains: 137,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Belt,
                     raidIncomePerHour: 0
                 },
@@ -191,7 +191,7 @@ export default {
                     cost: 2563,
                     gains: 205,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Bracers,
                     raidIncomePerHour: 0
                 },
@@ -202,7 +202,7 @@ export default {
                     cost: 3844,
                     gains: 308,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Shoulder,
                     raidIncomePerHour: 0
                 },
@@ -213,7 +213,7 @@ export default {
                     cost: 5767,
                     gains: 461,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Cloak,
                     raidIncomePerHour: 0
                 },
@@ -224,7 +224,7 @@ export default {
                     cost: 8650,
                     gains: 692,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Neckless,
                     raidIncomePerHour: 0
                 },
@@ -235,7 +235,7 @@ export default {
                     cost: 12975,
                     gains: 1038,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Ring,
                     raidIncomePerHour: 0
                 },
@@ -246,7 +246,7 @@ export default {
                     cost: 19462,
                     gains: 1557,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Ring2,
                     raidIncomePerHour: 0
                 },
@@ -257,7 +257,7 @@ export default {
                     cost: 29193,
                     gains: 2335,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Trinket,
                     raidIncomePerHour: 0
                 },
@@ -268,7 +268,7 @@ export default {
                     cost: 43789,
                     gains: 3503,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Trinket2,
                     raidIncomePerHour: 0
                 },
@@ -279,7 +279,7 @@ export default {
                     cost: 65684,
                     gains: 5255,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: MeleeWeaponGem,
                     raidIncomePerHour: 0
                 },
@@ -290,7 +290,7 @@ export default {
                     cost: 98526,
                     gains: 7882,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RangedWeaponGem,
                     raidIncomePerHour: 0
                 },
@@ -301,7 +301,7 @@ export default {
                     cost: 147789,
                     gains: 11823,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: OffHandGem,
                     raidIncomePerHour: 0
                 },
@@ -312,7 +312,7 @@ export default {
                     cost: 221684,
                     gains: 17735,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ChestGem,
                     raidIncomePerHour: 0
                 },
@@ -323,7 +323,7 @@ export default {
                     cost: 332526,
                     gains: 26602,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: PantsGem,
                     raidIncomePerHour: 0
                 },
@@ -334,7 +334,7 @@ export default {
                     cost: 498789,
                     gains: 39903,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: GlovesGem,
                     raidIncomePerHour: 0
                 },
@@ -345,7 +345,7 @@ export default {
                     cost: 748183,
                     gains: 59855,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: FeetGem,
                     raidIncomePerHour: 0
                 },
@@ -356,7 +356,7 @@ export default {
                     cost: 1122274,
                     gains: 89782,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BeltGem,
                     raidIncomePerHour: 0
                 },
@@ -367,7 +367,7 @@ export default {
                     cost: 1683411,
                     gains: 134673,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BracersGem,
                     raidIncomePerHour: 0
                 },
@@ -378,7 +378,7 @@ export default {
                     cost: 2525117,
                     gains: 202009,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ShoulderGem,
                     raidIncomePerHour: 0
                 },
@@ -389,7 +389,7 @@ export default {
                     cost: 3787675,
                     gains: 303014,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: CloakGem,
                     raidIncomePerHour: 0
                 },
@@ -400,7 +400,7 @@ export default {
                     cost: 5681513,
                     gains: 454521,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: NecklessGem,
                     raidIncomePerHour: 0
                 },
@@ -411,7 +411,7 @@ export default {
                     cost: 8522269,
                     gains: 681782,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RingGem,
                     raidIncomePerHour: 0
                 },
@@ -422,7 +422,7 @@ export default {
                     cost: 12783404,
                     gains: 1022672,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Ring2Gem,
                     raidIncomePerHour: 0
                 },
@@ -433,7 +433,7 @@ export default {
                     cost: 19175106,
                     gains: 1534008,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: TrinketGem,
                     raidIncomePerHour: 0
                 },
@@ -444,7 +444,7 @@ export default {
                     cost: 28762659,
                     gains: 2301013,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Trinket2Gem,
                     raidIncomePerHour: 0
                 },
@@ -455,7 +455,7 @@ export default {
                     cost: 43143988,
                     gains: 3451519,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: MeleeWeaponEnchant,
                     raidIncomePerHour: 0
                 },
@@ -466,7 +466,7 @@ export default {
                     cost: 64715982,
                     gains: 5177279,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RangedWeaponEnchant,
                     raidIncomePerHour: 0
                 },
@@ -477,7 +477,7 @@ export default {
                     cost: 97073974,
                     gains: 7765918,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: OffHandEnchant,
                     raidIncomePerHour: 0
                 },
@@ -488,7 +488,7 @@ export default {
                     cost: 145610961,
                     gains: 11648877,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ChestEnchant,
                     raidIncomePerHour: 0
                 },
@@ -499,7 +499,7 @@ export default {
                     cost: 218416441,
                     gains: 17473315,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: PantsEnchant,
                     raidIncomePerHour: 0
                 },
@@ -510,7 +510,7 @@ export default {
                     cost: 327624661,
                     gains: 26209973,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: GlovesEnchant,
                     raidIncomePerHour: 0
                 },
@@ -521,7 +521,7 @@ export default {
                     cost: 491436992,
                     gains: 39314959,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: FeetEnchant,
                     raidIncomePerHour: 0
                 },
@@ -532,7 +532,7 @@ export default {
                     cost: 737155488,
                     gains: 58972439,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BeltEnchant,
                     raidIncomePerHour: 0
                 },
@@ -543,7 +543,7 @@ export default {
                     cost: 1105733232,
                     gains: 88458659,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BracersEnchant,
                     raidIncomePerHour: 0
                 },
@@ -554,7 +554,7 @@ export default {
                     cost: 1658599848,
                     gains: 132687988,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ShoulderEnchant,
                     raidIncomePerHour: 0
                 },
@@ -565,7 +565,7 @@ export default {
                     cost: 2487899772,
                     gains: 199031982,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: CloakEnchant,
                     raidIncomePerHour: 0
                 },
@@ -576,7 +576,7 @@ export default {
                     cost: 3731849658,
                     gains: 298547973,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: NecklessEnchant,
                     raidIncomePerHour: 0
                 },
@@ -587,7 +587,7 @@ export default {
                     cost: 5597774487,
                     gains: 447821959,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RingEnchant,
                     raidIncomePerHour: 0
                 },
@@ -598,7 +598,7 @@ export default {
                     cost: 8396661731,
                     gains: 671732938,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Ring2Enchant,
                     raidIncomePerHour: 0
                 },
@@ -609,7 +609,7 @@ export default {
                     cost: 12594992597,
                     gains: 1007599408,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: TrinketEnchant,
                     raidIncomePerHour: 0
                 },
@@ -620,7 +620,7 @@ export default {
                     cost: 18892488895,
                     gains: 1511399112,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: Trinket2Enchant,
                     raidIncomePerHour: 0
                 },
@@ -631,7 +631,7 @@ export default {
                     cost: 28338733343,
                     gains: 2267098667,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: MeleeWeaponRune,
                     raidIncomePerHour: 0
                 },
@@ -642,7 +642,7 @@ export default {
                     cost: 42508100014,
                     gains: 3400648001,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: RangedWeaponRune,
                     raidIncomePerHour: 0
                 },
@@ -653,7 +653,7 @@ export default {
                     cost: 63762150021,
                     gains: 5100972002,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: OffHandRune,
                     raidIncomePerHour: 0
                 },
@@ -664,7 +664,7 @@ export default {
                     cost: 95643225032,
                     gains: 7651458003,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ChestRune,
                     raidIncomePerHour: 0
                 },
@@ -675,7 +675,7 @@ export default {
                     cost: 143464837548,
                     gains: 11477187004,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: PantsRune,
                     raidIncomePerHour: 0
                 },
@@ -686,7 +686,7 @@ export default {
                     cost: 215197256322,
                     gains: 17215780506,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: GlovesRune,
                     raidIncomePerHour: 0
                 },
@@ -697,7 +697,7 @@ export default {
                     cost: 322795884483,
                     gains: 25823670759,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: FeetRune,
                     raidIncomePerHour: 0
                 },
@@ -708,7 +708,7 @@ export default {
                     cost: 484193826725,
                     gains: 38735506138,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BeltRune,
                     raidIncomePerHour: 0
                 },
@@ -719,7 +719,7 @@ export default {
                     cost: 726290740088,
                     gains: 58103259207,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: BracersRune,
                     raidIncomePerHour: 0
                 },
@@ -730,7 +730,7 @@ export default {
                     cost: 1089436110131,
                     gains: 87154888811,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.2,
                     imageUrl: ShoulderRune,
                     raidIncomePerHour: 0
                 }
