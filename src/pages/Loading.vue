@@ -47,11 +47,6 @@ export default {
 
 @import url("https://fonts.googleapis.com/css?family=Rosarivo:400");
 
-:root {
-    --black: #000000;
-    --font-family-rosarivo: "Rosarivo", Helvetica;
-}
-
 .loading {
     background-color: #191919;
     cursor: pointer;
@@ -63,9 +58,9 @@ export default {
 }
 
 .loading .rectangle-3-D9VNiZ {
-    background-color: var(--black);
+    background-color: #000000;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #000000;
     height: 932px;
     left: 0px;
     position: absolute;
@@ -86,7 +81,7 @@ export default {
 .loading .noctian-war-for-the-throne-D9VNiZ {
     background-color: transparent;
     color: #ffffff;
-    font-family: var(--font-family-rosarivo);
+    font-family: "Rosarivo", Helvetica;
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 400;
@@ -110,10 +105,10 @@ export default {
 }
 
 .loading .title-D9VNiZ {
-    -webkit-text-stroke: 1px var(--black);
+    -webkit-text-stroke: 1px #000000;
     background-color: transparent;
     color: #ffffff;
-    font-family: var(--font-family-rosarivo);
+    font-family: "Rosarivo", Helvetica;
     font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 400;

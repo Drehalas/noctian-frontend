@@ -59,7 +59,7 @@
 }
 
 .orc-attack .rectangle-3-Z6GGxj {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 19.499999284744263%, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(209, 0, 28) 100%);
     background-color: transparent;
     height: 396px;
     left: 0px;
@@ -69,7 +69,7 @@
 }
 
 .orc-attack .rectangle-1-Z6GGxj {
-    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0%, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+    background: linear-gradient(180deg, rgb(42, 63, 41) 0%, rgb(192, 177, 4) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
     height: 665px;
@@ -156,7 +156,7 @@
 }
 
 .orc-attack .frame-3-Z6GGxj {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0600000032782555) 0%, rgba(77.51269429922104, 72.89019674062729, 72.89019674062729, 0.20000000298023224) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(77, 72, 72, 0.2) 100%);
     background-color: transparent;
     border-radius: 10.58px;
     height: 40px;
@@ -184,12 +184,12 @@
     font-style: normal;
     font-weight: 500;
     height: auto;
-    left: 51px;
+    left: 45px;
     letter-spacing: -0.14px;
     line-height: 7.7px;
     position: absolute;
     text-align: left;
-    top: 4px;
+    top: 7px;
     white-space: nowrap;
     width: auto;
 }
@@ -315,12 +315,14 @@
 }
 
 .orc-attack .group-12-Z6GGxj {
-    background-color: transparent;
-    height: 34px;
+    height: 40px;
     left: 30px;
     position: absolute;
-    top: 199px;
+    top: 195px;
     width: 143px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(77, 72, 72, 0.2) 100%);
+    background-color: transparent;
+    border-radius: 10.58px;
 }
 
 .orc-attack .rectangle-4-8WDrgx {
@@ -328,20 +330,20 @@
     border: 0.5px solid;
     border-color: #555555bf;
     border-radius: 30px;
-    height: 19px;
-    left: 0px;
+    height: 15px;
+    left: 5px;
     position: absolute;
-    top: 15px;
-    width: 139px;
+    top: 20px;
+    width: 130px;
 }
 
 .orc-attack .rectangle-5-8WDrgx {
     background-color: #c0b104;
     border-radius: 30px;
-    height: 18px;
-    left: 1px;
+    height: 15px;
+    left: 6px;
     position: absolute;
-    top: 16px;
+    top: 21px;
     width: 19px;
 }
 
@@ -351,9 +353,9 @@
     display: flex;
     gap: 3px;
     height: 17px;
-    left: 2px;
+    left: 5px;
     position: absolute;
-    top: 0px;
+    top: 3px;
     width: 7px;
 }
 
@@ -384,7 +386,7 @@
     line-height: 9.9px;
     position: absolute;
     text-align: left;
-    top: 4px;
+    top: 5px;
     width: 44px;
 }
 
@@ -407,7 +409,7 @@
     justify-content: space-between;
     left: 28px;
     position: absolute;
-    top: 777px;
+    bottom: 115px;
     width: 370px;
 }
 
@@ -446,19 +448,18 @@
 
 .orc-attack .bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV {
     background-color: transparent;
-    height: 52px;
+    height: 55px;
     left: 4px;
     object-fit: cover;
     position: absolute;
     top: -9px;
-    width: 20px;
 }
 
 .orc-attack .x6500-6500-8oF7wV {
     background-color: transparent;
     color: var(--white);
     font-family: var(--font-family-roboto);
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     height: auto;
@@ -467,7 +468,7 @@
     line-height: 15.4px;
     position: absolute;
     text-align: left;
-    top: 11px;
+    top: 15px;
     white-space: nowrap;
     width: auto;
 }
@@ -504,7 +505,7 @@
     background-color: transparent;
     color: var(--white);
     font-family: var(--font-family-roboto);
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     height: auto;
@@ -513,19 +514,19 @@
     line-height: 15.4px;
     position: absolute;
     text-align: left;
-    top: 11px;
+    top: 15px;
     white-space: nowrap;
     width: auto;
 }
 
 .orc-attack .x83c250f6-14c4-4c9e-a6a8-5c1542948173-1-HU5t6E {
     background-color: transparent;
-    height: 37px;
+    height: 40px;
     left: 0px;
     object-fit: cover;
     position: absolute;
     top: 0px;
-    width: 41px;
+    width: 40px;
 }
 
 .orc-attack .frame-35-Z6GGxj {
@@ -566,7 +567,7 @@
 }
 
 .orc-attack .select-kingdom-zJN8sm {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0600000032782555) 0%, rgba(77.51269429922104, 72.89019674062729, 72.89019674062729, 0.20000000298023224) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(77, 72, 72, 0.2) 100%);
     border-radius: 10.58px;
     height: 35px;
     left: 13px;

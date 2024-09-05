@@ -27,11 +27,11 @@
     overflow: hidden;
     position: relative;
     top: 0;
-    width: 430px
+    width: 100vw
 }
 
 .orc-add-friend .rectangle-3-YWnndF {
-    background: linear-gradient(180deg, #000 0, rgb(209.00000274181366, 0, 28.000000230968) 100%);
+    background: linear-gradient(180deg, #000 0, rgb(209, 0, 28) 100%);
     background-color: transparent;
     height: 296px;
     left: 0;
@@ -41,7 +41,7 @@
 }
 
 .orc-add-friend .rectangle-1-YWnndF {
-    background: linear-gradient(180deg, rgb(42.000001296401024, 63.000000044703484, 41.00000135600567) 0, rgb(192.00000375509262, 177.0000046491623, 4.000000236555934) 100%);
+    background: linear-gradient(180deg, rgb(42, 63, 41) 0, rgb(192, 177, 4) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0 0;
     height: 867px;
@@ -89,7 +89,6 @@
     background-color: transparent;
     display: inline-flex;
     flex-direction: column;
-    gap: 10px;
     position: absolute;
     top: 7px
 }
@@ -409,7 +408,11 @@
     position: relative;
     text-align: left;
     white-space: nowrap;
-    width: fit-content
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .orc-add-friend .rectangle-11 {

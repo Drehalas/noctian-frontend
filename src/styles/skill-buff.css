@@ -83,7 +83,7 @@
 }
 
 .orc-skill-u38-buff .rectangle-3-YDVDeA {
-    background: linear-gradient(180deg, rgb(204.4928365945816, 205.06250202655792, 187.97395259141922) 0%, rgb(243.00000071525574, 210.00000268220901, 19.0000007674098) 100%);
+    background: linear-gradient(180deg, rgb(204, 205, 187) 0%, rgb(243, 210, 19) 100%);
     background-color: transparent;
     height: 296px;
     left: 0px;
@@ -112,7 +112,7 @@
 }
 
 .orc-skill-u38-buff .rectangle-1-YDVDeA {
-    background: linear-gradient(180deg, rgb(139.18750405311584, 124.92078199982643, 44.07604269683361) 0%, rgb(200.81250607967377, 196.32216542959213, 189.09843385219574) 100%);
+    background: linear-gradient(180deg, rgb(139, 124, 44) 0%, rgb(200, 196, 189) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
     height: 1037px;
@@ -337,7 +337,7 @@
     justify-content: center;
     left: 0px;
     overflow: hidden;
-    padding: 17px 12px;
+    padding: 17px 0px;
     position: absolute;
     top: 350px;
     width: 428px;
@@ -1169,7 +1169,7 @@
     justify-content: center;
     left: 0px;
     overflow: hidden;
-    padding: 17px 12px;
+    padding: 17px 0px;
     position: absolute;
     width: 221px;
 }

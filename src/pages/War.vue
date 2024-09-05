@@ -18,6 +18,10 @@
                 <img class="war-banner-gfXRIF" src="@/assets/Global/War/war banner.png" alt="war banner">
                 <div class="group-27-gfXRIF">
                     <div class="level-120-JSjuIa" style="font-size: 24px;">THRONE</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2" viewBox="0 0 180 2" fill="none"
+                        style="position: relative;top:15px">
+                        <path d="M0 0.929443H180" stroke="white" stroke-width="0.3" />
+                    </svg>
                 </div>
                 <div class="group-16-gfXRIF">
                     <div class="rectangle-10-sMV5yX rectangle-10"></div>
@@ -199,7 +203,7 @@
                     <div class="rectangle-10-OxckLq rectangle-10"></div>
                     <div class="frame-16-OxckLq frame-16">
                         <div class="frame-19-tkD6WF frame-19">
-                            <h1 class="title-JWTY9q" style="font-size: 30px;">NEXT BATTLE:</h1>
+                            <h1 class="title-JWTY9q" style="font-size: 25px;">NEXT BATTLE:</h1>
                             <div class="x15958-JWTY9q" style="font-size: 30px;">
                                 {{ formatTime(hours) }}:{{ formatTime(minutes) }}:{{ formatTime(seconds) }}
                             </div>

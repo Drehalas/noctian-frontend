@@ -26,15 +26,31 @@
                 </div>
                 <div class="group-28-YDVDeA">
                     <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">Skills</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
+                        style="top: 20px;position: relative;">
+                        <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    </svg>
                 </div>
                 <div class="group-29-YDVDeA">
                     <div class="potion-vBOoVd roboto-normal-white-20px" style="font-size: 20px !important;">Potion</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
+                        style="top: 20px;position: relative;">
+                        <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    </svg>
                 </div>
                 <div class="group-30-YDVDeA">
                     <div class="items-dn1v0N roboto-normal-white-20px" style="font-size: 20px !important;">Items</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
+                        style="top: 20px;position: relative;">
+                        <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    </svg>
                 </div>
                 <div class="group-31-YDVDeA">
                     <div class="spells-dzXnyo roboto-normal-white-20px" style="font-size: 20px !important;">Spells</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
+                        style="top: 20px;position: relative;">
+                        <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    </svg>
                 </div>
                 <div class="skills-selection-YDVDeA">
                     <div class="property-61-BxVpmb property-61">
@@ -43,6 +59,11 @@
                             <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
                                     <div class="group-9-KkCCdX group-9">
                                         <img class="gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                                     </div>
@@ -61,241 +82,291 @@
                                 </div>
                             </div>
                             <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Multi Attack.png" alt="Multi Attack">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="property-62">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-l9ySLI frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-d2C3ms group-9">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
                                         <img class="gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                                     </div>
                                     <div class="x15692-k roboto-semi-bold-white-11px">156.92K</div>
                                 </div>
                             </div>
-                            <div class="frame-21-l9ySLI frame-21">
-                                <div class="mana-pool-5f0YPD roboto-normal-white-9px">Mana Pool</div>
-                                <div class="frame-20-5f0YPD frame-20">
-                                    <div class="mana-pool-aWofHq roboto-medium-white-7px">Mana pool
-                                    </div>
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Mana Pool
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Mana Pool</div>
                                     <div class="frame-19">
-                                        <div class="x1000-ESpO8c roboto-semi-bold-white-8-2px">1000
-                                        </div>
+                                        <div class="x1 roboto-semi-bold-white-8-2px">1000</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="mana-pool-l9ySLI" src="@/assets/Buff/Mana Pool.png" alt="Mana Pool">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Mana Pool.png" alt="Mana Pool">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="property-63">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-nc24b5 frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-fwDb4l group-9">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
                                         <img class="gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                                     </div>
                                     <div class="x15692-k roboto-semi-bold-white-11px">156.92K</div>
                                 </div>
                             </div>
-                            <div class="frame-21-nc24b5 frame-21">
-                                <div class="attack-crit-chance-YdlezQ roboto-normal-white-9px">Attack
-                                    Crit Chance</div>
-                                <div class="frame-20-YdlezQ frame-20">
-                                    <div class="critical-attack-chance-0DUnRz roboto-medium-white-7px">Critical Attack
-                                        chance</div>
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Attack Crit Chance
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Critical Attack Chance</div>
                                     <div class="frame-19">
-                                        <div class="group-9-g0d2Wb group-9">
-                                            <div class="x roboto-semi-bold-white-8-2px">%</div>
-                                        </div>
-                                        <div class="x1 roboto-semi-bold-white-8-2px">1</div>
+                                        <div class="x1 roboto-semi-bold-white-8-2px">% 1</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="attack-crit-chance-nc24b5" src="@/assets/Buff/Attack Crit Chance.png"
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Attack Crit Chance.png"
                                 alt="Attack Crit Chance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="property-64-BxVpmb">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-RZnRRv frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-qopkHa group-9">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
                                         <img class="gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                                     </div>
                                     <div class="x15692-k roboto-semi-bold-white-11px">156.92K</div>
                                 </div>
                             </div>
-                            <div class="frame-21-RZnRRv frame-21">
-                                <div class="attack-crit-income-BBSX7I roboto-normal-white-9px">Attack
-                                    Crit Income</div>
-                                <div class="frame-20-BBSX7I frame-20">
-                                    <div class="critical-income-hyHpqT roboto-medium-white-7px">
-                                        Critical income</div>
-                                    <div class="frame-20-hyHpqT frame-20">
-                                        <div class="group-9-48uWzt group-9">
-                                            <div class="x roboto-semi-bold-white-8-2px">%</div>
-                                        </div>
-                                        <div class="x10-48uWzt roboto-semi-bold-white-8-2px">10</div>
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Attack Crit Income
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Critical Income</div>
+                                    <div class="frame-19">
+                                        <div class="x1 roboto-semi-bold-white-8-2px">% 10</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="attack-crit-income-RZnRRv" src="@/assets/Buff/Attack Crit Income.png"
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Attack Crit Income.png"
                                 alt="Attack Crit Income">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="potion-selection-YDVDeA potion-selection">
-                    <div class="property-61">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-dewx1N frame-22">
-                                <div class="x66-2IN8lX roboto-semi-bold-white-9px">6/6</div>
-                                <div class="frame-4-2IN8lX frame-4">
-                                    <div class="group-9-mbO1tk group-9">
-                                        <div class="cooldown-d3xIT9">Cooldown:</div>
-                                    </div>
-                                    <div class="x0000-mbO1tk">00:00</div>
+                            <div class="frame-22-K1R0Nx frame-22">
+                                <div class="lvl-0 roboto-semi-bold-white-9px">6 / 6</div>
+                                <div class="frame-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="x15692-k roboto-semi-bold-white-11px">Cooldown: 00:00</div>
                                 </div>
                             </div>
-                            <div class="frame-21-dewx1N frame-21">
-                                <div class="mana-potion-V4dAVI roboto-normal-white-9px">Mana Potion
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px" style="top:15px">
+                                    Mana Potion
                                 </div>
                             </div>
-                            <img class="mana-potion-dewx1N" src="@/assets/Buff/Mana Potion.png" alt="Mana Potion">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Mana Potion.png" alt="Mana Potion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="item-select-YDVDeA">
-                    <div class="property-61">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-xmVaUj frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-1UFSxM group-9">
-                                        <img class="ton-logo-7bkR2D ton-logo" src="@/assets/Buff/Ton Logo.png"
-                                            alt="Ton Logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
+                                        <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                                     </div>
-                                    <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
+                                    <div class="x15692-k roboto-semi-bold-white-11px">0.7 TON</div>
                                 </div>
                             </div>
-                            <div class="frame-21-xmVaUj frame-21">
-                                <div class="magic-gods-blood-potion-voRCmz roboto-normal-white-9px">
-                                    Magic God's Blood Potion</div>
-                                <div class="frame-20-voRCmz frame-20">
-                                    <div class="regeneration-per-second-qnh5CI roboto-medium-white-7px">Regeneration per
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Magic God's Blood Potion
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Regeneration per
                                         second</div>
                                     <div class="frame-19">
-                                        <div class="group-9-n45F82 group-9">
-                                            <div class="x3-Nrk5iz roboto-semi-bold-white-8-2px">3
-                                            </div>
-                                        </div>
-                                        <div class="per-sec-n45F82 roboto-semi-bold-white-8-2px">per
-                                            sec</div>
+                                        <div class="x1 roboto-semi-bold-white-8-2px">3 per second</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="magic-gods-blood-potion-xmVaUj" src="@/assets/Buff/Magic Gods Blood Potion.png"
-                                alt="Magic God's Blood Potion">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Magic Gods Blood Potion.png"
+                                alt="Magic Gods Blood Potion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="property-62">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-HcW4em frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-F7TEgM group-9">
-                                        <img class="ton-logo-aFAtaM ton-logo" src="@/assets/Buff/Ton Logo.png"
-                                            alt="Ton Logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
+                                        <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                                     </div>
-                                    <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
+                                    <div class="x15692-k roboto-semi-bold-white-11px">0.7 TON</div>
                                 </div>
                             </div>
-                            <div class="frame-21-HcW4em frame-21">
-                                <div class="heros-pocket-portal-NFHpLF roboto-normal-white-9px">
-                                    Hero's Pocket Portal</div>
-                                <div class="frame-20-NFHpLF frame-20">
-                                    <div class="attack-income-bonus-e9uxlO roboto-medium-white-7px">
-                                        Attack income bonus</div>
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Hero's Pocket Portal
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Attack income bonus</div>
                                     <div class="frame-19">
-                                        <div class="group-9-VT6DGZ group-9">
-                                            <div class="x roboto-semi-bold-white-8-2px">%</div>
-                                        </div>
-                                        <div class="x0 roboto-semi-bold-white-8-2px">0</div>
+                                        <div class="x1 roboto-semi-bold-white-8-2px">%0</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="heros-pocket-portal-HcW4em" src="@/assets/Buff/Heros Pocket Portal.png"
-                                alt="Hero's Pocket Portal">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Heros Pocket Portal.png"
+                                alt="Heros Pocket Portal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="property-63">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-nZOoxG frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
                                 <div class="lvl-0 roboto-semi-bold-white-9px">lvl 0</div>
                                 <div class="frame-4">
-                                    <div class="group-9-i5dQaE group-9">
-                                        <img class="ton-logo-x0jrzx ton-logo" src="@/assets/Buff/Ton Logo.png"
-                                            alt="Ton Logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
+                                        <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                                     </div>
-                                    <div class="x07-ton roboto-semi-bold-white-11px">0,7 TON</div>
+                                    <div class="x15692-k roboto-semi-bold-white-11px">0.7 TON</div>
                                 </div>
                             </div>
-                            <div class="frame-21-nZOoxG frame-21">
-                                <div class="armys-raid-portal-lFWxfe roboto-normal-white-9px">
-                                    Army's Raid Portal</div>
-                                <div class="frame-20-lFWxfe frame-20">
-                                    <div class="raid-income-bonus-5WW5bv roboto-medium-white-7px">
-                                        Raid income bonus</div>
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    Army's Raid Portal
+                                </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Raid income bonus</div>
                                     <div class="frame-19">
-                                        <div class="group-9-E9MITb group-9">
-                                            <div class="x roboto-semi-bold-white-8-2px">%</div>
-                                        </div>
-                                        <div class="x0 roboto-semi-bold-white-8-2px">0</div>
+                                        <div class="x1 roboto-semi-bold-white-8-2px">%0</div>
                                     </div>
                                 </div>
                             </div>
-                            <img class="armys-raid-portal-nZOoxG" src="@/assets/Buff/Armys Raid Portal.png"
-                                alt="Army's Raid Portal">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Armys Raid Portal.png"
+                                alt="Armys Raid Portal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="potion-selection-3oCFl8 potion-selection">
-                    <div class="property-61">
+                    <div class="property-61-BxVpmb property-61">
                         <div class="group-18">
                             <div class="rectangle-11"></div>
-                            <div class="frame-22-gNiOCb frame-22">
+                            <div class="frame-22-K1R0Nx frame-22">
+                                <div class="lvl-0 roboto-semi-bold-white-9px"></div>
                                 <div class="frame-4">
-                                    <div class="group-9-scBzmM group-9">
-                                        <img class="ton-logo-sPT6w0 ton-logo" src="@/assets/Buff/Ton Logo.png"
-                                            alt="Ton Logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
+                                        fill="none">
+                                        <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                            stroke-opacity="0.2" stroke-width="0.3" />
+                                    </svg>
+                                    <div class="group-9-KkCCdX group-9">
+                                        <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                                     </div>
-                                    <div class="x10-ton-scBzmM roboto-semi-bold-white-11px">
-                                        10 TON
-                                    </div>
+                                    <div class="x15692-k roboto-semi-bold-white-11px">10 TON</div>
                                 </div>
                             </div>
-                            <div class="frame-21-gNiOCb frame-21">
-                                <div class="the-ancients-transformation-ritual-t1fUY3 roboto-normal-white-9px">
-                                    The Ancient's Transformation<br>Ritual
+                            <div class="frame-21-K1R0Nx frame-21">
+                                <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                    The Ancient's <br>Transformation Ritual
                                 </div>
-                                <div class="frame-20-t1fUY3 frame-20">
-                                    <div class="faction-chance-s4ImQl roboto-medium-white-7px">
-                                        Faction Chance
-                                    </div>
+                                <div class="frame-20-6ErPOi frame-20">
+                                    <div class="attack-6ZfXec roboto-medium-white-7px">Faction Chance</div>
                                 </div>
                             </div>
-                            <img class="the-ancients-transformation-ritual-gNiOCb"
-                                src="@/assets/Buff/The Ancients Transformation Ritual.png"
-                                alt="The Ancient's Transformation Ritual">
+                            <img class="multi-attack-K1R0Nx" src="@/assets/Buff/The Ancients Transformation Ritual.png"
+                                alt="The Ancients Transformation Ritual">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
+                                fill="none" style="position: relative;top: 55px;">
+                                <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
+                            </svg>
                         </div>
                     </div>
                 </div>
