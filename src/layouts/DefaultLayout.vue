@@ -19,7 +19,7 @@ export default {
 
       setTimeout(() => {
         this.$router.push({ name: 'FactionSelection' }); // Navigate to the Faction Selection page
-      }, 2000); // Wait 2 seconds before moving to Faction Selection
+      }, 41000); // Wait 2 seconds before moving to Faction Selection
     }, 2000); // Wait 2 seconds before moving to Intro
   },
 };
