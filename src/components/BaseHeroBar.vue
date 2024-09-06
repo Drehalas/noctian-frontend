@@ -69,8 +69,6 @@ export default {
     navigateTo(section) {
       switch (section) {
         case 'Hero':
-          console.log(1);
-          
           this.$router.push({ name: 'Base' });
           break;
         case 'Soldier':

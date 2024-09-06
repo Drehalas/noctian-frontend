@@ -30,6 +30,20 @@ import SpiritLodge from '@/assets/Orc images/Orc Armory/spirit lodge.png';
 import Bestiary from '@/assets/Orc images/Orc Armory/bestiary.png';
 import GreatHall from '@/assets/Orc images/Orc Armory/great hall.png';
 import SerratedBlades from '@/assets/Orc images/Orc Armory/Serrated Blades.png';
+import PoisonedTips from '@/assets/Orc images/Orc Armory/Poisoned Tips.png';
+import FlamingMunitions from '@/assets/Orc images/Orc Armory/Flaming Munitions.png';
+import RuneInscribedWeapons from '@/assets/Orc images/Orc Armory/Rune-Inscribed Weapons.png';
+import BerserkerAxes from '@/assets/Orc images/Orc Armory/Berserker Axes.png';
+import SpikedArmor from '@/assets/Orc images/Orc Armory/Spiked Armor.png';
+import TrollhideArmor from '@/assets/Orc images/Orc Armory/Trollhide Armor.png';
+import BlackIronPlate from '@/assets/Orc images/Orc Armory/Black Iron Plate.png';
+import WarlordRegalia from '@/assets/Orc images/Orc Armory/Warlord Regalia.png';
+import ShamanGarb from '@/assets/Orc images/Orc Armory/Shaman Garb.png';
+import ThrowingAxes from '@/assets/Orc images/Orc Armory/Throwing Axes.png';
+import GrapplingHooks from '@/assets/Orc images/Orc Armory/Grappling Hooks.png';
+import WarBanners from '@/assets/Orc images/Orc Armory/War Banners.png';
+import TotemofProtection from '@/assets/Orc images/Orc Armory/Totem of Protection.png';
+import DrumsofRage from '@/assets/Orc images/Orc Armory/Drums of Rage.png';
 
 export default {
     name: 'Armory',
@@ -47,67 +61,221 @@ export default {
                 {
                     id: "1",
                     name: "Warcamp",
-                    description: "A fortified camp that increases raid income.",
-                    cost: 156920,
-                    gains: 0,
-                    level: 1,
-                    costMultiplier: 1.5,
+                    description: "For basic infantry units and increases training quality.",
+                    cost: 5767,
+                    gains: 450,
+                    level: 0,
+                    costMultiplier: 1.8,
                     imageUrl: Warcamp,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "2",
                     name: "Forge",
-                    description: "A place to craft powerful weapons and armor.",
-                    cost: 156.920,
-                    gains: 0,
+                    description: "For weapon and armor upgrades, improves blacksmithing efficiency.",
+                    cost: 7497,
+                    gains: 585,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.8,
                     imageUrl: Forge,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "3",
                     name: "Spirit Lodge",
-                    description: "A mystical lodge that enhances magical abilities.",
-                    cost: 1569.20,
-                    gains: 0,
+                    description: "For shaman units and upgrades, enhances spiritual power.",
+                    cost: 9746,
+                    gains: 761,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.8,
                     imageUrl: SpiritLodge,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "4",
                     name: "Bestiary",
-                    description: "A place to train and enhance beasts for battle.",
-                    cost: 1569.20,
-                    gains: 0,
+                    description: "For beast units and upgrades, improves taming and training.",
+                    cost: 12670,
+                    gains: 989,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.8,
                     imageUrl: Bestiary,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "5",
                     name: "Great Hall",
-                    description: "The center of the orc's power, enhancing leadership.",
-                    cost: 156920,
-                    gains: 0,
+                    description: "For advanced units and upgrades, increases overall faction strength.",
+                    cost: 16471,
+                    gains: 1285,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.8,
                     imageUrl: GreatHall,
                     raidIncomePerHour: 0
                 },
                 {
                     id: "6",
                     name: "Serrated Blades",
-                    description: "Enhances melee weapons with serrated edges, increasing damage.",
-                    cost: 156920,
-                    gains: 0,
+                    description: "Increases the damage of axes and swords.",
+                    cost: 21412,
+                    gains: 1671,
                     level: 0,
-                    costMultiplier: 1.5,
+                    costMultiplier: 1.8,
                     imageUrl: SerratedBlades,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "7",
+                    name: "Poisoned Tips",
+                    description: "Adds poison damage to arrows and spears.",
+                    cost: 27836,
+                    gains: 2172,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: PoisonedTips,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "8",
+                    name: "Flaming Munitions",
+                    description: "Sets arrows and siege weapons ablaze, causing fire damage.",
+                    cost: 36187,
+                    gains: 2824,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: FlamingMunitions,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "9",
+                    name: "Rune-Inscribed Weapons",
+                    description: "Enchants weapons with runes, granting additional effects.",
+                    cost: 47043,
+                    gains: 3671,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: RuneInscribedWeapons,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "10",
+                    name: "Berserker Axes",
+                    description: "Massive axes that deal devastating blows but slow down the wielder.",
+                    cost: 61156,
+                    gains: 4772,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: BerserkerAxes,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "11",
+                    name: "Spiked Armor",
+                    description: "Adds spikes to armor, inflicting damage on attackers.",
+                    cost: 79503,
+                    gains: 6204,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: SpikedArmor,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "12",
+                    name: "Trollhide Armor",
+                    description: "Tough leather armor that increases health regeneration.",
+                    cost: 103354,
+                    gains: 8065,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: TrollhideArmor,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "13",
+                    name: "Black Iron Plate",
+                    description: " Heavy plate armor that provides excellent protection.",
+                    cost: 134360,
+                    gains: 10484,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: BlackIronPlate,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "14",
+                    name: "Warlord's Regalia",
+                    description: "Unique armor set for the Warlord, granting bonuses to all stats.",
+                    cost: 174668,
+                    gains: 13629,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: WarlordRegalia,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "15",
+                    name: "Shaman's Garb",
+                    description: "Enhances the shaman's magic and spiritual power.",
+                    cost: 227068,
+                    gains: 17718,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: ShamanGarb,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "16",
+                    name: "Throwing Axes",
+                    description: "Allows Orcs to throw axes at enemies from a distance.",
+                    cost: 295189,
+                    gains: 23034,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: ThrowingAxes,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "17",
+                    name: "Grappling Hooks",
+                    description: "Enables Orcs to scale walls and climb obstacles.",
+                    cost: 383746,
+                    gains: 29944,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: GrapplingHooks,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "18",
+                    name: "War Banners",
+                    description: "Boosts the morale and combat effectiveness of nearby units.",
+                    cost: 498869,
+                    gains: 38927,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: WarBanners,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "19",
+                    name: "Totem of Protection",
+                    description: "Provides a protective aura that reduces incoming damage.",
+                    cost: 648530,
+                    gains: 50605,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: TotemofProtection,
+                    raidIncomePerHour: 0
+                },
+                {
+                    id: "20",
+                    name: "Drums of Rage",
+                    description: "Increases attack speed and movement speed of nearby units.",
+                    cost: 843089,
+                    gains: 65786,
+                    level: 0,
+                    costMultiplier: 1.8,
+                    imageUrl: DrumsofRage,
                     raidIncomePerHour: 0
                 }
             ],

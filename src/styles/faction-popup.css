@@ -1,78 +1,76 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-
     --font-size-l: 16px;
     --font-size-m: 12px;
     --font-size-s: 11px;
     --font-size-xl: 24px;
     --font-size-xs: 7px;
-
-    --font-family-roboto: "Roboto", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica
 }
 
 .orc-melee-weapon {
     background-color: transparent;
-    height: 932px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 430px;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 430px
 }
 
 .orc-melee-weapon .group-31-Jxx3Jc {
     background-color: transparent;
     height: 932px;
-    left: 0px;
+    left: 0;
     position: relative;
-    top: 0px;
-    width: 430px;
+    top: 0;
+    width: 430px
 }
 
 .orc-melee-weapon .rectangle-3-Op5bx8 {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(209, 0, 28) 100%);
+    background: linear-gradient(180deg, #000 0, #d1001c 100%);
     background-color: transparent;
     height: 609px;
-    left: 0px;
-    opacity: 0.3;
+    left: 0;
+    opacity: .3;
     position: absolute;
-    top: 0px;
-    width: 428px;
+    top: 0;
+    width: 428px
 }
 
 .orc-melee-weapon .group-28-Op5bx8 {
     background-color: transparent;
     height: 440px;
-    left: 0px;
+    left: 0;
     position: absolute;
     top: 492px;
-    width: 428px;
+    width: 428px
 }
 
 .orc-melee-weapon .rectangle-2-IxqKwS {
     background-color: #d1001c;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 50px 50px 0 0;
     height: 419px;
-    left: 0px;
+    left: 0;
     position: absolute;
-    top: 0px;
-    width: 428px;
+    top: 0;
+    width: 428px
 }
 
 .orc-melee-weapon .rectangle-11-IxqKwS {
     background-color: var(--black);
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 50px 50px 0 0;
     height: 439px;
-    left: 0px;
+    left: 0;
     position: absolute;
     top: 1px;
-    width: 428px;
+    width: 428px
 }
 
 .orc-melee-weapon .buy-button-IxqKwS {
     align-items: center;
     background-color: #13460e;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
     display: flex;
     gap: 10px;
     height: 61px;
@@ -82,7 +80,7 @@
     position: absolute;
     top: 347px;
     width: 368px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .orc-melee-weapon .buy-DuEsqg {
@@ -92,12 +90,12 @@
     font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 600;
-    letter-spacing: -0.32px;
+    letter-spacing: -.32px;
     line-height: 17.6px;
     position: relative;
     text-align: left;
     white-space: nowrap;
-    width: fit-content;
+    width: fit-content
 }
 
 .orc-melee-weapon .a-well-balanced-weap-Op5bx8 {
@@ -108,13 +106,13 @@
     font-style: normal;
     font-weight: 400;
     height: auto;
-    letter-spacing: -0.24px;
+    letter-spacing: -.24px;
     line-height: 13.2px;
     position: absolute;
     text-align: left;
     top: 697px;
     white-space: nowrap;
-    width: auto;
+    width: auto
 }
 
 .orc-melee-weapon .melee-weapon-Op5bx8 {
@@ -123,7 +121,7 @@
     left: 177px;
     position: absolute;
     top: 563px;
-    width: 75px;
+    width: 75px
 }
 
 .orc-melee-weapon .frame-19-Op5bx8 {
@@ -135,18 +133,18 @@
     position: absolute;
     top: 787px;
     width: 100%;
-    justify-content: center;
+    justify-content: center
 }
 
 .orc-melee-weapon .group-9-WQV2wA {
     height: 30px;
-    margin-bottom: -1.00px;
-    width: 30px;
+    margin-bottom: -1px;
+    width: 30px
 }
 
 .orc-melee-weapon .gold-xS7xA3 {
     height: 30px;
-    width: 30px;
+    width: 30px
 }
 
 .orc-melee-weapon .title-WQV2wA {
@@ -157,14 +155,14 @@
     font-style: normal;
     font-weight: 700;
     height: 22.66552734375px;
-    letter-spacing: -0.48px;
+    letter-spacing: -.48px;
     line-height: 26.4px;
-    margin-right: -9.40px;
-    margin-top: -1.00px;
+    margin-right: -9.4px;
+    margin-top: -1px;
     position: relative;
     text-align: left;
     white-space: nowrap;
-    width: auto;
+    width: auto
 }
 
 .orc-melee-weapon .frame-25-Op5bx8 {
@@ -175,7 +173,7 @@
     gap: 54px;
     left: 59px;
     position: absolute;
-    top: 652px;
+    top: 652px
 }
 
 .orc-melee-weapon .melee-weapon-AYXywa {
@@ -186,12 +184,12 @@
     font-style: normal;
     font-weight: 700;
     height: 32px;
-    letter-spacing: -0.48px;
+    letter-spacing: -.48px;
     line-height: 26.4px;
-    margin-top: -1.00px;
+    margin-top: -1px;
     position: relative;
     text-align: center;
-    width: 310.2237548828125px;
+    width: 310.2237548828125px
 }
 
 .orc-melee-weapon .frame-24-AYXywa {
@@ -202,7 +200,7 @@
     flex-direction: column;
     gap: 7px;
     justify-content: center;
-    position: relative;
+    position: relative
 }
 
 .orc-melee-weapon .raid-income-per-hour-kBTGjp {
@@ -212,13 +210,13 @@
     font-size: var(--font-size-xs);
     font-style: normal;
     font-weight: 500;
-    letter-spacing: -0.14px;
+    letter-spacing: -.14px;
     line-height: 7.7px;
-    margin-top: -1.00px;
+    margin-top: -1px;
     position: relative;
     text-align: left;
     white-space: nowrap;
-    width: fit-content;
+    width: fit-content
 }
 
 .orc-melee-weapon .frame-4-kBTGjp {
@@ -227,17 +225,17 @@
     display: inline-flex;
     flex: 0 0 auto;
     gap: 3px;
-    position: relative;
+    position: relative
 }
 
 .orc-melee-weapon .group-9-37ez8N {
     height: 20px;
-    width: 20px;
+    width: 20px
 }
 
 .orc-melee-weapon .gold-ZIYg15 {
     height: 20px;
-    width: 20px;
+    width: 20px
 }
 
 .orc-melee-weapon .x123-37ez8N {
@@ -247,12 +245,12 @@
     font-size: var(--font-size-s);
     font-style: normal;
     font-weight: 600;
-    letter-spacing: -0.22px;
+    letter-spacing: -.22px;
     line-height: 12.1px;
     position: relative;
     text-align: left;
     white-space: nowrap;
-    width: fit-content;
+    width: fit-content
 }
 
 .orc-melee-weapon .close-button-Op5bx8 {
@@ -262,28 +260,31 @@
     left: 377px;
     position: absolute;
     top: 518px;
-    width: 25px;
-}
-
-.orc-melee-weapon .exclude-ZiCeoH {
-    background-color: transparent;
-    cursor: pointer;
-    height: 25px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 25px;
+    width: 25px
 }
 
 .orc-melee-weapon .gold {
     background-color: transparent;
-    left: 0px;
+    left: 0;
     object-fit: cover;
     position: absolute;
-    top: 0px;
+    top: 0
 }
 
 .orc-melee-weapon .group-9 {
     background-color: transparent;
-    position: relative;
+    position: relative
+}
+
+.skill-buff .rectangle-11-IxqKwS {
+    background-color: #32363C;
+}
+
+.skill-buff .buy-button-IxqKwS, 
+.skill-buff .rectangle-2-IxqKwS {
+    background-color: #FE881C;
+}
+
+.skill-buff .rectangle-3-Op5bx8 {
+    background: linear-gradient(180deg, #A0A092 0, #F3D213 100%);
 }

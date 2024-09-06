@@ -16,7 +16,7 @@
                     <div class="level-120-geIusQ">LADDER 1/20</div>
                 </div>
                 <div
-                    style="width: 100%;justify-content: center;height: -webkit-fill-available;position: absolute;top: 524px;">
+                    style="width: 100%;justify-content: center;height: -webkit-fill-available;position: absolute;top: 485px;">
                     <div class="group-16-7GkIVu" v-for="item in ladderList" :key="item.id">
                         <div class="rectangle-10"></div>
                         <div class="frame-16">
