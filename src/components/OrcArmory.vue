@@ -24,7 +24,7 @@ export default {
         { name: 'Forge', imageName: 'forge.png' },
         { name: 'Grappling Hooks', imageName: 'Grappling Hooks.png' },
         { name: 'Great Hall', imageName: 'great hall.png' },
-        { name: 'Orc Banner', imageName: 'Orc banner.png' },
+        { name: 'Orc Banner', imageName: 'Orc Banner.png' },
         { name: 'Poisoned Tips', imageName: 'Poisoned Tips.png' },
         { name: 'Rune-Inscribed Weapons', imageName: 'Rune-Inscribed Weapons.png' },
         { name: 'Serrated Blades', imageName: 'Serrated Blades.png' },

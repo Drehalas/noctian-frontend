@@ -24,12 +24,12 @@ import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
 
-import KoboldSlave from '@/assets/Orc images/Orc Soldier/kobold.png';
-import GoblinArcher from '@/assets/Orc images/Orc Soldier/goblin archer.png';
-import OrcYoungling from '@/assets/Orc images/Orc Soldier/orc youngling.png';
-import WolfPack from '@/assets/Orc images/Orc Soldier/wolf pack.png';
-import OrcGrunt from '@/assets/Orc images/Orc Soldier/orc grunt.png';
-import OrcSpearman from '@/assets/Orc images/Orc Soldier/orc spearman.png';
+import KoboldSlave from '@/assets/Orc images/Orc Soldier/Kobold.png';
+import GoblinArcher from '@/assets/Orc images/Orc Soldier/Goblin Archer.png';
+import OrcYoungling from '@/assets/Orc images/Orc Soldier/Orc Youngling.png';
+import WolfPack from '@/assets/Orc images/Orc Soldier/Wolf Pack.png';
+import OrcGrunt from '@/assets/Orc images/Orc Soldier/Orc Grunt.png';
+import OrcSpearman from '@/assets/Orc images/Orc Soldier/Orc Spearman.png';
 import OrcAxeman from '@/assets/Orc images/Orc Soldier/Orc Axeman.png';
 import OrcHunter from '@/assets/Orc images/Orc Soldier/Orc Hunter.png';
 import OrcShaman from '@/assets/Orc images/Orc Soldier/Orc Shaman.png';

@@ -102,8 +102,8 @@ export default {
         { id: 4, name: 'Goblin Archer', image: 'orc/soldier/goblin_archer.png', description: 'Ranged unit with quick attacks' },
         { id: 5, name: 'Harpy', image: 'orc/soldier/harpy.png', description: 'Agile aerial attacker' },
         { id: 6, name: 'Hell Lord', image: 'orc/soldier/hell_lord.png', description: 'Powerful demon commander' },
-        { id: 7, name: 'Kobold', image: 'orc/soldier/kobold.png', description: 'Weak but numerous fighter' },
-        { id: 8, name: 'Necromancer', image: 'orc/soldier/necromancer.png', description: 'Master of undead magic' },
+        { id: 7, name: 'Kobold', image: 'orc/soldier/Kobold.png', description: 'Weak but numerous fighter' },
+        { id: 8, name: 'Necromancer', image: 'orc/soldier/Necromancer.png', description: 'Master of undead magic' },
         { id: 9, name: 'Orc Axeman', image: 'orc/soldier/orc_axeman.png', description: 'Brutal frontline warrior' },
         { id: 10, name: 'Orc Champion', image: 'orc/soldier/orc_champion.png', description: 'Elite battlefield hero' },
         { id: 11, name: 'Orc Grunt', image: 'orc/soldier/orc_grunt.png', description: 'Basic infantry unit' },
@@ -116,7 +116,7 @@ export default {
         { id: 18, name: 'Orc Youngling', image: 'orc/soldier/orc_youngling.png', description: 'Youthful fighter, eager to prove' },
         { id: 19, name: 'Spider Swarm', image: 'orc/soldier/spider_swarm.png', description: 'Overwhelming group of venomous spiders' },
         { id: 20, name: 'Stone Giant', image: 'orc/soldier/stone_giant.png', description: 'Gargantuan creature with immense strength' },
-        { id: 21, name: 'Troll', image: 'orc/soldier/troll.png', description: 'Regenerating brute with immense resilience' },
+        { id: 21, name: 'Troll', image: 'orc/soldier/Troll.png', description: 'Regenerating brute with immense resilience' },
         { id: 22, name: 'Warlock Shaman', image: 'orc/soldier/warlock_shaman.png', description: 'Conjurer of forbidden spells' },
         { id: 23, name: 'Wolf', image: 'orc/soldier/wolf.png', description: 'Fast pack hunter with deadly jaws' }
       ]
