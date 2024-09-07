@@ -173,6 +173,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-20-wNWTLI {
@@ -473,6 +474,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 .orc-hero .raid-income-per-hour {
@@ -520,6 +522,8 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 8px !important;
 }
 
 .orc-hero .x15692-k {

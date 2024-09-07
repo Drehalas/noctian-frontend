@@ -152,7 +152,7 @@
 .orc-melee-weapon .title-WQV2wA {
     background-color: transparent;
     color: #fffefc;
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-xl);
     font-style: normal;
     font-weight: 700;
@@ -245,7 +245,7 @@
 .orc-melee-weapon .x123-37ez8N {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-s);
     font-style: normal;
     font-weight: 600;

@@ -237,8 +237,6 @@
 .orc-attack .x63631-k-1bAkpj {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.22px;
@@ -247,6 +245,8 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 11px !important;
 }
 
 .orc-attack .vector-1bAkpj {
@@ -394,11 +394,15 @@
     color: #ffffff80;
     font-style: normal;
     letter-spacing: -0.02px;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 9px !important;
 }
 
 .orc-attack .span1-JXIfOE {
     font-style: normal;
     letter-spacing: -0.02px;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 9px !important;
 }
 
 .orc-attack .frame-12-Z6GGxj {
@@ -448,17 +452,16 @@
 
 .orc-attack .bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV {
     background-color: transparent;
-    height: 55px;
     left: 4px;
     object-fit: cover;
     position: absolute;
-    top: -9px;
+    top: -5px;
 }
 
 .orc-attack .x6500-6500-8oF7wV {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;

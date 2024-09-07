@@ -15,8 +15,8 @@
 
 .roboto-semi-bold-white-8-2px {
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-s);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 8px !important;
     font-style: normal;
     font-weight: 600;
 }
@@ -31,8 +31,8 @@
 
 .roboto-semi-bold-white-9px {
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-m);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 9px !important;
     font-style: normal;
     font-weight: 600;
 }
@@ -157,7 +157,7 @@
 .orc-skill-u38-buff .title-PMa95H {
     background-color: transparent;
     color: #fffefc;
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-xxl);
     font-style: normal;
     font-weight: 700;
@@ -201,7 +201,7 @@
 .orc-skill-u38-buff .x801-od4OWG {
     background-color: transparent;
     color: #fffefc;
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-xxl);
     font-style: normal;
     font-weight: 700;

@@ -38,6 +38,7 @@ export default {
 <style scoped>
 .title-XsTlFn {
     font-size: 30px !important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 .gold-container {

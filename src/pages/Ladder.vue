@@ -13,7 +13,7 @@
                 </div>
                 <div class="group-27-7GkIVu">
                     <h1 class="title-geIusQ">Wormfood</h1>
-                    <div class="level-120-geIusQ">LADDER 1/20</div>
+                    <div class="level-120-geIusQ">LADDER <span class="ladder-level">1/20</span></div>
                 </div>
                 <div
                     style="width: 100%;justify-content: center;height: -webkit-fill-available;position: absolute;top: 485px;">

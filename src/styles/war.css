@@ -15,16 +15,16 @@
 
 .roboto-semi-bold-white-12px {
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-m);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 12px !important;
     font-style: normal;
     font-weight: 600;
 }
 
 .roboto-semi-bold-white-11px {
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-s);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 11px !important;
     font-style: normal;
     font-weight: 600;
 }
@@ -911,7 +911,7 @@
 .orc-war .x15958-JWTY9q {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
+    font-family: "Times New Roman", Times, serif;
     font-size: var(--font-size-xl);
     font-style: normal;
     font-weight: 600;
