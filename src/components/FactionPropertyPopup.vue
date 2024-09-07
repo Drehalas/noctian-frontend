@@ -18,7 +18,7 @@
                     <div class="group-9-WQV2wA group-9">
                         <img class="gold-xS7xA3 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                     </div>
-                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}K</h1>
+                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
                 </div>
                 <div class="frame-25-Op5bx8">
                     <div class="melee-weapon-AYXywa">{{ item.name }}</div>

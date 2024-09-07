@@ -96,6 +96,7 @@
     top: 209px;
     width: 100%;
     justify-content: center;
+    z-index: 3;
 }
 
 .orc-hero .group-9-XsTlFn {
@@ -286,6 +287,7 @@
     position: absolute;
     top: 300px;
     width: 100vw;
+    z-index: 3;
 }
 
 .orc-hero .property-11-3peoxU {

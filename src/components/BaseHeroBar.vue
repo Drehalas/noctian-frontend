@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%;position: absolute;top: 258px;display: flex;justify-content: center;">
+  <div style="width: 100%;position: absolute;top: 258px;display: flex;justify-content: center;z-index: 3;">
     <div class="base-hero-bar-lvJUvn">
       <div class="frame-16-cZXoCo frame-16">
         <!-- Hero -->

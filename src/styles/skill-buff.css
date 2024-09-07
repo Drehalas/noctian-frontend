@@ -80,6 +80,7 @@
     position: relative;
     top: -111px;
     width: 428px;
+    z-index: 4;
 }
 
 .orc-skill-u38-buff .rectangle-3-YDVDeA {

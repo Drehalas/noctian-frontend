@@ -23,23 +23,23 @@ export default {
 
 <style>
 .rectangle-3-lvJUvn {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 25%, rgb(209, 0, 28) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 75%, rgb(209, 0, 28) 100%);
     background-color: transparent;
-    height: 296px;
+    height: 150px;
     left: 0px;
     position: absolute;
     top: 0px;
     width: 100vw;
+    z-index: 1;
 }
 
 .rectangle-1-lvJUvn {
     background: linear-gradient(180deg, rgb(42, 63, 41) 0%, rgb(192, 177, 4) 100%);
     background-color: transparent;
-    border-radius: 50px 50px 0px 0px;
-    height: 3702px;
+    height: calc(100vh + 164px);
     left: 0px;
-    position: absolute;
-    top: 164px;
+    position: fixed;
+    top: 0;
     width: 100vw;
 }
 
@@ -51,5 +51,6 @@ export default {
     position: absolute;
     top: -34px;
     width: 100vw;
+    z-index: 2;
 }
 </style>

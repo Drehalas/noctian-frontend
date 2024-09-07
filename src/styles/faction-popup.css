@@ -15,7 +15,8 @@
     left: 0;
     position: fixed;
     top: 0;
-    width: 430px
+    width: 430px;
+    z-index: 4;
 }
 
 .orc-melee-weapon .group-31-Jxx3Jc {
