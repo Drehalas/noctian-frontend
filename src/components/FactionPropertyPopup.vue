@@ -9,9 +9,9 @@
                     <div class="buy-button-IxqKwS">
                         <div class="buy-DuEsqg">Buy</div>
                     </div>
-                </div>
-                <div style="display: flex; justify-content: center;">
-                    <p class="a-well-balanced-weap-Op5bx8">{{ item.description }}</p>
+                    <div style="display: flex; justify-content: center;">
+                        <p class="a-well-balanced-weap-Op5bx8">{{ item.description }}</p>
+                    </div>
                 </div>
                 <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">
                 <div class="frame-19-Op5bx8">
