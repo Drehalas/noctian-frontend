@@ -146,6 +146,7 @@
     justify-content: center;
     left: 21px;
     padding: 4px 0px;
+    box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
 
 .orc-hero .frame-16-cZXoCo {
@@ -456,6 +457,8 @@
     position: relative;
     top: 0px;
     width: 180px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
 
 .orc-hero .group-8 {
