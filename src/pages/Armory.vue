@@ -3,16 +3,19 @@
         <div class="orc-hero screen ">
             <div class="frame-30-zHO16R">
                 <FactionHeader />
-                <GoldBar />
-                <BaseHeroBar :selected="'Armory'" />
-                <div class="hero-equp-select-lvJUvn">
-                    <FactionProperty v-for="item in armoryList" :key="item.id" :property="item" @click="openPopup(item)"/>
+                <div class="page-container">
+                    <GoldBar />
+                    <BaseHeroBar :selected="'Armory'" />
+                    <div class="hero-equp-select-lvJUvn">
+                        <FactionProperty v-for="item in armoryList" :key="item.id" :property="item"
+                            @click="openPopup(item)" />
+                    </div>
                 </div>
             </div>
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup"/>
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" />
 </template>
 
 <script>
@@ -23,27 +26,6 @@ import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
-
-import Warcamp from '@/assets/Orc images/Orc Armory/war camp.png';
-import Forge from '@/assets/Orc images/Orc Armory/forge.png';
-import SpiritLodge from '@/assets/Orc images/Orc Armory/spirit lodge.png';
-import Bestiary from '@/assets/Orc images/Orc Armory/bestiary.png';
-import GreatHall from '@/assets/Orc images/Orc Armory/great hall.png';
-import SerratedBlades from '@/assets/Orc images/Orc Armory/Serrated Blades.png';
-import PoisonedTips from '@/assets/Orc images/Orc Armory/Poisoned Tips.png';
-import FlamingMunitions from '@/assets/Orc images/Orc Armory/Flaming Munitions.png';
-import RuneInscribedWeapons from '@/assets/Orc images/Orc Armory/Rune-Inscribed Weapons.png';
-import BerserkerAxes from '@/assets/Orc images/Orc Armory/Berserker Axes.png';
-import SpikedArmor from '@/assets/Orc images/Orc Armory/Spiked Armor.png';
-import TrollhideArmor from '@/assets/Orc images/Orc Armory/Trollhide Armor.png';
-import BlackIronPlate from '@/assets/Orc images/Orc Armory/Black Iron Plate.png';
-import WarlordRegalia from '@/assets/Orc images/Orc Armory/Warlord Regalia.png';
-import ShamanGarb from '@/assets/Orc images/Orc Armory/Shaman Garb.png';
-import ThrowingAxes from '@/assets/Orc images/Orc Armory/Throwing Axes.png';
-import GrapplingHooks from '@/assets/Orc images/Orc Armory/Grappling Hooks.png';
-import WarBanners from '@/assets/Orc images/Orc Armory/War Banners.png';
-import TotemofProtection from '@/assets/Orc images/Orc Armory/Totem of Protection.png';
-import DrumsofRage from '@/assets/Orc images/Orc Armory/Drums of Rage.png';
 
 export default {
     name: 'Armory',
@@ -58,7 +40,7 @@ export default {
     data() {
         return {
             armoryList: [
-                {
+            {
                     id: "1",
                     name: "Warcamp",
                     description: "For basic infantry units and increases training quality.",
@@ -66,7 +48,7 @@ export default {
                     gains: 450,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: Warcamp,
+                    imageUrl: "war camp.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -77,7 +59,7 @@ export default {
                     gains: 585,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: Forge,
+                    imageUrl: "forge.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -88,7 +70,7 @@ export default {
                     gains: 761,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: SpiritLodge,
+                    imageUrl: "spirit lodge.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -99,7 +81,7 @@ export default {
                     gains: 989,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: Bestiary,
+                    imageUrl: "bestiary.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -110,7 +92,7 @@ export default {
                     gains: 1285,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: GreatHall,
+                    imageUrl: "great hall.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -121,7 +103,7 @@ export default {
                     gains: 1671,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: SerratedBlades,
+                    imageUrl: "Serrated Blades.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -132,7 +114,7 @@ export default {
                     gains: 2172,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: PoisonedTips,
+                    imageUrl: "Poisoned Tips.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -143,7 +125,7 @@ export default {
                     gains: 2824,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: FlamingMunitions,
+                    imageUrl: "Flaming Munitions.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -154,7 +136,7 @@ export default {
                     gains: 3671,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: RuneInscribedWeapons,
+                    imageUrl: "Rune-Inscribed Weapons.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -165,7 +147,7 @@ export default {
                     gains: 4772,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: BerserkerAxes,
+                    imageUrl: "Berserker Axes.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -176,7 +158,7 @@ export default {
                     gains: 6204,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: SpikedArmor,
+                    imageUrl: "Spiked Armor.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -187,18 +169,18 @@ export default {
                     gains: 8065,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: TrollhideArmor,
+                    imageUrl: "Trollhide Armor.png",
                     raidIncomePerHour: 0
                 },
                 {
                     id: "13",
                     name: "Black Iron Plate",
-                    description: " Heavy plate armor that provides excellent protection.",
+                    description: "Heavy plate armor that provides excellent protection.",
                     cost: 134360,
                     gains: 10484,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: BlackIronPlate,
+                    imageUrl: "Black Iron Plate.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -209,7 +191,7 @@ export default {
                     gains: 13629,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: WarlordRegalia,
+                    imageUrl: "Warlord Regalia.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -220,7 +202,7 @@ export default {
                     gains: 17718,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: ShamanGarb,
+                    imageUrl: "Shaman Garb.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -231,7 +213,7 @@ export default {
                     gains: 23034,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: ThrowingAxes,
+                    imageUrl: "Throwing Axes.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -242,7 +224,7 @@ export default {
                     gains: 29944,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: GrapplingHooks,
+                    imageUrl: "Grappling Hooks.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -253,7 +235,7 @@ export default {
                     gains: 38927,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: WarBanners,
+                    imageUrl: "War Banners.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -264,7 +246,7 @@ export default {
                     gains: 50605,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: TotemofProtection,
+                    imageUrl: "Totem of Protection.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -275,13 +257,19 @@ export default {
                     gains: 65786,
                     level: 0,
                     costMultiplier: 1.8,
-                    imageUrl: DrumsofRage,
+                    imageUrl: "Drums of Rage.png",
                     raidIncomePerHour: 0
                 }
             ],
-            showPopup: false, 
-            selectedItem: null, 
+            showPopup: false,
+            selectedItem: null,
+            factionType: null
         };
+    },
+    async created() {
+        this.getFactionType();
+        await this.loadImages();
+        console.clear();
     },
     methods: {
         openPopup(item) {
@@ -291,7 +279,15 @@ export default {
         closePopup() {
             this.showPopup = false;
             this.selectedItem = null;
-        }
+        },
+        getFactionType() {
+            this.factionType = "Orc";
+        },
+        async loadImages() {
+            for (let armory of this.armoryList) {
+                armory.imageUrl = (await import(`@/assets/${this.factionType} images/${this.factionType} Armory/${armory.imageUrl}`)).default;
+            }
+        },
     },
 };
 </script>

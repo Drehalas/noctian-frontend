@@ -1,5 +1,3 @@
-<!-- src/pages/Equipment.vue -->
-
 <template>
     <div class="container-center-horizontal">
         <div class="orc-attack screen ">
@@ -8,13 +6,13 @@
                     <div class="group-29-zJN8sm">
                         <div class="rectangle-3-Z6GGxj"></div>
                         <div class="rectangle-1-Z6GGxj"></div>
-                        <img class="orc-banner-Z6GGxj" src="@/assets/Global/Attack/Orc banner.png" alt="Orc banner">
+                        <img class="orc-banner-Z6GGxj" src="@/assets/Global/Attack/Undead banner.png" alt="Orc banner">
                         <p class="noctian-war-for-the-throne-Z6GGxj">Noctian: War for the throne</p>
                         <div>
-                            <img class="orc-button-Z6GGxj" src="@/assets/Global/Attack/Orc button.png" alt="Orc button"
+                            <img class="orc-button-Z6GGxj" src="@/assets/Global/Attack/Undead button.png" alt="Orc button"
                                 style="border: 1px solid transparent; border-radius: 50%;" @click="gainGold">
                             <img class="ork-ladder-20-logo-Z6GGxj"
-                                src="@/assets/Orc images/Orc Avatar/20. Worm Food.png" alt="Orc Ladder 20 logo"
+                                src="@/assets/Undead images/Undead Avatar/20. Lost Soul.png" alt="Orc Ladder 20 logo"
                                 @click="gainGold">
                         </div>
                         <div class="frame-2-Z6GGxj">

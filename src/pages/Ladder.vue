@@ -2,10 +2,10 @@
     <div class="container-center-horizontal">
         <div class="orc-ladder screen ">
             <div class="frame-30-sSjFR3">
-                <div class="rectangle-3-7GkIVu"></div>
-                <div class="rectangle-1-7GkIVu"></div>
-                <img class="orc-banner-7GkIVu" src="@/assets/Global/Attack/Orc banner.png" alt="Orc banner">
-                <img class="ork-ladder-20-logo-7GkIVu" src="@/assets/Orc images/Orc Avatar/20. Worm Food.png"
+                <div class="rectangle-3-7GkIVu" style="background: linear-gradient(180deg, #000000 30%, #ABE5CA 100%);"></div>
+                <div class="rectangle-1-7GkIVu" style="background: linear-gradient(180deg, #848484 0%, #182E26 100%)"></div>
+                <img class="orc-banner-7GkIVu" src="@/assets/Global/Attack/Undead banner.png" alt="Orc banner">
+                <img class="ork-ladder-20-logo-7GkIVu" src="@/assets/Undead images/Undead Avatar/20. Lost Soul.png"
                     alt="Ork Ladder 20 logo">
                 <div class="group-12-7GkIVu">
                     <div class="rectangle-4-c0QDzt"></div>
@@ -16,7 +16,7 @@
                     <div class="level-120-geIusQ">LADDER <span class="ladder-level">1/20</span></div>
                 </div>
                 <div
-                    style="width: 100%;justify-content: center;height: -webkit-fill-available;position: absolute;top: 485px;">
+                    style="width: 100%;height: -webkit-fill-available;position: absolute;top: 485px;">
                     <div class="group-16-7GkIVu" v-for="item in ladderList" :key="item.id">
                         <div class="rectangle-10"></div>
                         <div class="frame-16">

@@ -3,16 +3,19 @@
         <div class="orc-hero screen ">
             <div class="frame-30-zHO16R">
                 <FactionHeader />
-                <GoldBar />
-                <BaseHeroBar :selected="'Spell'" />
-                <div class="hero-equp-select-lvJUvn">
-                    <FactionProperty v-for="item in spellList" :key="item.id" :property="item" @click="openPopup(item)"/>
+                <div class="page-container">
+                    <GoldBar />
+                    <BaseHeroBar :selected="'Spell'" />
+                    <div class="hero-equp-select-lvJUvn">
+                        <FactionProperty v-for="item in spellList" :key="item.id" :property="item"
+                            @click="openPopup(item)" />
+                    </div>
                 </div>
             </div>
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup"/>
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" />
 </template>
 
 <script>
@@ -23,34 +26,6 @@ import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
-
-import WarcryEnergy from '@/assets/Orc images/Orc Spell/Warcry Energy.png';
-import GreenTide from '@/assets/Orc images/Orc Spell/Green Tide.png';
-import RockLobber from '@/assets/Orc images/Orc Spell/Rock Lobber.png';
-import Firestorm from '@/assets/Orc images/Orc Spell/Firestorm.png';
-import BloodBoil from '@/assets/Orc images/Orc Spell/Blood Boil.png';
-import IronhideAura from '@/assets/Orc images/Orc Spell/Ironhide Aura.png';
-import SpiritShield from '@/assets/Orc images/Orc Spell/Spirit Shield.png';
-import TrollRegeneration from '@/assets/Orc images/Orc Spell/Troll Regeneration.png';
-import GroundSlam from '@/assets/Orc images/Orc Spell/Ground Slam.png';
-import WarChant from '@/assets/Orc images/Orc Spell/War Chant.png';
-import FeralSpeed from '@/assets/Orc images/Orc Spell/Feral Speed.png';
-import BloodScent from '@/assets/Orc images/Orc Spell/Blood Scent.png';
-import ShamanisticWard from '@/assets/Orc images/Orc Spell/Shamanistic Ward.png';
-import CalloftheWild from '@/assets/Orc images/Orc Spell/Call of the Wild.png';
-import VisionQuest from '@/assets/Orc images/Orc Spell/Vision Quest.png';
-import Enfeeblement from '@/assets/Orc images/Orc Spell/Enfeeblement.png';
-import Vulnerability from '@/assets/Orc images/Orc Spell/Vulnerability.png';
-import Confusion from '@/assets/Orc images/Orc Spell/Confusion.png';
-import RottingTouch from '@/assets/Orc images/Orc Spell/Rotting Touch.png';
-import CurseofWeakness from '@/assets/Orc images/Orc Spell/Curse of Weakness.png';
-import WarGodsMight from '@/assets/Orc images/Orc Spell/War Gods Might.png';
-import TheGreatWarcry from '@/assets/Orc images/Orc Spell/The Great Warcry.png';
-import RupturingEarth from '@/assets/Orc images/Orc Spell/Rupturing Earth.png';
-import BloodMoon from '@/assets/Orc images/Orc Spell/Blood Moon.png';
-import AncestralFury from '@/assets/Orc images/Orc Spell/Ancestral Fury.png';
-import BloodSacrifice from '@/assets/Orc images/Orc Spell/Blood Sacrifice.png';
-import SummonGreaterDemon from '@/assets/Orc images/Orc Spell/Summon Greater Demon.png';
 
 export default {
     name: 'Spell',
@@ -73,7 +48,7 @@ export default {
                     gains: 80,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: WarcryEnergy,
+                    imageUrl: "Warcry Energy.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -84,7 +59,7 @@ export default {
                     gains: 152,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: GreenTide,
+                    imageUrl: "Green Tide.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -95,7 +70,7 @@ export default {
                     gains: 289,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: RockLobber,
+                    imageUrl: "Rock Lobber.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -106,7 +81,7 @@ export default {
                     gains: 549,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: Firestorm,
+                    imageUrl: "Firestorm.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -117,7 +92,7 @@ export default {
                     gains: 1043,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: BloodBoil,
+                    imageUrl: "Blood Boil.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -128,7 +103,7 @@ export default {
                     gains: 1981,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: IronhideAura,
+                    imageUrl: "Ironhide Aura.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -139,7 +114,7 @@ export default {
                     gains: 3764,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: SpiritShield,
+                    imageUrl: "Spirit Shield.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -150,7 +125,7 @@ export default {
                     gains: 7151,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: TrollRegeneration,
+                    imageUrl: "Troll Regeneration.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -161,7 +136,7 @@ export default {
                     gains: 13587,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: GroundSlam,
+                    imageUrl: "Ground Slam.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -172,7 +147,7 @@ export default {
                     gains: 25815,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: WarChant,
+                    imageUrl: "War Chant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -183,7 +158,7 @@ export default {
                     gains: 49049,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: FeralSpeed,
+                    imageUrl: "Feral Speed.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -194,7 +169,7 @@ export default {
                     gains: 93192,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: BloodScent,
+                    imageUrl: "Blood Scent.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -205,7 +180,7 @@ export default {
                     gains: 177065,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: ShamanisticWard,
+                    imageUrl: "Shamanistic Ward.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -216,7 +191,7 @@ export default {
                     gains: 336424,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: CalloftheWild,
+                    imageUrl: "Call of the Wild.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -227,7 +202,7 @@ export default {
                     gains: 639205,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: VisionQuest,
+                    imageUrl: "Vision Quest.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -238,7 +213,7 @@ export default {
                     gains: 1214490,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: Enfeeblement,
+                    imageUrl: "Enfeeblement.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -249,7 +224,7 @@ export default {
                     gains: 2307531,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: Vulnerability,
+                    imageUrl: "Vulnerability.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -260,7 +235,7 @@ export default {
                     gains: 4384309,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: Confusion,
+                    imageUrl: "Confusion.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -271,7 +246,7 @@ export default {
                     gains: 8330188,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: RottingTouch,
+                    imageUrl: "Rotting Touch.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -282,7 +257,7 @@ export default {
                     gains: 15827357,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: CurseofWeakness,
+                    imageUrl: "Curse of Weakness.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -293,7 +268,7 @@ export default {
                     gains: 30071979,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: WarGodsMight,
+                    imageUrl: "War Gods Might.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -304,7 +279,7 @@ export default {
                     gains: 57136760,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: TheGreatWarcry,
+                    imageUrl: "The Great Warcry.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -315,7 +290,7 @@ export default {
                     gains: 108559843,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: RupturingEarth,
+                    imageUrl: "Rupturing Earth.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -326,7 +301,7 @@ export default {
                     gains: 206263702,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: BloodMoon,
+                    imageUrl: "Blood Moon.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -337,7 +312,7 @@ export default {
                     gains: 391901034,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: AncestralFury,
+                    imageUrl: "Ancestral Fury.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -348,7 +323,7 @@ export default {
                     gains: 744611966,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: BloodSacrifice,
+                    imageUrl: "Blood Sacrifice.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -359,13 +334,19 @@ export default {
                     gains: 1414762734,
                     level: 0,
                     costMultiplier: 1.3,
-                    imageUrl: SummonGreaterDemon,
+                    imageUrl: "Summon Greater Demon.png",
                     raidIncomePerHour: 0
                 }
             ],
-            showPopup: false, 
-            selectedItem: null, 
+            showPopup: false,
+            selectedItem: null,
+            factionType: null
         };
+    },
+    async created() {
+        this.getFactionType();
+        await this.loadImages();
+        console.clear();
     },
     methods: {
         openPopup(item) {
@@ -375,7 +356,15 @@ export default {
         closePopup() {
             this.showPopup = false;
             this.selectedItem = null;
-        }
+        },
+        getFactionType() {
+            this.factionType = "Orc";
+        },
+        async loadImages() {
+            for (let spell of this.spellList) {
+                spell.imageUrl = (await import(`@/assets/${this.factionType} images/${this.factionType} Spell/${spell.imageUrl}`)).default;
+            }
+        },
     },
 };
 </script>
