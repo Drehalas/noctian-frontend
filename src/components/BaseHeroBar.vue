@@ -7,42 +7,42 @@
             :class="{ selected: selected === 'Hero' }"
             @click="navigateTo('Hero')"
         >
-          <div class="hero-n6d0Ud roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Hero</div>
+          <div class="hero-n6d0Ud roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Hero</div>
         </div>
         <div
             class="frame-20-wNWTLI frame-20"
             :class="{ selected: selected === 'Soldier' }"
             @click="navigateTo('Soldier')"
         >
-          <div class="soldier-kDvytW roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Soldier</div>
+          <div class="soldier-kDvytW roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Soldier</div>
         </div>
         <div
             class="frame-19-wNWTLI frame-19"
             :class="{ selected: selected === 'Armory' }"
             @click="navigateTo('Armory')"
         >
-          <div class="armory-MjOaOq roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Armory</div>
+          <div class="armory-MjOaOq roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Armory</div>
         </div>
         <div
             class="frame-18-wNWTLI frame-18"
             :class="{ selected: selected === 'Spell' }"
             @click="navigateTo('Spell')"
         >
-          <div class="spell-KYkoHY roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Spell</div>
+          <div class="spell-KYkoHY roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Spell</div>
         </div>
         <div
             class="frame-17-wNWTLI frame-17"
             :class="{ selected: selected === 'Artifact' }"
             @click="navigateTo('Artifact')"
         >
-          <div class="artifact-H13YWN roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Artifact</div>
+          <div class="artifact-H13YWN roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Artifact</div>
         </div>
         <div
             class="frame-16-wNWTLI frame-16"
             :class="{ selected: selected === 'Peon' }"
             @click="navigateTo('Peon')"
         >
-          <div class="peon-LSCL1d roboto-semi-bold-white-12px" style="font-size: 0.6rem;">Peon</div>
+          <div class="peon-LSCL1d roboto-semi-bold-white-12px" style="font-size: 0.6rem !important;">Peon</div>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@
                         </div>
                         <div class="frame-3-Z6GGxj">
                             <img class="e3461866-28e9-4e0f-95cb-223395215a83-1-R8jrdC"
-                                src="@/assets/Global/Attack/Undead attack logo.png" alt="Undead attack logo">
+                                src="@/assets/Global/Attack/Orc attack logo.png" alt="Orc attack logo">
                             <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
                                 alt="Line 1" style="top: 6px;">
                             <div class="war-income-per-hour-R8jrdC">War income per hour</div>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div v-for="(text, index) in floatingTexts" :key="index" :style="{ top: text.y + 'px', left: text.x + 'px' }"
+    <div v-for="(text, index) in floatingTexts" :key="index" :id="index + '-float-text'" :style="{ top: text.y + 'px', left: text.x + 'px' }"
         @click="gainGold" class="floating-text">
         +{{ increaseAmount }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
     </div>
@@ -128,7 +128,7 @@ export default {
         return {
             isSkillBuffVisible: false,
             floatingTexts: [],
-            increaseAmount: 200,
+            increaseAmount: 99999,
             displayTitle: ''
         }
     },
@@ -143,7 +143,7 @@ export default {
         },
         gainGold(event) {
             const { innerHeight, innerWidth } = window;
-            const limit = 105;
+            const limit = 150;
 
             const x = (innerWidth - event.clientX < limit) ? event.clientX - limit : event.clientX;
             const y = (innerHeight - event.clientY < limit) ? event.clientY - limit : event.clientY;
