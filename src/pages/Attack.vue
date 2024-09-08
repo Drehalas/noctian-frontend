@@ -21,7 +21,7 @@
                         </div>
                         <div class="frame-3-Z6GGxj">
                             <img class="e3461866-28e9-4e0f-95cb-223395215a83-1-R8jrdC"
-                                src="@/assets/Global/Attack/Orc attack logo.png" alt="Orc attack logo">
+                                src="@/assets/Global/Attack/Undead attack logo.png" alt="Undead attack logo">
                             <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
                                 alt="Line 1" style="top: 6px;">
                             <div class="war-income-per-hour-R8jrdC">War income per hour</div>
@@ -80,12 +80,12 @@
                         <div class="frame-35-Z6GGxj">
                             <div class="orcs-Ip5M10">ORCS</div>
                             <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1-Ip5M10"
-                                src="@/assets/Global/Attack/Orc logo.png">
+                                src="@/assets/Global/Attack/Undead logo.png">
                         </div>
                     </div>
                     <Footer :selected="'Attack'" />
                     <div class="select-kingdom-zJN8sm select-kingdom">
-                        <img class="binance-logo-4fyxtR" src="@/assets/Global/Attack/Orc logo.png" alt="Binance Logo">
+                        <img class="binance-logo-4fyxtR" src="@/assets/Global/Attack/Undead logo.png" alt="Undead Logo">
                         <div class="select-kingdom-4fyxtR select-kingdom">Select Kingdom</div>
                         <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg" alt="Line 1">
                         <div class="frame-36-4fyxtR">
