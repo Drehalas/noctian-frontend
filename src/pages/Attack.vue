@@ -4,20 +4,23 @@
             <div class="group-71-9glIQN">
                 <div class="orc-attack-CiWjWe">
                     <div class="group-29-zJN8sm">
-                        <div class="rectangle-3-Z6GGxj"></div>
-                        <div class="rectangle-1-Z6GGxj"></div>
-                        <img class="orc-banner-Z6GGxj" src="@/assets/Global/Attack/Undead banner.png" alt="Orc banner">
+                        <div class="rectangle-3-Z6GGxj" v-if="topGradientColors"
+                            :style="{ background: `linear-gradient(180deg, ${topGradientColors.top} 50%, ${topGradientColors.bottom} 100%)` }">
+                        </div>
+                        <div class="rectangle-1-Z6GGxj" v-if="bottomGradientColors"
+                            :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
+                        </div>
+                        <img class="orc-banner-Z6GGxj" :src="bannerImage" alt="Orc banner">
                         <p class="noctian-war-for-the-throne-Z6GGxj">Noctian: War for the throne</p>
                         <div>
-                            <img class="orc-button-Z6GGxj" src="@/assets/Global/Attack/Undead button.png" alt="Orc button"
+                            <img class="orc-button-Z6GGxj" :src="buttonImage" alt="Orc button"
                                 style="border: 1px solid transparent; border-radius: 50%;" @click="gainGold">
-                            <img class="ork-ladder-20-logo-Z6GGxj"
-                                src="@/assets/Undead images/Undead Avatar/20. Lost Soul.png" alt="Orc Ladder 20 logo"
+                            <img class="ork-ladder-20-logo-Z6GGxj" :src="avatarImage" alt="Orc Ladder 20 logo"
                                 @click="gainGold">
                         </div>
                         <div class="frame-2-Z6GGxj">
-                            <div class="wormfood-Cbc0iH wormfood">Wormfood</div>
-                            <div class="arthur8071-Cbc0iH">Arthur8071</div>
+                            <div class="wormfood-Cbc0iH wormfood">{{ title }}</div>
+                            <div class="arthur8071-Cbc0iH">{{ name }}</div>
                         </div>
                         <div class="frame-3-Z6GGxj">
                             <img class="e3461866-28e9-4e0f-95cb-223395215a83-1-R8jrdC"
@@ -31,7 +34,7 @@
                                         <img class="gold-5ouUfJ gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
                                     </div>
                                 </div>
-                                <div class="x63631-k-1bAkpj">+636.31K</div>
+                                <div class="x63631-k-1bAkpj">+{{ incomePerHour }}</div>
                                 <img class="vector-1bAkpj vector" src="@/assets/Global/Attack/info.svg" alt="Vector"
                                     title="War income represents the passive income gained after a battle."
                                     @click="showTitle">
@@ -42,15 +45,15 @@
                         <GoldBar ref="goldBar" />
                         <div class="group-12-Z6GGxj">
                             <div class="rectangle-4-8WDrgx"></div>
-                            <div class="rectangle-5-8WDrgx"></div>
+                            <div class="rectangle-5-8WDrgx" :style="{ backgroundColor: expBarColor }"></div>
                             <div class="frame-10-8WDrgx">
                                 <div class="wormfood-CUprVx wormfood roboto-medium-white-9px">
-                                    Wormfood
+                                    {{ title }}
                                 </div>
                                 <img class="vector-CUprVx vector" src="@/assets/Global/Attack/Vector.svg" alt="Vector">
                             </div>
                             <div class="level-120-8WDrgx">
-                                <span class="span0-JXIfOE">Level 1</span>
+                                <span class="span0-JXIfOE">Level {{ level }}</span>
                                 <span class="span1-JXIfOE roboto-medium-white-9px">/20</span>
                             </div>
                         </div>
@@ -62,7 +65,7 @@
                                             <img class="bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV"
                                                 src="@/assets/Global/Attack/Mana.png"
                                                 alt="bc558d3d-8d85-47c6-a507-95a6035c5e38 1">
-                                            <div class="x6500-6500-8oF7wV">6500 / 6500</div>
+                                            <div class="x6500-6500-8oF7wV">{{ currentMana }} / {{ totalMana }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -78,14 +81,13 @@
                             </div>
                         </div>
                         <div class="frame-35-Z6GGxj">
-                            <div class="orcs-Ip5M10">ORCS</div>
-                            <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1-Ip5M10"
-                                src="@/assets/Global/Attack/Undead logo.png">
+                            <div class="orcs-Ip5M10">{{ factionType }}</div>
+                            <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-1-Ip5M10" :src="logoImage">
                         </div>
                     </div>
                     <Footer :selected="'Attack'" />
                     <div class="select-kingdom-zJN8sm select-kingdom">
-                        <img class="binance-logo-4fyxtR" src="@/assets/Global/Attack/Undead logo.png" alt="Undead Logo">
+                        <img class="binance-logo-4fyxtR" :src="logoImage" alt="Undead Logo">
                         <div class="select-kingdom-4fyxtR select-kingdom">Select Kingdom</div>
                         <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg" alt="Line 1">
                         <div class="frame-36-4fyxtR">
@@ -103,8 +105,8 @@
             </div>
         </div>
     </div>
-    <div v-for="(text, index) in floatingTexts" :key="index" :id="index + '-float-text'" :style="{ top: text.y + 'px', left: text.x + 'px' }"
-        @click="gainGold" class="floating-text">
+    <div v-for="(text, index) in floatingTexts" :key="index" :id="index + '-float-text'"
+        :style="{ top: text.y + 'px', left: text.x + 'px' }" @click="gainGold" class="floating-text">
         +{{ increaseAmount }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
     </div>
     <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" />
@@ -112,6 +114,7 @@
 
 <script>
 import '@/styles/attack.css';
+import attackService from '@/services/attackService';
 import Footer from '@/components/Footer.vue';
 import GoldBar from '@/components/GoldBar.vue';
 import SkillBuff from '@/components/SkillBuff.vue';
@@ -127,9 +130,25 @@ export default {
     data() {
         return {
             isSkillBuffVisible: false,
+            bannerImage: null,
+            avatarImage: null,
+            buttonImage: null,
+            logoImage: null,
             floatingTexts: [],
+            name: null,
+            incomePerHour: "500000",
             increaseAmount: 99999,
-            displayTitle: ''
+            factionType: null,
+            currentGold: null,
+            level: null,
+            exp: null,
+            currentMana: null,
+            totalMana: null,
+            title: null,
+            expBarColor: null,
+            bottomGradientColors: null,
+            topGradientColors: null,
+            userId: 100,
         }
     },
     setup() {
@@ -160,7 +179,151 @@ export default {
         },
         showTitle(event) {
             this.toast.info(event.target.title);
+        },
+        async getUserData() {
+            this.loading = true;
+
+            try {
+                const response = await attackService.getUserById(this.userId);
+
+                /*
+                {
+                    data: {
+                        name: "Arthur8071",
+                        incomePerHour: "500000",
+                        increaseAmount: 55,
+                        currentGold: 1000,
+                        level: 5,
+                        avatarImage: "1. High Queen.png",
+                        exp: 100,
+                        currentMana: 50,
+                        totalMana: 100,
+                        title: "Wormfood",
+                        factionType: "ELF"
+                    }
+                };
+                */
+
+                const { name, incomePerHour, increaseAmount, factionType, currentGold, level, avatarImage, exp, currentMana, totalMana, title } = response.data;
+                this.name = name;
+                this.incomePerHour = incomePerHour;
+                this.increaseAmount = increaseAmount;
+                this.factionType = this.formatFactionType(factionType);
+                this.currentGold = this.formatNumber(currentGold);
+                this.level = level;
+                this.avatarImage = avatarImage;
+                this.exp = exp;
+                this.currentMana = currentMana;
+                this.totalMana = totalMana;
+                this.title = title;
+            } catch (error) {
+                this.error = error.message;
+                console.error('Failed to fetch ladder details:', error);
+            } finally {
+                this.loading = false;
+            }
+        },
+        formatFactionType(type) {
+            console.log(type);
+
+            return type.toLowerCase().replace(/^\w/, (c) => c.toUpperCase());
+        },
+        async loadImages() {
+            this.bannerImage = (await import(`@/assets/Global/Attack/${this.factionType} banner.png`)).default;
+            this.avatarImage = (await import(`@/assets/${this.factionType} images/${this.factionType} Avatar/${this.avatarImage}`)).default;
+            this.buttonImage = (await import(`@/assets/Global/Attack/${this.factionType} button.png`)).default;
+            this.logoImage = (await import(`@/assets/Global/Attack/${this.factionType} logo.png`)).default;
+        },
+        formatNumber(number) {
+            const suffixes = ['', 'k', 'M', 'B', 'T'];
+            let suffixIndex = 0;
+
+            while (number >= 1000 && suffixIndex < suffixes.length - 1) {
+                number /= 1000;
+                suffixIndex++;
+            }
+
+            return number.toFixed(1).replace(/.0$/, '') + suffixes[suffixIndex];
+        },
+        getExpBarColor() {
+            const colors = {
+                ORC: "#C0B104",
+                UNDEAD: "#ABE5CA",
+                HUMAN: "#0D2CAB",
+                ANGEL: "#FFFFFF",
+                ELF: "#237C02",
+                DEMON: "#F3D213"
+            }
+
+            this.expBarColor = colors[this.factionType?.toUpperCase()];
+        },
+        getBottomGradientColors() {
+            const colors = {
+                ORC: {
+                    top: "#2A3F29",
+                    bottom: "#C0B104"
+                },
+                UNDEAD: {
+                    top: "#848484",
+                    bottom: "#182E26"
+                },
+                HUMAN: {
+                    top: "#CFCFD0",
+                    bottom: "#1E307A"
+                },
+                ANGEL: {
+                    top: "#D0CFCF",
+                    bottom: "#C6AC47"
+                },
+                ELF: {
+                    top: "#CACACA",
+                    bottom: "#0A2F00"
+                },
+                DEMON: {
+                    top: "#6F1F1F",
+                    bottom: "#C0B104"
+                }
+            }
+
+            this.bottomGradientColors = colors[this.factionType?.toUpperCase()];
+        },
+        getTopGradientColors() {
+            const colors = {
+                ORC: {
+                    top: "#000000",
+                    bottom: "#D1001C"
+                },
+                UNDEAD: {
+                    top: "#000000",
+                    bottom: "#182E26"
+                },
+                HUMAN: {
+                    top: "#000000",
+                    bottom: "#0D2CAB"
+                },
+                ANGEL: {
+                    top: "#000000",
+                    bottom: "#FFFFFF"
+                },
+                ELF: {
+                    top: "#000000",
+                    bottom: "#4ACC17"
+                },
+                DEMON: {
+                    top: "#000000",
+                    bottom: "#D1001C"
+                }
+            }
+
+            this.topGradientColors = colors[this.factionType?.toUpperCase()];
         }
+    },
+    mounted() {
+        this.getUserData();
+        this.getBottomGradientColors();
+        this.getTopGradientColors();
+        this.loadImages();
+        this.getExpBarColor();
     }
 };
 </script>
