@@ -38,11 +38,12 @@ export default {
 <style scoped>
 .title-XsTlFn {
     font-size: 30px !important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 .gold-container {
     display: flex;
-    padding: 0 20px;
+    padding: 0 10px;
     background: #21242980;
     box-shadow: 0 8px 32px 0 #21242980;
     backdrop-filter: blur(4px);

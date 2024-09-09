@@ -92,10 +92,11 @@
     background-color: transparent;
     display: flex;
     gap: 8px;
-    position: absolute;
-    top: 209px;
+    position: relative;
+    top: 45px;
     width: 100%;
     justify-content: center;
+    z-index: 3;
 }
 
 .orc-hero .group-9-XsTlFn {
@@ -129,8 +130,6 @@
     height: 46px;
     letter-spacing: -0.80px;
     line-height: 44.0px;
-    margin-right: -13.00px;
-    margin-top: -1.00px;
     position: relative;
     text-align: left;
     white-space: nowrap;
@@ -147,6 +146,7 @@
     justify-content: center;
     left: 21px;
     padding: 4px 0px;
+    box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
 
 .orc-hero .frame-16-cZXoCo {
@@ -172,6 +172,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-20-wNWTLI {
@@ -192,6 +193,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-19-wNWTLI {
@@ -211,6 +213,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-18-wNWTLI {
@@ -231,6 +234,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-17-wNWTLI {
@@ -253,6 +257,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .frame-16-wNWTLI {
@@ -270,6 +275,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: "Rosarivo", Helvetica !important;
 }
 
 .orc-hero .hero-equp-select-lvJUvn {
@@ -283,9 +289,10 @@
     left: 0px;
     overflow: hidden;
     padding: 17px 0px;
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: 60px;
     width: 100vw;
+    z-index: 3;
 }
 
 .orc-hero .property-11-3peoxU {
@@ -450,6 +457,8 @@
     position: relative;
     top: 0px;
     width: 180px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
 
 .orc-hero .group-8 {
@@ -471,6 +480,7 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 .orc-hero .raid-income-per-hour {
@@ -518,6 +528,8 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 8px !important;
 }
 
 .orc-hero .x15692-k {
@@ -528,4 +540,15 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+}
+
+.orc-hero .page-container {
+    position: absolute;
+    top: 185px;
+    width: 100vw;
+    background: linear-gradient(#d0cfcf 0%, #182E26 100%);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 175px;
+    min-height: 75vh;
 }

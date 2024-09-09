@@ -59,7 +59,7 @@
 }
 
 .orc-attack .rectangle-3-Z6GGxj {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(209, 0, 28) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, #182E26 100%);
     background-color: transparent;
     height: 396px;
     left: 0px;
@@ -69,13 +69,13 @@
 }
 
 .orc-attack .rectangle-1-Z6GGxj {
-    background: linear-gradient(180deg, rgb(42, 63, 41) 0%, rgb(192, 177, 4) 100%);
+    background: linear-gradient(180deg, #848484 0%, #182E26 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
     height: 665px;
     left: 0px;
     position: absolute;
-    top: 267px;
+    top: 307px;
     width: 428px;
 }
 
@@ -85,7 +85,7 @@
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 80px;
+    top: 210px;
     width: 428px;
 }
 
@@ -109,12 +109,11 @@
 
 .orc-attack .orc-button-Z6GGxj {
     background-color: transparent;
-    height: 400px;
-    left: 14px;
+    left: 0;
     object-fit: cover;
     position: absolute;
-    top: 383px;
-    width: 400px;
+    top: 365px;
+    width: 100vw;
 }
 
 .orc-attack .frame-2-Z6GGxj {
@@ -237,8 +236,6 @@
 .orc-attack .x63631-k-1bAkpj {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.22px;
@@ -247,6 +244,8 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 11px !important;
 }
 
 .orc-attack .vector-1bAkpj {
@@ -260,7 +259,7 @@
     display: flex;
     gap: 8px;
     position: absolute;
-    top: 335px;
+    top: 355px;
     width: 100%;
     justify-content: center;
 }
@@ -296,8 +295,6 @@
     height: 46px;
     letter-spacing: -0.80px;
     line-height: 44.0px;
-    margin-right: -13.00px;
-    margin-top: -1.00px;
     position: relative;
     text-align: left;
     white-space: nowrap;
@@ -306,12 +303,11 @@
 
 .orc-attack .ork-ladder-20-logo-Z6GGxj {
     background-color: transparent;
-    height: 257px;
-    left: 144px;
+    left: 0;
     object-fit: cover;
     position: absolute;
-    top: 454px;
-    width: 140px;
+    top: 365px;
+    width: 100vw;
 }
 
 .orc-attack .group-12-Z6GGxj {
@@ -338,7 +334,6 @@
 }
 
 .orc-attack .rectangle-5-8WDrgx {
-    background-color: #c0b104;
     border-radius: 30px;
     height: 15px;
     left: 6px;
@@ -394,11 +389,15 @@
     color: #ffffff80;
     font-style: normal;
     letter-spacing: -0.02px;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 9px !important;
 }
 
 .orc-attack .span1-JXIfOE {
     font-style: normal;
     letter-spacing: -0.02px;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 9px !important;
 }
 
 .orc-attack .frame-12-Z6GGxj {
@@ -409,7 +408,7 @@
     justify-content: space-between;
     left: 28px;
     position: absolute;
-    bottom: 115px;
+    bottom: 125px;
     width: 370px;
 }
 
@@ -448,17 +447,16 @@
 
 .orc-attack .bc558d3d-8d85-47c6-a507-95a6035c5e38-1-8oF7wV {
     background-color: transparent;
-    height: 55px;
     left: 4px;
     object-fit: cover;
     position: absolute;
-    top: -9px;
+    top: -5px;
 }
 
 .orc-attack .x6500-6500-8oF7wV {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;

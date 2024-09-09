@@ -61,6 +61,7 @@ export default {
     background-color: transparent;
     position: fixed;
     bottom: 40px;
+    z-index: 3;
 }
 
 .container .attack-bar {

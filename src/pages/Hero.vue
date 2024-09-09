@@ -3,16 +3,19 @@
         <div class="orc-hero screen ">
             <div class="frame-30-zHO16R">
                 <FactionHeader />
-                <GoldBar />
-                <BaseHeroBar :selected="'Hero'" />
-                <div class="hero-equp-select-lvJUvn">
-                    <FactionProperty v-for="item in heroList" :key="item.id" :property="item" @click="openPopup(item)"/>
+                <div class="page-container">
+                    <GoldBar />
+                    <BaseHeroBar :selected="'Hero'" />
+                    <div class="hero-equp-select-lvJUvn">
+                        <FactionProperty v-for="item in heroList" :key="item.id" :property="item"
+                            @click="openPopup(item)" />
+                    </div>
                 </div>
             </div>
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup"/>
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" />
 </template>
 
 <script>
@@ -23,65 +26,6 @@ import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
-
-import MeeleWeapon from '@/assets/Hero/Melee Weapon.png';
-import Gloves from '@/assets/Hero/Gloves.png';
-import RangedWeapon from '@/assets/Hero/Ranged Weapon.png';
-import OffHand from '@/assets/Hero/Off-hand.png';
-import ChestArmor from '@/assets/Hero/Chest Armor.png';
-import Pants from '@/assets/Hero/Pants.png';
-import Feet from '@/assets/Hero/Feet.png';
-import Belt from '@/assets/Hero/Belt.png';
-import Bracers from '@/assets/Hero/Bracers.png';
-import Shoulder from '@/assets/Hero/Shoulder.png';
-import Cloak from '@/assets/Hero/Cloak.png';
-import Neckless from '@/assets/Hero/Neckless.png';
-import Ring from '@/assets/Hero/Ring.png';
-import Ring2 from '@/assets/Hero/Ring 2.png';
-import Trinket from '@/assets/Hero/Trinket.png';
-import Trinket2 from '@/assets/Hero/Trinket 2.png';
-import MeleeWeaponGem from '@/assets/Hero/Melee Weapon Gem.png';
-import RangedWeaponGem from '@/assets/Hero/Ranged Weapon Gem.png';
-import OffHandGem from '@/assets/Hero/Off-Hand Gem.png';
-import ChestGem from '@/assets/Hero/Chest Gem.png';
-import PantsGem from '@/assets/Hero/Pants Gem.png';
-import GlovesGem from '@/assets/Hero/Gloves Gem.png';
-import FeetGem from '@/assets/Hero/Feet Gem.png';
-import BeltGem from '@/assets/Hero/Belt Gem.png';
-import BracersGem from '@/assets/Hero/Bracers Gem.png';
-import ShoulderGem from '@/assets/Hero/Shoulder Gem.png';
-import CloakGem from '@/assets/Hero/Cloak Gem.png';
-import NecklessGem from '@/assets/Hero/Neckless Gem.png';
-import RingGem from '@/assets/Hero/Ring Gem.png';
-import Ring2Gem from '@/assets/Hero/Ring 2 Gem.png';
-import TrinketGem from '@/assets/Hero/Trinket Gem.png';
-import Trinket2Gem from '@/assets/Hero/Trinket 2 Gem.png';
-import MeleeWeaponEnchant from '@/assets/Hero/Melee Weapon Enchant.png';
-import RangedWeaponEnchant from '@/assets/Hero/Ranged Weapon Enchant.png';
-import OffHandEnchant from '@/assets/Hero/Off-Hand Enchant.png';
-import ChestEnchant from '@/assets/Hero/Chest Enchant.png';
-import PantsEnchant from '@/assets/Hero/Pants Enchant.png';
-import GlovesEnchant from '@/assets/Hero/Gloves Enchant.png';
-import FeetEnchant from '@/assets/Hero/Feet Enchant.png';
-import BeltEnchant from '@/assets/Hero/Belt Enchant.png';
-import BracersEnchant from '@/assets/Hero/Bracers Enchant.png';
-import ShoulderEnchant from '@/assets/Hero/Shoulder Enchant.png';
-import CloakEnchant from '@/assets/Hero/Cloak Enchant.png';
-import NecklessEnchant from '@/assets/Hero/Neckless Enchant.png';
-import RingEnchant from '@/assets/Hero/Ring Enchant.png';
-import Ring2Enchant from '@/assets/Hero/Ring 2 Enchant.png';
-import TrinketEnchant from '@/assets/Hero/Trinket Enchant.png';
-import Trinket2Enchant from '@/assets/Hero/Trinket 2 Enchant.png';
-import MeleeWeaponRune from '@/assets/Hero/Melee Weapon Rune.png';
-import RangedWeaponRune from '@/assets/Hero/Ranged Weapon Rune.png';
-import OffHandRune from '@/assets/Hero/Off-Hand Rune.png';
-import ChestRune from '@/assets/Hero/Chest Rune.png';
-import PantsRune from '@/assets/Hero/Pants Rune.png';
-import GlovesRune from '@/assets/Hero/Gloves Rune.png';
-import FeetRune from '@/assets/Hero/Feet Rune.png';
-import BeltRune from '@/assets/Hero/Belt Rune.png';
-import BracersRune from '@/assets/Hero/Bracers Rune.png';
-import ShoulderRune from '@/assets/Hero/Shoulder Rune.png';
 
 export default {
     name: 'Hero',
@@ -104,7 +48,7 @@ export default {
                     gains: 8,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: MeeleWeapon,
+                    imageUrl: "Melee Weapon.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -115,7 +59,7 @@ export default {
                     gains: 12,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RangedWeapon,
+                    imageUrl: "Ranged Weapon.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -126,7 +70,7 @@ export default {
                     gains: 18,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: OffHand,
+                    imageUrl: "Off-hand.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -137,7 +81,7 @@ export default {
                     gains: 27,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ChestArmor,
+                    imageUrl: "Chest Armor.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -148,7 +92,7 @@ export default {
                     gains: 41,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Pants,
+                    imageUrl: "Pants.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -159,7 +103,7 @@ export default {
                     gains: 61,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Gloves,
+                    imageUrl: "Gloves.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -170,7 +114,7 @@ export default {
                     gains: 91,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Feet,
+                    imageUrl: "Feet.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -181,7 +125,7 @@ export default {
                     gains: 137,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Belt,
+                    imageUrl: "Belt.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -192,7 +136,7 @@ export default {
                     gains: 205,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Bracers,
+                    imageUrl: "Bracers.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -203,7 +147,7 @@ export default {
                     gains: 308,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Shoulder,
+                    imageUrl: "Shoulder.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -214,7 +158,7 @@ export default {
                     gains: 461,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Cloak,
+                    imageUrl: "Cloak.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -225,7 +169,7 @@ export default {
                     gains: 692,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Neckless,
+                    imageUrl: "Neckless.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -236,7 +180,7 @@ export default {
                     gains: 1038,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Ring,
+                    imageUrl: "Ring.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -247,7 +191,7 @@ export default {
                     gains: 1557,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Ring2,
+                    imageUrl: "Ring 2.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -258,7 +202,7 @@ export default {
                     gains: 2335,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Trinket,
+                    imageUrl: "Trinket.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -269,7 +213,7 @@ export default {
                     gains: 3503,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Trinket2,
+                    imageUrl: "Trinket 2.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -280,7 +224,7 @@ export default {
                     gains: 5255,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: MeleeWeaponGem,
+                    imageUrl: "Melee Weapon Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -291,7 +235,7 @@ export default {
                     gains: 7882,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RangedWeaponGem,
+                    imageUrl: "Ranged Weapon Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -302,7 +246,7 @@ export default {
                     gains: 11823,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: OffHandGem,
+                    imageUrl: "Off-Hand Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -313,7 +257,7 @@ export default {
                     gains: 17735,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ChestGem,
+                    imageUrl: "Chest Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -324,18 +268,18 @@ export default {
                     gains: 26602,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: PantsGem,
+                    imageUrl: "Pants Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
                     id: "22",
                     name: "Gloves Gem",
-                    description: " A sparkling gem that improves hand-to-hand combat skills",
+                    description: "A sparkling gem that improves hand-to-hand combat skills",
                     cost: 498789,
                     gains: 39903,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: GlovesGem,
+                    imageUrl: "Gloves Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -346,7 +290,7 @@ export default {
                     gains: 59855,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: FeetGem,
+                    imageUrl: "Feet Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -357,7 +301,7 @@ export default {
                     gains: 89782,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BeltGem,
+                    imageUrl: "Belt Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -368,7 +312,7 @@ export default {
                     gains: 134673,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BracersGem,
+                    imageUrl: "Bracers Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -379,7 +323,7 @@ export default {
                     gains: 202009,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ShoulderGem,
+                    imageUrl: "Shoulder Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -390,7 +334,7 @@ export default {
                     gains: 303014,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: CloakGem,
+                    imageUrl: "Cloak Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -401,7 +345,7 @@ export default {
                     gains: 454521,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: NecklessGem,
+                    imageUrl: "Neckless Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -412,7 +356,7 @@ export default {
                     gains: 681782,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RingGem,
+                    imageUrl: "Ring Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -423,7 +367,7 @@ export default {
                     gains: 1022672,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Ring2Gem,
+                    imageUrl: "Ring 2 Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -434,7 +378,7 @@ export default {
                     gains: 1534008,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: TrinketGem,
+                    imageUrl: "Trinket Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -445,7 +389,7 @@ export default {
                     gains: 2301013,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Trinket2Gem,
+                    imageUrl: "Trinket 2 Gem.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -456,7 +400,7 @@ export default {
                     gains: 3451519,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: MeleeWeaponEnchant,
+                    imageUrl: "Melee Weapon Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -467,7 +411,7 @@ export default {
                     gains: 5177279,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RangedWeaponEnchant,
+                    imageUrl: "Ranged Weapon Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -478,7 +422,7 @@ export default {
                     gains: 7765918,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: OffHandEnchant,
+                    imageUrl: "Off-Hand Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -489,7 +433,7 @@ export default {
                     gains: 11648877,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ChestEnchant,
+                    imageUrl: "Chest Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -500,7 +444,7 @@ export default {
                     gains: 17473315,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: PantsEnchant,
+                    imageUrl: "Pants Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -511,7 +455,7 @@ export default {
                     gains: 26209973,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: GlovesEnchant,
+                    imageUrl: "Gloves Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -522,7 +466,7 @@ export default {
                     gains: 39314959,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: FeetEnchant,
+                    imageUrl: "Feet Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -533,7 +477,7 @@ export default {
                     gains: 58972439,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BeltEnchant,
+                    imageUrl: "Belt Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -544,7 +488,7 @@ export default {
                     gains: 88458659,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BracersEnchant,
+                    imageUrl: "Bracers Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -555,18 +499,18 @@ export default {
                     gains: 132687988,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ShoulderEnchant,
+                    imageUrl: "Shoulder Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
                     id: "43",
                     name: "Cloak Enchant",
-                    description: " A mystical augmentation improving the cloak's protective qualities",
+                    description: "A mystical augmentation improving the cloak's protective qualities",
                     cost: 2487899772,
                     gains: 199031982,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: CloakEnchant,
+                    imageUrl: "Cloak Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -577,7 +521,7 @@ export default {
                     gains: 298547973,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: NecklessEnchant,
+                    imageUrl: "Neckless Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -588,7 +532,7 @@ export default {
                     gains: 447821959,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RingEnchant,
+                    imageUrl: "Ring Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -599,7 +543,7 @@ export default {
                     gains: 671732938,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Ring2Enchant,
+                    imageUrl: "Ring 2 Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -610,7 +554,7 @@ export default {
                     gains: 1007599408,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: TrinketEnchant,
+                    imageUrl: "Trinket Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -621,7 +565,7 @@ export default {
                     gains: 1511399112,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: Trinket2Enchant,
+                    imageUrl: "Trinket 2 Enchant.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -632,7 +576,7 @@ export default {
                     gains: 2267098667,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: MeleeWeaponRune,
+                    imageUrl: "Melee Weapon Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -643,7 +587,7 @@ export default {
                     gains: 3400648001,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: RangedWeaponRune,
+                    imageUrl: "Ranged Weapon Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -654,7 +598,7 @@ export default {
                     gains: 5100972002,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: OffHandRune,
+                    imageUrl: "Off-Hand Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -665,7 +609,7 @@ export default {
                     gains: 7651458003,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ChestRune,
+                    imageUrl: "Chest Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -676,7 +620,7 @@ export default {
                     gains: 11477187004,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: PantsRune,
+                    imageUrl: "Pants Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -687,7 +631,7 @@ export default {
                     gains: 17215780506,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: GlovesRune,
+                    imageUrl: "Gloves Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -698,7 +642,7 @@ export default {
                     gains: 25823670759,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: FeetRune,
+                    imageUrl: "Feet Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -709,7 +653,7 @@ export default {
                     gains: 38735506138,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BeltRune,
+                    imageUrl: "Belt Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -720,7 +664,7 @@ export default {
                     gains: 58103259207,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: BracersRune,
+                    imageUrl: "Bracers Rune.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -731,13 +675,17 @@ export default {
                     gains: 87154888811,
                     level: 0,
                     costMultiplier: 1.2,
-                    imageUrl: ShoulderRune,
+                    imageUrl: "Shoulder Rune.png",
                     raidIncomePerHour: 0
                 }
             ],
-            showPopup: false, 
-            selectedItem: null, 
+            showPopup: false,
+            selectedItem: null,
         };
+    },
+    async created() {
+        await this.loadImages();
+        console.clear();
     },
     methods: {
         upgradeHero(heroId) {
@@ -750,7 +698,12 @@ export default {
         closePopup() {
             this.showPopup = false;
             this.selectedItem = null;
-        }
+        },
+        async loadImages() {
+            for (let hero of this.heroList) {
+                hero.imageUrl = (await import(`@/assets/Hero/${hero.imageUrl}`)).default;
+            }
+        },
     },
 };
 </script>

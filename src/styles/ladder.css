@@ -40,69 +40,69 @@
     background-color: #191919;
     height: 932px;
     left: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     top: 0px;
-    width: 430px;
+    width: 100vw;
 }
 
 .orc-ladder .frame-30-sSjFR3 {
     background-color: transparent;
     height: 1015px;
-    left: 2px;
     position: absolute;
     top: -82px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-ladder .rectangle-3-7GkIVu {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 30%, rgb(209, 0, 28) 100%);
     background-color: transparent;
     height: 533px;
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-ladder .rectangle-1-7GkIVu {
-    background: linear-gradient(180deg, rgb(42, 63, 41) 0%, rgb(192, 177, 4) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
     height: 633px;
     left: 0px;
     position: absolute;
     top: 417px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-ladder .orc-banner-7GkIVu {
     background-color: transparent;
-    height: 428px;
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 218px;
-    width: 428px;
+    top: 330px;
+    width: 100vw;
+    z-index: 1;
 }
 
 .orc-ladder .ork-ladder-20-logo-7GkIVu {
     background-color: transparent;
-    height: 217px;
-    left: 159px;
+    left: 0;
     object-fit: cover;
-    position: absolute;
-    top: 133px;
-    width: 118px;
+    position: relative;
+    top: 15px;
+    width: 100vw;
+    width: 100%;
+    max-width: 425px;
 }
 
 .orc-ladder .group-12-7GkIVu {
     background-color: transparent;
     height: 34px;
-    left: 36px;
+    left: 0;
     position: absolute;
     top: 335px;
-    width: 357px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .orc-ladder .rectangle-4-c0QDzt {
@@ -111,10 +111,9 @@
     border-color: #555555bf;
     border-radius: 30px;
     height: 20px;
-    left: 0px;
     position: absolute;
     top: 15px;
-    width: 357px;
+    width: inherit;
 }
 
 .orc-ladder .rectangle-6-c0QDzt {
@@ -122,16 +121,15 @@
     border-radius: 30px;
     height: 18px;
     left: 2px;
-    position: absolute;
+    position: relative;
     top: 17px;
     width: 21px;
 }
 
 .orc-ladder .group-27-7GkIVu {
     height: 64px;
-    left: 128px;
-    position: absolute;
-    top: 415px;
+    position: relative;
+    top: 0;
     width: 180px;
     background: #21242980;
     box-shadow: 0 8px 32px 0 #21242980;
@@ -139,6 +137,7 @@
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid #21242980;
+    z-index: 2;
 }
 
 .orc-ladder .title-geIusQ {
@@ -177,6 +176,10 @@
     width: 153px;
 }
 
+.orc-ladder .level-120-geIusQ .ladder-level {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
 .orc-ladder .vector-8-geIusQ {
     height: 1px;
     left: 0px;
@@ -187,7 +190,6 @@
 .orc-ladder .group-16-7GkIVu {
     background-color: transparent;
     height: 41px;
-    left: 30px;
     position: relative;
     width: 367px;
 }
@@ -1232,4 +1234,31 @@
     text-align: left;
     white-space: nowrap;
     width: fit-content;
+}
+
+.orc-ladder-20-logo-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.ladder-info-container {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.ladder-list-container {
+    width: 100%;
+    position: relative;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
 }

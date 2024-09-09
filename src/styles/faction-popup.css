@@ -15,7 +15,8 @@
     left: 0;
     position: fixed;
     top: 0;
-    width: 430px
+    width: 430px;
+    z-index: 4;
 }
 
 .orc-melee-weapon .group-31-Jxx3Jc {
@@ -107,12 +108,13 @@
     font-weight: 400;
     height: auto;
     letter-spacing: -.24px;
-    line-height: 13.2px;
-    position: absolute;
-    text-align: left;
-    top: 697px;
-    white-space: nowrap;
-    width: auto
+    line-height: 11.2px;
+    text-align: center;
+    white-space: normal;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 195px;
 }
 
 .orc-melee-weapon .melee-weapon-Op5bx8 {
@@ -150,7 +152,7 @@
 .orc-melee-weapon .title-WQV2wA {
     background-color: transparent;
     color: #fffefc;
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-xl);
     font-style: normal;
     font-weight: 700;
@@ -200,7 +202,8 @@
     flex-direction: column;
     gap: 7px;
     justify-content: center;
-    position: relative
+    position: relative;
+    top: 15px;
 }
 
 .orc-melee-weapon .raid-income-per-hour-kBTGjp {
@@ -225,7 +228,8 @@
     display: inline-flex;
     flex: 0 0 auto;
     gap: 3px;
-    position: relative
+    position: relative;
+    top: -5px;
 }
 
 .orc-melee-weapon .group-9-37ez8N {
@@ -241,7 +245,7 @@
 .orc-melee-weapon .x123-37ez8N {
     background-color: transparent;
     color: var(--white);
-    font-family: var(--font-family-roboto);
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: var(--font-size-s);
     font-style: normal;
     font-weight: 600;

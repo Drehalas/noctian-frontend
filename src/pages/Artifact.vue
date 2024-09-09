@@ -3,11 +3,13 @@
         <div class="orc-hero screen ">
             <div class="frame-30-zHO16R">
                 <FactionHeader />
-                <GoldBar />
-                <BaseHeroBar :selected="'Artifact'" />
-                <div class="hero-equp-select-lvJUvn">
-                    <FactionProperty v-for="item in artifactList" :key="item.id" :property="item"
-                        @click="openPopup(item)" />
+                <div class="page-container">
+                    <GoldBar />
+                    <BaseHeroBar :selected="'Artifact'" />
+                    <div class="hero-equp-select-lvJUvn">
+                        <FactionProperty v-for="item in artifactList" :key="item.id" :property="item"
+                            @click="openPopup(item)" />
+                    </div>
                 </div>
             </div>
             <Footer :selected="'Base'" />
@@ -24,12 +26,6 @@ import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
-
-import GavelOfWarGod from '@/assets/Orc images/Orc Artifact/The Gavel of War God.png';
-import BloodChaliceOfMauller from '@/assets/Orc images/Orc Artifact/The Blood Chalice of Mauller.png';
-import BannerOfTheWars from '@/assets/Orc images/Orc Artifact/The Banner of the Wars.png';
-import MaskOfTheBeastlord from '@/assets/Orc images/Orc Artifact/The Mask of the Beastlord.png';
-import HeartOfTheVolcano from '@/assets/Orc images/Orc Artifact/The Heart of the Volcano.png';
 
 export default {
     name: 'Artifact',
@@ -52,7 +48,7 @@ export default {
                     gains: 3835021,
                     level: 0,
                     costMultiplier: 2,
-                    imageUrl: GavelOfWarGod,
+                    imageUrl: "The Gavel of War God.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -63,7 +59,7 @@ export default {
                     gains: 80535445,
                     level: 0,
                     costMultiplier: 2,
-                    imageUrl: BloodChaliceOfMauller,
+                    imageUrl: "The Blood Chalice of Mauller.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -74,7 +70,7 @@ export default {
                     gains: 1691244342,
                     level: 0,
                     costMultiplier: 2,
-                    imageUrl: BannerOfTheWars,
+                    imageUrl: "The Banner of the Wars.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -85,7 +81,7 @@ export default {
                     gains: 35516131191,
                     level: 0,
                     costMultiplier: 2,
-                    imageUrl: MaskOfTheBeastlord,
+                    imageUrl: "The Mask of the Beastlord.png",
                     raidIncomePerHour: 0
                 },
                 {
@@ -96,13 +92,19 @@ export default {
                     gains: 745838755013,
                     level: 0,
                     costMultiplier: 2,
-                    imageUrl: HeartOfTheVolcano,
+                    imageUrl: "The Heart of the Volcano.png",
                     raidIncomePerHour: 0
                 }
             ],
             showPopup: false,
             selectedItem: null,
+            factionType: null
         };
+    },
+    async created() {
+        this.getFactionType();
+        await this.loadImages();
+        console.clear();
     },
     methods: {
         openPopup(item) {
@@ -112,7 +114,15 @@ export default {
         closePopup() {
             this.showPopup = false;
             this.selectedItem = null;
-        }
+        },
+        getFactionType() {
+            this.factionType = "Orc";
+        },
+        async loadImages() {
+            for (let artifact of this.artifactList) {
+                artifact.imageUrl = (await import(`@/assets/${this.factionType} images/${this.factionType} Artifact/${artifact.imageUrl}`)).default;
+            }
+        },
     },
 };
 </script>
