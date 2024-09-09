@@ -42,10 +42,11 @@
                             <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
                                 alt="Line 1" style="position: relative;left: 125px;top: 6px;">
                         </div>
-                        <GoldBar ref="goldBar" />
+                        <GoldBar v-if="currentGold" :currentGold="currentGold"/>
                         <div class="group-12-Z6GGxj">
-                            <div class="rectangle-4-8WDrgx"></div>
-                            <div class="rectangle-5-8WDrgx" :style="{ backgroundColor: expBarColor }"></div>
+                            <div class="rectangle-4-8WDrgx" id="totalExp"></div>
+                            <div class="rectangle-5-8WDrgx" id="currentExp"
+                                :style="{ width: currentExpWidth() + 'px', backgroundColor: expBarColor }"></div>
                             <div class="frame-10-8WDrgx">
                                 <div class="wormfood-CUprVx wormfood roboto-medium-white-9px">
                                     {{ title }}
@@ -107,14 +108,14 @@
     </div>
     <div v-for="(text, index) in floatingTexts" :key="index" :id="index + '-float-text'"
         :style="{ top: text.y + 'px', left: text.x + 'px' }" @click="gainGold" class="floating-text">
-        +{{ increaseAmount }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
+        +{{ this.formattedGold(increaseAmount) }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
     </div>
     <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" />
 </template>
 
 <script>
 import '@/styles/attack.css';
-import attackService from '@/services/attackService';
+// import attackService from '@/services/attackService';
 import Footer from '@/components/Footer.vue';
 import GoldBar from '@/components/GoldBar.vue';
 import SkillBuff from '@/components/SkillBuff.vue';
@@ -136,8 +137,8 @@ export default {
             logoImage: null,
             floatingTexts: [],
             name: null,
-            incomePerHour: "500000",
-            increaseAmount: 99999,
+            incomePerHour: null,
+            increaseAmount: null,
             factionType: null,
             currentGold: null,
             level: null,
@@ -168,7 +169,10 @@ export default {
             const y = (innerHeight - event.clientY < limit) ? event.clientY - limit : event.clientY;
             this.createFloatingText(x, y);
 
-            this.$refs.goldBar.addGold(this.increaseAmount);
+            this.addGold(this.increaseAmount);
+        },    
+        addGold(amount) {
+            this.currentGold += amount;
         },
         createFloatingText(x, y) {
             this.floatingTexts.push({ x, y });
@@ -184,10 +188,7 @@ export default {
             this.loading = true;
 
             try {
-                const response = await attackService.getUserById(this.userId);
-
-                /*
-                {
+                const response = {
                     data: {
                         name: "Arthur8071",
                         incomePerHour: "500000",
@@ -195,21 +196,22 @@ export default {
                         currentGold: 1000,
                         level: 5,
                         avatarImage: "1. High Queen.png",
-                        exp: 100,
+                        exp: 95,
                         currentMana: 50,
                         totalMana: 100,
                         title: "Wormfood",
                         factionType: "ELF"
                     }
                 };
-                */
+
+                //await attackService.getUserById(this.userId);
 
                 const { name, incomePerHour, increaseAmount, factionType, currentGold, level, avatarImage, exp, currentMana, totalMana, title } = response.data;
                 this.name = name;
                 this.incomePerHour = incomePerHour;
                 this.increaseAmount = increaseAmount;
                 this.factionType = this.formatFactionType(factionType);
-                this.currentGold = this.formatNumber(currentGold);
+                this.currentGold = currentGold;
                 this.level = level;
                 this.avatarImage = avatarImage;
                 this.exp = exp;
@@ -234,7 +236,7 @@ export default {
             this.buttonImage = (await import(`@/assets/Global/Attack/${this.factionType} button.png`)).default;
             this.logoImage = (await import(`@/assets/Global/Attack/${this.factionType} logo.png`)).default;
         },
-        formatNumber(number) {
+        formattedGold(number) {
             const suffixes = ['', 'k', 'M', 'B', 'T'];
             let suffixIndex = 0;
 
@@ -316,6 +318,9 @@ export default {
             }
 
             this.topGradientColors = colors[this.factionType?.toUpperCase()];
+        },
+        currentExpWidth() {
+            return (this.exp / 100) * 130;
         }
     },
     mounted() {

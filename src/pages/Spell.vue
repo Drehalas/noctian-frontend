@@ -2,9 +2,10 @@
     <div class="container-center-horizontal hero">
         <div class="orc-hero screen ">
             <div class="frame-30-zHO16R">
-                <FactionHeader />
-                <div class="page-container">
-                    <GoldBar />
+                <FactionHeader :factionType="factionType" v-if="factionType"/>
+                <div class="page-container" v-if="bottomGradientColors"
+                    :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
+                    <GoldBar v-if="currentGold" :currentGold="currentGold" />
                     <BaseHeroBar :selected="'Spell'" />
                     <div class="hero-equp-select-lvJUvn">
                         <FactionProperty v-for="item in spellList" :key="item.id" :property="item"
@@ -39,6 +40,8 @@ export default {
     },
     data() {
         return {
+            currentGold: null,
+            userId: 100,
             spellList: [
                 {
                     id: "1",
@@ -340,11 +343,13 @@ export default {
             ],
             showPopup: false,
             selectedItem: null,
-            factionType: null
+            factionType: null,
+            bottomGradientColors: null,
         };
     },
     async created() {
-        this.getFactionType();
+        this.getUserData();
+        this.getBottomGradientColors();
         await this.loadImages();
         console.clear();
     },
@@ -357,13 +362,75 @@ export default {
             this.showPopup = false;
             this.selectedItem = null;
         },
-        getFactionType() {
-            this.factionType = "Orc";
-        },
         async loadImages() {
             for (let spell of this.spellList) {
-                spell.imageUrl = (await import(`@/assets/${this.factionType} images/${this.factionType} Spell/${spell.imageUrl}`)).default;
+                spell.imageUrl = (await import(`@/assets/${this.formatFactionType(this.factionType)} images/${this.formatFactionType(this.factionType)} Spell/${spell.imageUrl}`)).default;
             }
+        },
+        async getUserData() {
+            this.loading = true;
+
+            try {
+                const response = {
+                    data: {
+                        name: "Arthur8071",
+                        incomePerHour: "500000",
+                        increaseAmount: 55,
+                        currentGold: 1000,
+                        level: 5,
+                        avatarImage: "1. High Queen.png",
+                        exp: 95,
+                        currentMana: 50,
+                        totalMana: 100,
+                        title: "Wormfood",
+                        factionType: "ELF"
+                    }
+                };
+
+                //await attackService.getUserById(this.userId);
+
+                const { currentGold, factionType } = response.data;
+                this.currentGold = currentGold;
+                this.factionType = factionType;
+            } catch (error) {
+                this.error = error.message;
+                console.error('Failed to fetch ladder details:', error);
+            } finally {
+                this.loading = false;
+            }
+        },
+        formatFactionType(type) {
+            return type.toLowerCase().replace(/^\w/, (c) => c.toUpperCase());
+        },
+        getBottomGradientColors() {
+            const colors = {
+                ORC: {
+                    top: "#2A3F29",
+                    bottom: "#C0B104"
+                },
+                UNDEAD: {
+                    top: "#848484",
+                    bottom: "#182E26"
+                },
+                HUMAN: {
+                    top: "#CFCFD0",
+                    bottom: "#1E307A"
+                },
+                ANGEL: {
+                    top: "#D0CFCF",
+                    bottom: "#C6AC47"
+                },
+                ELF: {
+                    top: "#CACACA",
+                    bottom: "#0A2F00"
+                },
+                DEMON: {
+                    top: "#6F1F1F",
+                    bottom: "#C0B104"
+                }
+            }
+
+            this.bottomGradientColors = colors[this.factionType?.toUpperCase()];
         },
     },
 };

@@ -1,30 +1,67 @@
 <template>
     <div>
-        <div class="rectangle-3-lvJUvn"
-            :style="{ background: `linear-gradient(180deg, ${getTopLinearColors().top} 75%, ${getTopLinearColors().bottom} 100%)` }">
+        <div class="rectangle-3-lvJUvn" v-if="topGradientColors"
+            :style="{ background: `linear-gradient(180deg, ${topGradientColors.top} 65%, ${topGradientColors.bottom} 100%)` }">
         </div>
-        <img class="banner-lvJUvn" :src="BannerImg" alt="Orc banner">
+        <img v-if="bannerImg" class="banner-lvJUvn" :src="bannerImg" :alt="this.formatFactionType(this.factionType) + 'banner'">
     </div>
 </template>
 
 <script>
-import BannerImg from '@/assets/Global/Attack/Undead banner.png';
 
 export default {
     name: 'FactionHeader',
+    props: {
+        factionType: {
+            type: String,
+            required: true,
+        }
+    },
     data() {
         return {
-            BannerImg
+            bannerImg: null,
+            topGradientColors: null
         };
     },
     methods: {
-        getTopLinearColors() {
-            return {
-                top: "#000000",
-                bottom: "#182E26"
+        getTopGradientColors() {
+            const colors = {
+                ORC: {
+                    top: "#000000",
+                    bottom: "#D1001C"
+                },
+                UNDEAD: {
+                    top: "#000000",
+                    bottom: "#182E26"
+                },
+                HUMAN: {
+                    top: "#000000",
+                    bottom: "#0D2CAB"
+                },
+                ANGEL: {
+                    top: "#000000",
+                    bottom: "#FFFFFF"
+                },
+                ELF: {
+                    top: "#000000",
+                    bottom: "#4ACC17"
+                },
+                DEMON: {
+                    top: "#000000",
+                    bottom: "#D1001C"
+                }
             }
-        }
+            
+            this.topGradientColors = colors[this.factionType?.toUpperCase()];
+        },
+        formatFactionType(type) {
+            return type.toLowerCase().replace(/^\w/, (c) => c.toUpperCase());
+        },
     },
+    async mounted() {
+        this.getTopGradientColors();
+        this.bannerImg = (await import(`@/assets/Global/Attack/${this.formatFactionType(this.factionType)} banner.png`)).default;
+    }
 };
 </script>
 
