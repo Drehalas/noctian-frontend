@@ -2,9 +2,10 @@
     <div class="container-center-horizontal">
         <div class="orc-melee-weapon screen ">
             <div class="group-31-Jxx3Jc">
-                <div class="rectangle-3-Op5bx8"></div>
+                <div class="rectangle-3-Op5bx8" v-if="color"
+                    :style="{ background: `linear-gradient(180deg, #000 0%, ${color} 100%)` }"></div>
                 <div class="group-28-Op5bx8">
-                    <div class="rectangle-2-IxqKwS"></div>
+                    <div class="rectangle-2-IxqKwS" v-if="color" :style="{ backgroundColor: color }"></div>
                     <div class="rectangle-11-IxqKwS"></div>
                     <div class="buy-button-IxqKwS">
                         <div class="buy-DuEsqg">Buy</div>
@@ -50,6 +51,15 @@
 import "@/styles/faction-popup.css"
 export default {
     name: 'FactionPropertyPopup',
-    props: ['item']
+    props: {
+        item: {
+            type: Object,
+            required: true
+        },
+        color: {
+            type: String,
+            required: true
+        }
+    },
 };
 </script>

@@ -15,22 +15,28 @@
 <script>
 export default {
     name: 'GoldBar',
-    components: {
+    props: {
+        currentGold: {
+            type: Number,
+            required: true,
+        }
     },
-    data() {
-        return {
-            totalGold: 507.93
-        };
+    components: {
     },
     computed: {
         formattedGold() {
-            return this.totalGold.toFixed(2);
-        }
+            const suffixes = ['', 'k', 'M', 'B', 'T'];
+            let suffixIndex = 0;
+            let value = this.currentGold;
+            while (value >= 1000 && suffixIndex < suffixes.length - 1) {
+                value /= 1000;
+                suffixIndex++;
+            }
+
+            return value.toFixed(1).replace(/.0$/, '') + suffixes[suffixIndex];
+        },
     },
     methods: {
-        addGold(amount) {
-            this.totalGold += amount;
-        }
     },
 };
 </script>

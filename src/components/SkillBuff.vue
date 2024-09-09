@@ -16,7 +16,7 @@
                                     alt="Pngtreeglossy golden coin icon_6866281 1">
                             </div>
                         </div>
-                        <h1 class="title-PMa95H" style="font-size: 40px;">507,981</h1>
+                        <h1 class="title-PMa95H" style="font-size: 40px;" v-if="currentGold">{{ currentGold }}</h1>
                     </div>
                     <div class="frame-11-YDVDeA">
                         <div class="group-9-od4OWG group-9">
@@ -24,7 +24,7 @@
                                 <img class="ton-logo-rdGx6S ton-logo" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
                             </div>
                         </div>
-                        <div class="x801-od4OWG" style="font-size: 40px;">801</div>
+                        <div class="x801-od4OWG" style="font-size: 40px;" v-if="currentTon">{{ currentTon }}</div>
                     </div>
                     <div class="group-28-YDVDeA">
                         <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">Skills
@@ -84,8 +84,8 @@
                                         {{ skill.name }}
                                     </div>
                                     <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px">
-                                            {{ skill.description }}
+                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                            {{ skill.info }}
                                         </div>
                                         <div class="frame-19">
                                             <div class="x1 roboto-semi-bold-white-8-2px">{{ skill.gains }}</div>
@@ -101,11 +101,13 @@
                         </div>
                     </div>
                     <div class="potion-selection-YDVDeA potion-selection">
-                        <div class="property-61-BxVpmb property-61">
+                        <div class="property-61-BxVpmb property-61" v-for="(potion, index) in potions" :key="index"
+                            @click="openPopup(potion)">
                             <div class="group-18">
                                 <div class="rectangle-11"></div>
                                 <div class="frame-22-K1R0Nx frame-22">
-                                    <div class="lvl-0 roboto-semi-bold-white-9px">6 / 6</div>
+                                    <div class="lvl-0 roboto-semi-bold-white-9px">
+                                        {{ potion.currentPotions }} / {{ potion.totalPotions }}</div>
                                     <div class="frame-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
                                             fill="none">
@@ -130,7 +132,13 @@
                     </div>
                     <div class="item-select-YDVDeA">
                         <div class="property-61-BxVpmb property-61" v-for="(item, index) in items" :key="index"
-                            @click="openPopup(item)">
+                            @click="item.cooldown ? null : openPopup(item)">
+                            <div class="cooldown" v-if="item.cooldown">
+                                <div>Currently not active please wait</div>
+                                <div style="font-size: 30px">
+                                    {{ formattedCooldowns.items[index] }}
+                                </div>
+                            </div>
                             <div class="group-18">
                                 <div class="rectangle-11"></div>
                                 <div class="frame-22-K1R0Nx frame-22">
@@ -152,7 +160,8 @@
                                         {{ item.name }}
                                     </div>
                                     <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px">{{ item.description }}</div>
+                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                            {{ item.info }}</div>
                                         <div class="frame-19">
                                             <div class="x1 roboto-semi-bold-white-8-2px">{{ item.gains }}</div>
                                         </div>
@@ -167,7 +176,14 @@
                         </div>
                     </div>
                     <div class="potion-selection-3oCFl8 potion-selection">
-                        <div class="property-61-BxVpmb property-61">
+                        <div class="property-61-BxVpmb property-61" v-for="(spell, index) in spells" :key="index"
+                            @click="spell.cooldown ? null : openPopup(spell)">
+                            <div class="cooldown" v-if="spell.cooldown">
+                                <div>Currently not active please wait</div>
+                                <div style="font-size: 30px">
+                                    {{ formattedCooldowns.spells[index] }}
+                                </div>
+                            </div>
                             <div class="group-18">
                                 <div class="rectangle-11"></div>
                                 <div class="frame-22-K1R0Nx frame-22">
@@ -189,7 +205,8 @@
                                         The Ancient's <br>Transformation Ritual
                                     </div>
                                     <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px">Faction Chance</div>
+                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                            Faction Chance</div>
                                     </div>
                                 </div>
                                 <img class="multi-attack-K1R0Nx"
@@ -233,11 +250,22 @@ import AttackCritIncome from "@/assets/Buff/Attack Crit Income.png";
 import MagicGodsBloodPotion from "@/assets/Buff/Magic Gods Blood Potion.png";
 import HerosPocketPortal from "@/assets/Buff/Heros Pocket Portal.png";
 import ArmysRaidPortal from "@/assets/Buff/Armys Raid Portal.png";
+import TheAncientsTransformationRitual from "@/assets/Buff/The Ancients Transformation Ritual.png";
 
 export default {
     name: "SkillBuff",
     components: {
         SkillBuffPropertyPopup
+    },
+    props: {
+        currentGold: {
+            type: Number,
+            required: true
+        },
+        currentTon: {
+            type: Number,
+            required: true
+        }
     },
     data() {
         return {
@@ -245,87 +273,154 @@ export default {
             loading: true,
             showPopup: false,
             selectedItem: null,
+            formattedCooldowns: {
+                items: [],
+                spells: [],
+            },
             skills: [
                 {
-                    level: 0,
-                    iconSrc: GoldIcon,
-                    iconAlt: "Gold",
-                    cost: "156.92",
-                    name: "Multi Attack",
-                    description: "Attack",
-                    gains: "1",
-                    imageUrl: MultiAttack,
-                    imageAlt: "Multi Attack",
+                    "id": "1",
+                    "name": "Multi Attack",
+                    "info": "Attack",
+                    "description": "With more power comes more responsibility. The more you attack, the more mana you spend.",
+                    "cost": 100,
+                    "gains": 1,
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": MultiAttack,
+                    "iconSrc": GoldIcon
                 },
                 {
-                    level: 0,
-                    iconSrc: GoldIcon,
-                    iconAlt: "Gold",
-                    cost: "156.92",
-                    name: "Mana Pool",
-                    description: "Mana Pool",
-                    gains: "1000",
-                    imageUrl: ManaPool,
-                    imageAlt: "Mana Pool",
+                    "id": "2",
+                    "name": "Mana Pool",
+                    "info": "Mana Pool",
+                    "description": "By increasing your mana pool, you can make more attacks.",
+                    "cost": 100,
+                    "gains": 500,
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1000,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": ManaPool,
+                    "iconSrc": GoldIcon
                 },
                 {
-                    level: 0,
-                    iconSrc: GoldIcon,
-                    iconAlt: "Gold",
-                    cost: "156.92",
-                    name: "Attack Crit Chance",
-                    description: "Critical Attack Chance",
-                    gains: "% 1",
-                    imageUrl: AttackCritChance,
-                    imageAlt: "Attack Crit Chance",
+                    "id": "2",
+                    "name": "Attack Crit Chance",
+                    "info": "Critical Attack Chance",
+                    "description": "Increase your critical strike chance to earn more loot with just one click.",
+                    "cost": 200,
+                    "gains": "%1",
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1000,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": AttackCritChance,
+                    "iconSrc": GoldIcon
                 },
                 {
-                    level: 0,
-                    iconSrc: GoldIcon,
-                    iconAlt: "Gold",
-                    cost: "156.92",
-                    name: "Attack Crit Income",
-                    description: "Critical Income",
-                    gains: "% 10",
-                    imageUrl: AttackCritIncome,
-                    imageAlt: "Attack Crit Income",
+                    "id": "3",
+                    "name": "Attack Crit Income",
+                    "info": "Critical Income",
+                    "description": "You can increase the loot you get from critical attacks by increasing your critical damage.",
+                    "cost": 400,
+                    "gains": "%10",
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1000,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": AttackCritIncome,
+                    "iconSrc": GoldIcon
                 }
             ],
             items: [
                 {
-                    level: 0,
-                    iconSrc: TonIcon,
-                    iconAlt: "Ton",
-                    cost: "0.7",
-                    name: "Magic God's Blood Potion",
-                    description: "Regeneration per second",
-                    gains: "3 per second",
-                    imageUrl: MagicGodsBloodPotion,
-                    imageAlt: "MagicGodsBloodPotion",
+                    "id": "1",
+                    "name": "Magic God's Blood Potion",
+                    "info": "Regeneration per second",
+                    "description": "With this powerful potion, your mana pool will now regenerate faster.",
+                    "cost": 0.7,
+                    "gains": "1 per second",
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": "00:00:10",
+                    "refresh": null,
+                    "imageUrl": MagicGodsBloodPotion,
+                    "iconSrc": TonIcon,
+                    "iconAlt": "TON"
                 },
                 {
-                    level: 0,
-                    iconSrc: TonIcon,
-                    iconAlt: "Ton",
-                    cost: "0.7",
-                    name: "Hero's Pocket Portal",
-                    description: "Attack income bonus",
-                    gains: "%0",
-                    imageUrl: HerosPocketPortal,
-                    imageAlt: "HerosPocketPortal",
+                    "id": "2",
+                    "name": "Hero's Pocket Portal",
+                    "info": "Attack income bonus",
+                    "description": "Thanks to this item, you will no longer have to carry your loot. You will see that the income from your attacks will increase.",
+                    "cost": 0.7,
+                    "gains": "%5",
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": "00:01:10",
+                    "refresh": null,
+                    "imageUrl": HerosPocketPortal,
+                    "iconSrc": TonIcon,
+                    "iconAlt": "TON"
                 },
                 {
-                    level: 0,
-                    iconSrc: TonIcon,
-                    iconAlt: "Ton",
-                    cost: "0.7",
-                    name: "Army's Raid Portal",
-                    description: "Raid income bonus",
-                    gains: "%0",
-                    imageUrl: ArmysRaidPortal,
-                    imageAlt: "ArmysRaidPortal",
+                    "id": "3",
+                    "name": "Army's Raid Portal",
+                    "info": "Raid income bonus",
+                    "description": "It's one thing to raid, it's another thing for your army to carry it. With this item, you'll see your army's raid income increase.",
+                    "cost": 0.7,
+                    "gains": "%5",
+                    "level": 0,
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": ArmysRaidPortal,
+                    "iconSrc": TonIcon,
+                    "iconAlt": "TON"
                 }
             ],
+            potions: [
+                {
+                    "id": "1",
+                    "name": "Mana Potion",
+                    "info": "Daily Refresh",
+                    "description": "You can refill your Mana pool by drinking the potion, but remember, you can't drink it consecutively.",
+                    "totalPotions": 6,
+                    "currentPotions": 5,
+                    "cost": "5 / 6",
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": null,
+                    "refresh": null,
+                    "imageUrl": ManaPool,
+                },
+            ],
+            spells: [
+                {
+                    "id": "1",
+                    "name": "The Ancient's Transformation Ritual",
+                    "info": "Faction Chance",
+                    "description": "This ritual can transform you completely into a creature from another faction, but the ingredients for the spell are really hard to find.",
+                    "cost": "10",
+                    "costMultiplier": 1.5,
+                    "totalSkillGain": 1,
+                    "cooldown": "00:00:20",
+                    "refresh": null,
+                    "imageUrl": TheAncientsTransformationRitual,
+                    "iconSrc": TonIcon,
+                    "iconAlt": "TON"
+                },
+            ]
         };
     },
     created() {
@@ -351,7 +446,36 @@ export default {
         closePopup() {
             this.showPopup = false;
             this.selectedItem = null;
-        }
+        },
+        startCooldown(listName, index, cooldownTime) {
+            const [hours, minutes, seconds] = cooldownTime.split(":").map(Number);
+            let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+            const countdownInterval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(countdownInterval);
+                    this[listName][index].cooldown = null;
+                } else {
+                    totalSeconds--;
+
+                    const h = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+                    const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+                    const s = String(totalSeconds % 60).padStart(2, "0");
+
+                    this.formattedCooldowns[listName][index] = `${h}:${m}:${s}`;
+                }
+            }, 1000);
+        },
+    },
+    mounted() {
+        ["items", "spells"].forEach((listName) => {
+            this[listName].forEach((item, index) => {
+                if (item.cooldown) {
+                    this.formattedCooldowns[listName][index] = item.cooldown;
+                    this.startCooldown(listName, index, item.cooldown);
+                }
+            });
+        });
     },
 };
 </script>
@@ -391,5 +515,27 @@ export default {
 .slide-up-enter-to,
 .slide-up-leave-from {
     transform: translateY(0);
+}
+
+.cooldown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #31353b95;
+    border-radius: 15px;
+    cursor: not-allowed
+}
+
+.cooldown>div {
+    padding: 5px;
 }
 </style>
