@@ -36,7 +36,7 @@
     opacity: .3;
     position: absolute;
     top: 0;
-    width: 428px
+    width: 100vw
 }
 
 .orc-melee-weapon .group-28-Op5bx8 {
@@ -44,8 +44,8 @@
     height: 440px;
     left: 0;
     position: absolute;
-    top: 492px;
-    width: 428px
+    bottom: 0;
+    width: 100vw
 }
 
 .orc-melee-weapon .rectangle-2-IxqKwS {
@@ -55,7 +55,7 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 428px
+    width: 100vw
 }
 
 .orc-melee-weapon .rectangle-11-IxqKwS {
@@ -65,7 +65,7 @@
     left: 0;
     position: absolute;
     top: 1px;
-    width: 428px
+    width: 100vw
 }
 
 .orc-melee-weapon .buy-button-IxqKwS {
@@ -111,7 +111,7 @@
     line-height: 11.2px;
     text-align: center;
     white-space: normal;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
     top: 195px;

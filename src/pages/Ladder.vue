@@ -269,8 +269,6 @@ export default {
         },
     },
     created() {
-        console.log(1);
-
         this.getUserData();
         this.loadImages();
         this.fetchLadderDetails();

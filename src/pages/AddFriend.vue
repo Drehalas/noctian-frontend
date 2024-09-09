@@ -86,6 +86,7 @@ export default {
             currentGold: null,
             userId: 100,
             bottomGradientColors: null,
+            factionType: null,
             friends: [
                 { id: 1, name: 'Alice' },
                 { id: 2, name: 'Bob' },

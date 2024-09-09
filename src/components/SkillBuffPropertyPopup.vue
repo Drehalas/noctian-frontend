@@ -10,24 +10,24 @@
                         <div class="buy-DuEsqg">Buy</div>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <p class="a-well-balanced-weap-Op5bx8">{{ item.description }}</p>
+                <div style="display: flex;justify-content: center;width: 100vw;position: absolute;bottom: 230px;">
+                    <p class="a-well-balanced-weap-Op5bx8" style="top: 0;">{{ item.description }}</p>
                 </div>
                 <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">
                 <div class="frame-19-Op5bx8">
-                    <div class="group-9-WQV2wA group-9">
+                    <div class="group-9-WQV2wA group-9" v-if="item.iconSrc">
                         <img class="gold-xS7xA3 gold" :src="item.iconSrc" :alt="item.iconAlt">
                     </div>
-                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
+                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }} {{ item.iconAlt ? item.iconAlt : ''  }}</h1>
                 </div>
                 <div class="frame-25-Op5bx8">
                     <div class="melee-weapon-AYXywa">{{ item.name }}</div>
                     <div class="frame-24-AYXywa">
-                        <div class="raid-income-per-hour-kBTGjp">Raid income per hour</div>
-                        <div class="frame-4-kBTGjp">
-                            <div class="group-9-37ez8N group-9">
+                        <div class="raid-income-per-hour-kBTGjp">{{ item.info }}</div>
+                        <div class="frame-4-kBTGjp" v-if="item.gains">
+                            <!-- <div class="group-9-37ez8N group-9">
                                 <img class="gold-ZIYg15 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
-                            </div>
+                            </div> -->
                             <div class="x123-37ez8N" style="font-size: 9px;">+{{ item.gains }}</div>
                         </div>
                     </div>

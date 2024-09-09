@@ -110,7 +110,7 @@
         :style="{ top: text.y + 'px', left: text.x + 'px' }" @click="gainGold" class="floating-text">
         +{{ this.formattedGold(increaseAmount) }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
     </div>
-    <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" />
+    <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" :currentGold="currentGold" :currentTon="currentTon" v-if="currentGold && currentTon"/>
 </template>
 
 <script>
@@ -150,6 +150,7 @@ export default {
             bottomGradientColors: null,
             topGradientColors: null,
             userId: 100,
+            currentTon: null
         }
     },
     setup() {
@@ -194,6 +195,7 @@ export default {
                         incomePerHour: "500000",
                         increaseAmount: 55,
                         currentGold: 1000,
+                        currentTon: 350,
                         level: 5,
                         avatarImage: "1. Great Warchief.png",
                         exp: 95,
@@ -206,7 +208,7 @@ export default {
 
                 //await attackService.getUserById(this.userId);
 
-                const { name, incomePerHour, increaseAmount, factionType, currentGold, level, avatarImage, exp, currentMana, totalMana, title } = response.data;
+                const { name, incomePerHour, increaseAmount, factionType, currentGold, level, avatarImage, exp, currentMana, totalMana, title, currentTon } = response.data;
                 this.name = name;
                 this.incomePerHour = incomePerHour;
                 this.increaseAmount = increaseAmount;
@@ -218,6 +220,7 @@ export default {
                 this.currentMana = currentMana;
                 this.totalMana = totalMana;
                 this.title = title;
+                this.currentTon = currentTon;
             } catch (error) {
                 this.error = error.message;
                 console.error('Failed to fetch ladder details:', error);
@@ -226,8 +229,6 @@ export default {
             }
         },
         formatFactionType(type) {
-            console.log(type);
-
             return type.toLowerCase().replace(/^\w/, (c) => c.toUpperCase());
         },
         async loadImages() {
