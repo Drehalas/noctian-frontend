@@ -136,7 +136,7 @@
                             <div class="cooldown" v-if="item.cooldown">
                                 <div>Currently not active please wait</div>
                                 <div style="font-size: 30px">
-                                    {{ formattedCooldowns[index] }}
+                                    {{ formattedCooldowns.items[index] }}
                                 </div>
                             </div>
                             <div class="group-18">
@@ -177,7 +177,13 @@
                     </div>
                     <div class="potion-selection-3oCFl8 potion-selection">
                         <div class="property-61-BxVpmb property-61" v-for="(spell, index) in spells" :key="index"
-                            @click="openPopup(spell)">
+                            @click="spell.cooldown ? null : openPopup(spell)">
+                            <div class="cooldown" v-if="spell.cooldown">
+                                <div>Currently not active please wait</div>
+                                <div style="font-size: 30px">
+                                    {{ formattedCooldowns.spells[index] }}
+                                </div>
+                            </div>
                             <div class="group-18">
                                 <div class="rectangle-11"></div>
                                 <div class="frame-22-K1R0Nx frame-22">
@@ -267,7 +273,10 @@ export default {
             loading: true,
             showPopup: false,
             selectedItem: null,
-            formattedCooldowns: [],
+            formattedCooldowns: {
+                items: [],
+                spells: [],
+            },
             skills: [
                 {
                     "id": "1",
@@ -405,7 +414,7 @@ export default {
                     "cost": "10",
                     "costMultiplier": 1.5,
                     "totalSkillGain": 1,
-                    "cooldown": null,
+                    "cooldown": "00:00:20",
                     "refresh": null,
                     "imageUrl": TheAncientsTransformationRitual,
                     "iconSrc": TonIcon,
@@ -438,14 +447,14 @@ export default {
             this.showPopup = false;
             this.selectedItem = null;
         },
-        startCooldown(index, cooldownTime) {
+        startCooldown(listName, index, cooldownTime) {
             const [hours, minutes, seconds] = cooldownTime.split(":").map(Number);
             let totalSeconds = hours * 3600 + minutes * 60 + seconds;
 
             const countdownInterval = setInterval(() => {
                 if (totalSeconds <= 0) {
                     clearInterval(countdownInterval);
-                    this.items[index].cooldown = null;
+                    this[listName][index].cooldown = null;
                 } else {
                     totalSeconds--;
 
@@ -453,17 +462,19 @@ export default {
                     const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
                     const s = String(totalSeconds % 60).padStart(2, "0");
 
-                    this.formattedCooldowns[index] = `${h}:${m}:${s}`;
+                    this.formattedCooldowns[listName][index] = `${h}:${m}:${s}`;
                 }
             }, 1000);
         },
     },
     mounted() {
-        this.items.forEach((item, index) => {
-            if (item.cooldown) {
-                this.formattedCooldowns[index] = item.cooldown;
-                this.startCooldown(index, item.cooldown);
-            }
+        ["items", "spells"].forEach((listName) => {
+            this[listName].forEach((item, index) => {
+                if (item.cooldown) {
+                    this.formattedCooldowns[listName][index] = item.cooldown;
+                    this.startCooldown(listName, index, item.cooldown);
+                }
+            });
         });
     },
 };
