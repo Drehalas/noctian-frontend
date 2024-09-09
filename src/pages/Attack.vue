@@ -195,12 +195,12 @@ export default {
                         increaseAmount: 55,
                         currentGold: 1000,
                         level: 5,
-                        avatarImage: "1. High Queen.png",
+                        avatarImage: "1. Great Warchief.png",
                         exp: 95,
                         currentMana: 50,
                         totalMana: 100,
                         title: "Wormfood",
-                        factionType: "ELF"
+                        factionType: "ORC"
                     }
                 };
 

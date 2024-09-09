@@ -117,7 +117,7 @@ export default {
                         currentMana: 50,
                         totalMana: 100,
                         title: "Wormfood",
-                        factionType: "ELF"
+                        factionType: "ORC"
                     }
                 };
 

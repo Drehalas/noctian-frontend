@@ -16,7 +16,7 @@
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" />
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom"/>
 </template>
 
 <script>
@@ -727,7 +727,7 @@ export default {
                         currentMana: 50,
                         totalMana: 100,
                         title: "Wormfood",
-                        factionType: "ELF"
+                        factionType: "ORC"
                     }
                 };
 
