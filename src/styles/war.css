@@ -122,7 +122,7 @@
     background-color: transparent;
     height: 41px;
     left: 31px;
-    position: absolute;
+    position: relative;
     top: 511px;
     width: 367px;
 }
@@ -736,8 +736,8 @@
     background-color: transparent;
     height: 50px;
     left: 39px;
-    position: absolute;
-    top: 119px;
+    position: relative;
+    top: 35px;
     width: 333px;
 }
 
