@@ -2,7 +2,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Import your page components
-import Home from '../pages/Home.vue';
 import Loading from '../pages/Loading.vue';
 import Intro from '../pages/Intro.vue';
 import FactionSelection from '../pages/FactionSelection.vue';
@@ -21,8 +20,8 @@ import NotFound from '../pages/NotFound.vue';  // Ensure NotFound component is c
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home,
+        name: 'Attack',
+        component: Attack,
         meta: { layout: 'DefaultLayout' }
     },
     {
@@ -41,12 +40,6 @@ const routes = [
         path: '/faction-selection',
         name: 'FactionSelection',
         component: FactionSelection,
-        meta: { layout: 'DefaultLayout' }
-    },
-    {
-        path: '/attack',
-        name: 'Attack',
-        component: Attack,
         meta: { layout: 'DefaultLayout' }
     },
     {
