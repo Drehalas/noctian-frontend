@@ -8,15 +8,14 @@
                 <div class="page-container" v-if="bottomGradientColors"
                     :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
                     <GoldBar v-if="currentGold" :currentGold="currentGold" />
-                    <BaseHeroBar :selected="'Peon'" />
+                    <BaseHeroBar :selected="'Peon'" :factionType="factionType" v-if="factionType"/>
                     <div style="width: 100vw; display: flex; justify-content: center; flex-direction: column; align-items: center;">
                         <div class="group-19-YWnndF">
                             <div class="group-18-ads4WT group-18">
                                 <div class="rectangle-11-hwdVXu rectangle-11"></div>
                                 <div class="frame-22-hwdVXu">
                                     <div class="peon-6jHW5V peon">
-                                        PEON
-
+                                        {{getAddFriendText()}}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="180" height="2"
                                             viewBox="0 0 180 2" fill="none" style="position: relative">
                                             <path d="M0 0.929443H180" stroke="white" stroke-width="0.3" />
@@ -164,6 +163,24 @@ export default {
 
             this.bottomGradientColors = colors[this.factionType?.toUpperCase()];
         },
+        getAddFriendText() {
+            switch (this.factionType) {
+                case "ORC":
+                    return "Peon";
+                case "ELF":
+                    return "Fledgling";
+                case "DEMON":
+                    return "Servitor";
+                case "ANGEL":
+                    return "Neophyte";
+                case "HUMAN":
+                    return "Squire";
+                case "UNDEAD":
+                    return "Acolyte";
+                default:
+                    return "";
+            }
+        }
     },
     mounted() {
         this.getUserData();

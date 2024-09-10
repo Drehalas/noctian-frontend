@@ -6,7 +6,7 @@
                 <div class="page-container" v-if="bottomGradientColors"
                     :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
                     <GoldBar v-if="currentGold" :currentGold="currentGold" />
-                    <BaseHeroBar :selected="'Armory'" />
+                    <BaseHeroBar :selected="'Armory'" :factionType="factionType" v-if="factionType"/>
                     <div class="hero-equp-select-lvJUvn">
                         <FactionProperty v-for="item in armoryList" :key="item.id" :property="item"
                             @click="openPopup(item)" />
