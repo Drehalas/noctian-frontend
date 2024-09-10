@@ -71,6 +71,7 @@ import BaseHeroBar from "@/components/BaseHeroBar.vue";
 import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import { useToast } from "vue-toastification";
+import axios from 'axios';
 
 export default {
     name: 'AddFriend',
@@ -86,10 +87,7 @@ export default {
             userId: 100,
             bottomGradientColors: null,
             factionType: null,
-            friends: [
-                { id: 1, name: 'Alice' },
-                { id: 2, name: 'Bob' },
-            ],
+            friends: [],
         };
     },
     setup() {
@@ -105,23 +103,9 @@ export default {
             this.loading = true;
 
             try {
-                const response = {
-                    data: {
-                        name: "Arthur8071",
-                        incomePerHour: "500000",
-                        increaseAmount: 55,
-                        currentGold: 1000,
-                        level: 5,
-                        avatarImage: "1. High Queen.png",
-                        exp: 95,
-                        currentMana: 50,
-                        totalMana: 100,
-                        title: "Wormfood",
-                        factionType: "ORC"
-                    }
-                };
-
-                //await attackService.getUserById(this.userId);
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/user', {
+                    params: { userId: this.userId }
+                });
 
                 const { currentGold, factionType } = response.data;
                 this.currentGold = currentGold;
@@ -180,11 +164,24 @@ export default {
                 default:
                     return "";
             }
+        },
+        async fetchFriendData() {
+            try {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/friends', {
+                    params: { userId: this.userId }
+                });
+                
+                this.friends = response.data;
+            } catch (error) {
+                console.error('Error fetching friend data:', error);
+            }
         }
     },
-    mounted() {
-        this.getUserData();
+    async created() {
+        await this.getUserData();
+        await this.fetchFriendData();
         this.getBottomGradientColors();
-    }
+        console.clear();
+    },
 };
 </script>

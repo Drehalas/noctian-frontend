@@ -95,8 +95,8 @@
 
 <script>
 import '@/styles/ladder.css';
-import ladderService from '@/services/ladderService';
 import Footer from "@/components/Footer.vue";
+import axios from 'axios';
 
 export default {
     name: 'Ladder',
@@ -122,7 +122,10 @@ export default {
         async fetchLadderDetails() {
             this.loading = true;
             try {
-                const response = await ladderService.fetchAllLadders();
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladders', {
+                    params: { userId: this.userId }
+                });
+
                 this.ladderEntries = response.data.map(ladder => ({
                     id: ladder.id,
                     playerName: ladder.playerName,
@@ -139,7 +142,10 @@ export default {
         async fetchLadderDetailsById() {
             this.loading = true;
             try {
-                const response = await ladderService.fetchLadderById(this.userId);
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladders/' + this.userId, {
+                    params: { userId: this.userId }
+                });
+
                 this.myLadderData = response.data;
             } catch (error) {
                 this.error = error.message;
@@ -152,23 +158,9 @@ export default {
             this.loading = true;
 
             try {
-                const response = {
-                    data: {
-                        name: "Arthur8071",
-                        incomePerHour: "500000",
-                        increaseAmount: 55,
-                        currentGold: 1000,
-                        level: 5,
-                        avatarImage: "1. Great Warchief.png",
-                        exp: 95,
-                        currentMana: 50,
-                        totalMana: 100,
-                        title: "Wormfood",
-                        factionType: "ORC"
-                    }
-                };
-
-                //await attackService.getUserById(this.userId);
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/user', {
+                    params: { userId: this.userId }
+                });
 
                 const { factionType, avatarImage, title, exp } = response.data;
                 this.factionType = factionType;
@@ -268,11 +260,11 @@ export default {
             this.bottomGradientColors = colors[this.factionType?.toUpperCase()];
         },
     },
-    created() {
-        this.getUserData();
-        this.loadImages();
-        this.fetchLadderDetails();
-        this.fetchLadderDetailsById();
+    async created() {
+        await this.getUserData();
+        await this.fetchLadderDetails();
+        await this.fetchLadderDetailsById();
+        await this.loadImages();
     },
     mounted() {
         this.currentExpWidth();

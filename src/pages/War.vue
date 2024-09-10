@@ -82,6 +82,7 @@
 <script>
 import '@/styles/war.css';
 import Footer from "@/components/Footer.vue";
+import axios from 'axios';
 
 export default {
     name: 'War',
@@ -90,53 +91,13 @@ export default {
     },
     data() {
         return {
-            warList: [
-                {
-                    id: 1,
-                    first: "ORCS",
-                    second: "ELVES"
-                },
-                {
-                    id: 2,
-                    first: "DEMONS",
-                    second: "ANGELS"
-                },
-                {
-                    id: 3,
-                    first: "UNDEADS",
-                    second: "HUMANS"
-                }
-            ],
-            throneList: [
-                {
-                    faction: "ORCS",
-                    totalGold: "321.02B"
-                },
-                {
-                    faction: "DEMONS",
-                    totalGold: "318.98B"
-                },
-                {
-                    faction: "ANGELS",
-                    totalGold: "316.51B"
-                },
-                {
-                    faction: "ELVES",
-                    totalGold: "314.27B"
-                },
-                {
-                    faction: "HUMANS",
-                    totalGold: "311.51B"
-                },
-                {
-                    faction: "UNDEADS",
-                    totalGold: "274.74B"
-                }
-            ],
-            endTime: new Date('2024-09-12T00:00:00').getTime(),
+            warList: [],
+            throneList: [],
+            nextWarTime: null,
             hours: 0,
             minutes: 0,
-            seconds: 0
+            seconds: 0,
+            timer: null
         }
     },
     methods: {
@@ -145,7 +106,7 @@ export default {
         },
         updateCountdown() {
             const now = new Date().getTime()
-            const distance = this.endTime - now
+            const distance = this.nextWarTime - now
 
             if (distance > 0) {
                 this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
@@ -203,11 +164,27 @@ export default {
 
             return type.toLowerCase().replace(/^\w/, (c) => c.toUpperCase());
         },
+        async fetchWarData() {
+            try {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/war', {
+                    params: { userId: this.userId }
+                });
+
+                const { warList, throneList, nextWarTime } = response.data;
+                
+                this.warList = warList;
+                this.throneList = throneList;
+                this.nextWarTime = nextWarTime;
+            } catch (error) {
+                console.error('Error fetching friend data:', error);
+            }
+        }
     },
-    mounted() {
+    async mounted() {
+        await this.fetchWarData();
+        await this.loadImages();
         this.updateCountdown();
         this.timer = setInterval(this.updateCountdown, 1000);
-        this.loadImages();
     }
 };
 </script>

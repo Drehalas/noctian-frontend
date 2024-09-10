@@ -238,19 +238,8 @@
 
 <script>
 import "@/styles/skill-buff.css"
-import skillBuffService from "@/services/skillBuffService";
 import SkillBuffPropertyPopup from "./SkillBuffPropertyPopup.vue";
-
-import GoldIcon from "@/assets/Global/Common/Gold.png";
-import TonIcon from "@/assets/Buff/Ton Logo.png";
-import MultiAttack from "@/assets/Buff/Multi Attack.png";
-import ManaPool from "@/assets/Buff/Mana Pool.png";
-import AttackCritChance from "@/assets/Buff/Attack Crit Chance.png";
-import AttackCritIncome from "@/assets/Buff/Attack Crit Income.png";
-import MagicGodsBloodPotion from "@/assets/Buff/Magic Gods Blood Potion.png";
-import HerosPocketPortal from "@/assets/Buff/Heros Pocket Portal.png";
-import ArmysRaidPortal from "@/assets/Buff/Armys Raid Portal.png";
-import TheAncientsTransformationRitual from "@/assets/Buff/The Ancients Transformation Ritual.png";
+import axios from "axios";
 
 export default {
     name: "SkillBuff",
@@ -277,160 +266,29 @@ export default {
                 items: [],
                 spells: [],
             },
-            skills: [
-                {
-                    "id": "1",
-                    "name": "Multi Attack",
-                    "info": "Attack",
-                    "description": "With more power comes more responsibility. The more you attack, the more mana you spend.",
-                    "cost": 100,
-                    "gains": 1,
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": MultiAttack,
-                    "iconSrc": GoldIcon
-                },
-                {
-                    "id": "2",
-                    "name": "Mana Pool",
-                    "info": "Mana Pool",
-                    "description": "By increasing your mana pool, you can make more attacks.",
-                    "cost": 100,
-                    "gains": 500,
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1000,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": ManaPool,
-                    "iconSrc": GoldIcon
-                },
-                {
-                    "id": "2",
-                    "name": "Attack Crit Chance",
-                    "info": "Critical Attack Chance",
-                    "description": "Increase your critical strike chance to earn more loot with just one click.",
-                    "cost": 200,
-                    "gains": "%1",
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1000,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": AttackCritChance,
-                    "iconSrc": GoldIcon
-                },
-                {
-                    "id": "3",
-                    "name": "Attack Crit Income",
-                    "info": "Critical Income",
-                    "description": "You can increase the loot you get from critical attacks by increasing your critical damage.",
-                    "cost": 400,
-                    "gains": "%10",
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1000,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": AttackCritIncome,
-                    "iconSrc": GoldIcon
-                }
-            ],
-            items: [
-                {
-                    "id": "1",
-                    "name": "Magic God's Blood Potion",
-                    "info": "Regeneration per second",
-                    "description": "With this powerful potion, your mana pool will now regenerate faster.",
-                    "cost": 0.7,
-                    "gains": "1 per second",
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": "00:00:10",
-                    "isPermaClosed": true,
-                    "refresh": null,
-                    "imageUrl": MagicGodsBloodPotion,
-                    "iconSrc": TonIcon,
-                    "iconAlt": "TON"
-                },
-                {
-                    "id": "2",
-                    "name": "Hero's Pocket Portal",
-                    "info": "Attack income bonus",
-                    "description": "Thanks to this item, you will no longer have to carry your loot. You will see that the income from your attacks will increase.",
-                    "cost": 0.7,
-                    "gains": "%5",
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": "00:00:12",
-                    "refresh": null,
-                    "imageUrl": HerosPocketPortal,
-                    "iconSrc": TonIcon,
-                    "iconAlt": "TON"
-                },
-                {
-                    "id": "3",
-                    "name": "Army's Raid Portal",
-                    "info": "Raid income bonus",
-                    "description": "It's one thing to raid, it's another thing for your army to carry it. With this item, you'll see your army's raid income increase.",
-                    "cost": 0.7,
-                    "gains": "%5",
-                    "level": 0,
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": ArmysRaidPortal,
-                    "iconSrc": TonIcon,
-                    "iconAlt": "TON"
-                }
-            ],
-            potions: [
-                {
-                    "id": "1",
-                    "name": "Mana Potion",
-                    "info": "Daily Refresh",
-                    "description": "You can refill your Mana pool by drinking the potion, but remember, you can't drink it consecutively.",
-                    "totalPotions": 6,
-                    "currentPotions": 5,
-                    "cost": "5 / 6",
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": null,
-                    "refresh": null,
-                    "imageUrl": ManaPool,
-                },
-            ],
-            spells: [
-                {
-                    "id": "1",
-                    "name": "The Ancient's Transformation Ritual",
-                    "info": "Faction Chance",
-                    "description": "This ritual can transform you completely into a creature from another faction, but the ingredients for the spell are really hard to find.",
-                    "cost": "10",
-                    "costMultiplier": 1.5,
-                    "totalSkillGain": 1,
-                    "cooldown": "00:00:05",
-                    "refresh": null,
-                    "imageUrl": TheAncientsTransformationRitual,
-                    "iconSrc": TonIcon,
-                    "iconAlt": "TON"
-                },
-            ]
+            skills: [],
+            items: [],
+            potions: [],
+            spells: []
         };
     },
-    created() {
-        //this.fetchSkillBuffs();
+    async created() {
+        await this.fetchSkillBuffs();
+        await this.loadImages();
     },
     methods: {
         async fetchSkillBuffs() {
             try {
-                this.skillBuffs = await skillBuffService.getAll();
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/skillbuffs', {
+                    params: { userId: this.userId }
+                });
+                
+                const { skills, items, potions, spells } = response.data;
+
+                this.skills = skills;
+                this.items = items;
+                this.potions = potions;
+                this.spells = spells;
             } catch (error) {
                 console.error("Failed to fetch skill buff data:", error);
             } finally {
@@ -467,6 +325,15 @@ export default {
                 }
             }, 1000);
         },
+        async loadImages() {
+            const categories = ['skills', 'items', 'potions', 'spells'];
+
+            for (const category of categories) {
+                for (const item of this[category]) {
+                    item.imageUrl = (await import(`@/assets/Buff/${item.imageUrl}`)).default;
+                }
+            }
+        }
     },
     mounted() {
         ["items", "spells"].forEach((listName) => {
