@@ -282,7 +282,7 @@ export default {
                 const response = await axios.get(process.env.VUE_APP_API_URL + '/skillbuffs', {
                     params: { userId: this.userId }
                 });
-                
+
                 const { skills, items, potions, spells } = response.data;
 
                 this.skills = skills;
@@ -295,16 +295,16 @@ export default {
                 this.loading = false;
             }
         },
-  async upgradeSkill(skillId) {
-    try {
-      const response = await axios.post(process.env.VUE_APP_API_URL + '/skillbuffs/upgrade', {
-        skillId
-      });
-      console.log('Skill upgraded successfully:', response.data);
-    } catch (error) {
-      console.error('Failed to upgrade skill:', error);
-    }
-  },
+        async upgradeSkill(skillId) {
+            try {
+                const response = await axios.post(process.env.VUE_APP_API_URL + '/skillbuffs/upgrade', {
+                    skillId
+                });
+                console.log('Skill upgraded successfully:', response.data);
+            } catch (error) {
+                console.error('Failed to upgrade skill:', error);
+            }
+        },
         closeSkillBuff() {
             this.$emit('close');
         },

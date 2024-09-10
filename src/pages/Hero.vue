@@ -6,7 +6,7 @@
                 <div class="page-container" v-if="bottomGradientColors"
                     :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
                     <GoldBar v-if="currentGold" :currentGold="currentGold" />
-                    <BaseHeroBar :selected="'Hero'" :factionType="factionType" v-if="factionType"/>
+                    <BaseHeroBar :selected="'Hero'" :factionType="factionType" v-if="factionType" />
                     <div class="hero-equp-select-lvJUvn">
                         <FactionProperty v-for="item in heroList" :key="item.id" :property="item"
                             @click="openPopup(item)" />
@@ -16,7 +16,7 @@
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom"/>
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom" />
 </template>
 
 <script>
@@ -40,42 +40,41 @@ export default {
     },
     data() {
         return {
-          currentGold: null,
-          userId: 100,
-          factionType: null,
-          heroList: [],
-          showPopup: false,
-          selectedItem: null,
-          bottomGradientColors: null,
+            currentGold: null,
+            userId: 100,
+            factionType: null,
+            heroList: [],
+            showPopup: false,
+            selectedItem: null,
+            bottomGradientColors: null,
         };
     },
     async created() {
-      await this.getUserData();
-      await this.getHeroEquipment();
-      this.getBottomGradientColors();
-      await this.loadImages();
+        await this.getUserData();
+        await this.getHeroEquipment();
+        this.getBottomGradientColors();
+        await this.loadImages();
     },
     methods: {
         async upgradeHero(heroId) {
-          try {
-            const response = await axios.post('/api/hero/upgrade', {
-              userId: this.userId,
-              itemId: heroId
-            });
-            console.log('Upgrade successful:', response.data);
-          } catch (error) {
-            console.error('Failed to upgrade hero:', error);
-          }
+            try {
+                const response = await axios.post(process.env.VUE_APP_API_URL + '/api/hero/upgrade', {
+                    userId: this.userId,
+                    itemId: heroId
+                });
+                console.log('Upgrade successful:', response.data);
+            } catch (error) {
+                console.error('Failed to upgrade hero:', error);
+            }
         },
-
-      async getHeroEquipment() {
-        try {
-          const response = await axios.get(`/api/hero/${this.userId}`);
-          this.heroList = response.data;
-        } catch (error) {
-          console.error('Failed to fetch hero equipment:', error);
-        }
-      },
+        async getHeroEquipment() {
+            try {
+                const response = await axios.get(process.env.VUE_APP_API_URL + `/api/hero/${this.userId}`);
+                this.heroList = response.data;
+            } catch (error) {
+                console.error('Failed to fetch hero equipment:', error);
+            }
+        },
         openPopup(item) {
             this.selectedItem = item;
             this.showPopup = true;
@@ -89,17 +88,17 @@ export default {
                 hero.imageUrl = (await import(`@/assets/Hero/${hero.imageUrl}`)).default;
             }
         },
-      async getUserData() {
-        try {
-          const response = await axios.get(`/api/userGameData/${this.userId}`);
-          const { currentGold, factionType } = response.data;
+        async getUserData() {
+            try {
+                const response = await axios.get(process.env.VUE_APP_API_URL + `/api/userGameData/${this.userId}`);
+                const { currentGold, factionType } = response.data;
 
-          this.currentGold = currentGold;
-          this.factionType = factionType;
-        } catch (error) {
-          console.error('Failed to fetch user game data:', error);
-        }
-      },
+                this.currentGold = currentGold;
+                this.factionType = factionType;
+            } catch (error) {
+                console.error('Failed to fetch user game data:', error);
+            }
+        },
         getBottomGradientColors() {
             const colors = {
                 ORC: {
