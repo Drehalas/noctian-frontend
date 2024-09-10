@@ -132,10 +132,10 @@
                     </div>
                     <div class="item-select-YDVDeA">
                         <div class="property-61-BxVpmb property-61" v-for="(item, index) in items" :key="index"
-                            @click="item.cooldown ? null : openPopup(item)">
+                            @click="item.cooldown || item.isPermaClosed ? null : openPopup(item)">
                             <div class="cooldown" v-if="item.cooldown">
                                 <div>Currently not active please wait</div>
-                                <div style="font-size: 30px">
+                                <div style="font-size: 30px" v-if="!item.isPermaClosed">
                                     {{ formattedCooldowns.items[index] }}
                                 </div>
                             </div>
@@ -177,10 +177,10 @@
                     </div>
                     <div class="potion-selection-3oCFl8 potion-selection">
                         <div class="property-61-BxVpmb property-61" v-for="(spell, index) in spells" :key="index"
-                            @click="spell.cooldown ? null : openPopup(spell)">
+                            @click="spell.cooldown || spell.isPermaClosed ? null : openPopup(spell)">
                             <div class="cooldown" v-if="spell.cooldown">
                                 <div>Currently not active please wait</div>
-                                <div style="font-size: 30px">
+                                <div style="font-size: 30px" v-if="!spell.isPermaClosed">
                                     {{ formattedCooldowns.spells[index] }}
                                 </div>
                             </div>
@@ -367,7 +367,7 @@ export default {
                     "level": 0,
                     "costMultiplier": 1.5,
                     "totalSkillGain": 1,
-                    "cooldown": "00:01:10",
+                    "cooldown": "00:00:12",
                     "refresh": null,
                     "imageUrl": HerosPocketPortal,
                     "iconSrc": TonIcon,
@@ -471,7 +471,7 @@ export default {
     mounted() {
         ["items", "spells"].forEach((listName) => {
             this[listName].forEach((item, index) => {
-                if (item.cooldown) {
+                if (item.cooldown && !item.isPermaClosed) {
                     this.formattedCooldowns[listName][index] = item.cooldown;
                     this.startCooldown(listName, index, item.cooldown);
                 }
