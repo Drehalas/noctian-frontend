@@ -10,7 +10,7 @@
                     <div class="buy-button-IxqKwS">
                         <div class="buy-DuEsqg">Buy</div>
                     </div>
-                    <div style="display: flex; justify-content: center;">
+                    <div style="display: flex;justify-content: center;width: 100vw;position: absolute;bottom: 195px;">
                         <p class="a-well-balanced-weap-Op5bx8">{{ item.description }}</p>
                     </div>
                 </div>

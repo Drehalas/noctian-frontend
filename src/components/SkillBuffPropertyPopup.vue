@@ -10,7 +10,7 @@
                         <div class="buy-DuEsqg">Buy</div>
                     </div>
                 </div>
-                <div style="display: flex;justify-content: center;width: 100vw;position: absolute;bottom: 230px;">
+                <div style="display: flex;justify-content: center;width: 100vw;position: absolute;bottom: 195px;">
                     <p class="a-well-balanced-weap-Op5bx8" style="top: 0;">{{ item.description }}</p>
                 </div>
                 <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">

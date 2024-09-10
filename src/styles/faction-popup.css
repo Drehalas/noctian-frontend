@@ -114,15 +114,13 @@
     width: 70%;
     margin: 0 auto;
     position: relative;
-    top: 195px;
 }
 
 .orc-melee-weapon .melee-weapon-Op5bx8 {
     background-color: transparent;
-    height: 75px;
     left: 177px;
     position: absolute;
-    top: 563px;
+    top: 535px;
     width: 75px
 }
 
@@ -182,7 +180,7 @@
     background-color: transparent;
     color: #fffefc;
     font-family: var(--font-family-roboto);
-    font-size: var(--font-size-xl);
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     height: 32px;
