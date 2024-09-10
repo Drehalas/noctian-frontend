@@ -321,7 +321,10 @@ export default {
             this.topGradientColors = colors[this.factionType?.toUpperCase()];
         },
         currentExpWidth() {
-            return (this.exp / 100) * 130;
+            const rectangle4 = document.querySelector('.rectangle-4-8WDrgx');
+            const width = rectangle4?.offsetWidth;
+
+            return (this.exp / 100) * width;
         }
     },
     mounted() {

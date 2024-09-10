@@ -67,24 +67,24 @@ export default {
     background-color: #191919;
     display: flex;
     gap: 10px;
-    height: 100%;
+    height: 100vh;
     left: 0px;
     margin: 0px;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     overflow: hidden;
     overflow-x: hidden;
     position: relative;
     top: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 .intro .frame-a1KK9a {
     background-color: transparent;
-    height: 932px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .intro .frame-29-ojYCXP {
@@ -98,15 +98,16 @@ export default {
 
 .intro .rectangle-13-Nx77TY {
     background-color: #000000;
-    height: 241px;
-    left: 0px;
+    height: 100vh;
     position: relative;
-    top: 344px;
-    width: 429px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
 }
 
 .intro video {
-    height: 100%;
     width: 100%;
 }
 </style>
