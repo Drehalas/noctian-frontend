@@ -42,7 +42,7 @@
                             <img class="line-1-4fyxtR line-1" src="@/assets/Global/Attack/Vertical line.svg"
                                 alt="Line 1" style="position: relative;left: 125px;top: 6px;">
                         </div>
-                        <GoldBar v-if="currentGold" :currentGold="currentGold"/>
+                        <GoldBar v-if="currentGold" :currentGold="currentGold" />
                         <div class="group-12-Z6GGxj">
                             <div class="rectangle-4-8WDrgx" id="totalExp"></div>
                             <div class="rectangle-5-8WDrgx" id="currentExp"
@@ -110,16 +110,17 @@
         :style="{ top: text.y + 'px', left: text.x + 'px' }" @click="gainGold" class="floating-text">
         +{{ this.formattedGold(increaseAmount) }} <img class="" src="@/assets/Global/Common/Gold.png" alt="Gold">
     </div>
-    <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" :currentGold="currentGold" :currentTon="currentTon" v-if="currentGold && currentTon"/>
+    <SkillBuff v-show="isSkillBuffVisible" @close="toggleSkillBuffDiv" :currentGold="currentGold"
+        :currentTon="currentTon" v-if="currentGold && currentTon" />
 </template>
 
 <script>
 import '@/styles/attack.css';
-// import attackService from '@/services/attackService';
 import Footer from '@/components/Footer.vue';
 import GoldBar from '@/components/GoldBar.vue';
 import SkillBuff from '@/components/SkillBuff.vue';
 import { useToast } from "vue-toastification";
+import axios from 'axios';
 
 export default {
     name: 'Attack',
@@ -171,7 +172,7 @@ export default {
             this.createFloatingText(x, y);
 
             this.addGold(this.increaseAmount);
-        },    
+        },
         addGold(amount) {
             this.currentGold += amount;
         },
@@ -189,24 +190,9 @@ export default {
             this.loading = true;
 
             try {
-                const response = {
-                    data: {
-                        name: "Arthur8071",
-                        incomePerHour: "500000",
-                        increaseAmount: 55,
-                        currentGold: 1000,
-                        currentTon: 350,
-                        level: 5,
-                        avatarImage: "1. Great Warchief.png",
-                        exp: 95,
-                        currentMana: 50,
-                        totalMana: 100,
-                        title: "Wormfood",
-                        factionType: "ORC"
-                    }
-                };
-
-                //await attackService.getUserById(this.userId);
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/user', {
+                    params: { userId: this.userId }
+                });
 
                 const { name, incomePerHour, increaseAmount, factionType, currentGold, level, avatarImage, exp, currentMana, totalMana, title, currentTon } = response.data;
                 this.name = name;
@@ -327,11 +313,11 @@ export default {
             return (this.exp / 100) * width;
         }
     },
-    mounted() {
-        this.getUserData();
+    async mounted() {
+        await this.getUserData();
+        await this.loadImages();
         this.getBottomGradientColors();
         this.getTopGradientColors();
-        this.loadImages();
         this.getExpBarColor();
     }
 };
