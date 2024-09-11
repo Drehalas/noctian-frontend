@@ -27,6 +27,7 @@ import GoldBar from "@/components/GoldBar.vue";
 import FactionHeader from "@/components/FactionHeader.vue";
 import FactionProperty from "@/components/FactionProperty.vue";
 import FactionPropertyPopup from "@/components/FactionPropertyPopup.vue";
+import axios from 'axios';
 
 export default {
     name: 'Hero',
