@@ -39,7 +39,7 @@
 
 .orc-war {
     background-color: #191919;
-    height: 932px;
+    height: 100vh;
     left: 0px;
     overflow: hidden;
     position: relative;
@@ -49,20 +49,19 @@
 
 .orc-war .frame-30-0Yffcq {
     background-color: transparent;
-    height: 1015px;
+    height: 100vh;
     position: absolute;
-    top: -82px;
     width: 100vw;
 }
 
 .orc-war .rectangle-3-gfXRIF {
     background: linear-gradient(180deg, #000000 70%, rgb(232, 225, 13) 100%);
     background-color: transparent;
-    height: 533px;
+    height: 57vh;
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-war .rectangle-1-gfXRIF {
@@ -71,25 +70,23 @@
     left: 0px;
     position: absolute;
     top: 417px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-war .war-banner-gfXRIF {
     background-color: transparent;
-    height: 428px;
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 355px;
-    width: 428px;
+    top: 37vh;
+    width: 100vw;
 }
 
 .orc-war .group-27-gfXRIF {
     background-color: transparent;
     height: 28px;
-    left: 128px;
     position: absolute;
-    top: 476px;
+    top: 0;
     width: 182px;
 }
 
@@ -121,9 +118,8 @@
 .orc-war .group-16-gfXRIF {
     background-color: transparent;
     height: 41px;
-    left: 31px;
     position: relative;
-    top: 511px;
+    top: 40px;
     width: 367px;
 }
 
@@ -728,25 +724,22 @@
     background-color: transparent;
     object-fit: cover;
     position: absolute;
-    top: 100px;
-    width: 100%;
+    top: 0px;
 }
 
 .orc-war .group-39-gfXRIF {
     background-color: transparent;
     height: 50px;
-    left: 39px;
     position: relative;
     top: 35px;
     width: 333px;
 }
 
 .orc-war .rectangle-10-9mhVzY {
-    height: 41px;
-    left: 17px;
+    height: 42px;
     opacity: 0.25;
     top: 3px;
-    width: 316px;
+    width: 333px;
 }
 
 .orc-war .frame-16-9mhVzY {
@@ -754,6 +747,9 @@
     left: 0px;
     top: 7px;
     width: 333px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .orc-war .frame-19-C1Ze1Q {
@@ -762,15 +758,14 @@
     display: flex;
     gap: 10px;
     justify-content: center;
-    left: 20px;
+    left: 5px;
     padding: 10px;
-    position: absolute;
+    position: relative;
     width: 100px;
 }
 
 .orc-war .frame-20-C1Ze1Q {
     background-color: #0c9a0080;
-    left: 210px;
 }
 
 .orc-war .group-40-gfXRIF {
@@ -860,31 +855,31 @@
 .orc-war .group-45-gfXRIF {
     background-color: transparent;
     height: 72px;
-    left: 14px;
-    position: absolute;
-    top: 275px;
-    width: 380px;
+    position: relative;
+    top: 45px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .orc-war .rectangle-10-OxckLq {
+    background-color: #31353b50 !important;
     height: 70px;
-    left: 19px;
-    opacity: 0.25;
     top: 0px;
     width: 361px;
+    position: relative !important;
 }
 
 .orc-war .frame-16-OxckLq {
     height: 65px;
-    left: 0px;
-    top: 7px;
-    width: 380px;
+    top: 5px;
+    position: relative !important;
 }
 
 .orc-war .frame-19-tkD6WF {
     background-color: #040200b0;
-    height: 58px;
-    left: 24px;
+    height: 60px;
+    left: 5px;
     position: relative;
     width: 350px;
 }
@@ -1223,9 +1218,10 @@
     gap: 10px;
     justify-content: center;
     padding: 10px;
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 100px;
+    right: 5px;
 }
 
 .orc-war .frame-4 {
@@ -1316,9 +1312,8 @@
 .orc-war .x22 {
     background-color: transparent;
     height: 50px;
-    left: 150px;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 50px;
 }

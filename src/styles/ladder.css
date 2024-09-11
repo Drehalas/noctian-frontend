@@ -38,7 +38,7 @@
 
 .orc-ladder {
     background-color: #191919;
-    height: 932px;
+    height: 100vh;
     left: 0px;
     overflow-x: hidden;
     position: relative;
@@ -48,7 +48,7 @@
 
 .orc-ladder .frame-30-sSjFR3 {
     background-color: transparent;
-    height: 1015px;
+    height: 100vh;
     position: absolute;
     top: -82px;
     width: 100vw;

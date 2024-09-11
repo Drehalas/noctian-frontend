@@ -19,21 +19,21 @@
 
 .orc-treasure {
     background-color: #191919;
-    height: 932px;
+    height: 100vh;
     left: 0px;
     overflow: hidden;
     position: relative;
     top: 0px;
-    width: 430px;
+    width: 100vw;
 }
 
 .orc-treasure .frame-30-exKbOx {
     background-color: transparent;
-    height: 1015px;
+    height: 100vh;
     left: 0px;
     position: absolute;
-    top: -82px;
-    width: 428px;
+    top: 0;
+    width: 100vw;
 }
 
 .orc-treasure .rectangle-3-Cjm0nv {
@@ -41,8 +41,8 @@
     height: 451px;
     left: 0px;
     position: absolute;
-    top: 82px;
-    width: 428px;
+    top: 0;
+    width: 100vw;
 }
 
 .orc-treasure .rectangle-1-Cjm0nv {
@@ -51,16 +51,15 @@
     left: 0px;
     position: absolute;
     top: 417px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-treasure .war-banner-Cjm0nv {
     background-color: transparent;
-    height: 439px;
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 439px;
+    top: 34vh;
     width: 100vw
 }
 
@@ -76,9 +75,7 @@
 .orc-treasure .group-27-Cjm0nv {
     background-color: transparent;
     height: 45px;
-    left: 128px;
-    position: absolute;
-    top: 517px;
+    position: relative;
     width: 182px;
 }
 
@@ -113,8 +110,8 @@
     background-color: transparent;
     height: 306px;
     left: 0px;
-    position: absolute;
-    top: 82px;
+    position: relative;
+    top: 0;
     width: 428px;
 }
 
@@ -168,9 +165,7 @@
 .orc-treasure .group-19-Cjm0nv {
     background-color: transparent;
     height: 38px;
-    left: 25px;
-    position: absolute;
-    top: 562px;
+    position: relative;
     width: 367px;
 }
 
@@ -216,10 +211,9 @@
 .orc-treasure .add-wallet-button-Cjm0nv {
     background-color: transparent;
     height: 55px;
-    left: 25px;
-    position: absolute;
+    position: relative;
     border: 1px solid #9b5311;
-    top: 626px;
+    top: 3vh;
     width: 367px;
     border-radius: 15px;
 }
