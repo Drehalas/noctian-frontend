@@ -300,7 +300,7 @@
     cursor: pointer;
     height: 107.557861328125px;
     position: relative;
-    width: 180px;
+    width: 165px;
 }
 
 .orc-hero .frame-22-qGPTjX {
@@ -330,7 +330,7 @@
     margin-top: -1.00px;
     position: relative;
     text-align: left;
-    white-space: nowrap;
+    white-space: normal;
     width: fit-content;
 }
 
@@ -456,7 +456,7 @@
     left: 0px;
     position: relative;
     top: 0px;
-    width: 180px;
+    width: 165px;
     border-radius: 15px;
     box-shadow: 4px 4px 20px -7px rgba(0, 0, 0, 0.84);
 }
@@ -502,7 +502,7 @@
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 180px;
+    width: 165px;
 }
 
 .orc-hero .vector-8 {

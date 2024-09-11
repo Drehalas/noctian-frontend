@@ -30,7 +30,7 @@
                 </div>
             </div>
             <img class="spirit-shield-qGPTjX" :src="property.imageUrl" :alt="property.name" loading="lazy"/>
-            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1" fill="none"
+            <svg xmlns="http://www.w3.org/2000/svg" width="165" height="1" viewBox="0 0 180 1" fill="none"
                 style="position: relative;top: 55px;">
                 <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
             </svg>
