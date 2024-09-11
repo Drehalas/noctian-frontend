@@ -7,30 +7,33 @@
                 <div class="group-28-Op5bx8">
                     <div class="rectangle-2-IxqKwS" v-if="color" :style="{ backgroundColor: color }"></div>
                     <div class="rectangle-11-IxqKwS"></div>
-                    <div class="buy-button-IxqKwS">
-                        <div class="buy-DuEsqg">Buy</div>
-                    </div>
-                    <div style="display: flex;justify-content: center;width: 100vw;position: absolute;bottom: 195px;">
+                </div>
+                <div
+                    style="bottom: 0px;position: absolute;height: 440px;width: 100vw;display: flex;justify-content: space-around;flex-direction: column;align-items: center;">
+                    <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">
+                    <div class="melee-weapon-AYXywa">{{ item.name }}</div>
+                    <div style="width: inherit;position: relative;">
                         <p class="a-well-balanced-weap-Op5bx8">{{ item.description }}</p>
                     </div>
-                </div>
-                <img class="melee-weapon-Op5bx8" :src="item.imageUrl" :alt="item.name">
-                <div class="frame-19-Op5bx8">
-                    <div class="group-9-WQV2wA group-9">
-                        <img class="gold-xS7xA3 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
-                    </div>
-                    <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
-                </div>
-                <div class="frame-25-Op5bx8">
-                    <div class="melee-weapon-AYXywa">{{ item.name }}</div>
-                    <div class="frame-24-AYXywa">
-                        <div class="raid-income-per-hour-kBTGjp">Raid income per hour</div>
-                        <div class="frame-4-kBTGjp">
-                            <div class="group-9-37ez8N group-9">
-                                <img class="gold-ZIYg15 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
+                    <div class="frame-25-Op5bx8">
+                        <div class="frame-24-AYXywa">
+                            <div class="raid-income-per-hour-kBTGjp">Raid income per hour</div>
+                            <div class="frame-4-kBTGjp">
+                                <div class="group-9-37ez8N group-9">
+                                    <img class="gold-ZIYg15 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
+                                </div>
+                                <div class="x123-37ez8N" style="font-size: 9px;">+{{ item.gains }}</div>
                             </div>
-                            <div class="x123-37ez8N" style="font-size: 9px;">+{{ item.gains }}</div>
                         </div>
+                    </div>
+                    <div class="frame-19-Op5bx8">
+                        <div class="group-9-WQV2wA group-9">
+                            <img class="gold-xS7xA3 gold" src="@/assets/Global/Common/Gold.png" alt="Gold">
+                        </div>
+                        <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
+                    </div>
+                    <div class="buy-button-IxqKwS">
+                        <div class="buy-DuEsqg">Buy</div>
                     </div>
                 </div>
                 <div class="close-button-Op5bx8">
