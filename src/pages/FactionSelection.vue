@@ -253,20 +253,9 @@ export default {
         },
         async fetchFactionDescription() {
             try {
-                // const response = await axios.get(process.env.VUE_APP_API_URL + '/factions', {
-                //     params: { userId: this.userId }
-                // });
-
-                const response = {
-                    data: {
-                        HUMAN: "Humans, renowned for their cunning, courage, and adaptability, united the factions in the last Throne War and claimed dominion over the world. Yet, years of prosperity have corrupted their hearts. With the last Emperor's death and no heir to the throne, the human realm is fracturing. Kings vie for power, each claiming the imperial title. Can you unite the fractured human kingdoms and restore the Empire to its former glory? Can you lead humanity to once more dominate the world?",
-                        ORC: 'The Orcs, a brutish, bloodthirsty race of warriors, suffered devastating losses supporting the demonic faction in the Throne Wars. Driven from their lands, they now roam as nomadic hordes, scavenging the desolate wastes for forgotten treasures. Now, armed with ancient knowledge and battle-hardened, they stand at the precipice of war. But they lack a leader, a warlord to unite their clans and claim the throne. Could you be the one to forge a new orcish empire? Could you rule the world?',
-                        ANGEL: 'The angelic faction, beings of wisdom, compassion, and order, entered the Throne War late. Residing in the celestial realm, they were detached from the affairs of Noctia until the demonic hordes threatened to consume the world. With celestial gates swinging open, angelic legions descended upon the demonic armies. After a long and bloody conflict, the angels triumphed, but at a great cost. Having ensured the human Emperor would maintain order, they returned to the heavens. But perhaps they were wrong to entrust Noctia to mortals. Could you lead the angels once more, and bring true peace and order to the world?',
-                        DEMON: 'The Demons, cruel, powerful, and cunning entities, were the most formidable force in the last Throne War. They sought to conquer Noctia and transform it into a hellish realm. However, a united front of factions forced them back through the portals from which they came. After three hundred winters of gathering their strength, the Demons are poised to return. Can you lead them to victory, reclaim Noctia, and make it your infernal domain?',
-                        ELF: 'The Elves, renowned for their wisdom, grace, and prowess in battle, stood with humanity in the last Throne War and claimed dominion over the forests. For centuries, they lived in tranquility. Yet, as various races, particularly humans, encroached upon their woodlands, the elves have been forced to defend their realm. Now, they sharpen their blades and gather their magical artifacts. All they lack is a queen to unite their kingdoms and lead them to victory. Could you be that queen? Could you restore peace to the world?',
-                        UNDEAD: "The Undead, cunning, patient, and wise necromancers, were resurrected by powerful death mages to aid humanity in the last Throne War. However, fearing their growing power, the Emperor ordered their extermination. The Undead leaders, formidable beings, evaded capture and vanished into the shadows. Now, they dwell in the swamps of Noctia, their undead armies growing stronger with each fallen soldier. They seek vengeance against humanity. Can you unite the Undead and lead them to conquer the world, creating a realm where only the undead shall reign?"
-                    }
-                }
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/factions', {
+                    params: { userId: this.userId }
+                });
 
                 this.descriptions = response.data;
             } catch (error) {
