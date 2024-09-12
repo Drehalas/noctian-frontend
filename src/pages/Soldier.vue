@@ -60,6 +60,8 @@ export default {
     },
     methods: {
         async upgradeSoldier(soldierId) {
+          try {
+
             const response = await axios.post(process.env.VUE_APP_API_URL + '/soldiers', {
                 params: {
                     userId: this.userId,
@@ -70,6 +72,9 @@ export default {
             if (response.status == 200) {
                 console.log("Success");
             }
+          } catch (error) {
+            console.error("Error upgrading soldier:", error);
+          }
         },
         openPopup(item) {
             this.selectedItem = item;
