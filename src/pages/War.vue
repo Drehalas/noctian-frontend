@@ -121,15 +121,15 @@ export default {
             }
 
         },
-      async fetchNextWarTime() {
-        try {
-          const response = await axios.get(process.env.VUE_APP_API_URL + '/nextwar');
-          this.nextWarTime = response.data.nextWarTime;
-          this.timer = setInterval(this.updateCountdown, 1000); // Start the countdown
-        } catch (error) {
-          console.error('Failed to fetch next war time:', error);
-        }
-      },
+        async fetchNextWarTime() {
+            try {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/nextwar');
+                this.nextWarTime = response.data.nextWarTime;
+                this.timer = setInterval(this.updateCountdown, 1000); // Start the countdown
+            } catch (error) {
+                console.error('Failed to fetch next war time:', error);
+            }
+        },
         getWarBackgroundColor(faction) {
             switch (faction) {
                 case "ORCS":
@@ -180,25 +180,22 @@ export default {
                 const response = await axios.get(process.env.VUE_APP_API_URL + '/war', {
                     params: { userId: this.userId }
                 });
-                const { warList, throneList, nextWarTime } = response.data;
+                const { warList, throneList } = response.data;
 
                 this.warList = warList;
                 this.throneList = throneList;
-                this.nextWarTime = nextWarTime;
             } catch (error) {
                 console.error('Error fetching war data:', error);
             }
         }
     },
-  async created() {
-    await this.fetchNextWarTime();
-  },
-  beforeDestroy() {
-    clearInterval(this.timer); // Clear the interval when component is destroyed
-  },
-    async mounted() {
+    async created() {
         await this.fetchWarData();
         await this.loadImages();
+        await this.fetchNextWarTime();
+
+    },
+    mounted() {
         this.updateCountdown();
         this.timer = setInterval(this.updateCountdown, 1000);
     }

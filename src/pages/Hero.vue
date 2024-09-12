@@ -60,14 +60,14 @@ export default {
     },
     methods: {
         async upgradeHero(heroId) {
-            const response = await axios.post(process.env.VUE_APP_API_URL + '/heros', {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/hero', {
                 params: {
                     userId: this.userId,
                     id: heroId
                 }
             });
 
-            if(response.status == 200) {
+            if (response.status == 200) {
                 console.log("Success");
             }
         },

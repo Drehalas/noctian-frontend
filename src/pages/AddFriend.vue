@@ -98,7 +98,7 @@ export default {
     methods: {
       async addFriend() {
         try {
-          const response = await axios.post(process.env.VUE_APP_API_URL + '/friends', {
+          const response = await axios.post(process.env.VUE_APP_API_URL + '/friend', {
             userId: this.userId,
             addFriendName: this.friendName,
           });
@@ -182,7 +182,7 @@ export default {
         },
         async fetchFriendData() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/friends', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/friend', {
                     params: { userId: this.userId }
                 });
                 

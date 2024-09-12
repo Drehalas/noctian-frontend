@@ -122,7 +122,7 @@ export default {
         async fetchLadderDetails() {
             this.loading = true;
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladders', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladder', {
                     params: { userId: this.userId }
                 });
 
@@ -142,7 +142,7 @@ export default {
         async fetchLadderDetailsById() {
             this.loading = true;
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladders/' + this.userId, {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/ladder/' + this.userId, {
                     params: { userId: this.userId }
                 });
 

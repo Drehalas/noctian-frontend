@@ -279,7 +279,7 @@ export default {
     methods: {
         async fetchSkillBuffs() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/skillbuffs', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/skillbuff', {
                     params: { userId: this.userId }
                 });
                 

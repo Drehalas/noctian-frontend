@@ -60,7 +60,7 @@ export default {
     },
     methods: {
         async upgradeSpell(spellId) {
-            const response = await axios.post(process.env.VUE_APP_API_URL + '/spells', {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/spell', {
                 params: {
                     userId: this.userId,
                     id: spellId
@@ -137,7 +137,7 @@ export default {
         },
         async fetchSpellData() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/spells', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/spell', {
                     params: { userId: this.userId }
                 });
 

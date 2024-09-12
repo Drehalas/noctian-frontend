@@ -237,7 +237,7 @@ export default {
         },
         async selectFaction() {
             try {
-                const response = await axios.post(process.env.VUE_APP_API_URL + '/factions', {
+                const response = await axios.post(process.env.VUE_APP_API_URL + '/faction', {
                     params: {
                         userId: this.userId,
                         faction: this.selectedFaction
@@ -253,7 +253,7 @@ export default {
         },
         async fetchFactionDescription() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/factions', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/faction', {
                     params: { userId: this.userId }
                 });
 

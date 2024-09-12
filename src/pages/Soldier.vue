@@ -62,7 +62,7 @@ export default {
         async upgradeSoldier(soldierId) {
           try {
 
-            const response = await axios.post(process.env.VUE_APP_API_URL + '/soldiers', {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/soldier', {
                 params: {
                     userId: this.userId,
                     id: soldierId
@@ -142,7 +142,7 @@ export default {
         },
         async fetchSoldierData() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/soldiers', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/soldier', {
                     params: { userId: this.userId }
                 });
 

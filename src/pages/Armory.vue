@@ -60,7 +60,7 @@ export default {
     },
     methods: {
         async upgradeArmory(armoryId) {
-            const response = await axios.post(process.env.VUE_APP_API_URL + '/armories', {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/armory', {
                 params: {
                     userId: this.userId,
                     id: armoryId

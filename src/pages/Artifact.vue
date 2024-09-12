@@ -60,7 +60,7 @@ export default {
     },
     methods: {
         async upgradeArtifact(artifactId) {
-            const response = await axios.post(process.env.VUE_APP_API_URL + '/artifacts', {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/artifact', {
                 params: {
                     userId: this.userId,
                     id: artifactId
@@ -137,7 +137,7 @@ export default {
         },
         async fetchArmoryData() {
             try {
-                const response = await axios.get(process.env.VUE_APP_API_URL + '/artifacts', {
+                const response = await axios.get(process.env.VUE_APP_API_URL + '/artifact', {
                     params: { userId: this.userId }
                 });
 
