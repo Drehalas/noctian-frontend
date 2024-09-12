@@ -166,7 +166,7 @@
     background-color: transparent;
     height: 38px;
     position: relative;
-    width: 367px;
+    width: 70vw;
 }
 
 .orc-treasure .group-18-GtvAHp {
@@ -179,16 +179,13 @@
 }
 
 .orc-treasure .frame-23-9Nt7xs {
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 13px;
-    left: 8px;
-    position: absolute;
-    top: 12px;
-    width: 346px;
+    position: relative;
+    width: 70vw;
 }
 
 .orc-treasure .please-connect-your-di0LSt {
@@ -199,8 +196,6 @@
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 400;
-    height: 25px;
-    letter-spacing: -0.20px;
     line-height: 11.0px;
     margin-bottom: 0;
     margin-top: 0;
@@ -214,7 +209,7 @@
     position: relative;
     border: 1px solid #9b5311;
     top: 3vh;
-    width: 367px;
+    width: 70vw;
     border-radius: 15px;
 }
 
@@ -229,14 +224,14 @@
 }
 
 .orc-treasure .frame-21-ZVRKks {
-    align-items: flex-start;
     background-color: #FE881C;
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
-    left: 113px;
-    position: absolute;
-    top: 15px;
+    position: relative;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .orc-treasure .add-wallet-mbRsOe {
@@ -246,13 +241,10 @@
     font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 400;
-    letter-spacing: -0.48px;
-    line-height: 26.4px;
-    margin-top: -1.00px;
     position: relative;
-    text-align: left;
-    white-space: nowrap;
-    width: fit-content;
+    text-align: center;
+    white-space: normal;
+    width: 70vw;
 }
 
 .orc-treasure .general-treasure-bar-exKbOx {
@@ -516,7 +508,10 @@
     left: 0px;
     position: relative;
     top: 0px;
-    width: 367px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .orc-treasure .rectangle-11 {
@@ -524,5 +519,5 @@
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 367px;
+    width: 70vw;
 }
