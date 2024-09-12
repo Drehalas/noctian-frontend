@@ -64,12 +64,12 @@
 /* screen - orc-skill-u38-buff */
 
 .orc-skill-u38-buff {
-    background-color: #191919;
-    height: 1100px;
+    background: linear-gradient(180deg, rgb(139, 124, 44) 0%, rgb(200, 196, 189) 100%);
+    height: auto;
     left: 0px;
     overflow: hidden;
     top: 0px;
-    width: 430px;
+    width: 100vw;
     position: absolute;
 }
 
@@ -78,8 +78,8 @@
     height: 1211px;
     left: 0px;
     position: relative;
-    top: -111px;
-    width: 428px;
+    top: -155px;
+    width: 100vw;
     z-index: 4;
 }
 
@@ -88,9 +88,9 @@
     background-color: transparent;
     height: 296px;
     left: 0px;
-    position: absolute;
+    position: relative;
     top: 0px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-skill-u38-buff .group-14-YDVDeA {
@@ -99,7 +99,7 @@
     left: 0px;
     position: absolute;
     top: 172px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-skill-u38-buff .rectangle-2-28LpMs {
@@ -109,18 +109,18 @@
     left: 0px;
     position: relative;
     top: 0px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-skill-u38-buff .rectangle-1-YDVDeA {
     background: linear-gradient(180deg, rgb(139, 124, 44) 0%, rgb(200, 196, 189) 100%);
     background-color: transparent;
     border-radius: 50px 50px 0px 0px;
-    height: 1037px;
+    height: inherit;
     left: 0px;
     position: absolute;
     top: 174px;
-    width: 428px;
+    width: 100vw;
 }
 
 .orc-skill-u38-buff .frame-10-YDVDeA {
@@ -218,11 +218,11 @@
 
 .orc-skill-u38-buff .group-28-YDVDeA {
     background-color: transparent;
-    height: 25px;
-    left: 30px;
-    position: absolute;
-    top: 323px;
-    width: 368px;
+    position: relative;
+    top: 30px;
+    width: 90vw;
+    left: 5vw;
+    padding-bottom: 20px;
 }
 
 .orc-skill-u38-buff .vector-8-THK8T8 {
@@ -339,9 +339,9 @@
     left: 0px;
     overflow: hidden;
     padding: 17px 0px;
-    position: absolute;
-    top: 350px;
-    width: 428px;
+    position: relative;
+    top: 15px;
+    width: 100%;
 }
 
 .orc-skill-u38-buff .property-61-BxVpmb {
@@ -376,7 +376,7 @@
     margin-top: -1.00px;
     position: relative;
     text-align: left;
-    white-space: nowrap;
+    white-space: normal;
     width: fit-content;
 }
 
@@ -1059,7 +1059,7 @@
     background-color: transparent;
     cursor: pointer;
     height: 25px;
-    left: 377px;
+    right: 25px;
     position: absolute;
     top: 201px;
     width: 25px;
@@ -1135,7 +1135,7 @@
     left: 0px;
     position: relative;
     top: 0px;
-    width: 180px;
+    width: 163px;
 }
 
 .orc-skill-u38-buff .group-8 {
@@ -1179,14 +1179,14 @@
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
-    width: 180px;
+    width: 163px;
 }
 
 .orc-skill-u38-buff .property-62 {
     background-color: transparent;
     height: 107.557861328125px;
     position: relative;
-    width: 180px;
+    width: 163px;
 }
 
 .orc-skill-u38-buff .property-63 {
@@ -1203,7 +1203,7 @@
     left: 0px;
     position: absolute;
     top: 0px;
-    width: 180px;
+    width: 163px;
 }
 
 .orc-skill-u38-buff .ton-logo {

@@ -4,9 +4,6 @@
             <div class="orc-skill-u38-buff screen ">
                 <div class="frame-30-QHYqVR">
                     <div class="rectangle-3-YDVDeA"></div>
-                    <div class="group-14-YDVDeA">
-                        <div class="rectangle-2-28LpMs"></div>
-                    </div>
                     <div class="rectangle-1-YDVDeA"></div>
                     <div class="frame-10-YDVDeA">
                         <div class="group-9-PMa95H group-9">
@@ -27,195 +24,203 @@
                         <div class="x801-od4OWG" style="font-size: 40px;" v-if="currentTon">{{ currentTon }}</div>
                     </div>
                     <div class="group-28-YDVDeA">
-                        <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">Skills
+                        <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">
+                            Skills
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
-                            style="top: 20px;position: relative;">
-                            <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="group-29-YDVDeA">
-                        <div class="potion-vBOoVd roboto-normal-white-20px" style="font-size: 20px !important;">Potion
+                        <div style="height: 3px; background-color: #fff; opacity: .4;position: relative; top: 25px;margin: 20px 0;">
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
-                            style="top: 20px;position: relative;">
-                            <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="group-30-YDVDeA">
-                        <div class="items-dn1v0N roboto-normal-white-20px" style="font-size: 20px !important;">Items
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
-                            style="top: 20px;position: relative;">
-                            <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="group-31-YDVDeA">
-                        <div class="spells-dzXnyo roboto-normal-white-20px" style="font-size: 20px !important;">Spells
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="370" height="4" viewBox="0 0 370 4" fill="none"
-                            style="top: 20px;position: relative;">
-                            <path opacity="0.4" d="M2 2H368" stroke="white" stroke-width="4" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="skills-selection-YDVDeA">
-                        <div v-for="(skill, index) in skills" :key="index" class="property-61-BxVpmb property-61"
-                            @click="openPopup(skill)">
-                            <div class="group-18">
-                                <div class="rectangle-11"></div>
-                                <div class="frame-22-K1R0Nx frame-22">
-                                    <div class="lvl-0 roboto-semi-bold-white-9px">lvl {{ skill.level }}</div>
-                                    <div class="frame-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
-                                            fill="none">
-                                            <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
-                                                stroke-opacity="0.2" stroke-width="0.3" />
-                                        </svg>
-                                        <div class="group-9-KkCCdX group-9">
-                                            <img class="gold" :src="skill.iconSrc" :alt="skill.iconAlt" />
-                                        </div>
-                                        <div class="x15692-k roboto-semi-bold-white-11px">
-                                            {{ skill.cost }}
+
+                        <div class="skills-selection-YDVDeA">
+                            <div v-for="(skill, index) in skills" :key="index" class="property-61-BxVpmb property-61"
+                                @click="openPopup(skill)">
+                                <div class="group-18">
+                                    <div class="rectangle-11"></div>
+                                    <div class="frame-22-K1R0Nx frame-22">
+                                        <div class="lvl-0 roboto-semi-bold-white-9px">lvl {{ skill.level }}</div>
+                                        <div class="frame-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25"
+                                                viewBox="0 0 2 25" fill="none">
+                                                <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                                    stroke-opacity="0.2" stroke-width="0.3" />
+                                            </svg>
+                                            <div class="group-9-KkCCdX group-9">
+                                                <img class="gold" :src="skill.iconSrc" :alt="skill.iconAlt" />
+                                            </div>
+                                            <div class="x15692-k roboto-semi-bold-white-11px">
+                                                {{ skill.cost }}
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="frame-21-K1R0Nx frame-21">
+                                        <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                            {{ skill.name }}
+                                        </div>
+                                        <div class="frame-20-6ErPOi frame-20">
+                                            <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                                {{ skill.info }}
+                                            </div>
+                                            <div class="frame-19">
+                                                <div class="x1 roboto-semi-bold-white-8-2px">{{ skill.gains }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="multi-attack-K1R0Nx" :src="skill.imageUrl" :alt="skill.imageAlt" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="1" viewBox="0 0 180 1"
+                                        fill="none" style="position: relative; top: 55px;">
+                                        <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2"
+                                            stroke-width="0.3" />
+                                    </svg>
                                 </div>
-                                <div class="frame-21-K1R0Nx frame-21">
-                                    <div class="multi-attack-6ErPOi roboto-normal-white-9px">
-                                        {{ skill.name }}
-                                    </div>
-                                    <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
-                                            {{ skill.info }}
-                                        </div>
-                                        <div class="frame-19">
-                                            <div class="x1 roboto-semi-bold-white-8-2px">{{ skill.gains }}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img class="multi-attack-K1R0Nx" :src="skill.imageUrl" :alt="skill.imageAlt" />
-                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
-                                    fill="none" style="position: relative; top: 55px;">
-                                    <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
-                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="potion-selection-YDVDeA potion-selection">
-                        <div class="property-61-BxVpmb property-61" v-for="(potion, index) in potions" :key="index"
-                            @click="openPopup(potion)">
-                            <div class="group-18">
-                                <div class="rectangle-11"></div>
-                                <div class="frame-22-K1R0Nx frame-22">
-                                    <div class="lvl-0 roboto-semi-bold-white-9px">
-                                        {{ potion.currentPotions }} / {{ potion.totalPotions }}</div>
-                                    <div class="frame-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
-                                            fill="none">
-                                            <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
-                                                stroke-opacity="0.2" stroke-width="0.3" />
-                                        </svg>
-                                        <div class="x15692-k roboto-semi-bold-white-11px">Cooldown: 00:00</div>
+                    <div class="group-28-YDVDeA">
+                        <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">
+                            Potion
+                        </div>
+                        <div style="height: 3px; background-color: #fff; opacity: .4;position: relative; top: 25px;margin: 20px 0;">
+                        </div>
+
+
+                        <div class="skills-selection-YDVDeA">
+                            <div class="property-61-BxVpmb property-61" v-for="(potion, index) in potions" :key="index"
+                                @click="openPopup(potion)">
+                                <div class="group-18">
+                                    <div class="rectangle-11"></div>
+                                    <div class="frame-22-K1R0Nx frame-22">
+                                        <div class="lvl-0 roboto-semi-bold-white-9px">
+                                            {{ potion.currentPotions }} / {{ potion.totalPotions }}</div>
+                                        <div class="frame-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25"
+                                                viewBox="0 0 2 25" fill="none">
+                                                <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                                    stroke-opacity="0.2" stroke-width="0.3" />
+                                            </svg>
+                                            <div class="x15692-k roboto-semi-bold-white-11px">Cooldown: 00:00</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="frame-21-K1R0Nx frame-21">
-                                    <div class="multi-attack-6ErPOi roboto-normal-white-9px" style="top:15px">
-                                        Mana Potion
+                                    <div class="frame-21-K1R0Nx frame-21">
+                                        <div class="multi-attack-6ErPOi roboto-normal-white-9px" style="top:15px">
+                                            Mana Potion
+                                        </div>
                                     </div>
+                                    <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Mana Potion.png"
+                                        alt="Mana Potion">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="1" viewBox="0 0 180 1"
+                                        fill="none" style="position: relative;top: 55px;">
+                                        <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2"
+                                            stroke-width="0.3" />
+                                    </svg>
                                 </div>
-                                <img class="multi-attack-K1R0Nx" src="@/assets/Buff/Mana Potion.png" alt="Mana Potion">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
-                                    fill="none" style="position: relative;top: 55px;">
-                                    <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
-                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="item-select-YDVDeA">
-                        <div class="property-61-BxVpmb property-61" v-for="(item, index) in items" :key="index"
-                            @click="item.cooldown || item.isPermaClosed ? null : openPopup(item)">
-                            <div class="cooldown" v-if="item.cooldown">
-                                <div>Currently not active please wait</div>
-                                <div style="font-size: 30px" v-if="!item.isPermaClosed">
-                                    {{ formattedCooldowns.items[index] }}
-                                </div>
-                            </div>
-                            <div class="group-18">
-                                <div class="rectangle-11"></div>
-                                <div class="frame-22-K1R0Nx frame-22">
-                                    <div class="lvl-0 roboto-semi-bold-white-9px">lvl {{ item.level }}</div>
-                                    <div class="frame-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
-                                            fill="none">
-                                            <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
-                                                stroke-opacity="0.2" stroke-width="0.3" />
-                                        </svg>
-                                        <div class="group-9-KkCCdX group-9">
-                                            <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
-                                        </div>
-                                        <div class="x15692-k roboto-semi-bold-white-11px">{{ item.cost }} TON</div>
+                    <div class="group-28-YDVDeA">
+                        <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">
+                            Items
+                        </div>
+                        <div style="height: 3px; background-color: #fff; opacity: .4;position: relative; top: 25px;margin: 20px 0;">
+                        </div>
+
+
+                        <div class="skills-selection-YDVDeA">
+                            <div class="property-61-BxVpmb property-61" v-for="(item, index) in items" :key="index"
+                                @click="item.cooldown || item.isPermaClosed ? null : openPopup(item)">
+                                <div class="cooldown" v-if="item.cooldown">
+                                    <div>Currently not active please wait</div>
+                                    <div style="font-size: 30px" v-if="!item.isPermaClosed">
+                                        {{ formattedCooldowns.items[index] }}
                                     </div>
                                 </div>
-                                <div class="frame-21-K1R0Nx frame-21">
-                                    <div class="multi-attack-6ErPOi roboto-normal-white-9px">
-                                        {{ item.name }}
-                                    </div>
-                                    <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
-                                            {{ item.info }}</div>
-                                        <div class="frame-19">
-                                            <div class="x1 roboto-semi-bold-white-8-2px">{{ item.gains }}</div>
+                                <div class="group-18">
+                                    <div class="rectangle-11"></div>
+                                    <div class="frame-22-K1R0Nx frame-22">
+                                        <div class="lvl-0 roboto-semi-bold-white-9px">lvl {{ item.level }}</div>
+                                        <div class="frame-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25"
+                                                viewBox="0 0 2 25" fill="none">
+                                                <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                                    stroke-opacity="0.2" stroke-width="0.3" />
+                                            </svg>
+                                            <div class="group-9-KkCCdX group-9">
+                                                <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
+                                            </div>
+                                            <div class="x15692-k roboto-semi-bold-white-11px">{{ item.cost }} TON</div>
                                         </div>
                                     </div>
+                                    <div class="frame-21-K1R0Nx frame-21">
+                                        <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                            {{ item.name }}
+                                        </div>
+                                        <div class="frame-20-6ErPOi frame-20">
+                                            <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                                {{ item.info }}</div>
+                                            <div class="frame-19">
+                                                <div class="x1 roboto-semi-bold-white-8-2px">{{ item.gains }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="multi-attack-K1R0Nx" :src="item.imageUrl" :alt="item.imageAlt" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="1" viewBox="0 0 180 1"
+                                        fill="none" style="position: relative;top: 55px;">
+                                        <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2"
+                                            stroke-width="0.3" />
+                                    </svg>
                                 </div>
-                                <img class="multi-attack-K1R0Nx" :src="item.imageUrl" :alt="item.imageAlt" />
-                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
-                                    fill="none" style="position: relative;top: 55px;">
-                                    <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
-                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="potion-selection-3oCFl8 potion-selection">
-                        <div class="property-61-BxVpmb property-61" v-for="(spell, index) in spells" :key="index"
-                            @click="spell.cooldown || spell.isPermaClosed ? null : openPopup(spell)">
-                            <div class="cooldown" v-if="spell.cooldown">
-                                <div>Currently not active please wait</div>
-                                <div style="font-size: 30px" v-if="!spell.isPermaClosed">
-                                    {{ formattedCooldowns.spells[index] }}
+                    <div class="group-28-YDVDeA">
+                        <div class="skills-THK8T8 roboto-normal-white-20px" style="font-size: 20px !important;">
+                            Spells
+                        </div>
+                        <div style="height: 3px; background-color: #fff; opacity: .4;position: relative; top: 25px;margin: 20px 0;">
+                        </div>
+
+
+                        <div class="skills-selection-YDVDeA">
+                            <div class="property-61-BxVpmb property-61" v-for="(spell, index) in spells" :key="index"
+                                @click="spell.cooldown || spell.isPermaClosed ? null : openPopup(spell)">
+                                <div class="cooldown" v-if="spell.cooldown">
+                                    <div>Currently not active please wait</div>
+                                    <div style="font-size: 30px" v-if="!spell.isPermaClosed">
+                                        {{ formattedCooldowns.spells[index] }}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="group-18">
-                                <div class="rectangle-11"></div>
-                                <div class="frame-22-K1R0Nx frame-22">
-                                    <div class="lvl-0 roboto-semi-bold-white-9px"></div>
-                                    <div class="frame-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25" viewBox="0 0 2 25"
-                                            fill="none">
-                                            <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
-                                                stroke-opacity="0.2" stroke-width="0.3" />
-                                        </svg>
-                                        <div class="group-9-KkCCdX group-9">
-                                            <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
+                                <div class="group-18">
+                                    <div class="rectangle-11"></div>
+                                    <div class="frame-22-K1R0Nx frame-22">
+                                        <div class="lvl-0 roboto-semi-bold-white-9px"></div>
+                                        <div class="frame-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="25"
+                                                viewBox="0 0 2 25" fill="none">
+                                                <path d="M0.894409 0.588623L0.894408 24.9578" stroke="white"
+                                                    stroke-opacity="0.2" stroke-width="0.3" />
+                                            </svg>
+                                            <div class="group-9-KkCCdX group-9">
+                                                <img class="gold" src="@/assets/Buff/Ton Logo.png" alt="Ton Logo">
+                                            </div>
+                                            <div class="x15692-k roboto-semi-bold-white-11px">10 TON</div>
                                         </div>
-                                        <div class="x15692-k roboto-semi-bold-white-11px">10 TON</div>
                                     </div>
+                                    <div class="frame-21-K1R0Nx frame-21">
+                                        <div class="multi-attack-6ErPOi roboto-normal-white-9px">
+                                            The Ancient's <br>Transformation Ritual
+                                        </div>
+                                        <div class="frame-20-6ErPOi frame-20">
+                                            <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
+                                                Faction Chance</div>
+                                        </div>
+                                    </div>
+                                    <img class="multi-attack-K1R0Nx"
+                                        src="@/assets/Buff/The Ancients Transformation Ritual.png"
+                                        alt="The Ancients Transformation Ritual">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="1" viewBox="0 0 180 1"
+                                        fill="none" style="position: relative;top: 55px;">
+                                        <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2"
+                                            stroke-width="0.3" />
+                                    </svg>
                                 </div>
-                                <div class="frame-21-K1R0Nx frame-21">
-                                    <div class="multi-attack-6ErPOi roboto-normal-white-9px">
-                                        The Ancient's <br>Transformation Ritual
-                                    </div>
-                                    <div class="frame-20-6ErPOi frame-20">
-                                        <div class="attack-6ZfXec roboto-medium-white-7px" style="font-size: 7px;">
-                                            Faction Chance</div>
-                                    </div>
-                                </div>
-                                <img class="multi-attack-K1R0Nx"
-                                    src="@/assets/Buff/The Ancients Transformation Ritual.png"
-                                    alt="The Ancients Transformation Ritual">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="1" viewBox="0 0 180 1"
-                                    fill="none" style="position: relative;top: 55px;">
-                                    <path d="M0 0.487244H180" stroke="white" stroke-opacity="0.2" stroke-width="0.3" />
-                                </svg>
                             </div>
                         </div>
                     </div>
@@ -282,7 +287,7 @@ export default {
                 const response = await axios.get(process.env.VUE_APP_API_URL + '/skillbuff', {
                     params: { userId: this.userId }
                 });
-                
+
                 const { skills, items, potions, spells } = response.data;
                 this.skills = skills;
                 this.items = items;
@@ -328,7 +333,8 @@ export default {
             const categories = ['skills', 'items', 'potions', 'spells'];
             for (const category of categories) {
                 for (const item of this[category]) {
-                    item.imageUrl = (await import(`@/assets/Buff/${item.imageUrl}`)).default;
+                    item.imageUrl = item.imageUrl ? (await import(`@/assets/Buff/${item.imageUrl}`)).default : null;
+                    item.iconSrc = item.iconSrc ? (await import(`@/assets/Buff/${item.iconSrc}`)).default : null;
                 }
             }
         }
