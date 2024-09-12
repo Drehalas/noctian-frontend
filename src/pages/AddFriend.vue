@@ -96,6 +96,21 @@ export default {
         return { toast }
     },
     methods: {
+      async addFriend() {
+        try {
+          const response = await axios.post(process.env.VUE_APP_API_URL + '/friends', {
+            userId: this.userId,
+            addFriendName: this.friendName,
+          });
+
+          if (response.status === 201) {
+            console.log('Friend added successfully');
+          }
+        } catch (error) {
+          this.errorMessage = 'An error occurred while adding the friend.';
+          console.error('Error adding friend:', error);
+        }
+      },
         showMessage() {
             this.toast.error("An error occurred while adding friends.");
         },
