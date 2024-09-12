@@ -16,8 +16,8 @@
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup"
-        :color="bottomGradientColors.bottom" />
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom"
+        :upgrade="upgradeHero" />
 </template>
 
 <script>
@@ -59,8 +59,17 @@ export default {
         console.clear();
     },
     methods: {
-        upgradeHero(heroId) {
-            console.log(`Upgrading hero with ID: ${heroId}`);
+        async upgradeHero(heroId) {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/heros', {
+                params: {
+                    userId: this.userId,
+                    id: heroId
+                }
+            });
+
+            if(response.status == 200) {
+                console.log("Success");
+            }
         },
         openPopup(item) {
             this.selectedItem = item;

@@ -16,8 +16,8 @@
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup"
-        :color="bottomGradientColors.bottom" />
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom"
+        :upgrade="upgradeSpell" />
 </template>
 
 <script>
@@ -59,6 +59,18 @@ export default {
         console.clear();
     },
     methods: {
+        async upgradeSpell(spellId) {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/spells', {
+                params: {
+                    userId: this.userId,
+                    id: spellId
+                }
+            });
+
+            if (response.status == 200) {
+                console.log("Success");
+            }
+        },
         openPopup(item) {
             this.selectedItem = item;
             this.showPopup = true;

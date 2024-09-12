@@ -6,7 +6,7 @@
                 <div class="page-container" v-if="bottomGradientColors"
                     :style="{ background: `linear-gradient(180deg, ${bottomGradientColors.top} 0%, ${bottomGradientColors.bottom} 100%)` }">
                     <GoldBar v-if="currentGold" :currentGold="currentGold" />
-                    <BaseHeroBar :selected="'Armory'" :factionType="factionType" v-if="factionType"/>
+                    <BaseHeroBar :selected="'Armory'" :factionType="factionType" v-if="factionType" />
                     <div class="hero-equp-select-lvJUvn">
                         <FactionProperty v-for="item in armoryList" :key="item.id" :property="item"
                             @click="openPopup(item)" />
@@ -16,7 +16,8 @@
             <Footer :selected="'Base'" />
         </div>
     </div>
-    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom" />
+    <FactionPropertyPopup v-if="showPopup" :item="selectedItem" @close="closePopup" :color="bottomGradientColors.bottom"
+        :upgrade="upgradeArmory" />
 </template>
 
 <script>
@@ -58,6 +59,18 @@ export default {
         console.clear();
     },
     methods: {
+        async upgradeArmory(armoryId) {
+            const response = await axios.post(process.env.VUE_APP_API_URL + '/armories', {
+                params: {
+                    userId: this.userId,
+                    id: armoryId
+                }
+            });
+
+            if (response.status == 200) {
+                console.log("Success");
+            }
+        },
         openPopup(item) {
             this.selectedItem = item;
             this.showPopup = true;
@@ -127,7 +140,7 @@ export default {
                 const response = await axios.get(process.env.VUE_APP_API_URL + '/armory', {
                     params: { userId: this.userId }
                 });
-                
+
                 this.armoryList = response.data;
             } catch (error) {
                 console.error('Error fetching armory data:', error);

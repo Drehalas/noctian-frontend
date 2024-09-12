@@ -32,7 +32,7 @@
                         </div>
                         <h1 class="title-WQV2wA" style="font-size: 20px;">{{ item.cost }}</h1>
                     </div>
-                    <div class="buy-button-IxqKwS">
+                    <div class="buy-button-IxqKwS" @click="upgrade(item.id)">
                         <div class="buy-DuEsqg">Buy</div>
                     </div>
                 </div>
@@ -62,7 +62,8 @@ export default {
         color: {
             type: String,
             required: true
-        }
+        },
+        upgrade: Function
     },
 };
 </script>

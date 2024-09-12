@@ -231,7 +231,7 @@ export default {
                     }
                 });
                 
-                if (response.success) {
+                if (response.status == 200) {
                     this.$router.push(`/?faction=${this.selectedFaction.toLowerCase()}`);
                 }
             } catch (error) {
