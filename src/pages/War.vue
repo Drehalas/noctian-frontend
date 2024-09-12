@@ -23,7 +23,7 @@
                                 :style="{ backgroundColor: getWarBackgroundColor(throne.faction) }">
                                 <div class="orcs roboto-semi-bold-white-12px">{{ throne.faction }}</div>
                                 <img class="x9b3af883-354d-4413-bf7f-37baaad350d0-2-91MWnz x9b3af883-354d-4413-bf7f-37baaad350d0-2"
-                                    :src="throne.imageUrl">
+                                    :src="throne.imageUrl" alt="">
                             </div>
                             <div class="frame-18-vwdZa2 frame-18">
                                 <div class="frame-4">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div
-                    style="position: absolute;top: 30px;width: 100%;left: 0px;display: flex;flex-direction: column;align-items: center;">
+                    style="position: absolute;top: 30px;width: 100%;left: 0;display: flex;flex-direction: column;align-items: center;">
                     <img class="x2-2-gfXRIF" src="@/assets/Global/War/2 2.png" alt="2 2">
                     <div class="group-39-gfXRIF" style="position: relative;" v-for="war in warList" :key="war.id">
                         <div class="rectangle-10-9mhVzY rectangle-10"></div>
@@ -119,7 +119,17 @@ export default {
                 this.minutes = 0
                 this.seconds = 0
             }
+
         },
+      async fetchNextWarTime() {
+        try {
+          const response = await axios.get(process.env.VUE_APP_API_URL + '/nextwar');
+          this.nextWarTime = response.data.nextWarTime;
+          this.timer = setInterval(this.updateCountdown, 1000); // Start the countdown
+        } catch (error) {
+          console.error('Failed to fetch next war time:', error);
+        }
+      },
         getWarBackgroundColor(faction) {
             switch (faction) {
                 case "ORCS":
@@ -180,6 +190,12 @@ export default {
             }
         }
     },
+  async created() {
+    await this.fetchNextWarTime();
+  },
+  beforeDestroy() {
+    clearInterval(this.timer); // Clear the interval when component is destroyed
+  },
     async mounted() {
         await this.fetchWarData();
         await this.loadImages();
