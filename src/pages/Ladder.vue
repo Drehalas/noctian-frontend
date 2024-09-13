@@ -115,7 +115,7 @@ export default {
             expBarColor: null,
             topGradientColors: null,
             bottomGradientColors: null,
-            userId: 55
+            userId: "66e3679207906156d94fc3a8"
         };
     },
     methods: {
@@ -162,7 +162,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                const { factionType, avatarImage, title, exp } = response.data;
+                const { factionType, avatarImage, title, exp } = response.data[0];
                 this.factionType = factionType;
                 this.avatarImage = avatarImage;
                 this.title = title;

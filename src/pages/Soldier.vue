@@ -43,7 +43,7 @@ export default {
     data() {
         return {
             currentGold: null,
-            userId: 100,
+            userId: "66e3679207906156d94fc3a8",
             soldierList: [],
             showPopup: false,
             selectedItem: null,
@@ -97,7 +97,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                const { currentGold, factionType } = response.data;
+                const { currentGold, factionType } = response.data[0];
                 this.currentGold = currentGold;
                 this.factionType = factionType;
             } catch (error) {
@@ -146,7 +146,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                this.soldierList = response.data;
+                this.soldierList = response.data.filter(e => e.faction == this.factionType);
             } catch (error) {
                 console.error('Error fetching soldier data:', error);
             }

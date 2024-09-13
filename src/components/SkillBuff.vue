@@ -265,6 +265,7 @@ export default {
         return {
             skillBuffs: [],
             loading: true,
+            userId: "66e3679207906156d94fc3a8",
             showPopup: false,
             selectedItem: null,
             formattedCooldowns: {

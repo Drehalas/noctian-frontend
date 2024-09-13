@@ -92,7 +92,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                const { currentGold, factionType } = response.data;
+                const { currentGold, factionType } = response.data[0];
                 this.currentGold = currentGold;
                 this.factionType = factionType;
             } catch (error) {

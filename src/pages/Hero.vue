@@ -43,7 +43,7 @@ export default {
     data() {
         return {
             currentGold: null,
-            userId: 100,
+            userId: "66e3679207906156d94fc3a8",
             factionType: null,
             heroList: [],
             showPopup: false,
@@ -92,7 +92,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                const { currentGold, factionType } = response.data;
+                const { currentGold, factionType } = response.data[0];
                 this.currentGold = currentGold;
                 this.factionType = factionType;
             } catch (error) {

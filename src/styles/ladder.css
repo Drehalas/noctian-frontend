@@ -78,7 +78,7 @@
     left: 0px;
     object-fit: cover;
     position: absolute;
-    top: 330px;
+    top: 35vh;
     width: 100vw;
     z-index: 1;
 }
@@ -99,7 +99,7 @@
     height: 34px;
     left: 0;
     position: absolute;
-    top: 335px;
+    top: 32vh;
     width: 100vw;
     display: flex;
     justify-content: center;

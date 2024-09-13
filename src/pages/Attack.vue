@@ -86,9 +86,9 @@
                             </div>
                         </div>
                         <div
-                            style="position: relative;top: 35vh;width: 90vw;border: 1px solid transparent;left: 5vw;border-radius: 50%; overflow: hidden;">
-                            <img class="orc-button-Z6GGxj" :src="buttonImage" alt="Orc button" @click="gainGold">
-                            <img class="ork-ladder-20-logo-Z6GGxj" :src="avatarImage" alt="Orc Ladder 20 logo"
+                            style="position: relative;top: 40vh;width: 90vw;border: 1px solid transparent;left: 5vw;border-radius: 50%; overflow: hidden;">
+                            <img v-if="buttonImage" class="orc-button-Z6GGxj" :src="buttonImage" alt="Orc button" @click="gainGold">
+                            <img v-if="avatarImage" class="ork-ladder-20-logo-Z6GGxj" :src="avatarImage" alt="Orc Ladder 20 logo"
                                 @click="gainGold">
                         </div>
                         <GoldBar v-if="currentGold" :currentGold="currentGold" />
@@ -165,7 +165,7 @@ export default {
             expBarColor: null,
             bottomGradientColors: null,
             topGradientColors: null,
-            userId: 100,
+            userId: "66e3679207906156d94fc3a8",
             currentTon: null
         }
     },
@@ -209,7 +209,7 @@ export default {
                     params: { userId: this.userId }
                 });
 
-                const { name, incomePerHour, increaseAmount, factionType, currentGold, level, exp, currentMana, totalMana, title, currentTon } = response.data;
+                const { name, incomePerHour, increaseAmount, factionType, currentGold, level, exp, currentMana, totalMana, title, currentTon } = response.data[0];
                 this.name = name;
                 this.incomePerHour = incomePerHour;
                 this.increaseAmount = increaseAmount;

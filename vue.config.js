@@ -5,11 +5,12 @@ module.exports = defineConfig({
   transpileDependencies: true,
 
   devServer: {
-    https: {
-      key: fs.readFileSync('./localhost.key'), // Path to your private key
-      cert: fs.readFileSync('./localhost.crt'), // Path to your certificate
+    proxy: {
+      '/api': {
+        target: 'http://52.59.125.94:5001',
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' },
+      },
     },
-    port: 8080,  // You can change this port if needed
-    host: 'localhost',  // Define the host
   },
 });
